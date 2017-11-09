@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="230px" height="231px" viewBox="0 0 230 231" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>TriCorner</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="MockUp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Registration-Data-Input-Example" transform="translate(-145.000000, -436.000000)" fill="#003057">
+            <polygon id="TriCorner" transform="translate(259.500000, 551.500000) rotate(-180.000000) translate(-259.500000, -551.500000) " points="144 436 375 436 373.166667 436 144 667"></polygon>
+        </g>
+    </g>
+</svg>

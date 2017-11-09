@@ -1,0 +1,207 @@
+
+/*  ///////////  Top Level Structure  ////////////  */
+#wrapper {
+    width:100%;
+    margin:0;
+    border:0;
+    font-family: "Gotham", "Arial", sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+#content {
+    margin: auto;
+    width: 100%;
+    height:100vh;
+  background-image: url("../assets/img/background_gradient_split.svg");
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  color:white;
+}
+#contentReg {
+    margin: auto;
+    width: 100%;
+    height:100vh;
+    background-color: #e4e4e4;
+  background-image: url("../assets/img/TriCorner.svg");
+  background-size: 60vw;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  text-align: center;
+  color:#003057;
+
+}
+
+/*  ///////////    HTML  ////////////  */
+a {
+  text-decoration:underline;
+  color:white;
+}
+#contentReg a {
+  text-decoration:underline;
+  color:#003057;
+}
+
+p {
+  font-size: 16px;
+}
+h3 {
+  font-family: "Gotham", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  padding:0.8rem;
+
+}
+
+/*  ///////////  elements  ////////////  */
+form input, btn{
+  font-family: "Gotham", "Arial", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  }
+
+input {
+width:280px;
+height:40px;
+margin:10px auto;
+padding: 4px;
+border:1px solid #0099d8;
+}
+label {
+  font-size: 12px;
+}
+#contentReg label {
+  font-size: 12px;
+  color:#0099D8;
+}
+form .SR_btn {
+  background:#0099d8;
+  color:white;
+width:240px;
+height:50px;
+border:0;
+margin:30px auto;
+font-size: 16px;
+
+}
+.Reg_btn {
+  background:#0099d8;
+  color:white;
+border:0;
+margin:auto;
+margin-top:4px;
+padding:18px 20px;
+width:200px;
+font-size: 16px;
+
+}
+.button {
+  text-decoration: none;
+}
+.comment {
+  font-family: "Gotham", "Arial", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color:#0099D8;
+
+}
+#profileSummary {
+  text-align: left;
+  padding-left:20vw;
+  line-height: 0.8rem;
+}
+#profileSummary .profileImg {
+  margin:auto;
+
+}
+.userItem {
+  font-family: "Gotham", "Arial", sans-serif;
+  font-size: 16px;
+  color:#0099D8;
+    font-weight: 500;
+}
+#thanks {
+  width:80vw;
+  margin:auto;
+}
+#thanks h2 {
+  font-family: "Gotham", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color:#0099D8;
+}
+/* //////////  header items  /////////  */
+#contentReg #header {
+  background: url("../assets/img/Main_Header_bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+  height:90px;
+  border: 1px solid green;
+}
+
+.l_FirstLook {
+    margin:auto;
+    padding-top:100px;
+    padding-bottom:70px;
+}
+#contentReg .l_FirstLook {
+    margin:auto;
+    padding-top:40px;
+    padding-bottom:0px;
+}
+
+/* ////////  Navigation  ////////////////  */
+#nav-wrapper {
+    margin: auto;
+    position: absolute;
+    bottom: 10vh;
+    left:10%;
+    width: 80%;
+}
+
+#nav-wrapper #nav {
+  margin:auto;
+}
+.navLeft, .navRight {
+
+padding:6px;
+height:24px;
+}
+
+#nav-wrapper #line {
+  margin:auto;
+  background: url("../assets/img/Line.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:100vw;
+  text-align: left;
+  padding:0;
+}
+
+.two {
+  padding-left:26%;
+}
+.three {
+  padding-left:65%;
+}
+.four {
+  padding-left:96%;
+}
+
+/*  ////////////////////  logo bottom right corner  //////////////  */
+#uploadBox {
+  border:1px solid #0099D8;
+  width:40vw;
+  height: 40vw;
+  margin:auto;
+  color:#0099D8;
+}
+
+#bottomLogo img {
+  max-width:126px;
+  position: absolute;
+  bottom: 4vh;
+  right: 5vw;
+}
