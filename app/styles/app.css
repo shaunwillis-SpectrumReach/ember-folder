@@ -55,7 +55,7 @@ h3 {
 }
 
 /*  ///////////  elements  ////////////  */
-form input, btn{
+form input, select, btn{
   font-family: "Gotham", "Arial", sans-serif;
   font-size: 16px;
   text-align: center;
@@ -68,6 +68,14 @@ margin:10px auto;
 padding: 4px;
 border:1px solid #0099d8;
 }
+select {
+width:280px;
+height:40px;
+margin:10px auto;
+padding: 4px;
+border:1px solid #0099d8;
+}
+
 label {
   font-size: 12px;
 }
