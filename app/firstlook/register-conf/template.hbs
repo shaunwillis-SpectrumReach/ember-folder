@@ -15,19 +15,17 @@
     <!--  Note:  need a conditional, if image profile picture exists, file path = foo, else display generic thumbnail. - generic_thumbnail.svg  -->
     <p class="profileImg"><img src="../assets/img/profile_thumbnail.png"></p>
 <div id="profileSummary" >
-  <p><span class="userItem">Name: </span>Jane Smith</p>
-  <p><span class="userItem">Email: </span>Jane.Smith@charter.com</p>
-  <p><span class="userItem">Job Title: </span>Account Executive</p>
-  <p><span class="userItem">Manager: </span>Robert johnson</p>
-  <p><span class="userItem">City: </span>Los Angeles</p>
-  <p><span class="userItem">Region: </span>Los Angeles</p>
-  <p><span class="userItem">Division: </span> Pacific West</p>
+  <p><span class="userItem">Name: </span>{{wizard.userInfo.first}} {{wizard.userInfo.last}}</p>
+  <p><span class="userItem">Email: </span>{{wizard.userInfo.email}}</p>
+  <p><span class="userItem">Job Title: </span>{{wizard.userInfo.jobtitle}}</p>
+  <p><span class="userItem">Manager: </span>{{wizard.userInfo.managername}}</p>
+  <p><span class="userItem">City: </span>{{wizard.userInfo.city}}</p>
+  <p><span class="userItem">Region: </span>{{wizard.userInfo.region}}</p>
+  <p><span class="userItem">Division: </span>{{wizard.userInfo.division}}</p>
 </div>
 <div class="Reg_btn" style="margin-top:40px; ">
-  {{#link-to 'firstlook.register-thanks' class="button" }}
-      Submit
-    {{/link-to}}
-  </div>
+      {{#link-to 'firstlook.register-thanks' class="SR_btn" name="button"}}Submit{{/link-to}}
+</div>
 </section>
 
 
