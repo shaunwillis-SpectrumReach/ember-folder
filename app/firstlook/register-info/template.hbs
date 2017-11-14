@@ -8,7 +8,7 @@
   <h3>Provide Professional Information</h3>
 </section >
 
-  <section id="formHolder" style="">
+  <!-- <section id="formHolder" style="">
   <form action="" autocomplete="on" >
     <input type="text" placeholder="Job TItle" name="Job Title" /><br>
     <input type="text" placeholder="Manager Name" name="Manager Name" /><br>
@@ -38,6 +38,16 @@
 <br>
 <input type="text" placeholder="City" name="City" /><br>
   </form>
+</section> -->
+  <section id="formHolder" style="">
+    <form onsubmit={{action "save"}}>
+      {{input value=wizard.userInfo.jobtitle placeholder="Job Title"}}<br>
+      {{input value=wizard.userInfo.managername placeholder="Manager Name"}}<br>
+      {{input value=wizard.userInfo.region placeholder="Region"}}<br>
+      {{input value=wizard.userInfo.division placeholder="Division"}}<br>
+      {{input value=wizard.userInfo.city placeholder="City"}}<br>
+      <!-- <button class="SR_btn">Next</button> -->
+    </form>
 </section>
 
 
