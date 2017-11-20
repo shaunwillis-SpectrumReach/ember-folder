@@ -7,7 +7,6 @@ export default Ember.Route.extend({
       managername: '',
       email: '',
       password: '',
-      city: ''
     };
   }
 });

@@ -9,23 +9,40 @@
       {{#link-to 'firstlook.register-name' class="button" }}
       <p class="comment">Edit Info <img style="height:14px;" src="../assets/img/Nav_Right.svg"></p>
       {{/link-to}}
-    </section >
+    </section>
 
   <section id="profile" style="">
     <!--  Note:  need a conditional, if image profile picture exists, file path = foo, else display generic thumbnail. - generic_thumbnail.svg  -->
     <p class="profileImg"><img src="../assets/img/profile_thumbnail.png"></p>
-<div id="profileSummary" >
+
+
+ <div id="profileSummary">
   <p><span class="userItem">Name: </span>{{wizard.userInfo.first}} {{wizard.userInfo.last}}</p>
   <p><span class="userItem">Email: </span>{{wizard.userInfo.email}}</p>
   <p><span class="userItem">Job Title: </span>{{wizard.userInfo.jobtitle}}</p>
   <p><span class="userItem">Manager: </span>{{wizard.userInfo.managername}}</p>
-  <p><span class="userItem">City: </span>{{wizard.userInfo.city}}</p>
   <p><span class="userItem">Region: </span>{{wizard.userInfo.region}}</p>
   <p><span class="userItem">Division: </span>{{wizard.userInfo.division}}</p>
 </div>
 <div class="Reg_btn" style="margin-top:40px; ">
-      {{#link-to 'firstlook.register-thanks' class="SR_btn" name="button"}}Submit{{/link-to}}
+      {{#link-to 'firstlook.register-thanks' class="SR_btn" name="button" }}Submit{{/link-to}}
 </div>
+
+<!-- this form submits, but isn't working with Ember data properly. I'm still working on this -->
+ <!-- {{#simple-form class="card__form" onsubmit=(action "saveForm") as | wizard |}}
+    {{input class="form__input" type="text"  value=wizard.pid placeholder="PID"}}
+    {{input class="form__input" type="text"  value=wizard.firstname placeholder="First Name"}}
+    {{input class="form__input" type="text"  value=wizard.lastname placeholder="Last Name"}}
+    {{input class="form__input" type="text"  value=wizard.email placeholder="Email"}}
+    {{input class="form__input" type="password"  value=wizard.password placeholder="Password"}}
+    {{input class="form__input" type="text"  value=wizard.jobtitle placeholder="Job Title"}}
+    {{input class="form__input" type="text"  value=wizard.managername placeholder="Manager Name"}}
+    {{input class="form__input" type="text"  value=wizard.division placeholder="Division"}}
+    {{input class="form__input" type="text"  value=wizard.region placeholder="Region"}}
+    <div class="button-box">
+      <button type="submit" class="btn">Submit</button>
+    </div>
+  {{/simple-form}} -->
 </section>
 
 
@@ -39,7 +56,6 @@
       <svg class="four" height="30" width="30" >
         <circle cx="15" cy="15" r="15" stroke="#0099D8" stroke-width="1" fill="white" />
         <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">4</text>
-
       </svg>
  </div >
 </section>

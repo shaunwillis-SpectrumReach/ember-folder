@@ -3,26 +3,17 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   wizard: Ember.inject.service('wizard'),
 
-  // actions: {
-  //   save() {
-  //     this.get('wizard').saveUserInfo(this.model);
-  //
-  //     this.transitionToRoute('firstlook.register-thanks');
-  //   }
-  // }
   actions: {
-      save(formValues) {
-        console.log(formValues);
+      saveForm(wizard) {
+        console.log(wizard);
+        const pids = this.store.createRecord('pids', wizard);
 
-        const pid = this.store.createRecord('pid', formValues);
-
-        pid.save().then(() => {
-          console.log(pid);
-          return pid.save();
+        pids.save().then(() => {
+          return pids.save();
         }).then(() => {
           const secretStuff = {
-            identification: formValues.email,
-            password: formValues.password,
+            identification: wizard.email,
+            password: wizard.password,
           };
           console.log(secretStuff);
           const authenticator = 'authenticator:jwt';
