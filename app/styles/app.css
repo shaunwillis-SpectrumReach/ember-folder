@@ -7,14 +7,35 @@
     font-family: "Gotham", "Arial", sans-serif;
     font-size: 14px;
     text-align: center;
+
+Google background: #003057; /* Old browsers */
+background:  -moz-linear-gradient(-55deg,  #003057 0%, #0099D8 100%); /* FF3.6-15 */
+background:  -webkit-linear-gradient(-55deg,  #003057 0%,#0099D8 100%); /* Chrome10-25,Safari5.1-6 */
+background:  linear-gradient(125deg,  #003057 0%,#0099D8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003057', endColorstr='#0099D8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+
+
 }
 #content {
     margin: auto;
     width: 100%;
     height:100vh;
-  background-image: url("../assets/img/background_gradient_split.svg");
-  background-size: cover;
-  background-position: center center;
+
+
+
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#033257+0,189ad5+100 */
+background: url("../assets/img/TriCorner.svg");  /* Old browsers */
+background: url("../assets/img/TriCorner.svg");  /* FF3.6-15 */
+background: url("../assets/img/TriCorner.svg");  /* Chrome10-25,Safari5.1-6 */
+background: url("../assets/img/TriCorner.svg"); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+background-size: 120vw;
+background-position: bottom right;
+background-repeat: no-repeat;
+
   text-align: center;
   color:white;
 }
@@ -24,12 +45,53 @@
     height:100vh;
     background-color: #e4e4e4;
   background-image: url("../assets/img/TriCorner.svg");
-  background-size: 60vw;
+  background-size: 48vw;
   background-position: bottom right;
   background-repeat: no-repeat;
   text-align: center;
   color:#003057;
 
+}
+#formHolder {
+  opacity: 1;
+
+}
+.AnimCorner {
+
+  -webkit-animation: AnimCorner 1.2s 1 ease-out; /* Safari 4.0 - 8.0 */
+  animation: AnimCorner 1.2s 1 ease-out;
+
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes AnimCorner {
+    0%   {  background-size: 0vw;}
+    100% {  background-size: 120vw;}
+}
+
+/* Standard syntax */
+@keyframes AnimCorner {
+    0%   {background-size: 0vw;}
+    100% {background-size: 120vw;}
+}
+
+.AnimDown {
+
+  -webkit-animation: cornerAnim 1.2s 1 ease-out; /* Safari 4.0 - 8.0 */
+  animation: cornerAnim 1.2s 1 ease-out;
+
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes cornerAnim {
+    0%   {  background-size: 120vw;}
+    100% {  background-size: 48vw;}
+}
+
+/* Standard syntax */
+@keyframes cornerAnim {
+    0%   {background-size: 120vw;}
+    100% {background-size: 48vw;}
 }
 
 /*  ///////////    HTML  ////////////  */
@@ -37,7 +99,7 @@ a {
   text-decoration:underline;
   color:white;
 }
-#contentReg a {
+#contentReg  a {
   text-decoration:none;
   color:#fff;
 }
@@ -53,12 +115,44 @@ h3 {
   padding:0.8rem;
 
 }
+.fadein {
 
+    -webkit-animation: fadein 2s 1; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s 1; /* Firefox < 16 */
+        -ms-animation: fadein 2s 1; /* Internet Explorer */
+            animation: fadein 2s 1;
+
+
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 /*  ///////////  elements  ////////////  */
 form input, select, btn{
   font-family: "Gotham", "Arial", sans-serif;
   font-size: 16px;
   text-align: center;
+  border-radius: 0;
   }
 
 input {
@@ -102,8 +196,11 @@ margin-top:4px;
 padding:18px 20px;
 width:200px;
 font-size: 16px;
-
 }
+.Reg_btn a {
+  text-decoration: none;
+}
+
 .button {
   text-decoration: none;
 }
@@ -200,15 +297,72 @@ height:24px;
 }
 
 .two {
-  padding-left:26%;
+  padding-left:30%;
+
+  -webkit-animation: pg2 1.2s 1 ease-out; /* Safari 4.0 - 8.0 */
+  animation: pg2 1.2s 1 ease-out;
 }
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes pg2 {
+    0%   {  padding-left:0;}
+    100% {  padding-left:30%;}
+}
+
+/* Standard syntax */
+@keyframes pg2 {
+    0%   {padding-left:0;}
+    100% {padding-left:30%;}
+}
+
 .three {
   padding-left:65%;
+  -webkit-animation: pg3 1.2s 1 ease-out; /* Safari 4.0 - 8.0 */
+  animation: pg3 1.2s 1 ease-out;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes pg3 {
+    0%   {  padding-left:30%;}
+    100% {  padding-left:65%;}
+}
+
+/* Standard syntax */
+@keyframes pg3 {
+    0%   {padding-left:30%;}
+    100% {padding-left:65%;}
 }
 .four {
   padding-left:96%;
+  -webkit-animation: pg4 1.2s 1 ease-out; /* Safari 4.0 - 8.0 */
+  animation: pg4 1.2s 1 ease-out;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes pg4 {
+    0%   {  padding-left:65%;}
+    100% {  padding-left:96%;}
 }
 
+/* Standard syntax */
+@keyframes pg4 {
+    0%   {padding-left:65%;}
+    100% {padding-left:96%;}
+}
+
+.fourThree {
+  padding-left:65%;
+  -webkit-animation: pg4-3 1.2s 1 ease-out; /* Safari 4.0 - 8.0 */
+  animation: pg4-3 1.2s 1 ease-out;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes pg4-3 {
+    0%   {  padding-left:96%;}
+    100% {  padding-left:65%;}
+}
+
+/* Standard syntax */
+@keyframes pg4-3 {
+    0%   {padding-left:96%;}
+    100% {padding-left:65%;}
+}
 /*  ////////////////////  logo bottom right corner  //////////////  */
 #uploadBox {
   border:1px solid #0099D8;

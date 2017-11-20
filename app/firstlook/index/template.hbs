@@ -1,24 +1,25 @@
 <div id="wrapper">
-  <div id="content" >
+  <div id="content" class="AnimCorner">
 <section id="header">
       <img class="l_FirstLook" src="../assets/img/L_FirstLook.png">
 </section>
 
-<section id="formHolder">
+<section id="formHolder" class="fadein">
+
+
   <form action="" autocomplete="on">
     <input type="email" placeholder="Email" name="email" /><br>
     <input type="password" placeholder="Password" name="password"/><br>
-     <label for="password">Forgot your password?</label><br>
-    <input type="button" class="SR_btn" name="submit" value="Enter" >
+     <!-- <label for="password">Forgot your password?</label><br>  -->
+    <input type="button" class="SR_btn" name="submit" value="Register" >
   </form>
 </section>
-
-<section id="new-reg">
-  <p>Not yet registered?</p>
+<section id="new-reg" class="fadein" style="margin-top:80px;">
+  <p>Already registered?</p>
 
 <div class="Reg_btn">
-  {{#link-to 'firstlook.register-pid' class="button" replace="true"}}
-      Click Here
+  {{#link-to 'firstlook.register-conf' class="button " replace="true"}}
+      Edit Profile
     {{/link-to}}
   </div>
 
