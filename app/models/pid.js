@@ -8,7 +8,6 @@ export default DS.Model.extend({
   password: DS.attr('string'),
   jobtitle: DS.attr('string'),
   managername: DS.attr('string'),
-  city: DS.attr('string'),
   division: DS.attr('string'),
   region: DS.attr('string'),
   ae15m: DS.belongsTo('ae15m'),
