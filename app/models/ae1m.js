@@ -5,3 +5,4 @@ export default DS.Model.extend({
   fullyear: DS.attr('string'),
   division: DS.attr('string'),
   pids: DS.belongsTo('pids')
+});
