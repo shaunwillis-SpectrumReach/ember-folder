@@ -6,7 +6,6 @@ export default DS.Model.extend({
   lastname: DS.attr('string'),
   email: DS.attr('string'),
   password: DS.attr('string'),
-  jobtitle: DS.attr('string'),
   managername: DS.attr('string'),
   division: DS.attr('string'),
   region: DS.attr('string'),
