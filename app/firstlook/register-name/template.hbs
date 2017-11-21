@@ -20,8 +20,8 @@
 </section> -->
   <section id="formHolder" style="">
     <form onsubmit={{action "save"}}>
-      {{input type="text" placeholder="First Name" value=wizard.userInfo.first }}<br>
-      {{input type="text" value=wizard.userInfo.last placeholder="Last Name"}}<br>
+      {{input type="text" value=wizard.userInfo.firstname placeholder="First Name"}}<br>
+      {{input type="text" value=wizard.userInfo.lastname placeholder="Last Name"}}<br>
       {{input type="text" value=wizard.userInfo.email placeholder="Email"}}<br>
       <!-- {{password-toggle password=wizard.userInfo.password}}<br> -->
       {{input id="password" type="password" value=wizard.userInfo.password placeholder="Create Password"}}<br>
