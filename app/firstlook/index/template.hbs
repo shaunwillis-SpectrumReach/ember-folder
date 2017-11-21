@@ -4,24 +4,30 @@
       <img class="l_FirstLook" src="../assets/img/L_FirstLook.png">
 </section>
 
-<section id="formHolder" class="fadein">
+<section id="" class="Reg_btn fadein">
+
+  {{#link-to 'firstlook.register-pid' class="  " replace="true"}}
+      <span style="font-size:1.2rem;">Register <img src="../assets/img/Nav_Right_End.svg" style="position:relative; height:1.5rem; top:.25rem; "></span>
+    {{/link-to}}
+
+</section>
+
+<section id="formHolder" class="fadein" style="margin-top:120px;">
+
+  <p>Already registered?</p>
+
 
 
   <form action="" autocomplete="on">
     <input type="email" placeholder="Email" name="email" /><br>
     <input type="password" placeholder="Password" name="password"/><br>
      <!-- <label for="password">Forgot your password?</label><br>  -->
-    <input type="button" class="SR_btn" name="submit" value="Register" >
-  </form>
-</section>
-<section id="new-reg" class="fadein" style="margin-top:80px;">
-  <p>Already registered?</p>
-
-<div class="Reg_btn">
-  {{#link-to 'firstlook.register-conf' class="button " replace="true"}}
+     <div class="Reg_btn fadein" >
+     {{#link-to 'firstlook.register-conf' class="button " replace="true"}}
       Edit Profile
     {{/link-to}}
   </div>
+</form>
 
 </section>
 
