@@ -330,6 +330,23 @@ height:24px;
     0%   {padding-left:30%;}
     100% {padding-left:65%;}
 }
+.threeTwo {
+  padding-left:30%;
+  -webkit-animation: pg3-2 1.2s 1 ease-out; /* Safari 4.0 - 8.0 */
+  animation: pg3-2 1.2s 1 ease-out;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes pg3-2 {
+    0%   {  padding-left:65%;}
+    100% {  padding-left:30%;}
+}
+
+/* Standard syntax */
+@keyframes pg3-2 {
+    0%   {padding-left:65%;}
+    100% {padding-left:30%;}
+}
+
 .four {
   padding-left:96%;
   -webkit-animation: pg4 1.2s 1 ease-out; /* Safari 4.0 - 8.0 */

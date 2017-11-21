@@ -49,11 +49,11 @@
 
 <section id="nav-wrapper">
   <div id="nav">
-    {{#link-to 'firstlook.register-img' class="button" }}<img class="navLeft" src="../assets/img/Nav_Left.svg" >{{/link-to}}<img class="navRight" src="../assets/img/Nav_Right_End.svg">
+    {{#link-to 'firstlook.register-img' (query-params cat="left") }}<img class="navLeft" src="../assets/img/Nav_Left.svg" >{{/link-to}}<img class="navRight" src="../assets/img/Nav_Right_End.svg">
 </div>
 <div id="line" class="" >
 
-      <svg class="four" height="30" width="30" >
+      <svg id="cir4" class="four" height="30" width="30" >
         <circle cx="15" cy="15" r="15" stroke="#0099D8" stroke-width="1" fill="white" />
         <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">4</text>
       </svg>
