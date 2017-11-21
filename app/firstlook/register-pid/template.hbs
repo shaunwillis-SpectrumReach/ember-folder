@@ -5,13 +5,16 @@
 </section>
 
 
-<section id="formHolder" style="margin-top:15vh;">
+<section id="formHolder" style="margin-top:8vh;">
+  <p>Please enter your PID.</p>
 <form onsubmit={{action "save"}}>
   {{input value=wizard.userInfo.pid placeholder="P•XXXXXXX"}}<br>
 </form>
 </section>
+
+
 <div class="Reg_btn" style="margin-top:40px;">
-  {{#link-to 'firstlook.register-name' class="SR_btn" name="button"}}Register Here{{/link-to}}
+  {{#link-to 'firstlook.register-name' class="SR_btn" name="button"}}Continue{{/link-to}}
 </div>
 
  <!-- <div class="SR_btn">

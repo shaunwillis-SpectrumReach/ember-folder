@@ -1,5 +1,5 @@
 <div id="wrapper">
-  <div id="contentReg" >
+  <div id="contentReg" class="AnimDown" >
 
     <section id="header">
           <img class="l_FirstLook" src="../assets/img/L_FirstLook.png">
@@ -25,7 +25,7 @@
       {{input type="text" value=wizard.userInfo.email placeholder="Email"}}<br>
       <!-- {{password-toggle password=wizard.userInfo.password}}<br> -->
       {{input id="password" type="password" value=wizard.userInfo.password placeholder="Create Password"}}<br>
-      <label for="Password" >(Not your P•ID password/min 8 characters)</label><br>
+      <label for="password" >(Not your P•ID password/min 8 characters)</label><br>
       <!-- <button class="SR_btn">Next</button> -->
     </form>
 </section>
@@ -33,12 +33,12 @@
 <section id="nav-wrapper">
   <div id="nav">
   <img class="navLeft" src="../assets/img/Nav_Left_End.svg" >
-  {{#link-to 'firstlook.register-info' class="button" }}
+  {{#link-to 'firstlook.register-info' (query-params cat="right") }}
 <img class="navRight" src="../assets/img/Nav_Right.svg">
     {{/link-to}}
 </div>
 <div id="line">
-      <svg height="30" width="30">
+      <svg id="cir1" height="30" width="30">
         <circle cx="15" cy="15" r="15" stroke="#0099D8" stroke-width="1" fill="white" />
         <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">1</text>
 
