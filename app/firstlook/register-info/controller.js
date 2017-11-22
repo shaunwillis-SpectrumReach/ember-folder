@@ -44,7 +44,8 @@ export default Ember.Controller.extend({
 
     selectDivision(division) {
       this.set('division', division);
-    },
+    }
+
 
   }
 
