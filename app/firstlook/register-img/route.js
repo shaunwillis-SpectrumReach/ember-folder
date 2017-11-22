@@ -2,16 +2,16 @@ import Route from '@ember/routing/route';
 
 export default Route.extend({
 
-  beforeModel(params){
+  if (params){
     if (params.queryParams.cat=="left") {
       console.log(params.queryParams.cat);
-      $('#cir2').removeClass("two");
-      $('#cir2').addClass("threeTwo");
+      $('#cir3').removeClass("three");
+      $('#cir3').addClass("fourThree");
     }
     else if (params.queryParams.cat=="right") {
       console.log(params.queryParams.cat);
-      $('#cir2').removeClass('threeTwo');
-      $('#cir2').addClass('two');
+      $('#cir3').removeClass('fourThree');
+      $('#cir3').addClass('three');
       }
     }
 
