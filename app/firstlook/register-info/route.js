@@ -5,11 +5,12 @@ export default Ember.Route.extend({
     return {
       jobtitle: '',
       managername: '',
-      email: '',
-      password: '',
+      region: '',
+      division: '',
     };
   },
-  beforeModel(params){
+  if (params){
+    var $ = Ember.$;
     if (params.queryParams.cat=="left") {
       console.log(params.queryParams.cat);
       $('#cir2').removeClass("two");

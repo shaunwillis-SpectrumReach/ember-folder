@@ -5,15 +5,19 @@
     </section>
 
     <section id="title">
-      <h3>Upload Profile Image</h3>
-      {{#link-to 'firstlook.register-name' class="button" }}
+      <h3>Profile Summary</h3><p>You may edit the information below.<br>Click submit to complete your registration.</p>
+      <!--
+      {{#link-to 'firstlook.register-pid'  }}
       <p class="comment">Edit Info <img style="height:14px;" src="../assets/img/Nav_Right.svg"></p>
       {{/link-to}}
-    </section>
+    -->
+  </section>
 
   <section id="profile" style="">
     <!--  Note:  need a conditional, if image profile picture exists, file path = foo, else display generic thumbnail. - generic_thumbnail.svg  -->
-    <p class="profileImg"><img src="../assets/img/profile_thumbnail.png"></p>
+  {{#link-to 'firstlook.register-img' (query-params cat="left") }}
+    <p class="profileImg"><img src="../assets/img/generic_thumbnail.svg"></p>
+      {{/link-to}}
 
 
  <!-- <div id="profileSummary">

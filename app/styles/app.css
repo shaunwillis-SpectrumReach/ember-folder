@@ -148,21 +148,14 @@ h3 {
     to   { opacity: 1; }
 }
 /*  ///////////  elements  ////////////  */
-form input, select, btn{
+form input, form select, btn{
   font-family: "Gotham", "Arial", sans-serif;
   font-size: 16px;
   text-align: center;
   border-radius: 0;
   }
 
-input {
-width:280px;
-height:40px;
-margin:10px auto;
-padding: 4px;
-border:1px solid #0099d8;
-}
-select {
+input, select{
 width:280px;
 height:40px;
 margin:10px auto;
