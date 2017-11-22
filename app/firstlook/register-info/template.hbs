@@ -43,12 +43,15 @@
     <form onsubmit={{action "save"}}>
       {{input value=wizard.userInfo.managername placeholder="Manager Name"}}<br>
 
+      <label for="region">Region</label><br>
+
       <select onchange={{action "selectRegion" value="target.value"}} id="region" name="region">
         {{#each regions as |regionChoice|}}
           <option value={{regionChoice}} selected={{eq region regionChoice}}>{{regionChoice}}</option>
         {{/each}}
       </select>
 <br>
+<label for="division">Division</label><br>
       <select onchange={{action "selectDivision" value="target.value"}} id="division" name="division">
         {{#each divisions as |divisionChoice|}}
           <option value={{divisionChoice}} selected={{eq division divisionChoice}}>{{divisionChoice}}</option>
