@@ -1,0 +1,7 @@
+{
+  "name": "ember-folder",
+  "dependencies": {
+    "countdownjs": "^2.6.0",
+    "ember-uploader": "0.3.11"
+  }
+}
