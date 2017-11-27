@@ -3,10 +3,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    DS: {
-     host: 'http://127.0.0.1:3333',
-     namespace: 'api',
-   },
+
     modulePrefix: 'ember-folder',
     environment,
     rootURL: '/',
@@ -34,6 +31,12 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    let ENV = {
+        DS: {
+         host: 'http://127.0.0.1:3333',
+         namespace: 'api',
+       },
+     };
   }
 
   if (environment === 'test') {
@@ -49,6 +52,12 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
+  let ENV = {
+      DS: {
+     host: 'https://firstlook-spectrumreach-api.herokuapp.com/',
+     namespace: 'api',
+      },
+    };
   }
 
   return ENV;
