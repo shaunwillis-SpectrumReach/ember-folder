@@ -48,15 +48,39 @@
     {{input class="userItem" type="password"   id="password" value=formValues.password placeholder="Password"}}<br>
 <label for="managername" >Manager Name</label>
     {{input class="userItem" type="text"   id="managername" value=formValues.managername placeholder="Manager Name"}}<br>
-<label for="division" >Division</label>
+<!-- <label for="division" >Division</label>
     {{input class="userItem" type="text"   id="division" value=formValues.division placeholder="Division"}}<br>
 <label for="region" >Region</label>
-    {{input class="userItem" type="text"   id="region" value=formValues.region placeholder="Region"}}<br>
+    {{input class="userItem" type="text"   id="region" value=formValues.region placeholder="Region"}}<br> -->
     <div class="button-box">
       <button type="submit" class="SR_btn submit">Submit</button>
     </div>
   {{/simple-form}}
 </div>
+
+  <!-- <form id="final-form" onsubmit={{action "save"}}>
+    <span class="userItem">Name: </span>{{input class="form__input" type="text"  value=wizard.userInfo.pid placeholder="P•XXXXXXX"}}<br>
+    {{input class="form__input" type="text"  value=wizard.userInfo.firstname placeholder="First Name"}}<br>
+    {{input class="form__input" type="text"  value=wizard.userInfo.lastname placeholder="Last Name"}}<br>
+    {{input class="form__input" type="text"  value=wizard.userInfo.email placeholder="Email"}}<br>
+    {{input class="form__input" type="password"  value=wizard.userInfo.password placeholder="Password"}}<br>
+    {{input value=wizard.userInfo.managername placeholder="Manager Name"}}<br>
+
+   <select onchange={{action "selectRegion" value="target.value"}} id="region" name="region">
+      {{#each regions as |regionChoice|}}
+        <option value={{regionChoice}} selected={{eq region regionChoice}}>{{regionChoice}}</option>
+      {{/each}}
+    </select>
+<br>
+    <select onchange={{action "selectDivision" value="target.value"}} id="division" name="division">
+      {{#each divisions as |divisionChoice|}}
+        <option value={{divisionChoice}} selected={{eq division divisionChoice}}>{{divisionChoice}}</option>
+      {{/each}}
+    </select>
+    <div class="button-box">
+      <button type="submit" class="SR_btn">Submit</button>
+    </div>
+  </form> -->
 </section>
 
 

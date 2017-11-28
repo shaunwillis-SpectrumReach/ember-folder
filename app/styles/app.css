@@ -163,6 +163,20 @@ padding: 4px;
 border:1px solid #0099d8;
 }
 
+#final-form input, select{
+width: 250px;
+height: 30px;
+margin: 0px;
+padding: 0px;
+border: 0px solid #0099d8;
+background: transparent;
+}
+
+#final-form input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+background-color: transparent!important;
+}
+
+
 label {
   font-size: 12px;
 }

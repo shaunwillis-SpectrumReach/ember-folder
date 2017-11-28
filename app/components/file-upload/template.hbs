@@ -1,0 +1,24 @@
+
+ <!-- This File Upload is using Dropzone -->
+<!-- <form id="files-uploader" class="dropzone" action="http://127.0.0.1:3333/api/uploads" method="post" enctype="multipart/form-data" files="true">
+  <div class="fallback">
+  <input id="file" type="file" name="image" value="">
+  </div>
+</form>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/dropzone.js"></script>
+
+<script type="text/javascript">
+// "myAwesomeDropzone" is the camelized version of the HTML element's ID
+Dropzone.options.filesUploader = {
+  paramName: "file", // The name that will be used to transfer the file
+}
+</script> -->
+<form class="" action="index.html" method="post" enctype="multipart/form-data">
+  <p class="comment">Skip for Now <img style="height:14px;" src="../assets/img/Nav_Right.svg"></p>
+  <input class="hidden" onchange="this.form.submit()" type="file" name="" value="image">
+  <div class="form-image-wrapper">
+    <div id="uploadBox" ><img  style="width:80%; padding-top:12%;" src="../assets/img/image_upload.svg">
+    <p><strong>Choose file</strong><br><span class="comment">Size limit: 10MB</span></p></div>
+    <p class="comment">• Please upload either a .JPG or .PNG only  </p>
+  </div>
+</form>
