@@ -3,6 +3,11 @@
 
 module.exports = function(environment) {
   let ENV = {
+    DS: {
+      host: 'http://localhost:3333',
+      namespace: 'api',
+    },
+    
     modulePrefix: 'ember-folder',
     environment,
     rootURL: '/',
