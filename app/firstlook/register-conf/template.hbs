@@ -11,14 +11,14 @@
       <p class="comment">Edit Info <img style="height:14px;" src="../assets/img/Nav_Right.svg"></p>
       {{/link-to}}
     -->
-  </section>
+    {{#link-to 'firstlook.register-img' (query-params cat="left") }}
+    <img src="../assets/img/generic_thumbnail.svg" class="profileImg">
+        {{/link-to}}
 
-  <section id="profile" style="">
+      </section>
+
+  <section id="profileSummary" style="">
     <!--  Note:  need a conditional, if image profile picture exists, file path = foo, else display generic thumbnail. - generic_thumbnail.svg  -->
-  {{#link-to 'firstlook.register-img' (query-params cat="left") }}
-    <p class="profileImg"><img src="../assets/img/generic_thumbnail.svg"></p>
-      {{/link-to}}
-
 
  <!-- <div id="profileSummary">
   <p><span class="userItem">Name: </span>{{wizard.userInfo.first}} {{wizard.userInfo.last}}</p>
@@ -33,21 +33,31 @@
 </div> -->
 
 <!-- this form submits, but isn't working with Ember data properly. I'm still working on this -->
-
-   {{#simple-form id="final-form" class="card__form" startingValues=wizard.userInfo onsubmit=(action "saveForm") as | formValues |}}
+<div class="profile">
+   {{#simple-form class="profile" startingValues=wizard.userInfo onsubmit=(action "saveForm") as | formValues |}}
     <!-- {{log formValues}} -->
-    <span class="userItem">PID/EID:</span>{{input class="form__input" type="text"  value=formValues.pid placeholder="XXXXXXX"}}<br>
-    <span class="userItem">First Name:</span>{{input class="form__input" type="text"  value=formValues.firstname placeholder="First Name"}}<br>
-    <span class="userItem">Last Name:</span>{{input class="form__input" type="text"  value=formValues.lastname placeholder="Last Name"}}<br>
-    <span class="userItem">Email:</span>{{input class="form__input" type="text"  value=formValues.email placeholder="Email"}}<br>
-    <span class="userItem">Password</span>{{input class="form__input" type="password"  value=formValues.password placeholder="Password"}}<br>
-    <span class="userItem">Manager Name:</span>{{input class="form__input" type="text"  value=formValues.managername placeholder="Manager Name"}}<br>
-    <!-- <span class="userItem">Region:</span>{{input class="form__input" type="text"  value=formValues.division placeholder="Division"}}<br> -->
-    <!-- <span class="userItem">Division:</span>{{input class="form__input" type="text"  value=formValues.region placeholder="Region"}} -->
+    <label for="pid" >Employee ID</label>
+    {{input class="userItem" type="text" id="pid"  value=formValues.pid placeholder="XXXXXXX"}}<br>
+<label for="firstname" >First Name</label>
+    {{input class="userItem" type="text"  id="firstname" value=formValues.firstname placeholder="First Name"}}<br>
+<label for="lastname" >Last Name</label>
+    {{input class="userItem" type="text"  id="lastname" value=formValues.lastname placeholder="Last Name"}}<br>
+<label for="email" >Email</label>
+    {{input class="userItem" type="text"   id="email" value=formValues.email placeholder="Email"}}<br>
+<label for="password" >Password</label>
+    {{input class="userItem" type="password"   id="password" value=formValues.password placeholder="Password"}}<br>
+<label for="managername" >Manager Name</label>
+    {{input class="userItem" type="text"   id="managername" value=formValues.managername placeholder="Manager Name"}}<br>
+<!-- <label for="division" >Division</label>
+    {{input class="userItem" type="text"   id="division" value=formValues.division placeholder="Division"}}<br>
+<label for="region" >Region</label>
+    {{input class="userItem" type="text"   id="region" value=formValues.region placeholder="Region"}}<br> -->
     <div class="button-box">
-      <button type="submit" class="SR_btn">Submit</button>
+      <button type="submit" class="SR_btn submit">Submit</button>
     </div>
   {{/simple-form}}
+</div>
+
   <!-- <form id="final-form" onsubmit={{action "save"}}>
     <span class="userItem">Name: </span>{{input class="form__input" type="text"  value=wizard.userInfo.pid placeholder="P•XXXXXXX"}}<br>
     {{input class="form__input" type="text"  value=wizard.userInfo.firstname placeholder="First Name"}}<br>

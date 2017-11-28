@@ -5,6 +5,6 @@ export default Ember.Controller.extend({
   wizard: Ember.inject.service('wizard'),
 
   queryParams: ['cat'],
-  pgDir: null,
+  cat: null,
 
 });
