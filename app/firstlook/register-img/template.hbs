@@ -9,11 +9,32 @@
   {{#link-to 'firstlook.register-conf' (query-params cat="right") }}<p class="comment">Skip for Now <img style="height:14px;" src="../assets/img/Nav_Right.svg"></p>{{/link-to}}
 </section >
 
-<section id="ImageUp" style="">
+<section id="S3 upload" style="">
+  <div id="image-upload-wrapper">
+<label for="new-post" class="uploadBtn"></label><br>
+  {{s3-upload id="new-post" class="inputfile"}}
+  </div>
+</section>
 
-   {{img-up-03}}
+
+<section id="ImageUp" style="">
+<!--
+  <div id="image-upload-wrapper">
+  <form class="" action="index.html" method="post" enctype="multipart/form-data">
+      <label for="new-post"><div class="form-image-wrapper">
+        {{s3-upload id="new-post"}} <!-- see https://www.youtube.com/watch?v=5MxJl4ZA0Us&t=322s for support; uses cli-uploader  -->
+  <!--      <div id="uploadBox" ><img  style="width:80%; padding-top:12%;" src="../assets/img/image_upload.svg">
+        <p><strong>Choose file</strong><br><span class="comment">Size limit: 10MB</span></p></div>
+        <p class="comment">• Please upload either a .JPG or .PNG only  </p>
+      </div></label>
+    </form>
+-->
+<!--     {{ file-upload }}  -->
+
+<!--   </div> -->
+   <!-- {{img-up-03}}
     {{img-up-02}}
-    {{img-up-01}}
+    {{img-up-01}} -->
 
 </section>
 

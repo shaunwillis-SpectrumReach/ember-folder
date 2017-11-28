@@ -11,7 +11,9 @@ export default EmberUploader.FileField.extend({
         uploader  = EmberUploader.S3Uploader.create({
           url: uploadUrl
         });
+
     if (!Ember.isEmpty(files))
+      //alert("Files will upload.");
       uploader.upload(files[0]);
   }.observes('files')
 });

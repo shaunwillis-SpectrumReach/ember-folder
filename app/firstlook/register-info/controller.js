@@ -4,14 +4,14 @@ export default Ember.Controller.extend({
   wizard: Ember.inject.service('wizard'),
 
 
-  // regionOptions: [
+  // divisionOptions: [
   //     'Central',
   //     'Northeast',
   //     'Southeast',
   //     'West'
   //   ],
 
-  // divisionOptions: [
+  // regionOptions: [
   //   'Carolinas',
   //   'Florida',
   //   'LA',
