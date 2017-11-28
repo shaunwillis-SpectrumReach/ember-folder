@@ -7,7 +7,7 @@ export default Ember.Route.extend({
       jobtitle: '',
       managername: '',
       region: '',
-      division: '',
+      division: ''
     };
   },
 
