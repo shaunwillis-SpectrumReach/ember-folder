@@ -45,12 +45,17 @@
       <!-- {{input value=wizard.userInfo.region placeholder="Region"}}<br> -->
       <!-- {{input value=wizard.userInfo.division placeholder="Division"}}<br> -->
 
-      <!-- <select onchange={{action "selectRegion" value="target.value"}} id="region" name="region">
+
+      <label for="region">Region</label><br>
+
+      <select onchange={{action "selectRegion" value="target.value"}} id="region" name="region">
+        <!--
         {{#each regions as |regionChoice|}}
           <option value={{regionChoice}} selected={{eq region regionChoice}}>{{regionChoice}}</option>
         {{/each}}
       </select>
 <br>
+<label for="division">Division</label><br>
       <select onchange={{action "selectDivision" value="target.value"}} id="division" name="division">
         {{#each divisions as |divisionChoice|}}
           <option value={{divisionChoice}} selected={{eq division divisionChoice}}>{{divisionChoice}}</option>
@@ -65,6 +70,9 @@
 
 <section id="nav-wrapper">
   <div id="nav">
+
+
+
     {{#link-to 'firstlook.register-name' (query-params cat="left") }}
       <img class="navLeft" src="../assets/img/Nav_Left.svg" >{{/link-to}}{{#link-to 'firstlook.register-img' (query-params cat="right") }}<img class="navRight" src="../assets/img/Nav_Right.svg">
     {{/link-to}}

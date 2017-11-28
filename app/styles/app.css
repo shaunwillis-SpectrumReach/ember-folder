@@ -219,30 +219,42 @@ font-size: 16px;
 
 }
 #profileSummary {
-  text-align: left;
-  padding-left:20vw;
+  text-align: center;
   line-height: 0.4rem;
   font-family: "Gotham", "Arial", sans-serif;
   font-size: 14px;
-  max-width:400px;
 
 }
-#profileSummary img {
-  margin:auto;
 
-}
-.userItem {
-  font-family: "Gotham", "Arial", sans-serif;
-  font-size: 14px;
-  color:#0099D8;
-    font-weight: 500;
-}
 #profileImg {
   max-width:300px;
   margin:auto;
   clip-path: circle(150px at center);
+}
+.profile {
+  text-align:left;
+  width:90vw;
+  max-width:400px;
+  margin: auto;
+}
+.userItem {
+    font-size: 14px;
+    text-align:left;
+    border:0;
+    background:none;
+    padding:2px;
+    padding-left:6px;
+    margin:0;
+    width:280px;
+    height:32px;
+    text-decoration: underline;
+}
+
+.profile .submit {
+  margin-left:40px;
 
 }
+
 
 #thanks {
   width:80vw;
