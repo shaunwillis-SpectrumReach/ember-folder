@@ -3,7 +3,7 @@ import EmberUploader from 'ember-uploader';
 
 export default EmberUploader.FileField.extend({
 
-  url: "http://localhost:3333/sign/profile/images",
+  url: "https://firstlook-spectrumreach-api.herokuapp.com/sign/profile/images",
 
   filesDidChange: function() {
       let uploadUrl = this.get('url'),

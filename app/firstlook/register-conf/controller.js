@@ -16,17 +16,18 @@ export default Ember.Controller.extend({
         profile.save().then(() => {
           profile.save();
         }).then(() => {
-          const secretStuff = {
-            identification: wizard.email,
-            password: wizard.password,
-          };
-          console.log(secretStuff);
-          const authenticator = 'authenticator:jwt';
-
-          this.get('session').authenticate(authenticator, secretStuff)
-            .then(() => {
-              this.transitionToRoute('firstlook.register-thanks');
-            });
+          this.transitionToRoute('firstlook.register-thanks');
+          // const secretStuff = {
+          //   identification: wizard.email,
+          //   password: wizard.password,
+          // };
+          // console.log(secretStuff);
+          // const authenticator = 'authenticator:jwt';
+          //
+          // this.get('session').authenticate(authenticator, secretStuff)
+          //   .then(() => {
+          //     this.transitionToRoute('firstlook.register-thanks');
+          //   });
         })
         .catch(() => {
           console.log('Error Creating User');
