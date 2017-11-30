@@ -9,12 +9,49 @@
   {{#link-to 'firstlook.register-conf' (query-params cat="right") }}<p class="comment">Skip for Now <img style="height:14px;" src="../assets/img/Nav_Right.svg"></p>{{/link-to}}
 </section >
 
-<section id="S3 upload" style="">
+ <!-- <section id="S3 upload" style="">
   <div id="image-upload-wrapper">
 <label for="new-post" class="uploadBtn"></label><br>
   {{s3-upload id="new-post" class="inputfile"}}
   </div>
-</section>
+</section> -->
+
+
+<!-- {{file-picker}} -->
+{{#each selectedFiles as |file|}}
+  <p>{{file.name}}</p>
+{{/each}}
+
+{{log selectedFiles}}
+
+{{file-picker action=(action (mut selectedFiles))}} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <section id="ImageUp" style="">

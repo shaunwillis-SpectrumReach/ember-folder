@@ -7,4 +7,5 @@ export default Ember.Controller.extend({
   queryParams: ['cat'],
   cat: null,
 
+
 });

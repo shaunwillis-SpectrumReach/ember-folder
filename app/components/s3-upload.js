@@ -1,19 +1,26 @@
-import Ember from 'ember';
-import EmberUploader from 'ember-uploader';
+import Component from '@ember/component';
 
-export default EmberUploader.FileField.extend({
+export default Component.extend({
 
-  url: "https://firstlook-spectrumreach-api.herokuapp.com/sign/profile/images",
 
-  filesDidChange: function() {
-      let uploadUrl = this.get('url'),
-        files     = this.get('files'),
-        uploader  = EmberUploader.S3Uploader.create({
-          url: uploadUrl
+
+
+  url: "http://localhost:3333/api/profile/images",
+
+  filesDidChange: function(files) {
+    let uploadFile = this.store.createRecord('uploads', files);
+      profile.save().then(() => {
+        profile.save();
+      }).then(() => {
+        this.transitionToRoute('firstlook.register-conf')
+      // let uploadUrl = this.get('url'),
+      //   files     = this.get('files'),
+      //   uploader  = EmberUploader.S3Uploader.create({
+      //     url: uploadUrl
         });
 
-    if (!Ember.isEmpty(files))
-      //alert("Files will upload.");
-      uploader.upload(files[0]);
+  //   if (!Ember.isEmpty(files))
+  //     //alert("Files will upload.");
+  //     uploader.upload(files[0]);
   }.observes('files')
 });

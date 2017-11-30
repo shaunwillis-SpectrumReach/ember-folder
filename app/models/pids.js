@@ -9,8 +9,9 @@ export default DS.Model.extend({
   managername: DS.attr('string'),
   division: DS.attr('string'),
   region: DS.attr('string'),
-  ae15m: DS.belongsTo('ae15m'),
-  ae1m: DS.belongsTo('ae1m'),
+  ae15ms: DS.hasMany('ae15m'),
+  ae1ms: DS.hasMany('ae1m'),
+  profilePicUrl: DS.attr('string'),
   createdAt: DS.attr('date', {
     defaultValue() { return new Date(); }
   })
