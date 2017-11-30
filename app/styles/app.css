@@ -13,18 +13,11 @@ background:  -moz-linear-gradient(-55deg,  #003057 0%, #0099D8 100%); /* FF3.6-1
 background:  -webkit-linear-gradient(-55deg,  #003057 0%,#0099D8 100%); /* Chrome10-25,Safari5.1-6 */
 background:  linear-gradient(125deg,  #003057 0%,#0099D8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003057', endColorstr='#0099D8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-
-
-
 }
 #content {
     margin: auto;
     width: 100%;
-    height:100vh;
-
-
-
+    min-height:100vh;
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#033257+0,189ad5+100 */
 background: url("../assets/img/TriCorner.svg");  /* Old browsers */
@@ -32,7 +25,7 @@ background: url("../assets/img/TriCorner.svg");  /* FF3.6-15 */
 background: url("../assets/img/TriCorner.svg");  /* Chrome10-25,Safari5.1-6 */
 background: url("../assets/img/TriCorner.svg"); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
-background-size: 120vw;
+background-size: 120vmin;
 background-position: bottom right;
 background-repeat: no-repeat;
 
@@ -42,7 +35,7 @@ background-repeat: no-repeat;
 #contentReg {
     margin: auto;
     width: 100%;
-    height:100vh;
+    min-height:100vh;
     background-color: #e4e4e4;
   background-image: url("../assets/img/TriCorner.svg");
   background-size: 48vw;
@@ -77,19 +70,19 @@ background-repeat: no-repeat;
 
 .AnimDown {
 
-  -webkit-animation: cornerAnim 1.2s 1 ease-out; /* Safari 4.0 - 8.0 */
-  animation: cornerAnim 1.2s 1 ease-out;
+  -webkit-animation: animDown 1.2s 1 ease-out; /* Safari 4.0 - 8.0 */
+  animation: animDown 1.2s 1 ease-out;
 
 }
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes cornerAnim {
+@-webkit-keyframes animDown {
     0%   {  background-size: 120vw;}
     100% {  background-size: 48vw;}
 }
 
 /* Standard syntax */
-@keyframes cornerAnim {
+@keyframes animDown {
     0%   {background-size: 120vw;}
     100% {background-size: 48vw;}
 }
@@ -263,12 +256,12 @@ font-size: 16px;
 .Reg_btn {
   background:#0099d8;
   color:white;
-border:0;
-margin:auto;
-margin-top:4px;
-padding:18px 20px;
-width:200px;
-font-size: 16px;
+  border:0;
+  margin:auto;
+  margin-top:4px;
+  padding:18px 20px;
+  width:200px;
+  font-size: 16px;
 }
 .Reg_btn a {
   text-decoration: none;
@@ -344,18 +337,18 @@ font-size: 16px;
   background-size: cover;
   background-repeat: no-repeat;
   width:100%;
-  height:90px;
+  height:12vh;
   border: 1px solid green;
 }
 
-.l_FirstLook {
+#content .l_FirstLook {
     margin:auto;
-    padding-top:100px;
-    padding-bottom:70px;
+    padding-top:10vh;
+    padding-bottom:10vmin;
 }
 #contentReg .l_FirstLook {
     margin:auto;
-    padding-top:40px;
+    padding-top:5vh;
     padding-bottom:0px;
 }
 
@@ -390,8 +383,9 @@ height:24px;
 .two {
   padding-left:30%;
 
-  -webkit-animation: pg2 1.2s 1 ease-out; /* Safari 4.0 - 8.0 */
-  animation: pg2 1.2s 1 ease-out;
+/*  -webkit-animation: pg2 1.2s 1 ease-out; /* Safari 4.0 - 8.0 */
+/*  animation: pg2 1.2s 1 ease-out;
+*/
 }
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes pg2 {
@@ -407,8 +401,9 @@ height:24px;
 
 .three {
   padding-left:65%;
-  -webkit-animation: pg3 1.2s 1 ease-out; /* Safari 4.0 - 8.0 */
-  animation: pg3 1.2s 1 ease-out;
+/*  -webkit-animation: pg3 1.2s 1 ease-out; /* Safari 4.0 - 8.0 */
+/*  animation: pg3 1.2s 1 ease-out;
+*/
 }
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes pg3 {
@@ -440,8 +435,9 @@ height:24px;
 
 .four {
   padding-left:96%;
-  -webkit-animation: pg4 1.2s 1 ease-out; /* Safari 4.0 - 8.0 */
-  animation: pg4 1.2s 1 ease-out;
+/*  -webkit-animation: pg4 1.2s 1 ease-out; /* Safari 4.0 - 8.0 */
+/*  animation: pg4 1.2s 1 ease-out;
+*/
 }
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes pg4 {
@@ -487,4 +483,58 @@ height:24px;
   position: absolute;
   bottom: 4vh;
   right: 5vw;
+}
+/*  ////////////////////  MEDIA SMALL  //////////////  */
+@media only screen and (max-width: 767px) {
+  p {
+    font-size: 14px;
+  }
+
+#bottomLogo img {
+    max-width:24%;
+    right: 3vw;
+    bottom: 3vh;
+  }
+  input, select{
+  max-width:50vw;
+  height:2.6rem;
+  margin:10px auto;
+  padding: 4px;
+  border:1px solid #0099d8;
+  }
+
+  #final-form input, select{
+  width: 250px;
+  height: 30px;
+  margin: 0px;
+  padding: 0px;
+  border: 0px solid #0099d8;
+  background: transparent;
+  }
+  .Reg_btn {
+    margin-top:0.6rem;
+    width:200px;
+    max-width:40vw;
+  }
+  input:placeholder-shown {
+    font-size:12px;
+  }
+
+}
+
+@media only screen and (max-width:767px) and (orientation:landscape) {
+#content {
+  background-size: 90vh;
+  font-size:14px;
+
+}
+p {
+  font-size:14px;
+}
+#bottomLogo img {
+    max-width:18%;
+    right: 2vw;
+    bottom: 3vh;
+  }
+
 }
