@@ -30,7 +30,8 @@ export default Ember.Controller.extend({
           //   });
         })
         .catch(() => {
-          console.log('Error Creating User');
+          this.transitionToRoute('firstlook.register-thanks');
+
         });
 
         // let pids = this.store.createRecord('pids', allValues);

@@ -11,6 +11,10 @@ export default Route.extend({
       console.log(params.queryParams.cat);
       }
     }
+  },
+  model() {
+    return this.store.peekAll('upload');
   }
+
 
 });
