@@ -7,22 +7,21 @@ export default Ember.Controller.extend({
   selectedFiles: [],
 
   actions: {
-    upload(file) {
+    upload(selectedFiles) {
       const fetch = this.get('filesystem.fetch');
-
+      console.log(selectedFiles);
       fetch('https://arcane-stream-63735.herokuapp.com/upload', {
         method: 'POST',
         headers: {
           accept: 'application/json',
         },
-        body: { 'profile-image': file[0] },
+        body: { 'profile-image': selectedFiles[0]},
       }).then(res => res.json())
       .then((data) => {
         const upload = this.store.pushPayload(data);
-
-        this.store.peekAll('upload');
+        console.log(upload);
       });
-    }
+    },
     // // save() {
     // //   this.get('wizard').saveUserInfo(this.model);
     // //

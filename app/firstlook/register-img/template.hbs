@@ -18,14 +18,21 @@
 
 
 <!-- {{file-picker}} -->
-{{#each selectedFiles as |file|}}
+ {{#each selectedFiles as |file|}}
   <p>{{file.name}}</p>
 {{/each}}
 
 {{log selectedFiles}}
 
-{{file-picker action=(action (mut selectedFiles))}} 
+{{file-picker action=(action (mut selectedFiles))}}
 
+ <button {{action "upload" uploadFile}}>Save To Server</button>
+
+<!-- <form class="" action="/public" method="post" enctype="multipart/form-data">
+  <input type="file" name="" value="image">
+  <button type="submit" name="button">Submit</button>
+
+</form> -->
 
 
 
