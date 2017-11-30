@@ -15,5 +15,6 @@ export default EmberUploader.FileField.extend({
     if (!Ember.isEmpty(files))
       //alert("Files will upload.");
       uploader.upload(files[0]);
-  }.observes('files')
+  }.observes('files'),
+
 });
