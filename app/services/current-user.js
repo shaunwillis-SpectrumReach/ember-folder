@@ -8,8 +8,8 @@ export default Service.extend({
   loadCurrentUser() {
     if (this.get('session.isAuthenticated')) {
       return this.get('store').queryRecord('pids', { current: true })
-        .then((user) => {
-          this.set('pids', user);
+        .then((pids) => {
+          this.set('pids', pids);
         });
     }
   }

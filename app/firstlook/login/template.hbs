@@ -7,24 +7,20 @@
 
 
 <section id="formHolder" class="fadein" style="">
-  <!-- <p>Please enter your Employee ID (EID/PID/PSID).</p> -->
-<form onsubmit={{action "save"}}>
-  {{input value=wizard.userInfo.pid placeholder="Enter your (EID/PID/PSID)"}}<br>
-</form>
+
+{{#simple-form class="card__form" onsubmit=(action "checkForm") as | formValues |}}
+        {{input class="form__input" type="text" required=true value=formValues.email placeholder="E-Mail"}}<br/>
+        {{input class="form__input" type="password" required=true value=formValues.password placeholder="Password"}}
+        <div class="button-box">
+          <button type="submit" class="Reg_btn" style="border-radius: 0rem;">Login</button>
+        </div>
+ {{/simple-form}}
 </section>
 
 
-  {{#link-to 'firstlook.user' name="button"}}
-<div class="Reg_btn"  class="fadein" style="width: 250px; max-width: 42vw;">
-Register
-</div>
-{{/link-to}}
 
- <!-- <div class="SR_btn">
-{{#link-to 'firstlook.register-name' class="Reg_btn"}}
-    Register Here
-  {{/link-to}}
-</div> -->
+
+
 <section id="bottomLogo">
   <img src="../assets/img/Spectrum_Reach_Rev_RGB.svg">
 </section>
