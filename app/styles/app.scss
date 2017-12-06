@@ -1,4 +1,5 @@
-@import "bootstrap";
+@import 'homepage';
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css');
 /*  ///////////  Top Level Structure  ////////////  */
 #wrapper {
     width:100%;
@@ -8,7 +9,7 @@
     font-size: 14px;
     text-align: center;
 
-Google background: #003057; /* Old browsers */
+background: #003057; /* Old browsers */
 background:  -moz-linear-gradient(-55deg,  #003057 0%, #0099D8 100%); /* FF3.6-15 */
 background:  -webkit-linear-gradient(-55deg,  #003057 0%,#0099D8 100%); /* Chrome10-25,Safari5.1-6 */
 background:  linear-gradient(125deg,  #003057 0%,#0099D8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */

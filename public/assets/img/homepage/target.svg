@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="139px" height="129px" viewBox="0 0 139 129" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>target</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#00C9EE" offset="0%"></stop>
+            <stop stop-color="#0099D8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="target" transform="translate(69.500000, 64.500000) scale(1, -1) translate(-69.500000, -64.500000) ">
+            <g id="Group-2" transform="translate(13.000000, 8.000000)">
+                <circle id="Oval-11" stroke="url(#linearGradient-1)" stroke-width="10" fill="#FFFFFF" cx="56.5" cy="56.5" r="56.5"></circle>
+                <circle id="Oval-11" stroke="url(#linearGradient-1)" stroke-width="12" fill="#FFFFFF" cx="56.5" cy="56.5" r="34.5"></circle>
+                <circle id="Oval-11" fill="#003057" cx="56.5" cy="56.5" r="16.5"></circle>
+                <path d="M57,49 L57,63" id="Path-2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
+                <path d="M50,56 L64,56" id="Path-3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>
