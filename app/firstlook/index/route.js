@@ -2,6 +2,6 @@ import Route from '@ember/routing/route';
 
 export default Route.extend({
   beforeModel() {
-    this.replaceWith('firstlook.register-pid');
+    this.replaceWith('firstlook.login');
   }
 });

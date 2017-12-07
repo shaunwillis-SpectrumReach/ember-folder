@@ -11,7 +11,7 @@ export default DS.Model.extend({
   region: DS.attr('string'),
   ae15ms: DS.hasMany('ae15m'),
   ae1ms: DS.hasMany('ae1m'),
-  profilePicUrl: DS.attr('string'),
+  // profilePicUrl: DS.attr('string'),
   createdAt: DS.attr('date', {
     defaultValue() { return new Date(); }
   })

@@ -16,5 +16,6 @@ export default Ember.Route.extend({
     else if (params.queryParams.cat=="right") {
       console.log(params.queryParams.cat);
       }
+      this.replaceWith('firstlook.login');
     }
 });

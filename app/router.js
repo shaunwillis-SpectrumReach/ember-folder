@@ -17,16 +17,9 @@ Router.map(function() {
     this.route('login');
 
     this.route('user', function() {
-      this.route('profile', {
-        path: '/:user_id'
-      }, function() {
-        this.route('detail', {
-          path: '/:user_id'
-        });
-
-        this.route('edit', {
-          path: '/:user_id'
-        });
+      this.route('profile', function() {
+        this.route('detail', { path: '/:user_id' });
+        this.route('edit', { path: '/:user_id' });
       });
     });
     this.route('logout');

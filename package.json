@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "ember-cli-flash": "^1.6.1",
     "ember-cli-uploader": "^0.3.11",
     "ember-filesystem": "*",
     "ember-network": "^0.3.1",

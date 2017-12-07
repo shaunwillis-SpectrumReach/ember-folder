@@ -1,11 +1,14 @@
-{{#if currentUser.user.isAdmin}}
-
-  <div class="hello">You Are In Admin, Enjoy Your Unlimited Power</div>
-  <div class="admin-page">
-    <div class="admin-links">
-      {{#link-to "profile.edit"}}Edit info{{/link-to}}
-      {{#link-to "profile.detail"}}Info{{/link-to}}
+{{#if currentUser}}
+<div style="background: black; height: 100vh; display: flex; justify-content: center; flex-direction: row; margin: auto;">
+<!-- {{#each model as |pids|}} -->
+<!-- {{/each}} -->
+  <div class="">
+    <div class="" style="margin-top: 20rem;">
+      <!-- {{#link-to "firstlook.user.profile"}}Edit info{{/link-to}} -->
+      {{#link-to "firstlook.logout"}}logout{{/link-to}}
+      {{#link-to "firstlook.login"}}login{{/link-to}}
     </div>
+    <div class="hello" style="color: white;"> <h1>You Are Officially Logged In!!</h1></div>
     <div class="div">
       {{#each flashMessages.queue as |flash|}}
         {{#flash-message flash=flash as |component flash|}}
@@ -17,5 +20,8 @@
     </div>
 
   </div>
-
+</div>
+{{else}}
+<h2>You are not logged in</h2>
+  <!-- <div>{{#link-to "firstlook.login"}}login{{/link-to}}</div> -->
 {{/if}}
