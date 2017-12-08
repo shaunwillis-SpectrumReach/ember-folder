@@ -1,0 +1,184 @@
+
+
+.btn {
+  min-width:200px;
+  background-color:#0099D8;
+  color: #fff;
+}
+#contentHome {
+   margin: auto;
+   width: 100%;
+   min-height:100vh;
+   background-color: #fff;
+ text-align: center;
+ color:#003057;
+
+}
+
+#contentHome #header {
+  background: url("../assets/img/Main_Header_bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+  height:80px;
+}
+
+#contentHome .l_FirstLook  {
+  margin-left: 40px;
+  float:left;
+    padding-top:30px;
+    padding-bottom:0px;
+}
+
+#contentHome  #welcome {
+  background-image: url("../assets/img/homepage/FL-header.jpg");
+  background-size: 100% auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  min-height:60vh;
+
+}
+#welcome h1 {
+  font-size:3.6rem;
+  color:#0099D8;
+  padding-top:60px;
+}
+
+#welcome h2 {
+  color:#003057;
+  padding-bottom: 30px;
+}
+#message {
+  margin-top:5rem;
+}
+
+#message h2 {
+  color:#003057;
+  padding-bottom: 30px;
+}
+#welcome p, #message p {
+  text-align:left;
+  text-align:left;
+}
+
+#comment {
+  /*
+  border: 1px solid red;
+    height: 9.5em;
+    padding: 2px;
+    overflow: hidden;
+    */
+    // set this to closed height, then set CSS: heigth to auto with JS to expand.
+}
+
+#contentHome  #goals {
+  background-image: url("../assets/img/homepage/startingblocks.jpg");
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  text-align: left;
+
+}
+#goals h1 {
+  padding-top:37vw;
+  margin-top:-4.6rem;
+  font-size:4.8rem;
+  color:#0099D8;
+  padding-left:1rem;
+
+}
+#goals h2 {
+  padding-top:4rem;
+}
+#goals .messageIcon img {
+  width:60%;
+  margin-top:6rem;
+}
+#goals .placeIcon {
+  padding-top:1.8rem;
+}
+
+ .glance {
+   margin-top:6rem;
+   background-color:#003057;
+  color:white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size:0.8rem;
+
+}
+
+#goodluck  {
+  background-image: url("../assets/img/homepage/goodluck.jpg");
+  background-size: 100% auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding-top: 12vmin;
+  padding-bottom: 32vmin;
+
+}
+#goodluck  img {
+padding:40px;
+}
+
+
+#contentHome #homepageCornerLogo  {
+  height:26vmin;
+  width: 26vmin;
+  margin-top:-26vmin;
+  float:right;
+  position: relative;
+  background-image: url("../assets/img/TriCorner.svg");
+  background-size: 26vmin;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+
+#contentHome #homepageCornerLogo img {
+  position: relative;
+  left:6vmin;
+  top:16vmin;
+  max-width:12vmin;
+
+}
+
+#contentHome #stickyFooter {
+  background: url("../assets/img/Main_Header_bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+  height:50px;
+  color:white;
+    padding:10px;
+    margin:0;
+}
+
+/*  ////////////////////  MEDIA SMALL  //////////////  */
+@media only screen and (max-width: 767px) {
+
+  #contentHome #header {
+    height:80px;
+  }
+
+  #contentHome .l_FirstLook  {
+    margin-left: 40px;
+    float:left;
+      padding-top:30px;
+      padding-bottom:0px;
+  }
+
+  #contentHome  #welcome img {
+    width:80%;
+    margin:auto;
+  }
+  #goals h1 {
+    padding-top:36vw;
+    margin-top:-3.4rem;
+    font-size:3.6rem;
+
+  }
+
+
+
+}

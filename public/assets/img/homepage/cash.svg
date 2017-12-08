@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="139px" height="163px" viewBox="0 0 139 163" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>cash</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="66" height="119"></rect>
+        <linearGradient x1="0%" y1="21.089596%" x2="100%" y2="21.0895956%" id="linearGradient-2">
+            <stop stop-color="#00C9EE" offset="0%"></stop>
+            <stop stop-color="#0099D8" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-3" x="0" y="0" width="66" height="119"></rect>
+        <linearGradient x1="0%" y1="22.6962967%" x2="100%" y2="22.6962969%" id="linearGradient-4">
+            <stop stop-color="#00C9EE" offset="0%"></stop>
+            <stop stop-color="#0099D8" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="66" height="119"></rect>
+        <linearGradient x1="0%" y1="17.1628218%" x2="100%" y2="17.1628222%" id="linearGradient-6">
+            <stop stop-color="#00C9EE" offset="0%"></stop>
+            <stop stop-color="#0099D8" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-7" x="0" y="0" width="66" height="119"></rect>
+        <linearGradient x1="0%" y1="16.1624344%" x2="100%" y2="16.1624342%" id="linearGradient-8">
+            <stop stop-color="#00C9EE" offset="0%"></stop>
+            <stop stop-color="#0099D8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="cash">
+            <g id="Group" transform="translate(4.000000, 1.000000)">
+                <g id="Group-8" transform="translate(59.115523, 92.326443) rotate(-30.000000) translate(-59.115523, -92.326443) translate(26.115523, 32.826443)">
+                    <g id="Group-7">
+                        <g id="Rectangle-10">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <rect stroke="#0099D8" stroke-width="2" x="1" y="1" width="64" height="117"></rect>
+                        </g>
+                        <path d="M59,43.5895875 L59,8 L8,8 L8,43.5895875 C13.4083817,35.2715162 22.8087693,29.7674419 33.5,29.7674419 C44.1912307,29.7674419 53.5916183,35.2715162 59,43.5895875 Z M59,76.4104125 L59,112 L8,112 L8,76.4104125 C13.4083817,84.7284838 22.8087693,90.2325581 33.5,90.2325581 C44.1912307,90.2325581 53.5916183,84.7284838 59,76.4104125 Z" id="Combined-Shape" fill="url(#linearGradient-2)"></path>
+                    </g>
+                </g>
+                <g id="Group-8" transform="translate(67.092247, 79.509316) rotate(-20.000000) translate(-67.092247, -79.509316) translate(34.092247, 20.009316)">
+                    <g id="Group-7">
+                        <g id="Rectangle-10">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            <rect stroke="#0099D8" stroke-width="2" x="1" y="1" width="64" height="117"></rect>
+                        </g>
+                        <path d="M59,43.5895875 L59,8 L8,8 L8,43.5895875 C13.4083817,35.2715162 22.8087693,29.7674419 33.5,29.7674419 C44.1912307,29.7674419 53.5916183,35.2715162 59,43.5895875 Z M59,76.4104125 L59,112 L8,112 L8,76.4104125 C13.4083817,84.7284838 22.8087693,90.2325581 33.5,90.2325581 C44.1912307,90.2325581 53.5916183,84.7284838 59,76.4104125 Z" id="Combined-Shape" fill="url(#linearGradient-4)"></path>
+                    </g>
+                </g>
+                <g id="Group-8" transform="translate(76.917784, 68.270112) rotate(-10.000000) translate(-76.917784, -68.270112) translate(43.917784, 8.770112)">
+                    <g id="Group-7">
+                        <g id="Rectangle-10">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                            <rect stroke="#0099D8" stroke-width="2" x="1" y="1" width="64" height="117"></rect>
+                        </g>
+                        <path d="M59,43.5895875 L59,8 L8,8 L8,43.5895875 C13.4083817,35.2715162 22.8087693,29.7674419 33.5,29.7674419 C44.1912307,29.7674419 53.5916183,35.2715162 59,43.5895875 Z M59,76.4104125 L59,112 L8,112 L8,76.4104125 C13.4083817,84.7284838 22.8087693,90.2325581 33.5,90.2325581 C44.1912307,90.2325581 53.5916183,84.7284838 59,76.4104125 Z" id="Combined-Shape" fill="url(#linearGradient-6)"></path>
+                    </g>
+                </g>
+                <g id="Group-6" transform="translate(57.000000, 0.000000)">
+                    <g id="Rectangle-10">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
+                        <rect stroke="#0099D8" stroke-width="2" x="1" y="1" width="64" height="117"></rect>
+                    </g>
+                    <path d="M59,43.5895875 L59,8 L8,8 L8,43.5895875 C13.4083817,35.2715162 22.8087693,29.7674419 33.5,29.7674419 C44.1912307,29.7674419 53.5916183,35.2715162 59,43.5895875 Z M59,76.4104125 L59,112 L8,112 L8,76.4104125 C13.4083817,84.7284838 22.8087693,90.2325581 33.5,90.2325581 C44.1912307,90.2325581 53.5916183,84.7284838 59,76.4104125 Z" id="Combined-Shape" fill="url(#linearGradient-8)"></path>
+                    <text id="$" transform="translate(35.726531, 58.601883) rotate(270.000000) translate(-35.726531, -58.601883) " font-family="Gotham-Bold, Gotham" font-size="38" font-weight="bold" fill="#003957">
+                        <tspan x="21.7265311" y="69.6018827">$</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

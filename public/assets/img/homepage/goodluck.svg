@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="503px" height="259px" viewBox="0 0 503 259" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>goodluck</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="goodluck">
+            <path d="M502,257 L1,257" id="Line-Copy-3" stroke="#FFFFFF" stroke-width="3"></path>
+            <path d="M502,2 L1,2" id="Line-Copy-5" stroke="#FFFFFF" stroke-width="3"></path>
+            <text id="Good-luck-is-the-res" font-family="Baskerville-Italic, Baskerville" font-size="64" font-style="italic" font-weight="normal" line-spacing="57" fill="#003057">
+                <tspan x="121.265625" y="95">Good luck</tspan>
+                <tspan x="144.449219" y="166.25" font-size="48">is the residue of</tspan>
+                <tspan x="100" y="209">preparation.</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
