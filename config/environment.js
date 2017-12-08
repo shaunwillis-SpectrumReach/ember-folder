@@ -4,8 +4,7 @@
 module.exports = function(environment) {
   let ENV = {
     DS: {
-      host: 'https://firstlook-spectrumreach-api.herokuapp.com',
-      // host: 'http://127.0.0.1:3333',
+      host: 'http://127.0.0.1:3333',
       namespace: 'api',
     },
 
@@ -51,6 +50,8 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
+    ENV.DS.host = 'https://firstlook-spectrumreach-api.herokuapp.com';
+
   }
 
   return ENV;

@@ -1,4 +1,4 @@
-@import "ember-side-menu";
+
 
 .btn {
   min-width:200px;
@@ -61,6 +61,15 @@
   text-align:left;
 }
 
+#comment {
+  /*
+  border: 1px solid red;
+    height: 9.5em;
+    padding: 2px;
+    overflow: hidden;
+    */
+    // set this to closed height, then set CSS: heigth to auto with JS to expand.
+}
 
 #contentHome  #goals {
   background-image: url("../assets/img/homepage/startingblocks.jpg");
