@@ -23,6 +23,6 @@ export default Ember.Route.extend({
     }
     this.replaceWith('firstlook.login');
   },
-  
+
 
 });
