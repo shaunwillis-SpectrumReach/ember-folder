@@ -14,6 +14,7 @@ Router.map(function() {
     this.route('register-conf');
     this.route('register-thanks');
     this.route('register-pid');
+    this.route('homepage');
   });
 
 });

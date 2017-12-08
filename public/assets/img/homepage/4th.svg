@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="299px" height="75px" viewBox="0 0 299 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="288px" height="54px" viewBox="0 0 288 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
     <title>4th</title>
     <desc>Created with Sketch.</desc>
@@ -10,45 +10,47 @@
         <rect id="path-4" x="36" y="39" width="4.14285714" height="11.3300781"></rect>
         <polygon id="path-5" points="7.94936709 47 43.0506329 47 49 53 2 53"></polygon>
     </defs>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="4th">
-            <g id="Group-10" transform="translate(1.000000, 16.000000)">
-                <g id="Rectangle-17-Copy-12">
-                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
-                    <rect stroke="#0099D8" stroke-width="1" x="11.5" y="39.5" width="3.14285714" height="10.3300781"></rect>
+    <g id="MockUp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Revised1116" transform="translate(-353.000000, -4247.000000)">
+            <g id="4th" transform="translate(352.000000, 4227.000000)">
+                <g id="Group-10" stroke-width="1" fill-rule="evenodd" transform="translate(1.000000, 16.000000)">
+                    <g id="Rectangle-17-Copy-12">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#0099D8" stroke-width="1" x="11.5" y="39.5" width="3.14285714" height="10.3300781"></rect>
+                    </g>
+                    <g id="Rectangle-17-Copy-13">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <rect stroke="#0099D8" stroke-width="1" x="19.5" y="39.5" width="3.14285714" height="10.3300781"></rect>
+                    </g>
+                    <g id="Rectangle-17-Copy-14">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <rect stroke="#0099D8" stroke-width="1" x="28.5" y="39.5" width="3.14285714" height="10.3300781"></rect>
+                    </g>
+                    <g id="Rectangle-17-Copy-15">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        <rect stroke="#0099D8" stroke-width="1" x="36.5" y="39.5" width="3.14285714" height="10.3300781"></rect>
+                    </g>
+                    <g id="Rectangle-16-Copy-9">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        <path stroke="#0099D8" stroke-width="1" d="M8.15771603,47.5 L3.19991012,52.5 L47.8000899,52.5 L42.842284,47.5 L8.15771603,47.5 Z"></path>
+                    </g>
+                    <rect id="Rectangle-16-Copy-10" fill="#0099D8" x="8" y="36" width="35" height="6"></rect>
+                    <text id="t" font-family="Gotham-Bold, Gotham" font-size="20" font-weight="bold" fill="#0099D8">
+                        <tspan x="28" y="19">t</tspan>
+                    </text>
+                    <text id="h" font-family="Gotham-Bold, Gotham" font-size="20" font-weight="bold" fill="#0099D8">
+                        <tspan x="34" y="19">h</tspan>
+                    </text>
+                    <text id="4" stroke="#0099D8" stroke-width="2" font-family="Gotham-Bold, Gotham" font-size="45" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5" y="42">4</tspan>
+                    </text>
+                    <rect id="Rectangle-16-Copy-11" fill="#0099D8" x="0" y="52" width="51" height="6"></rect>
                 </g>
-                <g id="Rectangle-17-Copy-13">
-                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
-                    <rect stroke="#0099D8" stroke-width="1" x="19.5" y="39.5" width="3.14285714" height="10.3300781"></rect>
-                </g>
-                <g id="Rectangle-17-Copy-14">
-                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
-                    <rect stroke="#0099D8" stroke-width="1" x="28.5" y="39.5" width="3.14285714" height="10.3300781"></rect>
-                </g>
-                <g id="Rectangle-17-Copy-15">
-                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
-                    <rect stroke="#0099D8" stroke-width="1" x="36.5" y="39.5" width="3.14285714" height="10.3300781"></rect>
-                </g>
-                <g id="Rectangle-16-Copy-9">
-                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
-                    <path stroke="#0099D8" stroke-width="1" d="M8.15771603,47.5 L3.19991012,52.5 L47.8000899,52.5 L42.842284,47.5 L8.15771603,47.5 Z"></path>
-                </g>
-                <rect id="Rectangle-16-Copy-10" fill="#0099D8" x="8" y="36" width="35" height="6"></rect>
-                <text id="t" font-family="Gotham-Bold, Gotham" font-size="20" font-weight="bold" fill="#0099D8">
-                    <tspan x="28" y="16">t</tspan>
+                <text id="4th-Place-Winner-$11" font-family="Gotham-Bold, Gotham" font-size="24" font-weight="bold" line-spacing="28" fill="#003057">
+                    <tspan x="80" y="40">4th Place Winner</tspan>
+                    <tspan x="80" y="68" font-family="Gotham-Book, Gotham" font-weight="300">$1100 bonus</tspan>
                 </text>
-                <text id="h" font-family="Gotham-Bold, Gotham" font-size="20" font-weight="bold" fill="#0099D8">
-                    <tspan x="34" y="16">h</tspan>
-                </text>
-                <text id="4" stroke="#0099D8" stroke-width="2" font-family="Gotham-Bold, Gotham" font-size="45" font-weight="bold" fill="#FFFFFF">
-                    <tspan x="5" y="36">4</tspan>
-                </text>
-                <rect id="Rectangle-16-Copy-11" fill="#0099D8" x="0" y="52" width="51" height="6"></rect>
             </g>
-            <text id="4th-Place-Winner-$11" font-family="Gotham-Bold, Gotham" font-size="24" font-weight="bold" line-spacing="28" fill="#003057">
-                <tspan x="80" y="37">4th Place Winner</tspan>
-                <tspan x="80" y="65" font-family="Gotham-BoldItalic, Gotham" font-style="italic">$1100 bonus</tspan>
-            </text>
         </g>
     </g>
 </svg>
