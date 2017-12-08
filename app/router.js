@@ -14,7 +14,19 @@ Router.map(function() {
     this.route('register-conf');
     this.route('register-thanks');
     this.route('register-pid');
+
     this.route('homepage');
+
+    this.route('login');
+
+    this.route('user', function() {
+      this.route('profile', function() {
+        this.route('detail', { path: '/:user_id' });
+        this.route('edit', { path: '/:user_id' });
+      });
+    });
+    this.route('logout');
+
   });
 
 });

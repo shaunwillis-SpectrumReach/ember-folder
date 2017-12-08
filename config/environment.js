@@ -26,7 +26,12 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+     'ember-simple-auth': {
+       authorizer: 'authorization:token',
+     },
+
+     'ember-simple-auth-token': {}
   };
 
   if (environment === 'development') {
@@ -51,8 +56,8 @@ module.exports = function(environment) {
   if (environment === 'production') {
     // here you can enable a production-specific feature
     ENV.DS.host = 'https://firstlook-spectrumreach-api.herokuapp.com';
-
   }
+  ENV['ember-simple-auth-token'].serverTokenEndpoint = `${ENV.DS.host}/api/token-auth`;
 
   return ENV;
 };

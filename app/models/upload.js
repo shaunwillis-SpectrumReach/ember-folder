@@ -6,5 +6,5 @@ export default Model.extend({
   name: attr(),
   size: attr(),
   type: attr(),
-  pid: belongsTo('pid'),
+  pids: belongsTo('pids'),
 });

@@ -11,6 +11,7 @@ export default Route.extend({
       console.log(params.queryParams.cat);
       }
     }
+      this.replaceWith('firstlook.login');
   },
   model() {
     return this.store.peekAll('upload');
