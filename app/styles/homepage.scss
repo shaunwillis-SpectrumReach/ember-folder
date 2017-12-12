@@ -1,5 +1,41 @@
 
 
+.homepageWrapper {
+  background-image: url('../assets/img/homepage/arrow.svg');
+}
+
+#menuToggle  {
+
+  position:absolute;
+  right:20px;
+  color:white;
+}
+#menuRight {
+  background-color: #0099D8;
+  color:white;
+  padding: 20px;
+}
+#menuRight ul li {
+  margin:1.6rem;
+  font-size:0.7rem;
+}
+
+#menuRight img {
+  display:inline-block;
+  width:24px;
+  margin-right:12px;
+  height:auto;
+  clear:both;
+  padding:6px 0;
+}
+#menuRight a {
+  text-decoration: none;
+}
+.border-top {
+  border-top: 2px solid white;
+  padding-top:30px;
+  width:100%;
+}
 .btn {
   min-width:200px;
   background-color:#0099D8;

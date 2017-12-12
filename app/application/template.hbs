@@ -1,30 +1,44 @@
 
-{{#side-menu-toggle}}
-      <span class="fa fa-bars"></span>
+{{#side-menu-toggle id="menuToggle"}}
+      <span class="fa fa-bars fa-2x" style="padding-top:1.2rem;"></span>
 {{/side-menu-toggle}}
 
-{{#side-menu width="20%" side="right"}}
-  <header class="navbar navbar-default">
+{{#side-menu width="220px" side="right" id="menuRight"}}
+  <!-- <header class="navbar navbar-default">
     <div class="navbar-header">
     ...
     </div>
-  </header>
+  </header> -->
+
   <ul class="nav">
-    <li class="header">Events</li>
     <li>
       {{#side-menu-link-to "firstlook.homepage"}}
-        <!-- {{inline-svg "plus" class="icon"}} -->
-        New Event
+        <img src="../assets/img/homepage/overview.svg" /> <span>OVERVIEW</span>
       {{/side-menu-link-to}}
     </li>
-    <li class="divider"></li>
-    ...
     <li>
-      <a href="https://cowbell-labs.com/" target="_blank">
-        <!-- {{inline-svg "cowbell" class="icon cowbell"}} -->
-        Cowbell Labs
-      </a>
+      {{#side-menu-link-to "firstlook.homepage"}}
+        <img src="../assets/img/homepage/standings.svg" /> <span>STANDINGS</span>
+      {{/side-menu-link-to}}
     </li>
+    <li>
+      {{#side-menu-link-to "firstlook.homepage"}}
+        <img src="../assets/img/homepage/rules.svg" /> <span>RULES</span>
+      {{/side-menu-link-to}}
+    </li>
+
+    <li>
+      {{#side-menu-link-to "firstlook.homepage"}}
+        <img src="../assets/img/homepage/faq.svg" /> <span>FAQ</span>
+      {{/side-menu-link-to}}
+    </li>
+
+    <li class="border-top">
+      {{#side-menu-link-to "firstlook.homepage"}}
+        <img src="../assets/img/generic_thumbnail.svg" /> <span>ACCOUNT</span>
+      {{/side-menu-link-to}}
+    </li>
+
   </ul>
 {{/side-menu}}
 {{content-backdrop}}
