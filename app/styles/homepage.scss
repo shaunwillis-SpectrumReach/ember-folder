@@ -42,6 +42,11 @@
   background-color:#0099D8;
   color: #fff;
 }
+
+.logoutBtn {
+  margin:0;
+  margin-right:20px; margin-top:1.2rem; border:solid 1px #fff; color:#fff; padding:6px 12px;
+}
 #contentHome {
    margin: auto;
    width: 100%;
@@ -215,6 +220,9 @@ padding:40px;
 
   #contentHome #header {
     height:54px;
+  }
+  .logoutBtn {
+    margin-right:10px; margin-top:0.6rem; border:solid 1px #fff; color:#fff; padding:4px 10px;
   }
 
   #contentHome .l_FirstLook  {
