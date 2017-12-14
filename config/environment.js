@@ -4,8 +4,12 @@
 module.exports = function(environment) {
   let ENV = {
     DS: {
+      // LocalHost
       // host: 'http://127.0.0.1:3333',
-      host: 'https://firstlook-spectrumreach-api.herokuapp.com',
+      // Staging Database
+      host: 'https://firstlook-staging-api.herokuapp.com/',
+      // Production Database
+      // host: 'https://firstlook-spectrumreach-api.herokuapp.com',
       namespace: 'api',
     },
 

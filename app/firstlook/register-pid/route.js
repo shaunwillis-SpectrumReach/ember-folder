@@ -15,9 +15,10 @@ export default Ember.Route.extend({
       console.log(params.queryParams.cat);
       }
     },
-    // Use this after Registration is finished
+    //Use this after Registration is finished
     beforeModel() {
       this.replaceWith('firstlook.login');
     }
+
 
 });
