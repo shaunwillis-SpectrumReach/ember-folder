@@ -4,7 +4,8 @@
 module.exports = function(environment) {
   let ENV = {
     DS: {
-      host: 'http://127.0.0.1:3333',
+      // host: 'http://127.0.0.1:3333',
+      host: 'https://firstlook-spectrumreach-api.herokuapp.com',
       namespace: 'api',
     },
 
