@@ -16,8 +16,11 @@ export default Ember.Route.extend({
       }
     },
     // Use this after Registration is finished
+    // beforeModel() {
+    //   this.replaceWith('firstlook.login');
+    // }
     beforeModel() {
-      this.replaceWith('firstlook.login');
+      this.replaceWith('firstlook.welcome');
     }
 
 });

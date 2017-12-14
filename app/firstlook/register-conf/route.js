@@ -11,7 +11,8 @@ export default Ember.Route.extend({
           console.log(params.queryParams.cat);
           }
 
-          this.replaceWith('firstlook.login');
+          // this.replaceWith('firstlook.login');
+          this.replaceWith('firstlook.welcome');
       }
 
 });

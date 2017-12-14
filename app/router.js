@@ -27,6 +27,7 @@ Router.map(function() {
     });
     this.route('logout');
 
+    this.route('welcome');
   });
 
 });
