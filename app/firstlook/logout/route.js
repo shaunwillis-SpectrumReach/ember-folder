@@ -4,6 +4,6 @@ export default Ember.Route.extend({
   session: Ember.inject.service(),
 
   beforeModel() {
-    this.get('session').invalidate().transitionToRoute('firstlook.login');
+    this.get('session').invalidate();
   },
 });
