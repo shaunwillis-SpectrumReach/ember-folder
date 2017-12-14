@@ -2,7 +2,12 @@
 <div id="wrapper" class="homepageWrapper">
   <div id="contentHome" class="" >
     <section id="header">
-          <img class="l_FirstLook" src="../assets/img/L_FirstLook.png">
+          <div style="float:left; margin:0;"><img class="l_FirstLook" src="../assets/img/L_FirstLook.png"></div>
+          <div style="float:right; margin:0; margin-right:20px; margin-top:1.2rem; border:solid 1px #fff; color:#fff; padding:6px 12px;">
+            {{#link-to 'firstlook.logout' class="button " replace="true"}}
+              Logout
+            {{/link-to}}
+          </div>
     </section>
 
 
