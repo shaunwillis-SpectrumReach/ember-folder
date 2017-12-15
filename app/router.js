@@ -28,6 +28,9 @@ Router.map(function() {
     this.route('logout');
 
     this.route('welcome');
+    this.route('leaderboard');
+    this.route('rules');
+    this.route('faqs');
   });
 
 });

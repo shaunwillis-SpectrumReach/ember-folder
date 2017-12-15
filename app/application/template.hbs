@@ -1,11 +1,11 @@
 <!-- source: https://www.npmjs.com/package/ember-side-menu -->
 <!-- Note: removed header and other items that were already commented out. Was still working -->
-<!--
+
 {{#side-menu-toggle id="menuToggle"}}
       <span class="fa fa-bars fa-2x" style="padding-top:1.2rem;"></span>
-{{/side-menu-toggle}} -->
+{{/side-menu-toggle}}
 
-<!-- {{#side-menu width="220px" side="right" id="menuRight"}}
+{{#side-menu width="220px" side="right" id="menuRight"}}
 
   <ul class="nav">
     <li>
@@ -14,29 +14,35 @@
       {{/side-menu-link-to}}
     </li>
     <li>
-      {{#side-menu-link-to "firstlook.homepage"}}
+      {{#side-menu-link-to "firstlook.leaderboard"}}
         <img src="../assets/img/homepage/standings.svg" /> <span>STANDINGS</span>
       {{/side-menu-link-to}}
     </li>
     <li>
-      {{#side-menu-link-to "firstlook.homepage"}}
+      {{#side-menu-link-to "firstlook.rules"}}
         <img src="../assets/img/homepage/rules.svg" /> <span>RULES</span>
       {{/side-menu-link-to}}
     </li>
 
     <li>
-      {{#side-menu-link-to "firstlook.homepage"}}
+      {{#side-menu-link-to "firstlook.faqs"}}
         <img src="../assets/img/homepage/faq.svg" /> <span>FAQ</span>
       {{/side-menu-link-to}}
     </li>
 
     <li class="border-top">
-      {{#side-menu-link-to "firstlook.homepage"}}
+      {{#side-menu-link-to "firstlook.register-conf"}}
         <img src="../assets/img/generic_thumbnail.svg" /> <span>ACCOUNT</span>
       {{/side-menu-link-to}}
     </li>
 
+    <li class="logoutBtn">
+      {{#link-to 'firstlook.logout' class="button " replace="true"}}
+        Logout
+      {{/link-to}}
+    </li>
+
   </ul>
 {{/side-menu}}
-{{content-backdrop}} -->
+{{content-backdrop}}
 {{outlet}}
