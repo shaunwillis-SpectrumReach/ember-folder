@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="77px" height="77px" viewBox="0 0 77 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>dt_ataglance</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dt_ataglance">
+            <g id="Group-5" transform="translate(1.000000, 1.000000)">
+                <circle id="Oval-4" stroke="#0099D8" stroke-width="2" cx="37.5" cy="37.5" r="37.5"></circle>
+                <text id="at-a-glance" font-family=".AppleSystemUIFont" font-size="16" font-weight="normal" fill="#0099D8">
+                    <tspan x="24.6328125" y="32">at a</tspan>
+                    <tspan x="13.9179688" y="50">glance</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

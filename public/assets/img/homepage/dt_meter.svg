@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="139px" height="123px" viewBox="0 0 139 123" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
-    <title>meter</title>
+    <title>dt_meter</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <linearGradient x1="8.84445231%" y1="85.1857329%" x2="91.050844%" y2="85.1857305%" id="linearGradient-1">
@@ -14,7 +14,7 @@
         </linearGradient>
     </defs>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="meter">
+        <g id="dt_meter">
             <g id="Group" transform="translate(7.000000, 7.000000)">
                 <path d="M125,63 C125,28.2060608 97.0177969,0 62.5,0 C27.9822031,0 0,28.2060608 0,63" id="Oval-6" stroke="url(#linearGradient-1)" stroke-width="10" stroke-linecap="round"></path>
                 <ellipse id="Oval-9" fill="url(#linearGradient-2)" cx="62.9960317" cy="64.5" rx="50.0992063" ry="50.5"></ellipse>
