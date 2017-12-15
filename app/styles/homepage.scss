@@ -45,7 +45,11 @@
 
 .logoutBtn {
   margin:0;
-  margin-right:20px; margin-top:1.2rem; border:solid 1px #fff; color:#fff; padding:6px 12px;
+  margin-right:20px;
+  margin-top:1.2rem;
+  // border:solid 1px #fff;
+  color:#fff;
+  padding:0;
 }
 #contentHome {
    margin: auto;
@@ -59,10 +63,11 @@
 
 #contentHome #header {
   background: url("../assets/img/Main_Header_bg.svg");
-  background-size: cover;
+  background-size: 100.1%;
   background-repeat: no-repeat;
   width:100%;
   height:80px;
+  margin:0 0 0 -1px;
 }
 
 #contentHome .l_FirstLook  {
@@ -70,11 +75,14 @@
   float:left;
     padding-top:30px;
     padding-bottom:0px;
+    width:100%;
+    height:auto;
+
 }
 
 #contentHome  #welcome {
   background-image: url("../assets/img/homepage/FL-header.jpg");
-  background-size: 100% auto;
+  background-size: 100% ;
   background-position: center bottom;
   background-repeat: no-repeat;
   min-height:60vh;
@@ -205,14 +213,17 @@ padding:40px;
 
 #contentHome #stickyFooter {
   background: url("../assets/img/Main_Header_bg.svg");
-  background-size: cover;
+  background-size: 102%;
   background-repeat: no-repeat;
-  width:100%;
-  height:50px;
+  width:100.1%;
+  height:60px;
+  margin:0 0 -8px -1px;
+    height:50px;
   color:white;
     padding:10px 0 0 24px;
-    margin:0;
     text-align: left;
+    border:0;
+    bottom:-8px;
 }
 
 /*  ////////////////////  MEDIA SMALL  //////////////  */
@@ -222,16 +233,27 @@ padding:40px;
     height:54px;
   }
   .logoutBtn {
-    margin-right:10px; margin-top:0.6rem; border:solid 1px #fff; color:#fff; padding:4px 10px;
+    margin-right:10px;
+    margin-top:0.8rem;
+    // border:solid 1px #fff;
+    color:#fff;
+    padding:0;
+
+  }
+
+  .logoutBtn img {
+      width:70%;
+      height:auto;
   }
 
   #contentHome .l_FirstLook  {
-    margin-left: 40px;
+    margin-left: 30px;
     float:left;
       padding-top:20px;
       padding-bottom:0px;
       height:36px;
-      width:auto;
+      width:70%;
+      height:auto;
   }
 #contentHome #welcome {
   height: 700px;
@@ -283,8 +305,39 @@ padding:40px;
   #contentHome #stickyFooter p {
   font-size:0.7rem;
   margin-top:6px;
+  text-align: center;
   }
 
 
 
+}
+
+@media only screen and (max-width: 480px) {
+
+  #contentHome #header {
+    height:54px;
+  }
+  .logoutBtn {
+    margin-right:0.6rem;
+    margin-top:0.8rem;
+    // border:solid 1px #fff;
+    color:#fff;
+    padding:0;
+
+  }
+
+  .logoutBtn img {
+      width:26vmin;
+      height:auto;
+  }
+
+  #contentHome .l_FirstLook  {
+    margin-left: 30px;
+    float:left;
+      padding-top:20px;
+      padding-bottom:0px;
+      height:36px;
+      width:46vmin;
+      height:auto;
+  }
 }
