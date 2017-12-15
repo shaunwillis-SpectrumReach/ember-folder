@@ -60,7 +60,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
-    ENV.DS.host = 'https://firstlook-spectrumreach-api.herokuapp.com';
+    // ENV.DS.host = 'https://firstlook-spectrumreach-api.herokuapp.com';
   }
   ENV['ember-simple-auth-token'].serverTokenEndpoint = `${ENV.DS.host}/api/token-auth`;
 
