@@ -5,11 +5,17 @@ module.exports = function(environment) {
   let ENV = {
     DS: {
       // LocalHost
+<<<<<<< HEAD
         host: 'http://127.0.0.1:3333',
       // Staging Database
       //host: 'https://firstlook-staging-api.herokuapp.com/',
+=======
+      //  host: 'http://127.0.0.1:3333',
+      // Staging Database
+      // host: 'https://firstlook-staging-api.herokuapp.com',
+>>>>>>> dff3106ee5264137b1d5fef7ea145c32f695b132
       // Production Database
-      // host: 'https://firstlook-spectrumreach-api.herokuapp.com',
+      host: 'https://firstlook-spectrumreach-api.herokuapp.com',
       namespace: 'api',
     },
 
@@ -60,7 +66,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
-    ENV.DS.host = 'https://firstlook-spectrumreach-api.herokuapp.com';
+    // ENV.DS.host = 'https://firstlook-spectrumreach-api.herokuapp.com';
   }
   ENV['ember-simple-auth-token'].serverTokenEndpoint = `${ENV.DS.host}/api/token-auth`;
 
