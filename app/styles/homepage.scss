@@ -32,7 +32,7 @@
 #menuRight a {
   text-decoration: none;
 }
-.burger {
+#burger {
   padding-top:1.3rem;
 }
 .border-top {
@@ -172,8 +172,6 @@
 }
 .hide {
   display:none;
-  float:right;
-  padding:6px;
 }
 
 #contentHome  #goals {
@@ -269,10 +267,10 @@ padding:40px;
   #contentHome #header {
     height:54px;
   }
-  .burger {
+  #burger {
     padding-top:0;
   }
-  .burger img {
+  #burger img {
     height:16px;
   }
 

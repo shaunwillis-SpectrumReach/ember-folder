@@ -36,24 +36,81 @@
   background-color:#003357;
 }
 
+#personalNumbers {
+padding:40px 0;
+}
+
 #personalNumbers h3 {
   font-size: 2.0rem;
   margin: 0;
   font-family: "GothamMedium";
   padding:8px 0 0 0;
 }
+
 #personalNumbers h5 {
   font-size: 1.2rem;
   margin: 0;
   font-family: "GothamMedium";
   padding:8px 0 0 0;
 }
-#personalNumbers {
-padding:40px 0;
-}
+
 #leadingNumbers {
-padding:40px 0;
+padding:30px 0;
 }
+
+#leadingNumbers h1 {
+  font-size: 3.4rem;
+  margin: 0;
+  font-family: "GothamMedium";
+  padding:0 0 0 10px;
+  color:#0099D8;
+}
+.eliteNav img {
+  margin:0;
+  margin-top:2px;
+  margin-right:-5px;
+  padding:0;
+}
+#standings {
+  margin:30px 0;
+}
+.standingProgress {
+
+}
+.filter {
+  font-size: 1.4rem;
+  margin: 12px;
+  font-family: "GothamMedium";
+  color:#003057;
+}
+
+.filters {
+  font-size: 1.4rem;
+  margin: 12px 0;
+  font-family: "GothamMedium";
+  color:#0099D8;
+  text-align:left;
+}
+.active {
+  color:#003057;
+}
+.rotate90 {
+/* Safari */ -webkit-transform: rotate(90deg);
+/* Firefox */ -moz-transform: rotate(90deg);
+/* IE */ -ms-transform: rotate(90deg);
+/* Opera */ -o-transform: rotate(90deg);
+/* Internet Explorer */ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation1);
+}
+
+#standings h1 {
+  font-size: 3.4rem;
+  margin: 0;
+  font-family: "GothamMedium";
+  padding:0 0 0 10px;
+  color:#0099D8;
+  text-align:left;
+}
+
 .copyright {
   float:left;
 }
@@ -64,18 +121,28 @@ padding:40px 0;
   padding:6px;
   margin-right:24px;
 }
-.datatable .dataheader {
-  background: url("../assets/img/Main_Header_bg.svg");
+ .dataheader {
+  background: url("/assets/img/Main_Header_bg.svg");
   background-size: 102%;
   background-repeat: no-repeat;
   width:100.1%;
   height:40px;
   color:white;
+  padding:6px 0;
+
+}
+.datatable {
+  overflow-y: auto;
+  height:110px;
+}
+.datatable .progress {
+  height:12px;
 
 }
 
 .datatable .row {
-  padding:4px;
+  padding:8px;
+
 }
 .datatable .row:nth-child(odd){
   background-color: #F1F1F1;
@@ -88,6 +155,8 @@ padding:40px 0;
     font-size: 1.2rem;
     padding:4px 0 0 0;
   }
-
+  .standingProgress {
+    display:none;
+  }
 
 }
