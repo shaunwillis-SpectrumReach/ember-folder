@@ -32,6 +32,9 @@
 #menuRight a {
   text-decoration: none;
 }
+.burger {
+  padding-top:1.3rem;
+}
 .border-top {
   border-top: 2px solid white;
   padding-top:30px;
@@ -83,18 +86,16 @@
   float:left;
     padding-top:30px;
     padding-bottom:0px;
-    width:100%;
+    // width:100%;
     height:auto;
 
 }
 
 #contentHome  #welcome {
   background-image: url("../assets/img/homepage/FL-header.jpg");
-  background-size: 100% ;
-  background-position: center bottom;
+  background-size: 100%;
+  background-position:  bottom center;
   background-repeat: no-repeat;
-  min-height:60vh;
-
 }
 #welcome h1 {
   font-size:3.6rem;
@@ -112,6 +113,9 @@
   color:#003057;
   padding-bottom: 30px;
 }
+#contentHome  #welcome img {
+  margin:40px auto;
+}
 
 #welcome .welcomeMessageh1  {
   font-size:4.4rem; margin-top:5vmin;
@@ -123,7 +127,10 @@
   font-size:2.2rem; line-height:2.4rem; max-width:780px; margin:auto;margin-top:3.0rem;
 }
 
-
+#contentHome  #welcome img {
+  width:100%;
+  margin:60px auto;
+}
 #message {
   margin-top:5rem;
 }
@@ -137,14 +144,29 @@
   text-align:left;
 }
 
-#comment {
-  /*
-  border: 1px solid red;
-    height: 9.5em;
+.hideContent {
+    overflow: hidden;
+    line-height: 1.6rem;
+    height: 7.4em;
     padding: 2px;
     overflow: hidden;
-    */
-    // set this to closed height, then set CSS: heigth to auto with JS to expand.
+
+}
+
+.showContent {
+    line-height: 1.6rem;
+    height: auto;
+}
+
+.show {
+  display:block;
+  float:right;
+  padding:6px;
+}
+.hide {
+  display:none;
+  float:right;
+  padding:6px;
 }
 
 #contentHome  #goals {
@@ -167,7 +189,7 @@
   padding-top:4rem;
 }
 #goals .messageIcon img {
-  width:60%;
+  width:100%;
   margin-top:6rem;
 }
 #goals .placeIcon {
@@ -175,7 +197,7 @@
 }
 
  .glance {
-   margin-top:6rem;
+   margin-top:1rem;
    background-color:#003057;
   color:white;
   padding-top: 20px;
@@ -240,6 +262,14 @@ padding:40px;
   #contentHome #header {
     height:54px;
   }
+  .burger {
+    padding-top:0;
+  }
+  .burger img {
+    height:16px;
+  }
+
+
   .logoutBtn {
     margin-right:10px;
     margin-top:0.8rem;
@@ -260,12 +290,15 @@ padding:40px;
       padding-top:20px;
       padding-bottom:0px;
       height:36px;
-      width:70%;
+      max-width:46vmin;
       height:auto;
+
+
+
   }
 #contentHome #welcome {
-  height: 700px;
   min-height:120vmin;
+  text-align: center;
 }
 #welcome p {
   padding-left:20px;
@@ -295,14 +328,28 @@ padding:40px;
     display: none;
   }
   #welcome h2  {
-    font-size:1.6rem; line-height:1.8rem;  margin:auto;margin-top:2.4rem;
+    font-size:1.6rem;
+    line-height:1.8rem;
+    margin:auto;
+    margin-top:2.4rem;
   }
-
 
   #contentHome  #welcome img {
-    width:80%;
-    margin:auto;
+    width:100%;
+    margin:40px auto;
   }
+
+  #goals .messageIcon  {
+    width:100%;
+    margin:0 auto;
+    text-align: center;
+  }
+
+  #goals .messageIcon img {
+    width:40%;
+    margin:0 auto;
+  }
+
   #goals h1 {
     padding-top:36vw;
     margin-top:-3.4rem;
@@ -348,4 +395,6 @@ padding:40px;
       width:46vmin;
       height:auto;
   }
+
+
 }

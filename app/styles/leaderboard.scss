@@ -10,9 +10,7 @@
 
 #comapnyGoal {
   font-family: "Gotham";
-}
 
-#comapnyGoal {
   /* Rectangle 5 Copy 2: */
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0099d8+0,40afdd+100 */
   background: #0099d8; /* Old browsers */
@@ -36,7 +34,23 @@
 .progress-bar {
   background-color:#003357;
 }
+.copyright {
+  float:left;
+}
+.toTop {
+  float:right;
+}
+.toTop img {
+  padding:6px;
+  margin-right:24px;
+}
+.datatable .row {
+  padding:4px;
+}
+.datatable .row:nth-child(odd){
+  background-color: #F1F1F1;
 
+}
 /*  ////////////////////  MEDIA SMALL  //////////////  */
 @media only screen and (max-width: 767px) {
 
