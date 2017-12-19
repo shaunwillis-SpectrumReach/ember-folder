@@ -21,8 +21,8 @@ Router.map(function() {
 
     this.route('user', function() {
       this.route('profile', function() {
-        this.route('detail', { path: '/:user_id' });
-        this.route('edit', { path: '/:user_id' });
+        this.route('detail', { path: '/detail/:pid_id' });
+        this.route('edit', { path: '/edit/:pid_id' });
       });
     });
     this.route('logout');

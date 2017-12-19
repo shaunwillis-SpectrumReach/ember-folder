@@ -1,0 +1,29 @@
+<h1 style="color: green;">this is inside index page</h1>
+{{#link-to 'firstlook.user'}}back{{/link-to}}
+
+<!-- <p style="color: white;">{{model.firstname}}</p> -->
+
+
+  <div class="hello" style="color: blue; margin-top: 10rem;">You Are In Admin, Enjoy Your Unlimited Power</div>
+  <div class="admin-page">
+    <div class="admin-links">
+      <!-- {{#link-to "profile.detail"}}Users{{/link-to}} -->
+      <!-- {{#link-to "profile.resources"}}Organizations{{/link-to}} -->
+      <!-- {{#link-to "profile.category"}}Categories{{/link-to}} -->
+      <!-- {{#link-to "profile.pledge" class="flex-grow"}}Pledges{{/link-to}} -->
+    </div>
+    <div class="div">
+      {{#each flashMessages.queue as |flash|}}
+        {{#flash-message flash=flash as |component flash|}}
+
+          <p class="hi">{{flash.message}}</p>
+        {{/flash-message}}
+      {{/each}}
+      <div class="admin__content">{{outlet}}</div>
+    </div>
+
+  </div>
+
+
+
+{{outlet}}

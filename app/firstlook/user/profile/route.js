@@ -3,9 +3,9 @@ import AuthenticatedRouteMixin from 'ember-simple-auth/mixins/authenticated-rout
 
 export default Ember.Route.extend(AuthenticatedRouteMixin, {
 
-beforeModel() {
-  if(!currentUser) {
-    this.replaceWith('firstlook.login');
-  }
-}
+// beforeModel() {
+//   if(!currentUser) {
+//     this.replaceWith('firstlook.login');
+//   }
+// }
 });
