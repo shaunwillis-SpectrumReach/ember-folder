@@ -28,7 +28,13 @@ Router.map(function() {
     this.route('logout');
 
     this.route('welcome');
-    this.route('leaderboard');
+    this.route('leaderboard', function() {
+      this.route('elite-ae15m');
+      this.route('elite-ae1m');
+      this.route('elite-ae700k');
+      this.route('elite-ae450k');
+      this.route('elite-ae400k');
+    });
     this.route('rules');
     this.route('faqs');
   });

@@ -5,9 +5,10 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
   // model() {
   //    return this.store.findAll('pids');
   // }
-  // beforeModel() {
-  //   this.replaceWith('firstlook.login');
-  // }
+   beforeModel() {
+     $('#burger').removeClass('hide');
+
+   },
 
   actions: {
     scrollToMessage() {
@@ -32,6 +33,12 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
       $('#more').addClass('show').removeClass('hide');
       $('#less').addClass('hide').removeClass('show');
     },
+    showBurger() {
+      // document.getElementById('message').scrollIntoView();
+      $('#burger').removeClass('hide');
+    },
+
   }
+
 
 });

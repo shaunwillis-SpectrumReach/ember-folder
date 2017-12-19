@@ -2,8 +2,7 @@
 <!-- Note: removed header and other items that were already commented out. Was still working -->
 
 {{#side-menu-toggle id="menuToggle"}}
-      <!-- <span class="fa fa-bars fa-2x" style="padding-top:1.2rem;"></span> -->
-      <span class="burger" style=""><img src="../assets/img/homepage/hamburger.svg" /></span>
+<span id="burger" class="hide" style=""><img src="/assets/img/homepage/hamburger.svg" /></span>
 {{/side-menu-toggle}}
 
 {{#side-menu width="220px" side="right" id="menuRight"}}
@@ -11,35 +10,35 @@
   <ul class="nav">
     <li>
       {{#side-menu-link-to "firstlook.homepage"}}
-        <img src="../assets/img/homepage/iconOverview.svg" /> <span >OVERVIEW</span>
+        <img src="/assets/img/homepage/iconOverview.svg" /> <span >OVERVIEW</span>
       {{/side-menu-link-to}}
     </li>
     <li>
-      {{#side-menu-link-to "firstlook.leaderboard"}}
-        <img src="../assets/img/homepage/iconStandings.svg" /> <span>STANDINGS</span>
+      {{#side-menu-link-to "firstlook.leaderboard.elite-ae15m"}}
+        <img src="/assets/img/homepage/iconStandings.svg" /> <span>STANDINGS</span>
       {{/side-menu-link-to}}
     </li>
     <li>
       {{#side-menu-link-to "firstlook.rules"}}
-        <img src="../assets/img/homepage/iconRules.svg" /> <span>RULES</span>
+        <img src="/assets/img/homepage/iconRules.svg" /> <span>RULES</span>
       {{/side-menu-link-to}}
     </li>
 
     <li>
       {{#side-menu-link-to "firstlook.faqs"}}
-        <img src="../assets/img/homepage/iconFaq.svg" /> <span>FAQS</span>
+        <img src="/assets/img/homepage/iconFaq.svg" /> <span>FAQS</span>
       {{/side-menu-link-to}}
     </li>
 
     <li class="border-top">
       {{#side-menu-link-to "firstlook.register-conf"}}
-        <img src="../assets/img/homepage/iconNav_generic_thumb.svg" /> <span>ACCOUNT</span>
+        <img src="/assets/img/homepage/iconNav_generic_thumb.svg" /> <span>ACCOUNT</span>
       {{/side-menu-link-to}}
     </li>
 
     <li class="">
       {{#link-to 'firstlook.logout' class=" " replace="true"}}
-      <img src="../assets/img/homepage/signout.svg" style="width:100%; height:auto;" />
+      <img src="/assets/img/homepage/signout.svg" style="width:100%; height:auto;" />
       {{/link-to}}
     </li>
 
