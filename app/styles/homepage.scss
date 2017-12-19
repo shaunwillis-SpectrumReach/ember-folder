@@ -1,6 +1,4 @@
 
-
-
 .homepageWrapper {
   background-image: url('../assets/img/homepage/arrow.svg');
 }
@@ -35,6 +33,15 @@
 #burger {
   padding-top:1.3rem;
 }
+.userNameTop {
+  position:absolute;
+  top: 30px;
+  right:200px;
+  text-align:right;
+  color:white;
+  font-size:12px;
+
+}
 .border-top {
   border-top: 2px solid white;
   padding-top:30px;
@@ -56,7 +63,9 @@
 }
 
 .nav span  {
-  font-family: "GothamLight", "Arial", sans-serif;
+   font-family: "GothamLight", "Arial", sans-serif;
+  //font-family: 'Open Sans', sans-serif;
+  //font-weight:300;
   font-size:14px;
 
 }
@@ -273,7 +282,15 @@ padding:40px;
   #burger img {
     height:16px;
   }
+  .userNameTop {
+    position:absolute;
+    top: 18px;
+    right:120px;
+    text-align:right;
+    color:white;
+    font-size:12px;
 
+  }
 
   .logoutBtn {
     margin-right:10px;
@@ -372,11 +389,16 @@ padding:40px;
 
 }
 
+/* ////////////////////////  VERY SMALL  //////////////  */
+
 @media only screen and (max-width: 480px) {
 
   #contentHome #header {
     height:54px;
   }
+  .userNameTop {
+    display:none;
+}
   .logoutBtn {
     margin-right:0.6rem;
     margin-top:0.8rem;

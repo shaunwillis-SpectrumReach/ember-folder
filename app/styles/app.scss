@@ -67,6 +67,7 @@ background: url("../assets/img/arrow-left.svg");
     margin:0;
     border:0;
     font-family: "Gotham", "Arial", sans-serif;
+    // font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     text-align: center;
 
@@ -159,6 +160,7 @@ p {
 }
 h3 {
   font-family: "Gotham", "Arial", sans-serif;
+  //font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   font-weight: 300;
   text-align: center;
@@ -206,6 +208,7 @@ h3 {
 /*  ///////////  elements  ////////////  */
 form input, form select, btn{
   font-family: "Gotham", "Arial", sans-serif;
+  //font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   text-align: center;
   border-radius: 0;
@@ -344,6 +347,7 @@ font-size: 16px;
 
 .comment {
   font-family: "Gotham", "Arial", sans-serif;
+  //font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   text-align: center;
   color:#0099D8;
@@ -352,7 +356,8 @@ font-size: 16px;
 #profileSummary {
   text-align: center;
   line-height: 0.4rem;
-  font-family: "Gotham", "Arial", sans-serif;
+   font-family: "Gotham", "Arial", sans-serif;
+  //font-family: 'Open Sans', sans-serif;
   font-size: 14px;
 
 }
@@ -392,7 +397,8 @@ font-size: 16px;
   margin:auto;
 }
 #thanks h2 {
-  font-family: "Gotham", "Arial", sans-serif;
+   font-family: "Gotham", "Arial", sans-serif;
+  // font-family: 'Open Sans', sans-serif;
   font-size: 24px;
   font-weight: 500;
   color:#0099D8;
