@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="43px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>nav_generic_thumb</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="20.5" cy="20.5" r="20.5"></circle>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="nav_generic_thumb">
+            <g id="Group-4" transform="translate(1.000000, 1.000000)">
+                <g id="Group">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#0099D8" xlink:href="#path-1"></use>
+                    <g mask="url(#mask-2)" fill="#FFFFFF">
+                        <g transform="translate(3.931507, 3.030264)">
+                            <rect id="Rectangle-21" x="0" y="19.9971328" width="33.1369863" height="46.6164384" rx="16.5684932"></rect>
+                            <circle id="Oval-11" cx="16.1897101" cy="10.0116279" r="10.0116279"></circle>
+                        </g>
+                    </g>
+                </g>
+                <circle id="Oval-10" stroke="#FFFFFF" stroke-width="2" cx="20.5" cy="20.5" r="20.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

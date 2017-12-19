@@ -1,18 +1,17 @@
-<div id="wrapper">
-  <div id="contentReg" >
+<div id="wrapper" class="homepageWrapper">
+  <div id="contentHome" class="" >
     <section id="header">
           <img class="l_FirstLook" src="../assets/img/L_FirstLook.png">
     </section>
 
-    <section id="title">
-      <h3>Profile Summary</h3><p>Click "Edit info" to update profile.<br>Click submit to complete your registration.</p>
+    <div id="" class="graygradient" style="height:100%;min-height:600px;">
 
-      {{#link-to 'firstlook.register-pid'  }}
-      <p class="comment"><img style="height:14px;" src="../assets/img/Nav_Left.svg"> Edit Info </p>
+    <section id="title">
+      <h3>Profile Summary</h3>
+
+      {{#link-to 'firstlook.register-img'  }}
+      <p class="comment">Add an image to your profile </p>
       {{/link-to}}
-    <!-- {{#link-to 'firstlook.register-img' (query-params cat="left") }}
-    <img src="../assets/img/generic_thumbnail.svg" class="profileImg">
-        {{/link-to}} -->
 
       </section>
 
@@ -84,22 +83,30 @@
 
 
 
-<section id="nav-wrapper">
+<!-- <section id="nav-wrapper"> -->
    <!-- <div id="nav" class="navconf">
     {{#link-to 'firstlook.register-info' (query-params cat="left") }}<img class="navLeft" src="../assets/img/Nav_Left.svg" >{{/link-to}}<img class="navRight" src="../assets/img/Nav_Right.svg">
 </div> -->
-<div id="line" class="" >
+<!-- <div id="line" class="" >
 
       <svg id="cir3" class="three" height="30" width="30" >
         <circle cx="15" cy="15" r="15" stroke="#0099D8" stroke-width="1" fill="white" />
         <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">3</text>
       </svg>
- </div >
-</section>
+ </div > -->
+<!-- </section> -->
 
-<section id="bottomLogo">
+
+</div>
+
+<section id="homepageCornerLogo">
   <img src="../assets/img/Spectrum_Reach_Rev_RGB.svg">
 </section>
+
+<section id="stickyFooter">
+<p>Copyright 2018 • Spectrum Reach • All Rights Reserved</p>
+</section>
+
 
 </div>
 </div>

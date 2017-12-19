@@ -1,8 +1,8 @@
-@import 'homepage';
-@import 'leaderboard';
+@import "homepage";
+@import "leaderboard";
 @import "ember-side-menu";
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css');
-
+// @import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" ');
 @font-face {
     font-family: 'Gotham';
     src: url('../assets/fonts/Gotham-Book.otf');
@@ -17,13 +17,53 @@
 }
 
 /*  ///////////  Top Level Structure  ////////////  */
-html,body{
+html,body {
   padding:0;
   margin:0;
+  height: 100%;
 }
 
+section {
+overflow:hidden;
+background-color:transparent;
+}
+
+.bg-right {
+  position: absolute; /* Sit on top of the page content */
+width: 100%; /* Full width (cover the whole page) */
+height: 100%; /* Full height (cover the whole page) */
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+
+  background: url("../assets/img/arrow.svg");
+  background-size: 100vw;
+  background-position: top left;
+  background-repeat: no-repeat;
+  z-index: 1000;
+}
+.bg-left {
+  position: absolute; /* Sit on top of the page content */
+width: 100%; /* Full width (cover the whole page) */
+height: 100%; /* Full height (cover the whole page) */
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+
+background: url("../assets/img/arrow-left.svg");
+  background-size: 100vw;
+  background-position: top left;
+  background-repeat: no-repeat;
+  z-index: 1000;
+}
+.ltBlue {
+  color:#0099D8;
+}
 #wrapper {
     width:100%;
+    height: 100%;
     margin:0;
     border:0;
     font-family: "Gotham", "Arial", sans-serif;
@@ -39,9 +79,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003057', end
 #content {
     margin: auto;
     width: 100%;
+    height: 100%;
     min-height:100vh;
 background: url("../assets/img/TriCorner.svg");
-background-size: cover;
+background-size: 120vmin;
 background-position: bottom right;
 background-repeat: no-repeat;
   text-align: center;
@@ -50,6 +91,7 @@ background-repeat: no-repeat;
 #contentReg {
     margin: auto;
     width: 100%;
+    height: 100%;
     min-height:100vh;
     background-color: #e4e4e4;
   background-image: url("../assets/img/TriCorner.svg");
@@ -122,6 +164,12 @@ h3 {
   text-align: center;
   padding:0.8rem;
 
+}
+.btn {
+  margin-top:1.2rem;
+  border-radius: 0;
+  padding:0.8rem;
+  min-width:240px;
 }
 .fadein {
 

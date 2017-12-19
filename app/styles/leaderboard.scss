@@ -10,9 +10,7 @@
 
 #comapnyGoal {
   font-family: "Gotham";
-}
 
-#comapnyGoal {
   /* Rectangle 5 Copy 2: */
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0099d8+0,40afdd+100 */
   background: #0099d8; /* Old browsers */
@@ -22,21 +20,67 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0099d8', endColorstr='#40afdd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
   color:white;
-  padding:30px 0 60px 0;
+  padding:20px 0;
 }
-#comapnyGoal h4 {
+ h4 {
   font-size: 1.6rem;
   padding:8px 0 0 0;
   font-family: "GothamMedium";
 
 }
+
 #comapnyGoal .container {
   margin:auto;
 }
-.progress-bar {
+#comapnyGoal  .progress-bar {
   background-color:#003357;
 }
 
+#personalNumbers h3 {
+  font-size: 2.0rem;
+  margin: 0;
+  font-family: "GothamMedium";
+  padding:8px 0 0 0;
+}
+#personalNumbers h5 {
+  font-size: 1.2rem;
+  margin: 0;
+  font-family: "GothamMedium";
+  padding:8px 0 0 0;
+}
+#personalNumbers {
+padding:40px 0;
+}
+#leadingNumbers {
+padding:40px 0;
+}
+.copyright {
+  float:left;
+}
+.toTop {
+  float:right;
+}
+.toTop img {
+  padding:6px;
+  margin-right:24px;
+}
+.datatable .dataheader {
+  background: url("../assets/img/Main_Header_bg.svg");
+  background-size: 102%;
+  background-repeat: no-repeat;
+  width:100.1%;
+  height:40px;
+  color:white;
+
+}
+
+.datatable .row {
+  padding:4px;
+}
+.datatable .row:nth-child(odd){
+  background-color: #F1F1F1;
+
+}
 /*  ////////////////////  MEDIA SMALL  //////////////  */
 @media only screen and (max-width: 767px) {
 

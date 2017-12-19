@@ -1,26 +1,42 @@
 {{#if currentUser}}
-<div id="wrapper" class="homepageWrapper">
+<div id="wrapper" >
   <div id="contentHome" class="" >
     <section id="header">
-          <img class="l_FirstLook" src="../assets/img/L_FirstLook.png">
+           <img class="l_FirstLook" src="../assets/img/L_FirstLook.png">
     </section>
 
 
-<section id="welcome">
+
+<section id="welcome" >
+
       <div  class="container fadein"  >
 
-  <h1>MAGNIFY $75K</h1>
-  <h2>Looking forward to a successful 2018</h2>
-  <p >2018 has plenty in store to capture our clients’ attention: fan-favorite shows and sports that connect emotionally with viewers; college playoffs; March Madness back where it belongs on Turner; the Winter Olympics. With plenty of opportunities for prizes and awards for our top sellers, it’s time to reach beyond the ordinary in 2018.</p>
-  <div class="row">
-    <div class=" col-md-2  " ></div>
-    <div class=" col-md-3" ><p style="text-align:center;">Find out the specifics.</p><br><button class="btn">Learn More</button></div>
-    <div class=" col-md-2 " ></div>
-    <div class=" col-md-3" style=""><p style="text-align:center;">Cut to the chase…literally.</p><br><button class="btn">Go to the Standings</button></div>
-    <div class=" col-lg-2  " ></div>
+  <h1>$510M STRONG</h1>
+  <h2>Setting Our sights on a successful 2018</h2>
+  <p style=" font-size:14px; text-align:justify;">2018 has plenty in store to capture our clients’ attention: fan-favorite shows and sports that connect emotionally with viewers; college playoffs; March Madness back where it belongs on Turner; the Winter Olympics. With plenty of opportunities for prizes and awards for our top sellers, it’s time to reach beyond the ordinary in 2018.</p>
+
+  <div class="row col-sm-12" style="margin-top:20px;">
+
+    <div class=" col-lg-1 " >&nbsp;</div>
+
+    <div class=" col-lg-5" ><p style="text-align:center; font-size:20px; color: #002A4E; padding-top:20px;">Find out the specifics.<br>
+
+        <button class="button btn " {{action "scrollToMessage"}}>Learn More</button>
+
+    </p></div>
+    <div class=" col-lg-5 " style=""><p style="text-align:center;  font-size:20px;  color: #002A4E; padding-top:20px;">Cut to the chase…literally.<br>
+
+      {{#link-to 'firstlook.leaderboard' class="button btn " replace="true"}}
+        <span>Go to the Standings</span>
+      {{/link-to}}
+
+    </p></div>
+    <div class=" col-lg-1 " >&nbsp;</div>
+
   </div>
-  <div class="" >
-<img src="../assets/img/homepage/yourlimits.svg" style="margin:60px;">
+
+  <div class="row col-lg-12" >
+<img src="../assets/img/homepage/dt_quote01.svg" style="">
 </div>
 </div>
 </section>
@@ -28,15 +44,28 @@
 <section id="message">
   <div  class="container fadein"  >
 <div class="row">
-<div class=" col-md-4  " ><img src="../assets/img/homepage/BowenKeith_190x190.png" style="margin:60px;"></div>
-<div class=" col-md-8" style="">
+<div class=" col-lg-4  " >
+
+<div >  <img src="../assets/img/homepage/BowenKeith.png" style=""></div>
+<div style="margin:2.0rem;"> <h4>Keith Bowen </h4><p style="text-align:center;">SVP, Chief Revenue Officer</p></div>
+
+</div>
+<div class=" col-lg-8 " style="">
   <h2>Giving our clients (and our company) the chance to hit it out of the park</h2>
-  <p id="comment">We’re focused on finishing 2017 strong, creating the momentum that will propel our sales teams to a fast start next year.
+  <div id="comment" class="hideContent"><p >We’re focused on finishing 2017 strong, creating the momentum that will propel our sales teams to a fast start next year.
   Quality annuals make First Look essential to our success. We need clients buying at a non-deeply discounted rate, with other benefits determined by market and the spend level of the client. Our clients must move early to secure the best prime programming before their competition beats them to the punch. And our suite of digital products allows them to reach audiences across multiple screens.
   All of the necessary materials and calendars are on myspectrumreach.com to get those conversations started and to become well-versed in First Look 2018.
   2018 has plenty in store to capture our clients’ attention: fan-favorite shows and sports that connect emotionally with viewers; college playoffs; March Madness back where it belongs on Turner. And then we have the Winter Olympics, sure to keep eyes glued to TV content.
   We’re stronger together. It will take all of us to make First Look 2018 another winner. Stay fully engaged in the launch conversations, planning, and execution: let’s enter 2018 positioned for growth and success.
   </p>
+</div>
+<div id="more" class="show" style="float:right;">
+    <div   {{action "showMore"}} style="font-size:1.3rem;"> <img src="../assets/img/leaderboard/show_more.svg" style="height:1.4rem; width:auto;"/></div>
+</div>
+<div id="less" class="hide">
+    <div  {{action "showLess"}} style="font-size:1.3rem;"><img src="../assets/img/leaderboard/show_less.svg" style="height:1.4rem; width:auto;"/></div>
+</div>
+
 
 </div>
 </div>
@@ -48,7 +77,7 @@
   <div  class="container"  >
 <div class="row ">
 
-  <img src="../assets/img/homepage/videostill.jpg" style="width:80%; margin:auto;">
+  <img src="../assets/img/homepage/videostill.jpg" style="width:86%; margin:auto; padding:60px 20px;">
 
 </div>
 </div>
@@ -66,15 +95,16 @@
      <p >Account Executives and Local Sales Managers are eligible to win cash prizes based on their performance in reaching or exceeding their 2018 First Look goal. Field Sales leaders will set goals with approval from Divisional Vice Presidents/RVPs. The criteria used to set your goal will be your 2017 results plus initial growth or decline expectations based on your current market inventory factors. Guardrails will be provided to set appropriate goals within you reach.
  </p>
    </div>
-  <div class=" col-md-2 messageIcon" style=""> <img src="../assets/img/homepage/target.svg" style="padding:0;"></div>
+  <div class=" col-md-2 messageIcon" style=""> <img src="../assets/img/homepage/dt_target.svg" style=""></div>
 </div>
 
 <div class="row">
-  <div class=" col-md-9 offset-md-1  " >
+
+<div class=" col-md-9 offset-md-1  " >
     <h2>Tracking Your Progress</h2>
    <p >Are we on pace to deliver on our commitments for the year? Hitting your budget target gets you in a terrific place to achieve company goals, your personal goals and most importantly, a terrific place to be helping customers achieve their goals. We will be tracking our progress for 6 weeks—January 19th through March 2nd, 2018. </p>
  </div>
-<div class=" col-md-2  messageIcon" style=""> <img src="../assets/img/homepage/meter.svg" style="padding:0;"></div>
+ <div class=" col-md-2  messageIcon" style="float:right;"> <img src="../assets/img/homepage/dt_meter.svg" style=""></div>
 </div>
 
 <div class="row">
@@ -83,7 +113,7 @@
    <p >Similarly to 2017, Account Executives will be placed into 5 budget categories. Prizing will be awarded to Account Executives based on highest percent to goal in each budget category. Also, the top Local Sales Managers— based on percent to goal in each region— will receive $2,000.
    </p>
  </div>
-<div class=" col-md-2  messageIcon" style=""> <img src="../assets/img/homepage/cash.svg" style="padding:0;"></div>
+<div class=" col-md-2  messageIcon" style=""> <img src="../assets/img/homepage/dt_cash.svg" style=""></div>
 </div>
 
 <div class="row placeIcon" style="margin-top:4rem;">
@@ -127,9 +157,11 @@
 </div>
 
 </div>
+</section>
 
+<section style="width:100%; background-color:#003057; margin-top:60px;">
 <div  class="container"  >
-  <div class="row glance">
+  <div class="row glance" >
     <div class=" col-md-4 offset-md-1  " >
       <img src="../assets/img/homepage/ataglance.png" style="padding:0;"><span style="font-size:1.6rem; font-weight:500; padding-left:2.0rem;">Important&nbsp;Dates</span>
    </div>
@@ -151,11 +183,19 @@
 
     <div class="row">
 <div class=" col-md-3  " ></div>
-<div class=" col-md-6 " style=""><p>Find out the specifics.</p><br><button class="btn">Learn More</button></div>
+<div class=" col-md-6 " style=""><p>
+
+  Find out the specifics.<br>
+
+  {{#link-to 'firstlook.rules' class="button btn " replace="true"}}
+    <span>Learn More</span>
+  {{/link-to}}
+
+</p></div>
     </div>
 
     <div class="row ">
-<div class=" col-md-12  " ><img src="../assets/img/homepage/goodluck.svg" /></div>
+<div class=" col-md-12  " style="margin-top:50px;" ><img src="../assets/img/homepage/dt_quote02.svg" /></div>
     </div>
 
   </div>
@@ -167,7 +207,9 @@
 </section>
 
 <section id="stickyFooter">
-<p>Copyright 2018 • Spectrum Reach • All Rights Reserved</p>
+<div class="copyright"><p>Copyright 2018 • Spectrum Reach • All Rights Reserved</p></div>
+ <div class="toTop"><span class="" {{action "scrollToTop"}}>Return to Top <img src="../assets/img/leaderboard/return_top.svg" /></span></div>
+
 </section>
 
 </div>
