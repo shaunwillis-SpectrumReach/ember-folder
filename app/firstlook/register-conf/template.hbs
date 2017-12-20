@@ -4,34 +4,38 @@
           <img class="l_FirstLook" src="/assets/img/L_FirstLook.png">
     </section>
 
-    <div id="" class="graygradient" style="height:100%;min-height:600px;">
+    <div id="" class="graygradient" style="height:87vh !important;min-height:600px;">
 
     <section id="title">
       <h3>Profile Summary</h3>
 
       {{#link-to 'firstlook.register-img'  }}
+      <p><img src="/assets/img/homepage/nav_generic_thumb.svg" width="120"></p>
       <p class="comment">Add an image to your profile </p>
+
       {{/link-to}}
 
       </section>
 
   <section id="profileSummary" style="">
+     <div class="">
     <!--  Note:  need a conditional, if image profile picture exists, file path = foo, else display generic thumbnail. - generic_thumbnail.svg  -->
 
- <!-- <div id="profileSummary">
+ <div id="">
   <p><span class="userItem">Name: </span>{{wizard.userInfo.first}} {{wizard.userInfo.last}}</p>
   <p><span class="userItem">Email: </span>{{wizard.userInfo.email}}</p>
+  <p><span class="userItem">ID: </span>{{wizard.userInfo.pid}} </p>
   <p><span class="userItem">Job Title: </span>{{wizard.userInfo.jobtitle}}</p>
   <p><span class="userItem">Manager: </span>{{wizard.userInfo.managername}}</p>
   <p><span class="userItem">Region: </span>{{wizard.userInfo.region}}</p>
   <p><span class="userItem">Division: </span>{{wizard.userInfo.division}}</p>
 </div>
-<div class="Reg_btn" style="margin-top:40px; ">
+<!-- <div class="Reg_btn" style="margin-top:40px; ">
       {{#link-to 'firstlook.register-thanks' class="SR_btn" name="button" }}Submit{{/link-to}}
 </div> -->
-
+</div>
 <!-- this form submits, but isn't working with Ember data properly. I'm still working on this -->
-<div class="profile">
+<!-- <div class="profile">
    {{#simple-form class="profile" startingValues=wizard.userInfo onsubmit=(action "saveForm") as | formValues |}}
     <!-- {{log formValues}} -->
     <label for="pid" >Employee ID</label>
@@ -54,7 +58,7 @@
       <button type="submit" style="border-radius: 0rem;" class="Reg_btn submit">Submit</button>
     </div>
   {{/simple-form}}
-</div>
+</div> -->
 
   <!-- <form id="final-form" onsubmit={{action "save"}}>
     <span class="userItem">Name: </span>{{input class="form__input" type="text"  value=wizard.userInfo.pid placeholder="P•XXXXXXX"}}<br>

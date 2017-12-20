@@ -15,12 +15,52 @@
     font-family: 'GothamMedium';
     src: url('../assets/fonts/Gotham-Medium.otf');
 }
+@font-face {
+    font-family: 'GothamBold';
+    src: url('../assets/fonts/Gotham-Bold.otf');
+}
 
 /*  ///////////  Top Level Structure  ////////////  */
 html,body {
   padding:0;
   margin:0;
   height: 100%;
+  font-size:14px;
+  line-height:22px;
+  color: #596679;
+  font-family: "Gotham", sans-serif;
+}
+
+h1 {
+  font-size:72px;
+  color: #0099D8;
+  font-family: "GothamBold", sans-serif;
+  text-transform: uppercase;
+
+}
+
+h2 {
+  font-size:36px;
+  color: #003057;
+  font-family: "GothamMedium", sans-serif;
+}
+
+h3 {
+  font-size:20px;
+  color: #003057;
+  font-family: "Gotham", sans-serif;
+}
+
+h4 {
+  font-size:16px;
+  color: #0099D8;
+  font-family: "Gotham", sans-serif;
+}
+p {
+  font-size:14px;
+  color: #596679;
+  font-family: "Gotham", sans-serif;
+
 }
 
 section {
@@ -67,6 +107,7 @@ background: url("../assets/img/arrow-left.svg");
     margin:0;
     border:0;
     font-family: "Gotham", "Arial", sans-serif;
+    // font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     text-align: center;
 
@@ -154,17 +195,6 @@ a {
   color:#fff;
 }
 
-p {
-  font-size: 16px;
-}
-h3 {
-  font-family: "Gotham", "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  text-align: center;
-  padding:0.8rem;
-
-}
 .btn {
   margin-top:1.2rem;
   border-radius: 0;
@@ -206,6 +236,7 @@ h3 {
 /*  ///////////  elements  ////////////  */
 form input, form select, btn{
   font-family: "Gotham", "Arial", sans-serif;
+  //font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   text-align: center;
   border-radius: 0;
@@ -344,17 +375,25 @@ font-size: 16px;
 
 .comment {
   font-family: "Gotham", "Arial", sans-serif;
+  //font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   text-align: center;
   color:#0099D8;
 
 }
 #profileSummary {
-  text-align: center;
-  line-height: 0.4rem;
-  font-family: "Gotham", "Arial", sans-serif;
+  text-align: left;
+  line-height: 0.7rem;
+   font-family: "Gotham", "Arial", sans-serif;
+  //font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-
+  margin:auto;
+  width:50vmin;
+  max-width:260px;
+}
+#profileSummary img {
+  text-align: center;
+  margin:auto;
 }
 
 #profileImg {
@@ -392,10 +431,11 @@ font-size: 16px;
   margin:auto;
 }
 #thanks h2 {
-  font-family: "Gotham", "Arial", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  color:#0099D8;
+   // font-family: "Gotham", "Arial", sans-serif;
+  // font-family: 'Open Sans', sans-serif;
+  // font-size: 24px;
+  // font-weight: 500;
+  // color:#0099D8;
 }
 /* //////////  header items  /////////  */
 #contentReg  #header  {
@@ -532,6 +572,17 @@ height:24px;
     0%   {padding-left:96%;}
     100% {padding-left:65%;}
 }
+#rules {
+  margin: 12px 0 60px 0;
+}
+
+#rules p {
+  padding: 12px;
+  color:#003057;
+
+}
+
+
 /*  ////////////////////  logo bottom right corner  //////////////  */
 #uploadBox {
   border:1px solid #0099D8;

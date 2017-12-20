@@ -9,7 +9,8 @@
 }
 
 #comapnyGoal {
-  font-family: "Gotham";
+   font-family: "Gotham";
+  // font-family: 'Open Sans', sans-serif;
 
   /* Rectangle 5 Copy 2: */
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0099d8+0,40afdd+100 */
@@ -25,7 +26,9 @@
  h4 {
   font-size: 1.6rem;
   padding:8px 0 0 0;
-  font-family: "GothamMedium";
+   font-family: "GothamMedium";
+  // font-family: 'Open Sans', sans-serif;
+  // font-weight:500;
 
 }
 
@@ -34,16 +37,40 @@
 }
 #comapnyGoal  .progress-bar {
   background-color:#003357;
+  /* Rectangle 3: */
+background-image: linear-gradient(-90deg, #125993 0%, #003057 98%);
+background: #003057; /* Old browsers */
+background: -moz-linear-gradient(-90deg,  #125993 0%, #003057 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-90deg,  #125993 0%,#003057 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(90deg,  #125993 0%,#003057 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#125993', endColorstr='#003057',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 
 #personalNumbers {
 padding:40px 0;
 }
 
+#personalNumbers  .progress-bar {
+  background-color:#0099d8;
+  /* Rectangle 3: */
+background-image: linear-gradient(-90deg, #00C9EE 0%, #0099d8 98%);
+background: #003057; /* Old browsers */
+background: -moz-linear-gradient(-90deg,  #00C9EE 0%, #0099d8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-90deg,  #00C9EE 0%,#0099d8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(90deg,  #00C9EE 0%,#0099d8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00C9EE', endColorstr='#0099d8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+
+
 #personalNumbers h3 {
   font-size: 2.0rem;
   margin: 0;
-  font-family: "GothamMedium";
+   font-family: "GothamMedium";
+  // font-family: 'Open Sans', sans-serif;
+  // font-weight:500;
   padding:8px 0 0 0;
 }
 
@@ -51,8 +78,39 @@ padding:40px 0;
   font-size: 1.2rem;
   margin: 0;
   font-family: "GothamMedium";
+  // font-family: 'Open Sans', sans-serif;
+  // font-weight:500;
   padding:8px 0 0 0;
 }
+#personalNumbers .image2nd {
+float:left;
+background: url("/assets/img/leaderboard/image-rect-with-cutout.png");
+background-repeat: no-repeat;
+background-position: top left;
+background-size:132px;
+margin:0;
+padding:0;
+width:240px;
+height:126px;
+}
+#personalNumbers .rank {
+float:left;
+text-align: center;
+width:100px;
+margin:0;
+padding:0;
+color:white;
+font-size:16px;
+font-weight:600;
+margin-top:45px;
+}
+
+#personalNumbers .image2nd img {
+clip-path: circle(60px at center);
+width:60%;
+height:auto;
+margin-top:-80px;
+margin-left:90px;}
 
 #leadingNumbers {
 padding:30px 0;
@@ -61,9 +119,21 @@ padding:30px 0;
 #leadingNumbers h1 {
   font-size: 3.4rem;
   margin: 0;
-  font-family: "GothamMedium";
+   font-family: "GothamMedium";
+  // font-family: 'Open Sans', sans-serif;
+  // font-weight:500;
   padding:0 0 0 10px;
   color:#0099D8;
+}
+#leadingNumbers  .footnote {
+  font-size:11px;
+  text-align: left;
+  padding:0 0 0 60px;
+
+}
+.eliteGroup {
+  padding:40px 0;
+
 }
 .eliteNav img {
   margin:0;
@@ -71,6 +141,82 @@ padding:30px 0;
   margin-right:-5px;
   padding:0;
 }
+.eliteGroup .image1st {
+float:left;
+background: url("/assets/img/leaderboard/1st_triangle.svg");
+background-repeat: no-repeat;
+background-position: top left;
+background-size:80px;
+margin:0;
+padding:0;
+
+}
+.eliteGroup .image1st img {
+clip-path: circle(118px at center);
+width:100%;
+height:auto;
+margin-top:-6px;
+margin-left:-4px;
+}
+
+.eliteGroup .image2nd {
+float:left;
+background: url("/assets/img/leaderboard/2nd_triangle.svg");
+background-repeat: no-repeat;
+background-position: top left;
+background-size:55px;
+margin:0;
+padding:0;
+
+}
+.eliteGroup .image2nd img {
+clip-path: circle(70px at center);
+width:100%;
+height:auto;
+margin-top:-6px;
+margin-left:-4px;
+}
+
+.eliteGroup .img3rd {
+background: url("/assets/img/leaderboard/3rd_triangle.svg");
+background-repeat: no-repeat;
+background-position: top left;
+background-size:55px;
+margin:0;
+padding:0;
+}
+
+.eliteGroup .img4th {
+background: url("/assets/img/leaderboard/4th_triangle.svg");
+background-repeat: no-repeat;
+background-position: top left;
+background-size:55px;
+margin:0;
+padding:0;
+}
+.eliteGroup .img5th {
+background: url("/assets/img/leaderboard/5th_triangle.svg");
+background-repeat: no-repeat;
+background-position: top left;
+background-size:55px;
+margin:0;
+padding:0;
+}
+
+.eliteGroup .eliteDatum {
+  clear:both;
+  padding-top:10px;
+}
+
+.eliteGroup .eliteDatum2 {
+  padding-top:30px;
+}
+
+
+#leadingNumbers {
+padding:30px 0;
+}
+
 #standings {
   margin:30px 0;
 }
@@ -80,14 +226,18 @@ padding:30px 0;
 .filter {
   font-size: 1.4rem;
   margin: 12px;
-  font-family: "GothamMedium";
+   font-family: "GothamMedium";
+  // font-family: 'Open Sans', sans-serif;
+  // font-weight:500;
   color:#003057;
 }
 
 .filters {
   font-size: 1.4rem;
   margin: 12px 0;
-  font-family: "GothamMedium";
+   font-family: "GothamMedium";
+  // font-family: 'Open Sans', sans-serif;
+  // font-weight:500;
   color:#0099D8;
   text-align:left;
 }
@@ -105,7 +255,9 @@ padding:30px 0;
 #standings h1 {
   font-size: 3.4rem;
   margin: 0;
-  font-family: "GothamMedium";
+   font-family: "GothamMedium";
+  // font-family: 'Open Sans', sans-serif;
+  // font-weight:500;
   padding:0 0 0 10px;
   color:#0099D8;
   text-align:left;
@@ -157,6 +309,33 @@ padding:30px 0;
   }
   .standingProgress {
     display:none;
+  }
+
+
+  .eliteGroup .image1st {
+  float:none;
+  margin:0 auto;
+
+  }
+
+  .eliteGroup .image2nd {
+    float:none;
+    margin:0 auto;
+
+  }
+
+  .eliteGroup .img3rd {
+    float:none;
+    margin:0 auto;
+  }
+
+  .eliteGroup .img4th {
+    float:none;
+    margin:0 auto;
+  }
+  .eliteGroup .img5th {
+    float:none;
+    margin:0 auto;
   }
 
 }
