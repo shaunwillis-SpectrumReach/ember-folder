@@ -1,11 +1,11 @@
 <div class="row" >
   <div class="col-lg-6"><h1>LEADERBOARD</h1><p class="footnote">* Ranking is based on % to budget</p></div>
   <div class="col-lg-6 eliteNav" style="">
-    <img src="/assets/img/leaderboard/01_section.png" />
-    {{#link-to 'firstlook.leaderboard.elite-ae1m' replace="true"}}<img src="/assets/img/leaderboard/02_tab.png" />{{/link-to}}
-    {{#link-to 'firstlook.leaderboard.elite-ae700k' replace="true"}}<img src="/assets/img/leaderboard/03_tab.png" />{{/link-to}}
-    {{#link-to 'firstlook.leaderboard.elite-ae450k' replace="true"}}<img src="/assets/img/leaderboard/04_tab.png" />{{/link-to}}
-    {{#link-to 'firstlook.leaderboard.elite-ae400k' replace="true"}}<img src="/assets/img/leaderboard/05_tab.png" />{{/link-to}}
+    <img src="/assets/img/leaderboard/01_section.svg" />
+    {{#link-to 'firstlook.leaderboard.elite-ae1m' replace="true"}}<img src="/assets/img/leaderboard/02_tab.svg" />{{/link-to}}
+    {{#link-to 'firstlook.leaderboard.elite-ae700k' replace="true"}}<img src="/assets/img/leaderboard/03_tab.svg" />{{/link-to}}
+    {{#link-to 'firstlook.leaderboard.elite-ae450k' replace="true"}}<img src="/assets/img/leaderboard/04_tab.svg" />{{/link-to}}
+    {{#link-to 'firstlook.leaderboard.elite-ae400k' replace="true"}}<img src="/assets/img/leaderboard/05_tab.svg" />{{/link-to}}
 
 
   </div>
@@ -25,7 +25,42 @@
     </div>
   </div>
 
-  <!--  ////////  END   /////////  -->
+  <!--  /////////  CIRCLE PROGRESS BAR:  https://bootsnipp.com/snippets/featured/circle-progress-bar (renamed progress to progress-l here and in CSS to avoid conflit with  linear progress bar )  //////  -->
+
+  <div class="container" style="margin-top:-345px;">
+      <div class="row" >
+
+        <div id="percent2">30%</div>
+
+  <style>
+  /* to set animation  */
+  .progress-l .progress-l-right .progress-l-bar{
+    animation: loading-4 1.8s linear forwards;
+    /* set: (1=10%; 2=20%; 3=25%; 4=30%  5=40%; 6=50%;  NOTE: set to 6 if more than 50 and add numbers below */
+  }
+  .progress-l.blue .progress-l-left .progress-l-bar {
+    /* animation: loading-6 1.5s linear forwards 1.8s; */
+    /* set: (1=60%;  2=70%; 3=75%; 4=80% 5=90%; 6=100%;   */
+  }
+  </style>
+
+          <div class="col-md-3 col-sm-6" style="margin-left:-264px; ">
+              <div class="progress-l blue">
+                  <span class="progress-l-left">
+                      <span class="progress-l-bar"></span>
+                  </span>
+                  <span class="progress-l-right">
+                      <span class="progress-l-bar"></span>
+                  </span>
+                  <!-- <div class="progress-l-value"></div> -->
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- /////////////   END CIRCLE  /////////////  -->
+
+
+  <!--  ////////  END  First Place  /////////  -->
 
 </div >
 

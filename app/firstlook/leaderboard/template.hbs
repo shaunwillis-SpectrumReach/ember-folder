@@ -13,13 +13,13 @@
 
     	      <div class="col-sm-12" >
 
-    	 	 <div style="float:left;"><h4 style="color:#003057;">COMPANY-WIDE GOAL</h4></div>   <div style="float:right;"><h4>50% </h4></div>
+    	 	 <div style="float:left;"><h2 style="color:#003057;">COMPANY-WIDE GOAL</h2></div>   <div style="float:right; color:#fff;"><h2 style="color:#fff;">50.0% </h2></div>
           <div class="progress" style="clear:both; background-color:white; border:1px solid #003057;">
-            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style=" width:50%">
+            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style=" width:50%; ">
               <!-- <span class="">70% </span> -->
             </div>
           </div>
-          <div style="float:left;"><h4>2018 GOAL</h4></div>   <div style="float:right;"><h4 style="color:#003057;">$255,000,000/$510,000,000 </h4></div>
+          <div style="float:left; margin-top:10px"><h2 style="color:#fff;">2018 GOAL</h2></div>   <div style="float:right;margin-top:10px"><h2 style="color:#003057;">$255,000,000/$510,000,000 </h2></div>
 
     	 </div>
 
@@ -33,28 +33,65 @@
       <div  class="container "  >
     <div class="row" >
 
-    	     <div class="col-md-12 col-lg-5" >
+    	     <div class="col-md-12 col-lg-6" >
              <div class=" "  style="text-align:left; ">
                <div class="image2nd" >
                  <div class="rank">#125</div><img src="/assets/img/leaderboard/2nd-5th_place.png"   >
+
+
+<!--  /////////  CIRCLE PROGRESS BAR:  https://bootsnipp.com/snippets/featured/circle-progress-bar (renamed progress to progress-c here and in CSS to avoid conflit with  linear progress bar )  //////  -->
+
+<div class="container" style="margin-top:-135px; ">
+    <div class="row" >
+
+      <div id="percent">70%</div>
+
+<style>
+/* to set animation  */
+.progress-c .progress-c-right .progress-c-bar{
+  animation: loading-6 1.8s linear forwards;
+  /* set: (1=10%; 2=20%; 3=25%; 4=30%  5=40%; 6=50%;  NOTE: set to 5 is more than 50 and add numbers below */
+}
+.progress-c.blue .progress-c-left .progress-c-bar {
+  animation: loading-2 1.5s linear forwards 1.8s;
+  /* set: (1=60%;  2=70%; 3=75%; 4=80% 5=90%; 6=100%;   */
+}
+</style>
+
+        <div class="col-md-3 col-sm-6" style="margin-left:-16px;">
+            <div class="progress-c blue">
+                <span class="progress-c-left">
+                    <span class="progress-c-bar"></span>
+                </span>
+                <span class="progress-c-right">
+                    <span class="progress-c-bar"></span>
+                </span>
+                <!-- <div class="progress-c-value"></div> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /////////////   END CIRCLE  /////////////  -->
                </div>
 
              <div style=" ">
-               <h5>Jane Smith</h5><h5 class="ltBlue">P123456</h5>
-               <span class="ltBlue">Manager</span> Robert Johnson<br> <span class="ltBlue">Division</span> Pacific West<br> <span class="ltBlue">Region</span> Los Angeles
+               <h2>Jane Smith</h2><h2 class="ltBlue">P123456</h2>
+               <div style="font-size:14px; line-height:22px;">
+                 <span class="ltBlue">Manager</span> Robert Johnson<br> <span class="ltBlue">Division</span> Pacific West<br> <span class="ltBlue">Region</span> Los Angeles
+               </div>
              </div>
 
              </div>
            </div >
 
-    	  <div class=" col-md-12 col-lg-7" >
-    	 	 <div style="float:left;"><h4 style="color:#003057;">&nbsp;</h4></div>   <div class="ltBlue" style="float:right;"><h3>50% </h3></div>
+    	  <div class=" col-md-12 col-lg-6" >
+    	 	 <div style="float:left;"><h2 style="color:#003057;">&nbsp;</h2></div>   <div  style="float:right;"><h2 class="ltBlue">50.0% </h2></div>
           <div class="progress" style="clear:both; background-color:white; border:1px solid #0099D8;">
             <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style=" width:50%; ">
               <!-- <span class="">70% </span> -->
             </div>
           </div>
-          <div style="float:left;"><h4>&nbsp;</h4></div>   <div style="float:right;"><h3 style="color:#003057;">$255,000/$510,000 </h3></div>
+          <div style="float:left; margin-top:10px;"><h2>&nbsp;</h2></div>   <div style="float:right; margin-top:10px;"><h2 style="color:#003057;">$255,000/$510,000 </h2></div>
     	 </div>
 
 
@@ -86,15 +123,42 @@
     </div>
 
     <div class="row hide" id="Filters" >
-    <div class="col-lg-12 filters " ><span class="active">All</span>  Category  Division  Region  Manager  AE Name</div>
+    <div class="col-lg-12 filters " ><div class="filterBtn active" {{action "showAll"}} >All</div><div class="filterBtn" {{action "showCategory"}}>Category</div><div class="filterBtn" {{action "showDivision"}}>Division</div><div class="filterBtn" {{action "showRegion"}}>Region</div><div class="filterBtn" {{action "showManager"}}>Manager</div><div class="filterBtn" {{action "showAE"}}>AE Name</div></div>
+        <div id="filterCategory" class="row hide" >
+            <div class="filterOptions">
+              <ul><li>1.5m+</li><li>1.0m-1.49m</li><li>700k-999k</li><li>450k-699k</li><li>499k-under</li></ul>
+            </div>
+        </div>
+        <div id="filterDivisions" class="row  hide" >
+            <div class="filterOptions">
+              <ul><li>Northeast</li><li>Northwest</li><li>Southeast</li><li>West</li></ul>
+            </div>
+        </div>
+
+        <div id="filterRegions" class="row  hide" >
+            <div class="filterOptions">
+              <ul><li>Carolinas</li><li>Florida</li><li>LA</li><li>MidNorth</li><li>Midwest</li><li>Mountain States</li><li>New York</li><li>Ohio</li><li>Pacific States</li><li>Southeast</li><li>Texas</li><li>Upstate NY - ME</li></ul>
+            </div>
+        </div>
+
+        <div id="filterManagers" class="row  hide" >
+            <div class="filterOptions">
+              <ul><li>All Managers - otherwise, use search</li></ul>
+            </div>
+        </div>
+
+        <div id="filterAEs" class="row  hide" >
+            <div class="filterOptions">
+              <ul><li>All AEs - otherwise, use search</li></ul>
+            </div>
+        </div>
+
     </div>
 
   </div>
 
 </section>
 
-<!--  IGNORE THIS - TESSTING  -->  <!-- <div class="col-lg-1"><span class="" style="z-index:1000; float:right; background-color:#0099D8;" {{action "resetList"}}><img src="/assets/img/leaderboard/return_top.svg" /></span></div>
--->
 <section id="AElist" class="" style="">
 
 <!--   ================================   -->
@@ -113,7 +177,7 @@
         <div class="col-sm-1">Region</div>
         <div class="col-sm-3 standingProgress ">Progress</div>
         <div class="col-sm-1">%</div>
-        <div class="col-sm-1"><span class="" style="z-index:1000;" {{action "resetList"}}><img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+        <div class="col-sm-1"><span class="" style="z-index:10000;" {{action "resetList"}}><img src="/assets/img/leaderboard/return_top.svg" /></span></div>
     </div>
 </div>
 </div>
@@ -236,6 +300,87 @@
         <div class="col-sm-1">&nbsp;</div>
     </div>
 
+    <div class="row" >
+      <div class="col-sm-1">8</div>
+      <div class="col-sm-1">Image</div>
+        <div class="col-sm-2">AE Name</div>
+        <div class="col-sm-1">Manager</div>
+        <div class="col-sm-1">Division</div>
+        <div class="col-sm-1">Region</div>
+        <div class="col-sm-3 standingProgress">
+          <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
+            <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; ">
+              <!-- <span class="">70% </span> -->
+            </div>
+          </div></div>        <div class="col-sm-1">%</div>
+        <div class="col-sm-1">&nbsp;</div>
+    </div>
+
+    <div class="row" >
+      <div class="col-sm-1">9</div>
+      <div class="col-sm-1">Image</div>
+        <div class="col-sm-2">AE Name</div>
+        <div class="col-sm-1">Manager</div>
+        <div class="col-sm-1">Division</div>
+        <div class="col-sm-1">Region</div>
+        <div class="col-sm-3 standingProgress">
+          <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
+            <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; ">
+              <!-- <span class="">70% </span> -->
+            </div>
+          </div></div>        <div class="col-sm-1">%</div>
+        <div class="col-sm-1">&nbsp;</div>
+    </div>
+
+    <div class="row" >
+      <div class="col-sm-1">10</div>
+      <div class="col-sm-1">Image</div>
+        <div class="col-sm-2">AE Name</div>
+        <div class="col-sm-1">Manager</div>
+        <div class="col-sm-1">Division</div>
+        <div class="col-sm-1">Region</div>
+        <div class="col-sm-3 standingProgress">
+          <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
+            <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; ">
+              <!-- <span class="">70% </span> -->
+            </div>
+          </div></div>        <div class="col-sm-1">%</div>
+        <div class="col-sm-1">&nbsp;</div>
+    </div>
+
+    <div class="row" >
+      <div class="col-sm-1">11</div>
+      <div class="col-sm-1">Image</div>
+        <div class="col-sm-2">AE Name</div>
+        <div class="col-sm-1">Manager</div>
+        <div class="col-sm-1">Division</div>
+        <div class="col-sm-1">Region</div>
+        <div class="col-sm-3 standingProgress">
+          <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
+            <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; ">
+              <!-- <span class="">70% </span> -->
+            </div>
+          </div></div>        <div class="col-sm-1">%</div>
+        <div class="col-sm-1">&nbsp;</div>
+    </div>
+
+    <div class="row" >
+      <div class="col-sm-1">12</div>
+      <div class="col-sm-1">Image</div>
+        <div class="col-sm-2">AE Name</div>
+        <div class="col-sm-1">Manager</div>
+        <div class="col-sm-1">Division</div>
+        <div class="col-sm-1">Region</div>
+        <div class="col-sm-3 standingProgress">
+          <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
+            <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; ">
+              <!-- <span class="">70% </span> -->
+            </div>
+          </div></div>        <div class="col-sm-1">%</div>
+        <div class="col-sm-1">&nbsp;</div>
+    </div>
+
+
     <!--   ================================   -->
     <!--  END OF DATA   -->
     <!--   ================================   -->
@@ -252,7 +397,7 @@
 
 <section id="stickyFooter">
 <div class="copyright"><p>Copyright 2018 • Spectrum Reach • All Rights Reserved</p></div>
- <div class="toTop"><span class="" {{action "scrollToTop"}}>Return to Top <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+ <div class="toTop"><span class="" {{action "scrollToTop"}}><span style="color:#fff;">Return to Top</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
 
 </section>
 
