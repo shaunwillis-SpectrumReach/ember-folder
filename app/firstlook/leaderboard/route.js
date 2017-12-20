@@ -12,7 +12,7 @@ export default Route.extend({
 
     resetList() {
       // document.getElementById('message').scrollIntoView();
-      $('#datatable').scrollTop();
+      $("#datatable").animate({ scrollTop: 0 }, "slow");
     },
     showFilters() {
       // document.getElementById('message').scrollIntoView();
@@ -25,6 +25,62 @@ export default Route.extend({
       $('#Filters').addClass('hide');
       $('#showFilter').removeClass('hide');
       $('#hideFilter').addClass('hide');
+    },
+    showCategory() {
+      // document.getElementById('message').scrollIntoView();
+      $('#filterCategory').removeClass('hide');
+      $('#filterDivisions').addClass('hide');
+      $('#filterRegions').addClass('hide');
+      $('#filterManagers').addClass('hide');
+      $('#filterAEs').addClass('hide');
+    },
+    showDivision() {
+      // document.getElementById('message').scrollIntoView();
+      $('#filterCategory').addClass('hide');
+      $('#filterDivisions').removeClass('hide');
+      $('#filterRegions').addClass('hide');
+      $('#filterManagers').addClass('hide');
+      $('#filterAEs').addClass('hide');
+    },
+
+    showRegion() {
+      // document.getElementById('message').scrollIntoView();
+      $('#filterCategory').addClass('hide');
+      $('#filterDivisions').addClass('hide');
+      $('#filterRegions').removeClass('hide');
+      $('#filterManagers').addClass('hide');
+      $('#filterAEs').addClass('hide');
+    },
+
+    showManager() {
+      // document.getElementById('message').scrollIntoView();
+      $('#filterCategory').addClass('hide');
+      $('#filterDivisions').addClass('hide');
+      $('#filterRegions').addClass('hide');
+      $('#filterManagers').removeClass('hide');
+      $('#filterAEs').addClass('hide');
+    },
+
+    showAE() {
+      // document.getElementById('message').scrollIntoView();
+      $('#filterCategory').addClass('hide');
+      $('#filterDivisions').addClass('hide');
+      $('#filterRegions').addClass('hide');
+      $('#filterManagers').addClass('hide');
+      $('#filterAEs').removeClass('hide');
+    },
+    showAll() {
+      // document.getElementById('message').scrollIntoView();
+      $('#filterCategory').addClass('hide');
+      $('#filterDivisions').addClass('hide');
+      $('#filterRegions').addClass('hide');
+      $('#filterManagers').addClass('hide');
+      $('#filterAEs').addClass('hide');
+
+      $('#Filters').addClass('hide');
+      $('#showFilter').removeClass('hide');
+      $('#hideFilter').addClass('hide');
+
     },
 
   },
