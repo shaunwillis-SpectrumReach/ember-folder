@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="45px" height="34px" viewBox="0 0 45 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="47px" height="36px" viewBox="0 0 47 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
-    <title>Overview</title>
+    <title>overview</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="overview" transform="translate(-1.000000, -1.000000)">
+        <g id="overview">
             <g id="Overview" transform="translate(1.000000, 1.000000)">
                 <g id="overview" transform="translate(0.000000, 8.058824)">
                     <path d="M3.01736414e-12,12.5 C4.36607291,5.04888172 12.8053111,3.55271368e-15 22.5,3.55271368e-15 C32.1946889,3.55271368e-15 40.6339271,5.04888172 45,12.5 C40.6339271,19.9511183 32.1946889,25 22.5,25 C12.8053111,25 4.36607291,19.9511183 -2.58215671e-12,12.5 Z" id="Combined-Shape" fill="#FFFFFF"></path>

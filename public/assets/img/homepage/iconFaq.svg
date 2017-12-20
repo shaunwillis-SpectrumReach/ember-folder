@@ -9,7 +9,7 @@
             <g id="FAQ" transform="translate(3.000000, 1.000000)">
                 <circle id="Oval-2" fill="#FFFFFF" cx="20.5" cy="20.5" r="20.5"></circle>
                 <text id="?" font-family="Gotham-Bold, Gotham" font-size="36" font-weight="bold" fill="#0099D8">
-                    <tspan x="11.708" y="39">?</tspan>
+                    <tspan x="11.708" y="34">?</tspan>
                 </text>
             </g>
         </g>
