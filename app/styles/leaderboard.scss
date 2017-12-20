@@ -87,7 +87,7 @@ float:left;
 background: url("/assets/img/leaderboard/image-rect-with-cutout.png");
 background-repeat: no-repeat;
 background-position: top left;
-background-size:55%;
+background-size:132px;
 margin:0;
 padding:0;
 width:240px;
@@ -125,23 +125,96 @@ padding:30px 0;
   padding:0 0 0 10px;
   color:#0099D8;
 }
+#leadingNumbers  .footnote {
+  font-size:11px;
+  text-align: left;
+  padding:0 0 0 60px;
+
+}
+.eliteGroup {
+  padding:40px 0;
+
+}
 .eliteNav img {
   margin:0;
   margin-top:2px;
   margin-right:-5px;
   padding:0;
 }
-#leadingNumbers .image2nd {
+.eliteGroup .image1st {
 float:left;
-background: url("/assets/img/leaderboard/Corner-2nd.png");
+background: url("/assets/img/leaderboard/1st_triangle.svg");
 background-repeat: no-repeat;
 background-position: top left;
-background-size:36%;
+background-size:80px;
+margin:0;
+padding:0;
+
 }
- #leadingNumbers .image2nd img {
-margin-right:16px;
-width:120px;
-clip-path: circle(60px at center);
+.eliteGroup .image1st img {
+clip-path: circle(118px at center);
+width:100%;
+height:auto;
+margin-top:-6px;
+margin-left:-4px;
+}
+
+.eliteGroup .image2nd {
+float:left;
+background: url("/assets/img/leaderboard/2nd_triangle.svg");
+background-repeat: no-repeat;
+background-position: top left;
+background-size:55px;
+margin:0;
+padding:0;
+
+}
+.eliteGroup .image2nd img {
+clip-path: circle(70px at center);
+width:100%;
+height:auto;
+margin-top:-6px;
+margin-left:-4px;
+}
+
+.eliteGroup .img3rd {
+background: url("/assets/img/leaderboard/3rd_triangle.svg");
+background-repeat: no-repeat;
+background-position: top left;
+background-size:55px;
+margin:0;
+padding:0;
+}
+
+.eliteGroup .img4th {
+background: url("/assets/img/leaderboard/4th_triangle.svg");
+background-repeat: no-repeat;
+background-position: top left;
+background-size:55px;
+margin:0;
+padding:0;
+}
+.eliteGroup .img5th {
+background: url("/assets/img/leaderboard/5th_triangle.svg");
+background-repeat: no-repeat;
+background-position: top left;
+background-size:55px;
+margin:0;
+padding:0;
+}
+
+.eliteGroup .eliteDatum {
+  clear:both;
+  padding-top:10px;
+}
+
+.eliteGroup .eliteDatum2 {
+  padding-top:30px;
+}
+
+
+#leadingNumbers {
+padding:30px 0;
 }
 
 #standings {
@@ -236,6 +309,33 @@ clip-path: circle(60px at center);
   }
   .standingProgress {
     display:none;
+  }
+
+
+  .eliteGroup .image1st {
+  float:none;
+  margin:0 auto;
+
+  }
+
+  .eliteGroup .image2nd {
+    float:none;
+    margin:0 auto;
+
+  }
+
+  .eliteGroup .img3rd {
+    float:none;
+    margin:0 auto;
+  }
+
+  .eliteGroup .img4th {
+    float:none;
+    margin:0 auto;
+  }
+  .eliteGroup .img5th {
+    float:none;
+    margin:0 auto;
   }
 
 }
