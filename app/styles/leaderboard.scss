@@ -9,9 +9,6 @@
 }
 
 #comapnyGoal {
-   font-family: "Gotham";
-  // font-family: 'Open Sans', sans-serif;
-
   /* Rectangle 5 Copy 2: */
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0099d8+0,40afdd+100 */
   background: #0099d8; /* Old browsers */
@@ -24,9 +21,9 @@
   padding:20px 0;
 }
  h4 {
-  font-size: 1.6rem;
-  padding:8px 0 0 0;
-   font-family: "GothamMedium";
+  // font-size: 1.6rem;
+  // padding:8px 0 0 0;
+  //  font-family: "GothamMedium";
   // font-family: 'Open Sans', sans-serif;
   // font-weight:500;
 
@@ -66,9 +63,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00C9EE', end
 
 
 #personalNumbers h3 {
-  font-size: 2.0rem;
-  margin: 0;
-   font-family: "GothamMedium";
+  // font-size: 2.0rem;
+  // margin: 0;
+  //  font-family: "GothamMedium";
   // font-family: 'Open Sans', sans-serif;
   // font-weight:500;
   padding:8px 0 0 0;
@@ -88,10 +85,10 @@ background: url("/assets/img/leaderboard/image-rect-with-cutout.png");
 background-repeat: no-repeat;
 background-position: top left;
 background-size:132px;
-margin:0;
+margin:30px 0;
 padding:0;
 width:240px;
-height:126px;
+height:160px;
 }
 #personalNumbers .rank {
 float:left;
@@ -100,7 +97,7 @@ width:100px;
 margin:0;
 padding:0;
 color:white;
-font-size:16px;
+font-size:24px;
 font-weight:600;
 margin-top:45px;
 }
@@ -110,25 +107,25 @@ clip-path: circle(60px at center);
 width:60%;
 height:auto;
 margin-top:-80px;
-margin-left:90px;}
+margin-left:94px;}
 
 #leadingNumbers {
 padding:30px 0;
 }
 
 #leadingNumbers h1 {
-  font-size: 3.4rem;
-  margin: 0;
-   font-family: "GothamMedium";
+  // font-size: 3.4rem;
+  // margin: 0;
+  //  font-family: "GothamMedium";
   // font-family: 'Open Sans', sans-serif;
   // font-weight:500;
-  padding:0 0 0 10px;
+  padding:0 0 0 0px;
   color:#0099D8;
 }
 #leadingNumbers  .footnote {
   font-size:11px;
   text-align: left;
-  padding:0 0 0 60px;
+  padding:0 0 0 0px;
 
 }
 .eliteGroup {
@@ -220,6 +217,18 @@ padding:30px 0;
 #standings {
   margin:30px 0;
 }
+
+#standings h1 {
+  // font-size: 3.4rem;
+  // margin: 0;
+  //  font-family: "GothamMedium";
+  // font-family: 'Open Sans', sans-serif;
+  // font-weight:500;
+  padding:0 0 0 10px;
+  color:#0099D8;
+  text-align:left;
+}
+
 .standingProgress {
 
 }
@@ -234,7 +243,7 @@ padding:30px 0;
 
 .filters {
   font-size: 1.4rem;
-  margin: 12px 0;
+  margin: 10px 0;
    font-family: "GothamMedium";
   // font-family: 'Open Sans', sans-serif;
   // font-weight:500;
@@ -252,16 +261,6 @@ padding:30px 0;
 /* Internet Explorer */ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation1);
 }
 
-#standings h1 {
-  font-size: 3.4rem;
-  margin: 0;
-   font-family: "GothamMedium";
-  // font-family: 'Open Sans', sans-serif;
-  // font-weight:500;
-  padding:0 0 0 10px;
-  color:#0099D8;
-  text-align:left;
-}
 
 .copyright {
   float:left;
