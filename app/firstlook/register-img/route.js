@@ -10,12 +10,15 @@ export default Route.extend({
     else if (params.queryParams.cat=="right") {
       console.log(params.queryParams.cat);
       }
-    }
-       // this.replaceWith('firstlook.login');
+    };
+
+    $('#burger').removeClass('hide');
+
   },
   model() {
     return this.store.peekAll('upload');
-  }
+  },
+
 
 
 });

@@ -1,6 +1,6 @@
 <div id="wrapper" class="homepageWrapper">
   <div id="contentHome" class="" >
-    <section id="header">
+    <section id="header" >
       <div class="userNameTop">Welcome, Jane</div>
           <img class="l_FirstLook" src="/assets/img/L_FirstLook.png" >
     </section>
@@ -35,48 +35,14 @@
 
     	     <div class="col-md-12 col-lg-6" >
              <div class=" "  style="text-align:left; ">
-               <div class="image2nd" >
-                 <div class="rank">#125</div><img src="/assets/img/leaderboard/2nd-5th_place.png"   >
+               <div class="image2nd " >
+                 <div class="rank ">#125</div><img src="/assets/img/leaderboard/2nd-5th_place.png"   >
 
-
-<!--  /////////  CIRCLE PROGRESS BAR:  https://bootsnipp.com/snippets/featured/circle-progress-bar (renamed progress to progress-c here and in CSS to avoid conflit with  linear progress bar )  //////  -->
-
-<div class="container" style="margin-top:-135px; ">
-    <div class="row" >
-
-      <div id="percent">70%</div>
-
-<style>
-/* to set animation  */
-.progress-c .progress-c-right .progress-c-bar{
-  animation: loading-6 1.8s linear forwards;
-  /* set: (1=10%; 2=20%; 3=25%; 4=30%  5=40%; 6=50%;  NOTE: set to 5 is more than 50 and add numbers below */
-}
-.progress-c.blue .progress-c-left .progress-c-bar {
-  animation: loading-2 1.5s linear forwards 1.8s;
-  /* set: (1=60%;  2=70%; 3=75%; 4=80% 5=90%; 6=100%;   */
-}
-</style>
-
-        <div class="col-md-3 col-sm-6" style="margin-left:-16px;">
-            <div class="progress-c blue">
-                <span class="progress-c-left">
-                    <span class="progress-c-bar"></span>
-                </span>
-                <span class="progress-c-right">
-                    <span class="progress-c-bar"></span>
-                </span>
-                <!-- <div class="progress-c-value"></div> -->
-            </div>
-        </div>
-    </div>
-</div>
-<!-- /////////////   END CIRCLE  /////////////  -->
                </div>
 
              <div style=" ">
-               <h2>Jane Smith</h2><h2 class="ltBlue">P123456</h2>
-               <div style="font-size:14px; line-height:22px;">
+               <h3>Jane Smith</h3><h3 class="ltBlue">P123456</h3>
+               <div>
                  <span class="ltBlue">Manager</span> Robert Johnson<br> <span class="ltBlue">Division</span> Pacific West<br> <span class="ltBlue">Region</span> Los Angeles
                </div>
              </div>
@@ -111,19 +77,19 @@
 
 
 
-<section id="standings" class="" style="">
+<section id="standings" class="" style="margin-bottom:-30px;" >
 
   <div class="container" >
     <div class="row" >
-    <div class="" style="float:left;"><h1>STANDINGS</h1></div>
+    <div class="" ><h1>STANDINGS</h1></div>
 
     <div {{action "showFilters"}} id="showFilter" class=" filter" style="float:left; margin:24px 2px 0 30px;">Filters <img src="/assets/img/leaderboard/nav_right.png" height="16" class="" id="nav_right"></div>
     <div {{action "hideFilters"}} id="hideFilter" class=" filter hide" style="float:left; margin:24px 2px 0 30px;">Filters <img src="/assets/img/leaderboard/nav_right.png" height="16" class="rotate90 " id="nav_right"></div>
 
     </div>
 
-    <div class="row hide" id="Filters" >
-    <div class="col-lg-12 filters " ><div class="filterBtn active" {{action "showAll"}} >All</div><div class="filterBtn" {{action "showCategory"}}>Category</div><div class="filterBtn" {{action "showDivision"}}>Division</div><div class="filterBtn" {{action "showRegion"}}>Region</div><div class="filterBtn" {{action "showManager"}}>Manager</div><div class="filterBtn" {{action "showAE"}}>AE Name</div></div>
+    <div class="row hide" id="Filters"  >
+    <div class="col-lg-12 filters " ><div class="filterBtn active" {{action "showAll"}} ><h3  class="ltBlue">All</h3></div><div class="filterBtn" {{action "showCategory"}}><h3  class="ltBlue">Category</h3></div><div class="filterBtn" {{action "showDivision"}}><h3 class="ltBlue">Division</h3></div><div class="filterBtn" {{action "showRegion"}} ><h3  class="ltBlue">Region</h3></div><div class="filterBtn" {{action "showManager"}}><h3  class="ltBlue">Manager</h3></div><div class="filterBtn" {{action "showAE"}}><h3  class="ltBlue">AE Name</h3></div></div>
         <div id="filterCategory" class="row hide" >
             <div class="filterOptions">
               <ul><li>1.5m+</li><li>1.0m-1.49m</li><li>700k-999k</li><li>450k-699k</li><li>499k-under</li></ul>
@@ -167,17 +133,17 @@
 
 <div class="dataheader" style=" color:white;">
   <div class="container" >
-    <div class="row " >
+    <div class="row listHide3" >
 
-      <div class="col-sm-1">#</div>
-      <div class="col-sm-1">Image</div>
-        <div class="col-sm-2 ">AE Name</div>
-        <div class="col-sm-1  ">Manager</div>
-        <div class="col-sm-1 ">Division</div>
-        <div class="col-sm-1">Region</div>
-        <div class="col-sm-3 standingProgress ">Progress</div>
-        <div class="col-sm-1">%</div>
-        <div class="col-sm-1"><span class="" style="z-index:10000;" {{action "resetList"}}><img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+      <div class="col-xxs-2 col-sm-2 col-md-1">#</div>
+      <div class="col-xxs-2 col-sm-2 col-md-1">&nbsp;</div>
+        <div class="col-xxs-3 col-sm-3 col-md-2">AE Name</div>
+        <div class="col-xxs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+        <div class="col-xxs-1 col-md-2 col-lg-1 listHide2">Division</div>
+        <div class="col-xxs-1 col-md-2 col-lg-1 listHide2">Region</div>
+        <div class="col-xxs-1 col-md-3 listHide ">Progress</div>
+        <div class="col-xxs-1 col-sm-1">%</div>
+        <div class="col-xxs-1  col-sm-1"><span class="" style="z-index:10000;" {{action "resetList"}}><img src="/assets/img/leaderboard/return_top.svg" /></span></div>
     </div>
 </div>
 </div>
@@ -185,199 +151,199 @@
   <div id="datatable" class="container datatable" >
 
     <!--   ================================   -->
-    <!--  REPLACE EACH SET OF ROWS WITH DATA   -->
+    <!--  REPLACE EACH 2 SET OF ROWS BELOW WITH DATA   -->
     <!--   ================================   -->
 
     <div class="row" >
-      <div class="col-sm-1">1</div>
-      <div class="col-sm-1">Image</div>
-        <div class="col-sm-2">AE Name</div>
-        <div class="col-sm-1">Manager</div>
-        <div class="col-sm-1">Division</div>
-        <div class="col-sm-1">Region</div>
-        <div class="col-sm-3 standingProgress">
+      <div class="col-xs-2 col-sm-2 col-md-1 bgLtBLue">1</div>
+    <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+      <div class="col-xs-3 col-sm-3 col-md-2">AE Name</div>
+      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Division</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+      <div class="col-xs-1 col-md-3 listHide">
           <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
             <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; ">
               <!-- <span class="">70% </span> -->
             </div>
           </div></div>        <div class="col-sm-1">%</div>
-        <div class="col-sm-1">&nbsp;</div>
+          <div class="col-xs-1  col-sm-1"></div>
     </div>
 
     <div class="row" >
-      <div class="col-sm-1">2</div>
-      <div class="col-sm-1">Image</div>
-        <div class="col-sm-2">AE Name</div>
-        <div class="col-sm-1">Manager</div>
-        <div class="col-sm-1">Division</div>
-        <div class="col-sm-1">Region</div>
-        <div class="col-sm-3 standingProgress">
+    <div class="col-xs-2 col-sm-2 col-md-1 bgDkBlue">2</div>
+      <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+      <div class="col-xs-3 col-sm-3 col-md-2">AE Name</div>
+      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Division</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+        <div class="col-xs-1 col-md-3 listHide">
           <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
             <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; ">
               <!-- <span class="">70% </span> -->
             </div>
           </div></div>        <div class="col-sm-1">%</div>
-        <div class="col-sm-1">&nbsp;</div>
+        <div class="col-xs-1  col-sm-1">&nbsp;</div>
     </div>
 
     <div class="row" >
-      <div class="col-sm-1">3</div>
-      <div class="col-sm-1">Image</div>
-        <div class="col-sm-2">AE Name</div>
-        <div class="col-sm-1">Manager</div>
-        <div class="col-sm-1">Division</div>
-        <div class="col-sm-1">Region</div>
-        <div class="col-sm-3 standingProgress">
+      <div class="col-xs-2 col-sm-2 col-md-1 bgLtBLue">1</div>
+    <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+      <div class="col-xs-3 col-sm-3 col-md-2">AE Name</div>
+      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Division</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+      <div class="col-xs-1 col-md-3 listHide">
           <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
             <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; ">
               <!-- <span class="">70% </span> -->
             </div>
           </div></div>        <div class="col-sm-1">%</div>
-        <div class="col-sm-1">&nbsp;</div>
+          <div class="col-xs-1  col-sm-1"></div>
     </div>
 
     <div class="row" >
-      <div class="col-sm-1">4</div>
-      <div class="col-sm-1">Image</div>
-        <div class="col-sm-2">AE Name</div>
-        <div class="col-sm-1">Manager</div>
-        <div class="col-sm-1">Division</div>
-        <div class="col-sm-1">Region</div>
-        <div class="col-sm-3 standingProgress">
+    <div class="col-xs-2 col-sm-2 col-md-1 bgDkBlue">2</div>
+      <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+      <div class="col-xs-3 col-sm-3 col-md-2">AE Name</div>
+      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Division</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+        <div class="col-xs-1 col-md-3 listHide">
           <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
             <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; ">
               <!-- <span class="">70% </span> -->
             </div>
           </div></div>        <div class="col-sm-1">%</div>
-        <div class="col-sm-1">&nbsp;</div>
+        <div class="col-xs-1  col-sm-1">&nbsp;</div>
     </div>
 
     <div class="row" >
-      <div class="col-sm-1">5</div>
-      <div class="col-sm-1">Image</div>
-        <div class="col-sm-2">AE Name</div>
-        <div class="col-sm-1">Manager</div>
-        <div class="col-sm-1">Division</div>
-        <div class="col-sm-1">Region</div>
-        <div class="col-sm-3 standingProgress">
+      <div class="col-xs-2 col-sm-2 col-md-1 bgLtBLue">1</div>
+    <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+      <div class="col-xs-3 col-sm-3 col-md-2">AE Name</div>
+      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Division</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+      <div class="col-xs-1 col-md-3 listHide">
           <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
             <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; ">
               <!-- <span class="">70% </span> -->
             </div>
           </div></div>        <div class="col-sm-1">%</div>
-        <div class="col-sm-1">&nbsp;</div>
+          <div class="col-xs-1  col-sm-1"></div>
     </div>
 
     <div class="row" >
-      <div class="col-sm-1">6</div>
-      <div class="col-sm-1">Image</div>
-        <div class="col-sm-2">AE Name</div>
-        <div class="col-sm-1">Manager</div>
-        <div class="col-sm-1">Division</div>
-        <div class="col-sm-1">Region</div>
-        <div class="col-sm-3 standingProgress">
+    <div class="col-xs-2 col-sm-2 col-md-1 bgDkBlue">2</div>
+      <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+      <div class="col-xs-3 col-sm-3 col-md-2">AE Name</div>
+      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Division</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+        <div class="col-xs-1 col-md-3 listHide">
           <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
             <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; ">
               <!-- <span class="">70% </span> -->
             </div>
           </div></div>        <div class="col-sm-1">%</div>
-        <div class="col-sm-1">&nbsp;</div>
+        <div class="col-xs-1  col-sm-1">&nbsp;</div>
     </div>
 
     <div class="row" >
-      <div class="col-sm-1">7</div>
-      <div class="col-sm-1">Image</div>
-        <div class="col-sm-2">AE Name</div>
-        <div class="col-sm-1">Manager</div>
-        <div class="col-sm-1">Division</div>
-        <div class="col-sm-1">Region</div>
-        <div class="col-sm-3 standingProgress">
+      <div class="col-xs-2 col-sm-2 col-md-1 bgLtBLue">1</div>
+    <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+      <div class="col-xs-3 col-sm-3 col-md-2">AE Name</div>
+      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Division</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+      <div class="col-xs-1 col-md-3 listHide">
           <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
             <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; ">
               <!-- <span class="">70% </span> -->
             </div>
           </div></div>        <div class="col-sm-1">%</div>
-        <div class="col-sm-1">&nbsp;</div>
+          <div class="col-xs-1  col-sm-1"></div>
     </div>
 
     <div class="row" >
-      <div class="col-sm-1">8</div>
-      <div class="col-sm-1">Image</div>
-        <div class="col-sm-2">AE Name</div>
-        <div class="col-sm-1">Manager</div>
-        <div class="col-sm-1">Division</div>
-        <div class="col-sm-1">Region</div>
-        <div class="col-sm-3 standingProgress">
+    <div class="col-xs-2 col-sm-2 col-md-1 bgDkBlue">2</div>
+      <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+      <div class="col-xs-3 col-sm-3 col-md-2">AE Name</div>
+      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Division</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+        <div class="col-xs-1 col-md-3 listHide">
           <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
             <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; ">
               <!-- <span class="">70% </span> -->
             </div>
           </div></div>        <div class="col-sm-1">%</div>
-        <div class="col-sm-1">&nbsp;</div>
+        <div class="col-xs-1  col-sm-1">&nbsp;</div>
     </div>
 
     <div class="row" >
-      <div class="col-sm-1">9</div>
-      <div class="col-sm-1">Image</div>
-        <div class="col-sm-2">AE Name</div>
-        <div class="col-sm-1">Manager</div>
-        <div class="col-sm-1">Division</div>
-        <div class="col-sm-1">Region</div>
-        <div class="col-sm-3 standingProgress">
+      <div class="col-xs-2 col-sm-2 col-md-1 bgLtBLue">1</div>
+    <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+      <div class="col-xs-3 col-sm-3 col-md-2">AE Name</div>
+      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Division</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+      <div class="col-xs-1 col-md-3 listHide">
           <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
             <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; ">
               <!-- <span class="">70% </span> -->
             </div>
           </div></div>        <div class="col-sm-1">%</div>
-        <div class="col-sm-1">&nbsp;</div>
+          <div class="col-xs-1  col-sm-1"></div>
     </div>
 
     <div class="row" >
-      <div class="col-sm-1">10</div>
-      <div class="col-sm-1">Image</div>
-        <div class="col-sm-2">AE Name</div>
-        <div class="col-sm-1">Manager</div>
-        <div class="col-sm-1">Division</div>
-        <div class="col-sm-1">Region</div>
-        <div class="col-sm-3 standingProgress">
+    <div class="col-xs-2 col-sm-2 col-md-1 bgDkBlue">2</div>
+      <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+      <div class="col-xs-3 col-sm-3 col-md-2">AE Name</div>
+      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Division</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+        <div class="col-xs-1 col-md-3 listHide">
           <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
             <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; ">
               <!-- <span class="">70% </span> -->
             </div>
           </div></div>        <div class="col-sm-1">%</div>
-        <div class="col-sm-1">&nbsp;</div>
+        <div class="col-xs-1  col-sm-1">&nbsp;</div>
     </div>
 
     <div class="row" >
-      <div class="col-sm-1">11</div>
-      <div class="col-sm-1">Image</div>
-        <div class="col-sm-2">AE Name</div>
-        <div class="col-sm-1">Manager</div>
-        <div class="col-sm-1">Division</div>
-        <div class="col-sm-1">Region</div>
-        <div class="col-sm-3 standingProgress">
+      <div class="col-xs-2 col-sm-2 col-md-1 bgLtBLue">1</div>
+    <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+      <div class="col-xs-3 col-sm-3 col-md-2">AE Name</div>
+      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Division</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+      <div class="col-xs-1 col-md-3 listHide">
           <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
             <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; ">
               <!-- <span class="">70% </span> -->
             </div>
           </div></div>        <div class="col-sm-1">%</div>
-        <div class="col-sm-1">&nbsp;</div>
+          <div class="col-xs-1  col-sm-1"></div>
     </div>
 
     <div class="row" >
-      <div class="col-sm-1">12</div>
-      <div class="col-sm-1">Image</div>
-        <div class="col-sm-2">AE Name</div>
-        <div class="col-sm-1">Manager</div>
-        <div class="col-sm-1">Division</div>
-        <div class="col-sm-1">Region</div>
-        <div class="col-sm-3 standingProgress">
+    <div class="col-xs-2 col-sm-2 col-md-1 bgDkBlue">2</div>
+      <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+      <div class="col-xs-3 col-sm-3 col-md-2">AE Name</div>
+      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Division</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+        <div class="col-xs-1 col-md-3 listHide">
           <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
             <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; ">
               <!-- <span class="">70% </span> -->
             </div>
           </div></div>        <div class="col-sm-1">%</div>
-        <div class="col-sm-1">&nbsp;</div>
+        <div class="col-xs-1  col-sm-1">&nbsp;</div>
     </div>
 
 
@@ -388,7 +354,7 @@
 </div>
 
 
-<div class="space" style="margin-top:80px;">&nbsp;</div>
+<div class="spacer10" style="margin-top:20px;">&nbsp;</div>
 </section>
 
 <section id="homepageCornerLogo">
