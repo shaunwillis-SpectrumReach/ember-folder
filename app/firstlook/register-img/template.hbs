@@ -21,7 +21,7 @@
 
 
 <!-- {{file-picker}} -->
- {{#each selectedFiles as |file|}}
+ <!-- {{#each selectedFiles as |file|}}
   <p>{{file.name}}</p>
 {{/each}}
 
@@ -29,7 +29,7 @@
 
 {{file-picker action=(action (mut selectedFiles))}}
 
- <button {{action "upload" uploadFile}}>Save To Server</button>
+ <button {{action "upload" uploadFile}}>Save To Server</button> -->
 
 <!-- <form class="" action="/public" method="post" enctype="multipart/form-data">
   <input type="file" name="" value="image">
@@ -37,7 +37,7 @@
 
 </form> -->
 
-<section id="ImageUp" style="">
+<section id="ImageUp" >
 <!--
   <div id="image-upload-wrapper">
   <form class="" action="index.html" method="post" enctype="multipart/form-data">
@@ -49,7 +49,7 @@
       </div></label>
     </form>
 -->
-<!--     {{ file-upload }}  -->
+    {{ file-upload }}
 
 <!--   </div> -->
    <!-- {{img-up-03}}

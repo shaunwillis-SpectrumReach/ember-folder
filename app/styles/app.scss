@@ -23,6 +23,18 @@
     src: url('/assets/fonts/Gotham-Bold.otf');
 }
 
+/*  ///////////  File Upload  ////////////  */
+
+#files-uploader>.dz-default>.dz-message {
+  padding: 5rem;
+}
+
+#files-uploader>.dz-default>.dz-message>span {
+  border: 1px solid #0099d8;
+  padding: 4rem;
+}
+
+
 /*  ///////////  Top Level Structure  ////////////  */
 html,body {
   padding:0;

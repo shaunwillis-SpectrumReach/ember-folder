@@ -5,6 +5,6 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
   currentUser: Ember.inject.service(),
 
   model() {
-     return this.store.findAll('ae15m');
+    return this.get('currentUser').loadCurrentUser();
   }
 });

@@ -37,6 +37,7 @@ Router.map(function() {
     });
     this.route('rules');
     this.route('faqs');
+    this.route('salesforce');
   });
 
 });

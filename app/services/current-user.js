@@ -7,9 +7,9 @@ export default Service.extend({
 
   loadCurrentUser() {
     if (this.get('session.isAuthenticated')) {
-      return this.get('store').queryRecord('pids', { current: true })
+      return this.get('store').queryRecord('pid', { current: true })
         .then((pids) => {
-          this.set('pids', pids);
+          this.set('pid', pids);
         });
     }
   }
