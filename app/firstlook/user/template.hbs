@@ -1,14 +1,17 @@
 {{#if currentUser}}
 <div style="background: black; height: 100vh; display: flex; justify-content: center; flex-direction: row; margin: auto;">
-<!-- {{#each model as |pids|}} -->
-<!-- {{/each}} -->
+
   <div class="">
     <div class="" style="margin-top: 20rem;">
-      <!-- {{#link-to "firstlook.user.profile"}}Edit info{{/link-to}} -->
+      {{#link-to "firstlook.user.profile"}}Edit info{{/link-to}}
       {{#link-to "firstlook.logout"}}logout{{/link-to}}
-      {{#link-to "firstlook.login"}}login{{/link-to}}
     </div>
-    <div class="hello" style="color: white;"> <h1>You Are Officially Logged In!!</h1></div>
+    <div class="hello" style="color: white;"> <h1>{{ currentUser.pids.firstname }}, You Are Officially Logged In!!</h1></div>
+    {{#each model as |ae15m|}}
+        <p style="color: white">{{ae15m.fullyear}}</p>
+        <p style="color: white">{{ae15m.name}}</p>
+        <p style="color: white">{{ae15m.division}}</p>
+    {{/each}}
     <div class="div">
       {{#each flashMessages.queue as |flash|}}
         {{#flash-message flash=flash as |component flash|}}

@@ -1,7 +1,14 @@
 import Route from '@ember/routing/route';
 
 export default Route.extend({
-  // model({ user_id }) {
-  //    return this.store.findRecord('pledge', user_id);
-  //  },
+  currentUser: Ember.inject.service(),
+  model({ pid_id }) {
+    // debugger
+     return this.store.findRecord('pids', pid_id);
+   },
+  // model() {
+  //   return this.store.query('pids', {
+  //     mine: true,
+  //   });
+  // },
 });
