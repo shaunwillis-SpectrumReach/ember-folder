@@ -7,6 +7,13 @@ export default Route.extend({
 
   },
 
+  model() {
+    return this.store.query('ae15m', {
+        mine: true,
+      });
+  },
+
+
   actions: {
 
     scrollToTop() {

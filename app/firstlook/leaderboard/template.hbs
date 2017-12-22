@@ -51,7 +51,9 @@
            </div >
 
     	  <div class=" col-md-12 col-lg-6" >
-    	 	 <div style="float:left;"><h2 style="color:#003057;">&nbsp;</h2></div>   <div  style="float:right;"><h2 class="ltBlue">50.0% </h2></div>
+    	 	 <div style="float:left;"><h2 style="color:#003057;">&nbsp;</h2></div>   <div  style="float:right;"><h2 class="ltBlue">{{#each model as |ae15m|}}
+        {{ ae15m.fullyear }}%
+        {{/each}} </h2></div>
           <div class="progress" style="clear:both; background-color:white; border:1px solid #0099D8;">
             <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style=" width:50%; ">
               <!-- <span class="">70% </span> -->
