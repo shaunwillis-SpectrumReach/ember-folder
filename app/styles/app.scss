@@ -1,4 +1,4 @@
-@import "progress";
+@import "progress-b";
 @import "progress-leader";
 @import "homepage";
 @import "leaderboard";
@@ -80,9 +80,29 @@ p {
 
 section {
 overflow:hidden;
-background-color:transparent;
+padding:60px 0;
+}
+#header {
+  padding:0 0;
 }
 
+.spacer20 {
+  margin:20vmin;
+}
+.spacer10 {
+  margin:10vmin;
+}
+.bgLtBLue {
+  background-color: #0099D8;
+  color:white;
+}
+.bgDkBlue {
+  background-color: #003057;
+  color:white;
+}
+.ltBlue {
+  color:#0099D8;
+}
 .bg-right {
   position: absolute; /* Sit on top of the page content */
 width: 100%; /* Full width (cover the whole page) */
@@ -113,9 +133,7 @@ background: url("../assets/img/arrow-left.svg");
   background-repeat: no-repeat;
   z-index: 1000;
 }
-.ltBlue {
-  color:#0099D8;
-}
+
 #wrapper {
     width:100%;
     height: 100%;
@@ -401,7 +419,6 @@ font-size: 16px;
   line-height: 0.7rem;
    font-family: "Gotham", "Arial", sans-serif;
   //font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
   margin:auto;
   width:50vmin;
   max-width:260px;
@@ -632,11 +649,68 @@ height:24px;
 
 }
 
+
+/*  ////////////////////  MEDIA Medium  //////////////  */
+@media only screen and (max-width: 1199px) {
+
+
+h1 {
+  font-size:64px;
+  color: #0099D8;
+  font-family: "GothamBold", sans-serif;
+  text-transform: uppercase;
+
+}
+
+h2 {
+  font-size:32px;
+  color: #003057;
+  font-family: "GothamMedium", sans-serif;
+}
+
+}
+
 /*  ////////////////////  MEDIA SMALL  //////////////  */
 @media only screen and (max-width: 767px) {
-  p {
-    font-size: 14px;
+
+  h1 {
+    font-size:36px;
+    color: #0099D8;
+    font-family: "GothamBold", sans-serif;
+    text-transform: uppercase;
+
   }
+
+  h2 {
+    font-size:24px;
+    color: #003057;
+    font-family: "GothamMedium", sans-serif;
+  }
+
+  h3 {
+    font-size:18px;
+    color: #003057;
+    font-family: "Gotham", sans-serif;
+  }
+
+  h4 {
+    font-size:14px;
+    color: #0099D8;
+    font-family: "Gotham", sans-serif;
+  }
+  p {
+    font-size:13px;
+    color: #596679;
+    font-family: "Gotham", sans-serif;
+  }
+
+  section {
+  overflow:hidden;
+  padding:40px 0;
+  }
+#header {
+   padding:0 0;
+ }
 
 #bottomLogo img {
     max-width:20vw;
@@ -676,9 +750,8 @@ height:24px;
   font-size:14px;
 
 }
-p {
-  font-size:14px;
-}
+
+
 #bottomLogo img {
     max-width:18%;
     right: 2vw;
