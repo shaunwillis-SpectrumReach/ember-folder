@@ -166,7 +166,10 @@
   text-align:left;
   text-align:left;
 }
-
+.video img {
+    max-width:100%;
+    margin:auto;
+}
 .hideContent {
     overflow: hidden;
     line-height: 1.6rem;
@@ -294,6 +297,7 @@ font-size:14px;
 @media only screen and (max-width: 991px) {
 
 
+
 .impDate img {
   padding:0px 0;
   margin:auto;
@@ -417,16 +421,29 @@ font-size:14px;
     font-size:2.6rem;
 
   }
+
   .impDate img {
     padding:0px 0;
   }
   .impDate h5 {
     font-size:1.4rem;
     font-weight:500;
-    padding-top:10px;
-    padding-left:2.0rem;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:0;
     color:white;
   }
+
+  #goals .placeIcon  {
+    margin:auto;
+    text-align: center;
+  }
+  #goals .placeIcon img {
+    margin:auto;
+    width:80%;
+    margin-top:10px;
+  }
+
   #contentHome #stickyFooter p {
   font-size:0.7rem;
   margin-top:6px;

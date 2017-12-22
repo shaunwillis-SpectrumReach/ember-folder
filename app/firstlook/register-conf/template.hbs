@@ -1,10 +1,12 @@
 <div id="wrapper" class="homepageWrapper">
   <div id="contentHome" class="" >
     <section id="header">
-          <img class="l_FirstLook" src="/assets/img/L_FirstLook.png">
+      <div class="userNameTop">Welcome, Jane</div>
+          <img class="l_FirstLook" src="/assets/img/L_FirstLook.png" >
     </section>
 
-    <div id="" class="graygradient" style="height:87vh !important;min-height:600px;">
+
+    <div id="" class="graygradient" style="min-height:calc(100vh - 130px ) !important;min-height:600px;">
 
     <section id="title">
       <div  class="container fadein"  style="margin-top:30px;" >
@@ -40,6 +42,7 @@
 <!-- <div class="profile">
    {{#simple-form class="profile" startingValues=wizard.userInfo onsubmit=(action "saveForm") as | formValues |}}
     <!-- {{log formValues}} -->
+    <!--
     <label for="pid" >Employee ID</label>
     {{input class="userItem" type="text" id="pid"  value=formValues.pid placeholder="XXXXXXX"}}<br>
 <label for="firstname" >First Name</label>
