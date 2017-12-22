@@ -318,7 +318,7 @@ padding:0;
   margin-right:24px;
 }
 #AElist {
-  margin:-70px;
+  margin:-70px 0;
 }
  .dataheader {
   background: url("/assets/img/Main_Header_bg.svg");
@@ -329,6 +329,7 @@ padding:0;
   color:white;
   display: flex;
   align-items: center;
+  border:1px solid red;
 
 }
 .datatable {
