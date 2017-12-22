@@ -270,8 +270,8 @@ padding:40px;
 
 #contentHome #homepageCornerLogo img {
   position: relative;
-  left:6vmin;
-  top:16vmin;
+  left:5vmin;
+  top:12vmin;
   max-width:12vmin;
 
 }
@@ -442,6 +442,13 @@ font-size:14px;
     margin:auto;
     width:80%;
     margin-top:10px;
+  }
+  #contentHome #homepageCornerLogo img {
+    position: relative;
+    left:5.5vmin;
+    top:9vmin;
+    max-width:12vmin;
+
   }
 
   #contentHome #stickyFooter p {
