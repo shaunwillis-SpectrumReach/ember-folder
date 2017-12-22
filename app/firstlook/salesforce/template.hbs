@@ -1,0 +1,52 @@
+<div id="wrapper">
+  <div id="contentReg" class="AnimDown" >
+
+    <section id="header">
+          <img class="l_FirstLook" src="/assets/img/L_FirstLook.png">
+    </section>
+
+<section id="title">
+  <h3 style="margin-top: 5rem;">Official Sign Up</h3>
+</section >
+
+
+<!-- This File Upload is using Dropzone -->
+<!-- <form id="files-uploader" class="dropzone" action="http://127.0.0.1:3333/api/uploads" method="post" enctype="multipart/form-data" files="true">
+ <div class="fallback">
+ <input id="file" type="file" name="image" value="">
+   <div id="uploadBox" >
+     <img  style="width:80%; padding-top:12%;" src="../assets/img/image_upload.svg">
+   </div>
+ </div>
+</form>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/dropzone.js"></script>
+
+<script type="text/javascript">
+// "myAwesomeDropzone" is the camelized version of the HTML element's ID
+Dropzone.options.filesUploader = {
+ paramName: "file", // The name that will be used to transfer the file
+}
+</script> -->
+  <section id="formHolder" style="">
+    {{#simple-form onsubmit=(action "saveForm") as |formValues|}}
+      {{input value=formValues.pid placeholder="Employee ID"}}<br/>
+      {{input value=formValues.firstname placeholder="First Name"}}<br/>
+      {{input value=formValues.lastname placeholder="Last Name"}}<br/>
+      {{input value=formValues.email placeholder="Email"}}<br/>
+      {{input type="password" value=formValues.password placeholder="Password"}}<br/>
+      {{input value=formValues.managername placeholder="Manager Name"}}<br/>
+      {{input value=formValues.division placeholder="Division"}}<br/>
+      {{input value=formValues.region placeholder="Region"}}<br/>
+      <!-- {{input value=formValues.jobtitle placeholder="Job Title"}}<br/> -->
+        <button  class="SR_btn">Register</button>
+    {{/simple-form}}
+</section>
+
+
+<section id="bottomLogo" >
+  <img src="/assets/img/Spectrum_Reach_Rev_RGB.svg">
+</section>
+
+</div>
+</div>
+{{outlet}}

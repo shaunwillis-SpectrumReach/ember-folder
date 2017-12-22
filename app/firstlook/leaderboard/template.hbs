@@ -1,7 +1,7 @@
 <div id="wrapper" class="homepageWrapper">
   <div id="contentHome" class="" >
-    <section id="header" >
-      <div class="userNameTop">Welcome, Jane</div>
+    <section id="header">
+      <div class="userNameTop">Welcome, {{ currentUser.pid.firstname }}</div>
           <img class="l_FirstLook" src="/assets/img/L_FirstLook.png" >
     </section>
 
@@ -41,9 +41,9 @@
                </div>
 
              <div style=" ">
-               <h3>Jane Smith</h3><h3 class="ltBlue">P123456</h3>
-               <div>
-                 <span class="ltBlue">Manager</span> Robert Johnson<br> <span class="ltBlue">Division</span> Pacific West<br> <span class="ltBlue">Region</span> Los Angeles
+               <h2>{{ currentUser.pid.firstname}} {{ currentUser.pid.lastname}}</h2><h2 class="ltBlue">{{ currentUser.pid.pid}}</h2>
+               <div style="font-size:14px; line-height:22px;">
+                 <span class="ltBlue">Manager</span> {{ currentUser.pid.managername}}<br> <span class="ltBlue">Division</span> {{ currentUser.pid.division}}<br> <span class="ltBlue">Region</span> {{ currentUser.pid.region}}
                </div>
              </div>
 

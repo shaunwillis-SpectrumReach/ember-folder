@@ -14,6 +14,8 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
   },
 
 
-
+  model() {
+    return this.get('currentUser').loadCurrentUser();
+  }
 
 });
