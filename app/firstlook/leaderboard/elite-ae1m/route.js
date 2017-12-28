@@ -6,4 +6,9 @@ export default Route.extend({
 
   },
 
+  model() {
+    return this.store.query('Eliteae1m', {
+          top5: 'Top 5'
+        });
+      },
 });
