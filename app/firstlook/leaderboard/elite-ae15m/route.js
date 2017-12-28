@@ -7,4 +7,16 @@ export default Route.extend({
 
   },
 
+  // model() {
+  //   return this.store.query('Eliteae15m', {
+  //       mine: true,
+  //     });
+  // },
+  model() {
+    return this.store.query('Eliteae15m', {
+          top5: 'Top 5'
+        });
+    // return this.get('store').findRecord('Eliteae15m', [0]);
+  },
+
 });
