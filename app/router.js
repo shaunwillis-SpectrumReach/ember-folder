@@ -29,7 +29,9 @@ Router.map(function() {
 
     this.route('welcome');
     this.route('leaderboard', function() {
-      this.route('elite-ae15m');
+      this.route('elite-ae15m', function() {
+        this.route('fullstandings');
+      });
       this.route('elite-ae1m');
       this.route('elite-ae700k');
       this.route('elite-ae450k');

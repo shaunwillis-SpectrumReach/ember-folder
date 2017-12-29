@@ -1,0 +1,207 @@
+<div id="datatable" class="container datatable" >
+
+  <!--   ================================   -->
+  <!--  REPLACE EACH 2 SET OF ROWS BELOW WITH DATA   -->
+  <!--   ================================   -->
+
+  <div class="row" >
+    {{#each model as |ae15m|}}
+    <div class="col-xs-2 col-sm-2 col-md-1 bgLtBLue">1</div>
+  <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+    <div class="col-xs-3 col-sm-3 col-md-2">{{ ae15m.name }}</div>
+    <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">{{ ae15m.managername }}</div>
+    <div class="col-xs-1 col-md-2 col-lg-1 listHide2">{{ ae15m.division }}</div>
+    <div class="col-xs-1 col-md-2 col-lg-1 listHide2">{{ ae15m.region }}</div>
+    <div class="col-xs-1 col-md-3 listHide">
+        <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
+          <div class="progress-bar" role="progressbar" aria-valuenow="{{ ae15m.fullyear }}" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:{{ ae15m.fullyear }}%; ">
+            <!-- <span class="">70% </span> -->
+          </div>
+        </div></div>        <div class="col-sm-1">{{ ae15m.fullyear }}%</div>
+        <div class="col-xs-1  col-sm-1"></div>
+      {{/each}}
+  </div>
+
+<!-- <div class="row" >
+  <div class="col-xs-2 col-sm-2 col-md-1 bgDkBlue">2</div>
+    <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+    <div class="col-xs-3 col-sm-3 col-md-2">AE Name</div>
+    <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+    <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Division</div>
+    <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+      <div class="col-xs-1 col-md-3 listHide">
+        <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
+          <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; "> -->
+            <!-- <span class="">70% </span> -->
+          <!-- </div>
+        </div></div>        <div class="col-sm-1">%</div>
+      <div class="col-xs-1  col-sm-1">&nbsp;</div>
+  </div> -->
+
+  <!-- <div class="row" >
+    <div class="col-xs-2 col-sm-2 col-md-1 bgLtBLue">1</div>
+  <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+    <div class="col-xs-3 col-sm-3 col-md-2">AE Name</div>
+    <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+    <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Division</div>
+    <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+    <div class="col-xs-1 col-md-3 listHide">
+        <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
+          <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; "> -->
+            <!-- <span class="">70% </span> -->
+          <!-- </div>
+        </div></div>        <div class="col-sm-1">%</div>
+        <div class="col-xs-1  col-sm-1"></div>
+  </div> -->
+
+  <!-- <div class="row" >
+  <div class="col-xs-2 col-sm-2 col-md-1 bgDkBlue">2</div>
+    <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+    <div class="col-xs-3 col-sm-3 col-md-2">AE Name</div>
+    <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+    <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Division</div>
+    <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+      <div class="col-xs-1 col-md-3 listHide">
+        <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
+          <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; "> -->
+            <!-- <span class="">70% </span> -->
+          <!-- </div>
+        </div></div>        <div class="col-sm-1">%</div>
+      <div class="col-xs-1  col-sm-1">&nbsp;</div>
+  </div> -->
+
+  <!-- <div class="row" >
+    <div class="col-xs-2 col-sm-2 col-md-1 bgLtBLue">1</div>
+  <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+    <div class="col-xs-3 col-sm-3 col-md-2">AE Name</div>
+    <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+    <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Division</div>
+    <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+    <div class="col-xs-1 col-md-3 listHide">
+        <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
+          <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; "> -->
+            <!-- <span class="">70% </span> -->
+          <!-- </div>
+        </div></div>        <div class="col-sm-1">%</div>
+        <div class="col-xs-1  col-sm-1"></div>
+  </div> -->
+
+  <!-- <div class="row" >
+  <div class="col-xs-2 col-sm-2 col-md-1 bgDkBlue">2</div>
+    <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+    <div class="col-xs-3 col-sm-3 col-md-2">AE Name</div>
+    <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+    <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Division</div>
+    <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+      <div class="col-xs-1 col-md-3 listHide">
+        <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
+          <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; "> -->
+            <!-- <span class="">70% </span> -->
+          <!-- </div>
+        </div></div>        <div class="col-sm-1">%</div>
+      <div class="col-xs-1  col-sm-1">&nbsp;</div>
+  </div> -->
+
+  <!-- <div class="row" >
+    <div class="col-xs-2 col-sm-2 col-md-1 bgLtBLue">1</div>
+  <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+    <div class="col-xs-3 col-sm-3 col-md-2">AE Name</div>
+    <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+    <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Division</div>
+    <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+    <div class="col-xs-1 col-md-3 listHide">
+        <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
+          <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; "> -->
+            <!-- <span class="">70% </span> -->
+          <!-- </div>
+        </div></div>        <div class="col-sm-1">%</div>
+        <div class="col-xs-1  col-sm-1"></div>
+  </div> -->
+
+  <!-- <div class="row" >
+  <div class="col-xs-2 col-sm-2 col-md-1 bgDkBlue">2</div>
+    <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+    <div class="col-xs-3 col-sm-3 col-md-2">AE Name</div>
+    <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+    <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Division</div>
+    <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+      <div class="col-xs-1 col-md-3 listHide">
+        <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
+          <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; "> -->
+            <!-- <span class="">70% </span> -->
+          <!-- </div>
+        </div></div>        <div class="col-sm-1">%</div>
+      <div class="col-xs-1  col-sm-1">&nbsp;</div>
+  </div> -->
+
+  <!-- <div class="row" >
+    <div class="col-xs-2 col-sm-2 col-md-1 bgLtBLue">1</div>
+  <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+    <div class="col-xs-3 col-sm-3 col-md-2">AE Name</div>
+    <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+    <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Division</div>
+    <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+    <div class="col-xs-1 col-md-3 listHide">
+        <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
+          <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; "> -->
+            <!-- <span class="">70% </span> -->
+          <!-- </div>
+        </div></div>        <div class="col-sm-1">%</div>
+        <div class="col-xs-1  col-sm-1"></div>
+  </div> -->
+
+  <!-- <div class="row" >
+  <div class="col-xs-2 col-sm-2 col-md-1 bgDkBlue">2</div>
+    <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+    <div class="col-xs-3 col-sm-3 col-md-2">AE Name</div>
+    <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+    <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Division</div>
+    <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+      <div class="col-xs-1 col-md-3 listHide">
+        <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
+          <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; "> -->
+            <!-- <span class="">70% </span> -->
+          <!-- </div>
+        </div></div>        <div class="col-sm-1">%</div>
+      <div class="col-xs-1  col-sm-1">&nbsp;</div>
+  </div> -->
+
+  <!-- <div class="row" >
+    <div class="col-xs-2 col-sm-2 col-md-1 bgLtBLue">1</div>
+  <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+    <div class="col-xs-3 col-sm-3 col-md-2">AE Name</div>
+    <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+    <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Division</div>
+    <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+    <div class="col-xs-1 col-md-3 listHide">
+        <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
+          <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; "> -->
+            <!-- <span class="">70% </span> -->
+          <!-- </div>
+        </div></div>        <div class="col-sm-1">%</div>
+        <div class="col-xs-1  col-sm-1"></div>
+  </div> -->
+
+  <!-- <div class="row" >
+  <div class="col-xs-2 col-sm-2 col-md-1 bgDkBlue">2</div>
+    <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+    <div class="col-xs-3 col-sm-3 col-md-2">AE Name</div>
+    <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+    <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Division</div>
+    <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+      <div class="col-xs-1 col-md-3 listHide">
+        <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
+          <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:10%; "> -->
+            <!-- <span class="">70% </span> -->
+          <!-- </div>
+        </div></div>        <div class="col-sm-1">%</div>
+      <div class="col-xs-1  col-sm-1">&nbsp;</div>
+  </div>  -->
+
+
+  <!--   ================================   -->
+  <!--  END OF DATA   -->
+  <!--   ================================   -->
+
+</div>
+{{outlet}}
