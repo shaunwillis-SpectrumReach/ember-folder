@@ -11,7 +11,10 @@ export default Route.extend({
     return this.store.query('ae15m', {
         mine: true,
       });
+
   },
+
+
 
 
   actions: {
