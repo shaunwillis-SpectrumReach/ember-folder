@@ -5,13 +5,18 @@
     <div class="" style="margin-top: 20rem;">
       {{#link-to "firstlook.user.profile"}}Edit info{{/link-to}}
       {{#link-to "firstlook.logout"}}logout{{/link-to}}
+       {{#each model as |ae15m|}}
+      {{ ae15m.fullyear }}%
+      {{/each}}
+      {{ember-progress-bar shape="Circle"}}
     </div>
-    <div class="hello" style="color: white;"> <h1>{{ currentUser.pids.firstname }}, You Are Officially Logged In!!</h1></div>
-    {{#each model as |ae15m|}}
+    <div class="hello" style="color: white;"> <h1>{{ currentUser.pid.firstname }}, You Are Officially Logged In!!</h1></div>
+    <div class="section">
+  <!-- {{user-profile user=model myProfile=true onUpdate=(action "update") onChoosePic=(action "choosePic")}} -->
+</div>
         <p style="color: white">{{ae15m.fullyear}}</p>
         <p style="color: white">{{ae15m.name}}</p>
         <p style="color: white">{{ae15m.division}}</p>
-    {{/each}}
     <div class="div">
       {{#each flashMessages.queue as |flash|}}
         {{#flash-message flash=flash as |component flash|}}

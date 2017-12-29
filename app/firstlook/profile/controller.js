@@ -4,7 +4,7 @@ export default Ember.Controller.extend({
   wizard: Ember.inject.service('wizard'),
   currentUser: Ember.inject.service(),
   session: Ember.inject.service(),
-  
+
   actions: {
       saveForm(changesFromForm) {
         // I changed ...this.get() to an array, because {} threw syntax error

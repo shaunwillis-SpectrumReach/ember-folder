@@ -67,54 +67,55 @@
 <div class=" col-md-12 col-lg-8">
 
   <div class="row" >
-
+    {{#each model as |Eliteae700k|}}
 <!--  ////////  2nd place   /////////  -->
       <div class="col-lg-6 "  style="text-align:left; ">
         <div class=" image2nd" >
           <img src="/assets/img/leaderboard/2nd-5th_place.png"   >
         </div>
         <div class=" eliteDatum2  " style=" ">
-          <span class="ltBlue">Name</span>  <span >Jane Smith</span><br><span class="ltBlue">Manager</span> Robert Johnson<br> <span class="ltBlue">Division</span> Pacific West<br> <span class="ltBlue">Region</span> Los Angeles
+          <span class="ltBlue">Name</span>  <span >{{ Eliteae700k.name }}</span><br><span class="ltBlue">Manager</span> {{ Eliteae700k.managername }}<br> <span class="ltBlue">Division</span> {{ Eliteae700k.division }}<br> <span class="ltBlue">Region</span> {{ Eliteae700k.region }}
         </div>
       </div>
+      {{/each}}
       <!--  ////////  3rd place   /////////  -->
 
-      <div class="col-lg-6 "  style="text-align:left; ">
+      <!-- <div class="col-lg-6 "  style="text-align:left; ">
         <div class="image2nd img3rd" >
           <img src="/assets/img/leaderboard/2nd-5th_place.png"   >
         </div>
         <div class=" eliteDatum2">
           <span class="ltBlue">Name</span>  <span >Jane Smith</span><br><span class="ltBlue">Manager</span> Robert Johnson<br> <span class="ltBlue">Division</span> Pacific West<br> <span class="ltBlue">Region</span> Los Angeles
         </div>
-      </div>
+      </div> -->
 
   </div>
-  <div class="row"  style="margin-top:40px;">
+  <!-- <div class="row"  style="margin-top:40px;"> -->
 
     <!--  ////////  4th place   /////////  -->
 
-    <div class="col-lg-6 "  style="text-align:left; ">
+    <!-- <div class="col-lg-6 "  style="text-align:left; ">
       <div class="image2nd img4th" >
         <img src="/assets/img/leaderboard/2nd-5th_place.png"   >
       </div>
       <div class=" eliteDatum2">
         <span class="ltBlue">Name</span>  <span >Jane Smith</span><br><span class="ltBlue">Manager</span> Robert Johnson<br> <span class="ltBlue">Division</span> Pacific West<br> <span class="ltBlue">Region</span> Los Angeles
       </div>
-    </div>
+    </div> -->
 
     <!--  ////////  5th place   /////////  -->
 
-    <div class="col-lg-6 "  style="text-align:left; ">
+    <!-- <div class="col-lg-6 "  style="text-align:left; ">
       <div class="image2nd img5th" >
         <img src="/assets/img/leaderboard/2nd-5th_place.png"   >
       </div>
       <div class=" eliteDatum2">
         <span class="ltBlue">Name</span>  <span >Jane Smith</span><br><span class="ltBlue">Manager</span> Robert Johnson<br> <span class="ltBlue">Division</span> Pacific West<br> <span class="ltBlue">Region</span> Los Angeles
       </div>
-    </div>
+    </div> -->
     <!--  ////////  END   /////////  -->
 
-    </div>
+    <!-- </div> -->
 
 </div>
 

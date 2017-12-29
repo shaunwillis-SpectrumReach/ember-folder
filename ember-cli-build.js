@@ -8,7 +8,10 @@ module.exports = function(defaults) {
     // Add options here
     babel: {
     plugins: ['transform-object-rest-spread']
-  }
+  },
+  'ember-math-helpers': {
+     only: ['add', 'div', 'round']
+   }
   });
 
   // Use `app.import` to add additional libraries to the generated

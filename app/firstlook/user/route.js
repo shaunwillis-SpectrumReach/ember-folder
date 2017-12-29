@@ -14,8 +14,15 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
   },
 
 
+  // model() {
+  //   return this.get('currentUser').loadCurrentUser();
+  //
+  // },
   model() {
-    return this.get('currentUser').loadCurrentUser();
+    return this.store.query('ae15m', {
+        mine: true,
+      });
   }
+
 
 });

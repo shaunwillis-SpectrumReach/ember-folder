@@ -6,5 +6,9 @@ export default Route.extend({
     $('#burger').removeClass('hide');
 
   },
-
+  model() {
+    return this.store.query('Eliteae700k', {
+          top5: 'Top 5'
+        });
+  },
 });
