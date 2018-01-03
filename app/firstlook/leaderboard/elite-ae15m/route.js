@@ -16,7 +16,6 @@ export default Route.extend({
     return this.store.query('Eliteae15m', {
           top5: 'Top 5'
         });
-    // return this.get('store').findRecord('Eliteae15m', [0]);
   },
 
 });

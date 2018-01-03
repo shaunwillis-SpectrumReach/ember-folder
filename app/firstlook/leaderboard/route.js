@@ -1,4 +1,5 @@
 import Route from '@ember/routing/route';
+import RSVP from 'rsvp';
 
 export default Route.extend({
 
@@ -8,11 +9,18 @@ export default Route.extend({
   },
 
   model() {
-    return this.store.query('ae15m', {
-        mine: true,
-      });
-
+    return RSVP.hash({
+      mine: this.store.query('ae15m', {
+          mine: true,
+        }),
+      all: this.store.findAll('ae15m')
+    });
+    // return this.store.query('ae15m', {
+    //     mine: true,
+    //   });
+      // return this.store.findAll('ae15m');
   },
+
 
 
 
