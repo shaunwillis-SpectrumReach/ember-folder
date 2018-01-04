@@ -18,8 +18,13 @@ export default Route.extend({
       all: this.store.findAll('ae15m'),
       ae1m: this.store.findAll('ae1m'),
       ae700k: this.store.findAll('ae700k'),
+      ae450k: this.store.findAll('ae450k'),
       ae499k: this.store.findAll('ae499k'),
-      ae450k: this.store.findAll('ae450k')
+      //Allaes and AE15m needs to be corrected after launch
+      allae: this.store.findAll('allae'),
+      northeast1: this.store.query('pid', {
+        division: '',
+      })
     });
     // return this.store.query('ae15m', {
     //     mine: true,
@@ -32,14 +37,21 @@ export default Route.extend({
 
   actions: {
 
-
-
+    filterCategoryAllaes() {
+      $('#ae1m').addClass('hide');
+      $('#ae15m').addClass('hide');
+      $('#ae700k').addClass('hide');
+      $('#ae499k').addClass('hide');
+      $('#ae450k').addClass('hide');
+      $('#allae').removeClass('hide');
+    },
 
     filterCategoryAE450k() {
       $('#ae1m').addClass('hide');
       $('#ae15m').addClass('hide');
       $('#ae700k').addClass('hide');
       $('#ae499k').addClass('hide');
+      $('#allae').addClass('hide');
       $('#ae450k').removeClass('hide');
     },
 
@@ -48,6 +60,7 @@ export default Route.extend({
       $('#ae15m').addClass('hide');
       $('#ae450k').addClass('hide');
       $('#ae499k').addClass('hide');
+      $('#allae').addClass('hide');
       $('#ae700k').removeClass('hide');
     },
 
@@ -56,6 +69,7 @@ export default Route.extend({
       $('#ae700k').addClass('hide');
       $('#ae450k').addClass('hide');
       $('#ae499k').addClass('hide');
+      $('#allae').addClass('hide');
       $('#ae1m').removeClass('hide');
     },
 
@@ -64,6 +78,7 @@ export default Route.extend({
       $('#ae700k').addClass('hide');
       $('#ae450k').addClass('hide');
       $('#ae499k').addClass('hide');
+      $('#allae').addClass('hide');
       $('#ae15m').removeClass('hide');
     },
 
@@ -72,6 +87,7 @@ export default Route.extend({
       $('#ae15m').addClass('hide');
       $('#ae700k').addClass('hide');
       $('#ae450k').addClass('hide');
+      $('#allae').addClass('hide');
       $('#ae499k').removeClass('hide');
     },
 
