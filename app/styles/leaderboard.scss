@@ -270,11 +270,17 @@ padding:0;
   text-align:left;
  }
 .filterOptions ul li:hover {
-  background-color:#0099D8;
-  color:white;
+  // background-color:#0099D8;
+  color:#0099D8;
   cursor: pointer;
 
  }
+// .filterOptions ul li:hover {
+//   background-color:#0099D8;
+//   color:white;
+//   cursor: pointer;
+//
+//  }
 #filterCategory {
   margin-left:60px;
   margin-top:40px;

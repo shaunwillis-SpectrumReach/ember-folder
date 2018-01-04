@@ -2,10 +2,12 @@ import Route from '@ember/routing/route';
 import RSVP from 'rsvp';
 
 export default Route.extend({
+  // renderTemplate: function() {
+  //     this.render('loading');
+  //   },
 
   beforeModel() {
     $('#burger').removeClass('hide');
-
   },
 
   model() {
@@ -13,7 +15,8 @@ export default Route.extend({
       mine: this.store.query('ae15m', {
           mine: true,
         }),
-      all: this.store.findAll('ae15m')
+      all: this.store.findAll('ae15m'),
+      ae1m: this.store.findAll('ae1m')
     });
     // return this.store.query('ae15m', {
     //     mine: true,
@@ -24,8 +27,23 @@ export default Route.extend({
 
 
 
-
   actions: {
+
+
+    filterCategoryAE15m() {
+      $('#ae1m').removeClass('hide');
+      $('#ae15m').addClass('hide');
+    },
+
+    showAllAEs() {
+      $('#ae1m').addClass('hide');
+      $('#ae15m').removeClass('hide');
+    },
+    // filterCategoryAE1m() {
+    //   // return this.store.query('ae15m', {
+    //   // });
+    //   $('#ae15m').addClass('displaynone');
+    // },
 
     scrollToTop() {
       // document.getElementById('message').scrollIntoView();
@@ -104,6 +122,13 @@ export default Route.extend({
       $('#showFilter').removeClass('hide');
       $('#hideFilter').addClass('hide');
 
+    },
+    removeCategory() {
+      $('#filterCategory').addClass('hide');
+      $('#filterDivisions').addClass('hide');
+      $('#filterRegions').addClass('hide');
+      $('#filterManagers').addClass('hide');
+      $('#filterAEs').addClass('hide');
     },
 
   },
