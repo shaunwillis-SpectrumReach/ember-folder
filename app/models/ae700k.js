@@ -6,5 +6,5 @@ export default DS.Model.extend({
   division: DS.attr('string'),
   region: DS.attr('string'),
   managername: DS.attr('string'),
-  pids: DS.belongsTo('pids')
+  pid: DS.belongsTo('pids')
 });

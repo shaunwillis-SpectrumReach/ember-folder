@@ -16,7 +16,10 @@ export default Route.extend({
           mine: true,
         }),
       all: this.store.findAll('ae15m'),
-      ae1m: this.store.findAll('ae1m')
+      ae1m: this.store.findAll('ae1m'),
+      ae700k: this.store.findAll('ae700k'),
+      ae499k: this.store.findAll('ae499k'),
+      ae450k: this.store.findAll('ae450k')
     });
     // return this.store.query('ae15m', {
     //     mine: true,
@@ -30,15 +33,48 @@ export default Route.extend({
   actions: {
 
 
-    filterCategoryAE15m() {
-      $('#ae1m').removeClass('hide');
+
+
+    filterCategoryAE450k() {
+      $('#ae1m').addClass('hide');
       $('#ae15m').addClass('hide');
+      $('#ae700k').addClass('hide');
+      $('#ae499k').addClass('hide');
+      $('#ae450k').removeClass('hide');
+    },
+
+    filterCategoryAE700k() {
+      $('#ae1m').addClass('hide');
+      $('#ae15m').addClass('hide');
+      $('#ae450k').addClass('hide');
+      $('#ae499k').addClass('hide');
+      $('#ae700k').removeClass('hide');
+    },
+
+    filterCategoryAE1m() {
+      $('#ae15m').addClass('hide');
+      $('#ae700k').addClass('hide');
+      $('#ae450k').addClass('hide');
+      $('#ae499k').addClass('hide');
+      $('#ae1m').removeClass('hide');
     },
 
     showAllAEs() {
       $('#ae1m').addClass('hide');
+      $('#ae700k').addClass('hide');
+      $('#ae450k').addClass('hide');
+      $('#ae499k').addClass('hide');
       $('#ae15m').removeClass('hide');
     },
+
+    filterCategoryAE499k() {
+      $('#ae1m').addClass('hide');
+      $('#ae15m').addClass('hide');
+      $('#ae700k').addClass('hide');
+      $('#ae450k').addClass('hide');
+      $('#ae499k').removeClass('hide');
+    },
+
     // filterCategoryAE1m() {
     //   // return this.store.query('ae15m', {
     //   // });

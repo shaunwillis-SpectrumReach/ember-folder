@@ -107,7 +107,13 @@
                             X
                   </p>
               </div>
-              <ul><li >1.5m+</li><li {{action "filterCategoryAE15m"}}>1.0m-1.49m</li><li>700k-999k</li><li>450k-699k</li><li>499k-under</li></ul>
+              <ul>
+                <li {{action "showAllAEs"}}>1.5m+</li>
+                <li {{action "filterCategoryAE1m"}}>1.0m-1.49m</li>
+                <li {{action "filterCategoryAE700k"}}>700k-999k</li>
+                <li {{action "filterCategoryAE450k"}}>450k-699k</li>
+                <li {{action "filterCategoryAE499k"}}>449k-under</li>
+              </ul>
             </div>
         </div>
         <div id="filterDivisions" class="row  hide" >
@@ -238,6 +244,57 @@
     </div>
     <div class="row hide" id="ae1m" >
       {{#each model.ae1m as |ae15m|}}
+      <div class="col-xs-2 col-sm-2 col-md-1 bgLtBLue">{{round (div ae15m.id 10)}}</div>
+    <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+      <div class="col-xs-3 col-sm-3 col-md-2">{{ ae15m.name }}</div>
+      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">{{ ae15m.division }}</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+      <div class="col-xs-1 col-md-3 listHide">
+          <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
+            <div class="progress-bar" role="progressbar" aria-valuenow="{{ae15m.fullyear}}" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:{{ae15m.fullyear}}%; ">
+              <!-- <span class="">70% </span> -->
+            </div>
+          </div></div>        <div class="col-sm-1">{{ae15m.fullyear}}%</div>
+          <div class="col-xs-1  col-sm-1"></div>
+        {{/each}}
+    </div>
+    <div class="row hide" id="ae700k" >
+      {{#each model.ae700k as |ae15m|}}
+      <div class="col-xs-2 col-sm-2 col-md-1 bgLtBLue">{{round (div ae15m.id 10)}}</div>
+    <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+      <div class="col-xs-3 col-sm-3 col-md-2">{{ ae15m.name }}</div>
+      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">{{ ae15m.division }}</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+      <div class="col-xs-1 col-md-3 listHide">
+          <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
+            <div class="progress-bar" role="progressbar" aria-valuenow="{{ae15m.fullyear}}" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:{{ae15m.fullyear}}%; ">
+              <!-- <span class="">70% </span> -->
+            </div>
+          </div></div>        <div class="col-sm-1">{{ae15m.fullyear}}%</div>
+          <div class="col-xs-1  col-sm-1"></div>
+        {{/each}}
+    </div>
+    <div class="row hide" id="ae450k" >
+      {{#each model.ae450k as |ae15m|}}
+      <div class="col-xs-2 col-sm-2 col-md-1 bgLtBLue">{{round (div ae15m.id 10)}}</div>
+    <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+      <div class="col-xs-3 col-sm-3 col-md-2">{{ ae15m.name }}</div>
+      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">{{ ae15m.division }}</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
+      <div class="col-xs-1 col-md-3 listHide">
+          <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
+            <div class="progress-bar" role="progressbar" aria-valuenow="{{ae15m.fullyear}}" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:{{ae15m.fullyear}}%; ">
+              <!-- <span class="">70% </span> -->
+            </div>
+          </div></div>        <div class="col-sm-1">{{ae15m.fullyear}}%</div>
+          <div class="col-xs-1  col-sm-1"></div>
+        {{/each}}
+    </div>
+    <div class="row hide" id="ae499k" >
+      {{#each model.ae499k as |ae15m|}}
       <div class="col-xs-2 col-sm-2 col-md-1 bgLtBLue">{{round (div ae15m.id 10)}}</div>
     <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
       <div class="col-xs-3 col-sm-3 col-md-2">{{ ae15m.name }}</div>
