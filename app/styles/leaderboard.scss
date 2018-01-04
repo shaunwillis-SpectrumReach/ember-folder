@@ -137,13 +137,22 @@ margin:0;
 padding:0;
 
 }
+
 .eliteGroup .image1st img {
-clip-path: circle(118px at center);
+clip-path: circle(112px at center);
 width:100%;
 height:auto;
-margin-top:-6px;
-margin-left:-4px;
+margin-top:0px;
+margin-left:0px;
 }
+//
+// .eliteGroup .image1st img {
+// clip-path: circle(111px at center);
+// width:100%;
+// height:auto;
+// margin-top:-6px;
+// margin-left:-4px;
+// }
 
 .eliteGroup .image2nd {
 float:left;

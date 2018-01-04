@@ -2,7 +2,7 @@
   <div id="contentHome" class="" >
     <section id="header">
       <div class="userNameTop">Welcome, {{ currentUser.pid.firstname }}</div>
-          <img class="l_FirstLook" src="/assets/img/L_FirstLook.png" >
+          {{#link-to 'firstlook.homepage'}}<img class="l_FirstLook" src="/assets/img/L_FirstLook.png" >{{/link-to}}
     </section>
 
 
