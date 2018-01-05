@@ -6,8 +6,20 @@
     </section>
 
 <section id="title">
-  <h3 style="margin-top: 5rem;">Official Sign Up</h3>
-</section >
+  <h3 style="">Official LSM Sign Up</h3>
+  {{#simple-form onsubmit=(action "saveForm") as |formValues|}}
+  {{input value=formValues.pid placeholder="Employee ID"}}<br/>
+  {{input value=formValues.firstname placeholder="First Name"}}<br/>
+  {{input value=formValues.lastname placeholder="Last Name"}}<br/>
+  {{input value=formValues.email placeholder="Email"}}<br/>
+  {{input type="password" value=formValues.password placeholder="Password"}}<br/>
+  {{input value=formValues.managername placeholder="Manager Name"}}<br/>
+  {{input value=formValues.division placeholder="Division"}}<br/>
+  {{input value=formValues.region placeholder="Region"}}<br/>
+  <!-- {{input value=formValues.jobtitle placeholder="Job Title"}}<br/> -->
+  <button  class="SR_btn">Register</button>
+  {{/simple-form}}
+</section>
 
 
 <!-- This File Upload is using Dropzone -->
@@ -27,23 +39,9 @@ Dropzone.options.filesUploader = {
  paramName: "file", // The name that will be used to transfer the file
 }
 </script> -->
-  <section id="formHolder" style="">
-    {{#simple-form onsubmit=(action "saveForm") as |formValues|}}
-      {{input value=formValues.pid placeholder="Employee ID"}}<br/>
-      {{input value=formValues.firstname placeholder="First Name"}}<br/>
-      {{input value=formValues.lastname placeholder="Last Name"}}<br/>
-      {{input value=formValues.email placeholder="Email"}}<br/>
-      {{input type="password" value=formValues.password placeholder="Password"}}<br/>
-      {{input value=formValues.managername placeholder="Manager Name"}}<br/>
-      {{input value=formValues.division placeholder="Division"}}<br/>
-      {{input value=formValues.region placeholder="Region"}}<br/>
-      <!-- {{input value=formValues.jobtitle placeholder="Job Title"}}<br/> -->
-        <button  class="SR_btn">Register</button>
-    {{/simple-form}}
-</section>
 
 
-<section id="bottomLogo" >
+<section id="bottomLogo" style="padding: 9px 0;" >
   <img src="/assets/img/Spectrum_Reach_Rev_RGB.svg">
 </section>
 

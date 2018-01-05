@@ -3,11 +3,11 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   actions: {
     saveForm(changesFromForm) {
-      let profile = this.store.createRecord('pids', changesFromForm);
+      let profile = this.store.createRecord('pid', changesFromForm);
         profile.save().then(() => {
-          profile.set('pids', profile);
+          profile.set('pid', profile);
         }).then(() => {
-          this.transitionToRoute('register-conf');
+          this.transitionToRoute('register-thanks');
 
         })
 
