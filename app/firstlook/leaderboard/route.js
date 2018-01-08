@@ -10,32 +10,40 @@ export default Route.extend({
     $('#burger').removeClass('hide');
   },
 
-  model() {
-    return RSVP.hash({
-      mine: this.store.query('ae15m', {
-          mine: true,
-        }),
-      all: this.store.findAll('ae15m'),
-      ae1m: this.store.findAll('ae1m'),
-      ae700k: this.store.findAll('ae700k'),
-      ae450k: this.store.findAll('ae450k'),
-      ae499k: this.store.findAll('ae499k'),
-      //Allaes and AE15m needs to be corrected after launch
-      allae: this.store.findAll('allae'),
-      northeast1: this.store.query('pid', {
-        division: '',
-      })
-    });
-    // return this.store.query('ae15m', {
-    //     mine: true,
-    //   });
-      // return this.store.findAll('ae15m');
-  },
+model() {
+  return RSVP.hash({
+    mine: this.store.query('ae15m', {
+        mine: true,
+      }),
+    all: this.store.findAll('ae15m'),
+    ae1m: this.store.findAll('ae1m'),
+    ae700k: this.store.findAll('ae700k'),
+    ae450k: this.store.findAll('ae450k'),
+    ae499k: this.store.findAll('ae499k'),
+    //Allaes and AE15m needs to be corrected after launch
+    allae: this.store.findAll('allae')
+    // northeast: this.store.findAll('pid')
+  });
+  // return this.store.query('ae15m', {
+  //     mine: true,
+  //   });
+    // return this.store.findAll('ae15m');
+},
 
 
 
 
   actions: {
+
+    filterDivisionNortheast() {
+      $('#ae1m').addClass('hide');
+      $('#ae15m').addClass('hide');
+      $('#ae700k').addClass('hide');
+      $('#ae499k').addClass('hide');
+      $('#ae450k').addClass('hide');
+      $('#allae').addClass('hide');
+      $('#northeast').removeClass('hide');
+    },
 
     filterCategoryAllaes() {
       $('#ae1m').addClass('hide');

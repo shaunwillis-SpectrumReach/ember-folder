@@ -129,7 +129,11 @@
                             X
                   </p>
               </div>
-              <ul><li>Northeast</li><li>Northwest</li><li>Southeast</li><li>West</li></ul>
+              <ul>
+                <li {{action "filterDivisionNortheast"}}>Northeast</li>
+                <li>Northwest</li>
+                <li>Southeast</li>
+                <li>West</li></ul>
             </div>
         </div>
 
@@ -223,6 +227,10 @@
     <!-- {{full-standings model=model}} -->
     <!-- {{test-component}} -->
   <!-- </div> -->
+
+  <!--   ================================   -->
+  <!--  Filter for Category   -->
+  <!--   ================================   -->
    <div class="row" id="ae15m" >
 
       {{#each model.all as |ae15m|}}
@@ -324,6 +332,27 @@
               <!-- <span class="">70% </span> -->
             </div>
           </div></div>        <div class="col-sm-1">{{ae15m.fullyear}}%</div>
+          <div class="col-xs-1  col-sm-1"></div>
+        {{/each}}
+    </div>
+    <!--   ================================   -->
+    <!--  Filter for division   -->
+    <!--   ================================   -->
+
+    <div class="row hide" id="northeast" >
+      {{#each model.northeast as |ae15m|}}
+      <div class="col-xs-2 col-sm-2 col-md-1 bgLtBLue">{{round (div ae15m.id 10)}}</div>
+    <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
+      <div class="col-xs-3 col-sm-3 col-md-2">{{ ae15m.firstname }} {{ae15m.lastname}}</div>
+      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">{{ ae15m.managername }}</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">{{ ae15m.division }}</div>
+      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">{{ ae15m.region }}</div>
+      <div class="col-xs-1 col-md-3 listHide">
+          <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
+            <div class="progress-bar" role="progressbar" aria-valuenow="{{ae15m.AE15ms.fullyear}}" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:{{ae15m.AE15ms.fullyear}}%; ">
+              <!-- <span class="">70% </span> -->
+            </div>
+          </div></div>        <div class="col-sm-1">{{ae15m.AE15ms.fullyear}}%</div>
           <div class="col-xs-1  col-sm-1"></div>
         {{/each}}
     </div>
