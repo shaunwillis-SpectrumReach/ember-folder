@@ -7,7 +7,7 @@ export default Ember.Controller.extend({
         profile.save().then(() => {
           profile.set('pid', profile);
         }).then(() => {
-          this.transitionToRoute('register-thanks');
+          this.transitionToRoute('firstlook.register-thanks');
 
         })
 

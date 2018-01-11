@@ -6,7 +6,7 @@
     </section>
 
 <section id="title">
-  <h3 style="">Official LSM Sign Up</h3>
+  <h3 style="">Official Sales Team Sign Up</h3>
   {{#simple-form onsubmit=(action "saveForm") as |formValues|}}
   {{input value=formValues.pid placeholder="Employee ID"}}<br/>
   {{input value=formValues.firstname placeholder="First Name"}}<br/>
@@ -16,7 +16,7 @@
   {{input value=formValues.managername placeholder="Manager Name"}}<br/>
   {{input value=formValues.division placeholder="Division"}}<br/>
   {{input value=formValues.region placeholder="Region"}}<br/>
-  <!-- {{input value=formValues.jobtitle placeholder="Job Title"}}<br/> -->
+  {{input value=formValues.jobtitle placeholder="Job Title"}}<br/>
   <button  class="SR_btn">Register</button>
   {{/simple-form}}
 </section>
@@ -42,7 +42,7 @@ Dropzone.options.filesUploader = {
 
 
 <section id="bottomLogo" style="padding: 9px 0;" >
-  <img src="/assets/img/Spectrum_Reach_Rev_RGB.svg">
+  <img src="/assets/img/Spectrum_Reach_Rev_RGB.svg" style=" right: 1vw; bottom: 1vh;">
 </section>
 
 </div>

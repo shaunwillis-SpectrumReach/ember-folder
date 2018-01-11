@@ -9,7 +9,7 @@ export default DS.Model.extend({
   managername: DS.attr('string'),
   division: DS.attr('string'),
   region: DS.attr('string'),
-  // jobtitle: DS.attr('string'),
+  jobtitle: DS.attr('string'),
   ae15ms: DS.hasMany('ae15m'),
   ae1ms: DS.hasMany('ae1m'),
   // profilePicUrl: DS.attr('string'),
