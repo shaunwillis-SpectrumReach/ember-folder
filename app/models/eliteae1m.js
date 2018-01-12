@@ -7,5 +7,6 @@ export default DS.Model.extend({
   region: DS.attr('string'),
   managername: DS.attr('string'),
   pids: DS.belongsTo('pids'),
+  rank: DS.attr('string'),
   top5: DS.attr('string')
 });
