@@ -6,6 +6,7 @@ export default Route.extend({
   //     this.render('loading');
   //   },
 
+
   beforeModel() {
     $('#burger').removeClass('hide');
   },
@@ -15,15 +16,21 @@ model() {
     mine: this.store.query('ae15m', {
         mine: true,
       }),
-    all: this.store.findAll('ae15m'),
+    // all: this.store.findAll('ae15m'),
     ae1m: this.store.findAll('ae1m'),
     ae700k: this.store.findAll('ae700k'),
     ae450k: this.store.findAll('ae450k'),
     ae499k: this.store.findAll('ae499k'),
     //Allaes and AE15m needs to be corrected after launch
     allae: this.store.findAll('allae')
-    // northeast: this.store.findAll('pid')
-  });
+    // northeast: this.store.findAll('ae15m').then(results => results.filter((ae15m) => {
+    //                 return ae15m.get('division') === 'northeast';
+    //              })
+    //            )
+    // northeast: Ember.computed.sort('ae15m', 'sortDivisions')
+
+    });
+    // sortDefinition: Ember.computed.sort('division')
   // return this.store.query('ae15m', {
   //     mine: true,
   //   });

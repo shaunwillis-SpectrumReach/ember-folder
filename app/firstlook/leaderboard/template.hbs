@@ -51,7 +51,7 @@
            </div >
 
     	  <div class=" col-md-12 col-lg-6" >
-    	 	 <div style="float:left;"><h2 style="color:#003057;">&nbsp;</h2></div>   <div  style="float:right;"><h2 class="ltBlue">{{#each model.mine as |ae15m|}}
+    	 	 <div style="float:left;"><h2 style="color:#003057;">&nbsp;</h2></div>   <div  style="float:right;"><h2 class="ltBlue" style="font-size: 72px; color: #003057;">{{#each model.mine as |ae15m|}}
         {{ ae15m.fullyear }}%
         {{/each}} </h2></div>
         {{#each model.mine as |ae15m|}}
@@ -61,7 +61,7 @@
             </div>
           </div>
           {{/each}}
-          <div style="float:left; margin-top:10px;"><h2>&nbsp;</h2></div>   <div style="float:right; margin-top:10px;"><h2 style="color:#003057;">$433,500/$510,000 </h2></div>
+          <!-- <div style="float:left; margin-top:10px;"><h2>&nbsp;</h2></div>   <div style="float:right; margin-top:10px;"><h2 style="color:#003057;">$433,500/$510,000 </h2></div> -->
     	 </div>
 
 
@@ -92,8 +92,23 @@
 
     </div>
 
-    <div class="row" id="Filters"  >
-    <div class="col-lg-12 filters " style="    padding-left: 8px;" ><div class="filterBtn active" {{action "showFilters"}} ><h3  class="ltBlue" {{action "showAllAEs"}}>All</h3></div><div class="filterBtn" {{action "showCategory"}}><h3  class="ltBlue">Category</h3></div><div class="filterBtn" {{action "showDivision"}}><h3 class="ltBlue">Division</h3></div><div class="filterBtn" {{action "showRegion"}} ><h3  class="ltBlue">Region</h3></div><div class="filterBtn" {{action "showManager"}}><h3  class="ltBlue">Manager</h3></div><div class="filterBtn" {{action "showAE"}}><h3  class="ltBlue">AE Name</h3></div></div>
+    <!-- This is commented out, because we have added a new feature from ember addons. -->
+     <div class="row" id="Filters"  >
+    <div class="col-lg-12 filters " style="    padding-left: 8px;" >
+            <!-- <div class="filterBtn active" >
+                <h3  class="ltBlue" {{action "showAllAEs"}}>All</h3></div> -->
+            <div class="filterBtn" {{action "filterCategoryAllaes"}}>
+                <h3  class="ltBlue">1.5m+</h3></div>
+            <div class="filterBtn" {{action "filterCategoryAE1m"}}>
+                <h3 class="ltBlue">1.0m-1.49m</h3></div>
+            <div class="filterBtn" {{action "filterCategoryAE700k"}} >
+                <h3  class="ltBlue">700k-999k</h3></div>
+            <div class="filterBtn" {{action "filterCategoryAE450k"}}>
+                <h3  class="ltBlue">450k-699k</h3></div>
+            <div class="filterBtn" {{action "filterDivisionNortheast"}}>
+                <h3  class="ltBlue">449k-under</h3></div>
+
+      </div>
         <div id="filterCategory" class="row hide" >
             <div class="filterOptions">
               <div class="" {{action "removeCategory"}}>
@@ -200,7 +215,7 @@
 <!--  KEEP THIS AS HEADER  -->
 <!--   ================================   -->
 
-<div class="dataheader" style=" color:white;">
+<!-- <div class="dataheader" style=" color:white;">
   <div class="container-fluid" >
     <div class="row listHide3" >
 
@@ -215,7 +230,7 @@
         <div class="col-xxs-1  col-sm-1"><span class="" style="z-index:10000;" {{action "resetList"}}>Top <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
     </div>
 </div>
-</div>
+</div> -->
 
   <div id="datatable" class="container-fluid datatable" >
 
@@ -231,7 +246,7 @@
   <!--   ================================   -->
   <!--  Filter for Category   -->
   <!--   ================================   -->
-   <div class="row" id="ae15m" >
+   <div class="row hide"  id="ae15m" >
 
       {{#each model.all as |ae15m|}}
       <div class="col-xs-2 col-sm-2 col-md-1 bgLtBLue">{{round (div ae15m.id 10)}}</div>
@@ -268,94 +283,77 @@
         {{/each}}
     </div>
     <div class="row hide" id="ae700k" >
-      {{#each model.ae700k as |ae15m|}}
-      <div class="col-xs-2 col-sm-2 col-md-1 bgLtBLue">{{round (div ae15m.id 10)}}</div>
-    <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
-      <div class="col-xs-3 col-sm-3 col-md-2">{{ ae15m.name }}</div>
-      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
-      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">{{ ae15m.division }}</div>
-      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
-      <div class="col-xs-1 col-md-3 listHide">
-          <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
-            <div class="progress-bar" role="progressbar" aria-valuenow="{{ae15m.fullyear}}" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:{{ae15m.fullyear}}%; ">
-              <!-- <span class="">70% </span> -->
-            </div>
-          </div></div>        <div class="col-sm-1">{{ae15m.fullyear}}%</div>
-          <div class="col-xs-1  col-sm-1"></div>
-        {{/each}}
-    </div>
-    <div class="row hide" id="ae450k" >
-      {{#each model.ae450k as |ae15m|}}
-      <div class="col-xs-2 col-sm-2 col-md-1 bgLtBLue">{{round (div ae15m.id 10)}}</div>
-    <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
-      <div class="col-xs-3 col-sm-3 col-md-2">{{ ae15m.name }}</div>
-      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
-      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">{{ ae15m.division }}</div>
-      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
-      <div class="col-xs-1 col-md-3 listHide">
-          <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
-            <div class="progress-bar" role="progressbar" aria-valuenow="{{ae15m.fullyear}}" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:{{ae15m.fullyear}}%; ">
-              <!-- <span class="">70% </span> -->
-            </div>
-          </div></div>        <div class="col-sm-1">{{ae15m.fullyear}}%</div>
-          <div class="col-xs-1  col-sm-1"></div>
-        {{/each}}
-    </div>
-    <div class="row hide" id="ae499k" >
-      {{#each model.ae499k as |ae15m|}}
-      <div class="col-xs-2 col-sm-2 col-md-1 bgLtBLue">{{round (div ae15m.id 10)}}</div>
-    <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
-      <div class="col-xs-3 col-sm-3 col-md-2">{{ ae15m.name }}</div>
-      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
-      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">{{ ae15m.division }}</div>
-      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
-      <div class="col-xs-1 col-md-3 listHide">
-          <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
-            <div class="progress-bar" role="progressbar" aria-valuenow="{{ae15m.fullyear}}" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:{{ae15m.fullyear}}%; ">
-              <!-- <span class="">70% </span> -->
-            </div>
-          </div></div>        <div class="col-sm-1">{{ae15m.fullyear}}%</div>
-          <div class="col-xs-1  col-sm-1"></div>
-        {{/each}}
-    </div>
-    <div class="row hide" id="allae" >
-      {{#each model.allae as |ae15m|}}
-      <div class="col-xs-2 col-sm-2 col-md-1 bgLtBLue">{{round (div ae15m.id 10)}}</div>
-    <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
-      <div class="col-xs-3 col-sm-3 col-md-2">{{ ae15m.name }}</div>
-      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
-      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">{{ ae15m.division }}</div>
-      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
-      <div class="col-xs-1 col-md-3 listHide">
-          <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
-            <div class="progress-bar" role="progressbar" aria-valuenow="{{ae15m.fullyear}}" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:{{ae15m.fullyear}}%; ">
-              <!-- <span class="">70% </span> -->
-            </div>
-          </div></div>        <div class="col-sm-1">{{ae15m.fullyear}}%</div>
-          <div class="col-xs-1  col-sm-1"></div>
-        {{/each}}
+      <div class="col-lg-12">
+        {{models-table
+          data=model.ae700k
+          columns=columns
+          showGlobalFilter=falses
+          showComponentFooter=falses
+          columnComponents=(hash progressBar=(component "progress-bar") percentSymbol=(component "percent-symbol") rankNumber=(component "rank-number") profileImg=(component "profile-img"))
+          pageSize=755}}
+        </div>
     </div>
     <!--   ================================   -->
-    <!--  Filter for division   -->
+    <!--  450K table  -->
     <!--   ================================   -->
 
-    <div class="row hide" id="northeast" >
-      {{#each model.northeast as |ae15m|}}
-      <div class="col-xs-2 col-sm-2 col-md-1 bgLtBLue">{{round (div ae15m.id 10)}}</div>
-    <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
-      <div class="col-xs-3 col-sm-3 col-md-2">{{ ae15m.firstname }} {{ae15m.lastname}}</div>
-      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">{{ ae15m.managername }}</div>
-      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">{{ ae15m.division }}</div>
-      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">{{ ae15m.region }}</div>
-      <div class="col-xs-1 col-md-3 listHide">
-          <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
-            <div class="progress-bar" role="progressbar" aria-valuenow="{{ae15m.AE15ms.fullyear}}" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:{{ae15m.AE15ms.fullyear}}%; ">
-              <!-- <span class="">70% </span> -->
-            </div>
-          </div></div>        <div class="col-sm-1">{{ae15m.AE15ms.fullyear}}%</div>
-          <div class="col-xs-1  col-sm-1"></div>
-        {{/each}}
+    <div class="row hide" id="ae450k" >
+      <div class="col-lg-12">
+        {{models-table
+          data=model.ae450k
+          columns=columns
+          showGlobalFilter=falses
+          showComponentFooter=falses
+          columnComponents=(hash progressBar=(component "progress-bar") percentSymbol=(component "percent-symbol") rankNumber=(component "rank-number") profileImg=(component "profile-img"))
+          pageSize=755}}
+        </div>
     </div>
+    <!--   ================================   -->
+    <!--  449K table  -->
+    <!--   ================================   -->
+
+    <div class="row hide" id="ae499k" >
+      <div class="col-lg-12">
+        {{models-table
+          data=model.ae499k
+          columns=columns
+          showGlobalFilter=falses
+          showComponentFooter=falses
+          columnComponents=(hash progressBar=(component "progress-bar") percentSymbol=(component "percent-symbol") rankNumber=(component "rank-number") profileImg=(component "profile-img"))
+          pageSize=755}}
+        </div>
+    </div>
+    <!--   ================================   -->
+    <!--  1.5m+ table  -->
+    <!--   ================================   -->
+
+    <div class="row hide" id="allae" >
+      <div class="col-lg-12">
+        {{models-table
+          data=model.allae
+          columns=columns
+          showGlobalFilter=falses
+          showComponentFooter=falses
+          columnComponents=(hash progressBar=(component "progress-bar") percentSymbol=(component "percent-symbol") rankNumber=(component "rank-number") profileImg=(component "profile-img"))
+          pageSize=755}}
+        </div>
+    </div>
+    <!--   ================================   -->
+    <!--  Models Table example   -->
+    <!--   ================================   -->
+
+    <div class="row" id="northeast" >
+      <div class="col-lg-12">
+        {{models-table
+          data=model.allae
+          columns=columns
+          showGlobalFilter=falses
+          showComponentFooter=falses
+          columnComponents=(hash progressBar=(component "progress-bar") percentSymbol=(component "percent-symbol") rankNumber=(component "rank-number") profileImg=(component "profile-img"))
+          pageSize=755}}
+        </div>
+    </div>
+
 
   <!-- <div class="row" >
     <div class="col-xs-2 col-sm-2 col-md-1 bgDkBlue">2</div>

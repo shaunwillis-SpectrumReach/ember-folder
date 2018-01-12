@@ -1,0 +1,24 @@
+thead {
+    background: url(/assets/img/Main_Header_bg.svg);
+    background-size: 102%;
+    background-repeat: no-repeat;
+    width: 100.1%;
+    color: white;
+  }
+
+
+  button.btn.btn-default.dropdown-toggle {
+      display: none;
+  }
+
+.table thead th {
+  border: 0px;
+}
+
+tbody tr td {
+  text-align: left;
+}
+
+.widerwidth {
+  width: 20rem;
+}
