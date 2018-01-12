@@ -42,15 +42,7 @@ model() {
 
   actions: {
 
-    filterDivisionNortheast() {
-      $('#ae1m').addClass('hide');
-      $('#ae15m').addClass('hide');
-      $('#ae700k').addClass('hide');
-      $('#ae499k').addClass('hide');
-      $('#ae450k').addClass('hide');
-      $('#allae').addClass('hide');
-      $('#northeast').removeClass('hide');
-    },
+    
 
     filterCategoryAllaes() {
       $('#ae1m').addClass('hide');

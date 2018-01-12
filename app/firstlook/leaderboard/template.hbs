@@ -36,7 +36,7 @@
              <div class=" "  style="text-align:left; ">
                <div class="image2nd " >
                  {{#each model.mine as |ae15m|}}
-                 <div class="rank ">#{{round (div ae15m.id 10)}}</div><img src="/assets/img/homepage/nav_generic_thumb.svg"   >
+                 <div class="rank ">#{{ae15m.rank}}</div><img src="/assets/img/homepage/nav_generic_thumb.svg"   >
                  {{/each}}
                </div>
 
@@ -86,17 +86,12 @@
   <div class="container" >
     <div class="row" >
     <div class="col-lg-12 text-left" ><h1>STANDINGS</h1></div>
-
-    <!-- <div {{action "showFilters"}} id="showFilter" class=" filter" style="float:left; margin:24px 2px 0 30px;">Filters <img src="/assets/img/leaderboard/nav_right.png" height="16" class="" id="nav_right"></div> -->
-    <!-- <div {{action "hideFilters"}} id="hideFilter" class=" filter hide" style="float:left; margin:24px 2px 0 30px;">Filters <img src="/assets/img/leaderboard/nav_right.png" height="16" class="rotate90 " id="nav_right"></div> -->
-
     </div>
 
-    <!-- This is commented out, because we have added a new feature from ember addons. -->
+    <!-- Tabs section Temporarily until New Tabs are built-->
      <div class="row" id="Filters"  >
     <div class="col-lg-12 filters " style="    padding-left: 8px;" >
-            <!-- <div class="filterBtn active" >
-                <h3  class="ltBlue" {{action "showAllAEs"}}>All</h3></div> -->
+
             <div class="filterBtn" {{action "filterCategoryAllaes"}}>
                 <h3  class="ltBlue">1.5m+</h3></div>
             <div class="filterBtn" {{action "filterCategoryAE1m"}}>
@@ -105,103 +100,11 @@
                 <h3  class="ltBlue">700k-999k</h3></div>
             <div class="filterBtn" {{action "filterCategoryAE450k"}}>
                 <h3  class="ltBlue">450k-699k</h3></div>
-            <div class="filterBtn" {{action "filterDivisionNortheast"}}>
+            <div class="filterBtn" {{action "filterCategoryAE499k"}}>
                 <h3  class="ltBlue">449k-under</h3></div>
 
       </div>
-        <div id="filterCategory" class="row hide" >
-            <div class="filterOptions">
-              <div class="" {{action "removeCategory"}}>
-                <p style="    position: absolute;
-                              top: 0;
-                              right: 0;
-                              transform: translate(-100%, 50%);
-                              cursor: pointer;
-                              color: #0099D8;
-                              ">
-                            X
-                  </p>
-              </div>
-              <ul>
-                <li {{action "filterCategoryAllaes"}}>1.5m+</li>
-                <li {{action "filterCategoryAE1m"}}>1.0m-1.49m</li>
-                <li {{action "filterCategoryAE700k"}}>700k-999k</li>
-                <li {{action "filterCategoryAE450k"}}>450k-699k</li>
-                <li {{action "filterCategoryAE499k"}}>449k-under</li>
-              </ul>
-            </div>
-        </div>
-        <div id="filterDivisions" class="row  hide" >
-            <div class="filterOptions">
-              <div class="" {{action "removeCategory"}}>
-                <p style="    position: absolute;
-                              top: 0;
-                              right: 0;
-                              transform: translate(-100%, 50%);
-                              cursor: pointer;
-                              color: #0099D8;
-                              ">
-                            X
-                  </p>
-              </div>
-              <ul>
-                <li {{action "filterDivisionNortheast"}}>Northeast</li>
-                <li>Northwest</li>
-                <li>Southeast</li>
-                <li>West</li></ul>
-            </div>
-        </div>
 
-        <div id="filterRegions" class="row  hide" >
-            <div class="filterOptions">
-              <div class="" {{action "removeCategory"}}>
-                <p style="    position: absolute;
-                              top: 0;
-                              right: 0;
-                              transform: translate(-100%, 50%);
-                              cursor: pointer;
-                              color: #0099D8;
-                              ">
-                            X
-                  </p>
-              </div>
-              <ul><li>Carolinas</li><li>Florida</li><li>LA</li><li>MidNorth</li><li>Midwest</li><li>Mountain States</li><li>New York</li><li>Ohio</li><li>Pacific States</li><li>Southeast</li><li>Texas</li><li>Upstate NY - ME</li></ul>
-            </div>
-        </div>
-
-        <div id="filterManagers" class="row  hide" >
-            <div class="filterOptions">
-              <div class="" {{action "removeCategory"}}>
-                <p style="    position: absolute;
-                              top: 0;
-                              right: 0;
-                              transform: translate(-100%, 50%);
-                              cursor: pointer;
-                              color: #0099D8;
-                              ">
-                            X
-                  </p>
-              </div>
-              <ul><li>All Managers - otherwise, use search</li></ul>
-            </div>
-        </div>
-
-        <div id="filterAEs" class="row  hide" >
-            <div class="filterOptions">
-              <div class="" {{action "removeCategory"}}>
-                <p style="    position: absolute;
-                              top: 0;
-                              right: 0;
-                              transform: translate(-100%, 50%);
-                              cursor: pointer;
-                              color: #0099D8;
-                              ">
-                            X
-                  </p>
-              </div>
-              <ul><li>All AEs - otherwise, use search</li></ul>
-            </div>
-        </div>
 
     </div>
 
@@ -244,7 +147,7 @@
   <!-- </div> -->
 
   <!--   ================================   -->
-  <!--  Filter for Category   -->
+  <!--  Keep this row for when we need to create mobile view   -->
   <!--   ================================   -->
    <div class="row hide"  id="ae15m" >
 
@@ -265,23 +168,28 @@
         {{/each}}
 
     </div>
+    <!--   ================================   -->
+                    <!--  end   -->
+    <!--   ================================   -->
+
+
+    <!--   ================================   -->
+    <!--  1m table  -->
+    <!--   ================================   -->
     <div class="row hide" id="ae1m" >
-      {{#each model.ae1m as |ae15m|}}
-      <div class="col-xs-2 col-sm-2 col-md-1 bgLtBLue">{{round (div ae15m.id 10)}}</div>
-    <div class="col-xs-2 col-sm-2 col-md-1"><img src="/assets/img/homepage/nav_generic_thumb.svg"></div>
-      <div class="col-xs-3 col-sm-3 col-md-2">{{ ae15m.name }}</div>
-      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
-      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">{{ ae15m.division }}</div>
-      <div class="col-xs-1 col-md-2 col-lg-1 listHide2">Region</div>
-      <div class="col-xs-1 col-md-3 listHide">
-          <div class="progress" style=" background-color:white; border:1px solid #0099D8;">
-            <div class="progress-bar" role="progressbar" aria-valuenow="{{ae15m.fullyear}}" aria-valuemin="0" aria-valuemax="100" style="background-color:#0099D8; width:{{ae15m.fullyear}}%; ">
-              <!-- <span class="">70% </span> -->
-            </div>
-          </div></div>        <div class="col-sm-1">{{ae15m.fullyear}}%</div>
-          <div class="col-xs-1  col-sm-1"></div>
-        {{/each}}
+      <div class="col-lg-12">
+        {{models-table
+          data=model.ae1m
+          columns=columns
+          showGlobalFilter=falses
+          showComponentFooter=falses
+          columnComponents=(hash progressBar=(component "progress-bar") percentSymbol=(component "percent-symbol") rankNumber=(component "rank-number") profileImg=(component "profile-img"))
+          pageSize=755}}
+        </div>
     </div>
+    <!--   ================================   -->
+    <!--  700K table  -->
+    <!--   ================================   -->
     <div class="row hide" id="ae700k" >
       <div class="col-lg-12">
         {{models-table
@@ -308,10 +216,10 @@
           pageSize=755}}
         </div>
     </div>
+
     <!--   ================================   -->
     <!--  449K table  -->
     <!--   ================================   -->
-
     <div class="row hide" id="ae499k" >
       <div class="col-lg-12">
         {{models-table
@@ -323,11 +231,11 @@
           pageSize=755}}
         </div>
     </div>
+
     <!--   ================================   -->
     <!--  1.5m+ table  -->
     <!--   ================================   -->
-
-    <div class="row hide" id="allae" >
+    <div class="row" id="allae" >
       <div class="col-lg-12">
         {{models-table
           data=model.allae
@@ -338,11 +246,11 @@
           pageSize=755}}
         </div>
     </div>
+
     <!--   ================================   -->
     <!--  Models Table example   -->
     <!--   ================================   -->
-
-    <div class="row" id="northeast" >
+    <div class="row hide" id="northeast" >
       <div class="col-lg-12">
         {{models-table
           data=model.allae
