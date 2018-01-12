@@ -4,10 +4,14 @@ export default Ember.Controller.extend({
   session: Ember.inject.service(),
   showOnlyAE15m: false,
   columns: [
-  {
-    "propertyName": "id",
-    "title": "Rank",
-  },
+    {
+        "title": "Rank",
+        "component": "rankNumber"
+      },
+    {
+        "title": "",
+        "component": "profileImg"
+      },
   {
     "propertyName": "name",
     "title": "AE Name",
@@ -27,7 +31,7 @@ export default Ember.Controller.extend({
     "filterWithSelect": true,
     "predefinedFilterOptions": [
       "Northeast",
-      "Northwest",
+      "Central",
       "Southeast",
       "West"
     ]
@@ -53,12 +57,13 @@ export default Ember.Controller.extend({
   },
   {
       "title": "Progress",
-      "component": "progressBar"
+      "component": "progressBar",
+      "className": "widerwidth"
     },
   {
-    "propertyName": "fullyear",
-    "title": "%"
-  }
+      "title": "%",
+      "component": "percentSymbol"
+    }
 ],
 
 actions: {

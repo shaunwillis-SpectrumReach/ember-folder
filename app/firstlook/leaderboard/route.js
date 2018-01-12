@@ -6,7 +6,6 @@ export default Route.extend({
   //     this.render('loading');
   //   },
 
-  sortDivisions: ['division:asc'],
 
   beforeModel() {
     $('#burger').removeClass('hide');
