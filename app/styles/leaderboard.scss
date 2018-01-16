@@ -107,7 +107,7 @@ margin-top:-80px;
 margin-left:90px;}
 
 
-#leadingNumbers  .footnote {
+#leadingNumbers  .footnote, #lsmLeaders  .footnote  {
   font-size:11px;
   text-align: left;
   padding:0 0 0 0px;
@@ -207,7 +207,14 @@ padding:0;
   padding-top:30px;
 }
 
+.lsmGroup h4, .lsmGroup h5, {
+  text-align: left;
+}
+.lsmImg {
+  width:244px;
+  clip-path: circle(122px at center);
 
+}
 .active {
   color:#003057;
 }
