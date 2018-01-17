@@ -1,0 +1,41 @@
+{{outlet}}
+<div class="columns">
+
+  <div class="column is-3">
+    <div class="profile__pic">
+      {{profile-pic pid=pid large=true}}
+    </div>
+
+      {{#simple-form startingValues=pid onsubmit=(action "update" (action toggleProperty "editing")) as |formValues|}}
+
+        <p class="control center-buttons">
+          <button style="
+          width: 20rem;
+          height: 20rem;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          z-index: 1;
+          opacity: 0;
+          " type="button" class="button is-small is-warning" {{action onChoosePic}}>Upload Profile Pic</button>
+        </p>
+          <!-- <div id="" style="text-align: left;">
+            <p><span class="userItem">Name: </span>{{currentUser.pid.firstname}} {{currentUser.pid.lastname}}</p>
+            <p><span class="userItem">Email: </span>{{currentUser.pid.email}}</p>
+            <p><span class="userItem">ID: </span>{{currentUser.pid.pid}} </p>
+            <p><span class="userItem">Job Title: </span>{{currentUser.pid.jobtitle}}</p>
+            <p><span class="userItem">Manager: </span>{{currentUser.pid.managername}}</p>
+            <p><span class="userItem">Region: </span>{{currentUser.pid.region}}</p>
+            <p><span class="userItem">Division: </span>{{currentUser.pid.division}}</p>
+          </div> -->
+        <!-- <p class="control center-buttons">
+          <button class="button is-warning Reg_btn">Submit</button>
+        </p> -->
+
+      {{/simple-form}}
+
+  </div>
+
+</div>

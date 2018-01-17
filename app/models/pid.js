@@ -12,7 +12,10 @@ export default DS.Model.extend({
   jobtitle: DS.attr('string'),
   ae15ms: DS.hasMany('ae15m'),
   ae1ms: DS.hasMany('ae1m'),
-  // profilePicUrl: DS.attr('string'),
+  profilePicUrl: DS.attr('string'),
+  fullProfilePicUrl: Ember.computed('profilePicUrl', function() {
+    return `http://localhost:3333/uploads/${this.get('profilePicUrl')}`
+  }),
   createdAt: DS.attr('date', {
     defaultValue() { return new Date(); }
   })
