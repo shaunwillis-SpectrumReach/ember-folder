@@ -15,8 +15,12 @@
 
     <div  class="container "  style="margin-top:50px;"  >
     <div class="row" >
-      <div class="col-sm-4 " >
-      <div >  <img src="/assets/img/homepage/dt_bowenkeith.png" style="" align="left"> <p style=" color:white; padding-top:70px;">Keith Bowen </p><p style="color:white;">SVP, Chief Revenue&nbsp;Officer</p></div>
+      <div class="col-xs-12 col-sm-4 bowen" >
+      <div >
+        <img src="/assets/img/homepage/dt_bowenkeith.png" style="" align="left">
+        <p style=" color:white; padding-top:70px;">Keith Bowen </p>
+        <p style="color:white;">SVP, Chief Revenue&nbsp;Officer</p>
+      </div>
     </div>
     	<div class="col-xs-12 col-sm-8" >
     	 	 <div style="float:left;"> <h2 style="color:#003057;">COMPANY-WIDE GOAL</h2></div>   <div style="float:right; color:#fff;"><h2 style="color:#fff;">50% </h2></div>
@@ -56,9 +60,9 @@
            </div >
 
     	  <div class=" col-md-12 col-lg-6" >
-    	 	 <div style="float:left;"><h2 style="color:#003057;">&nbsp;</h2></div>   <div  style="float:right;"><h2 class="ltBlue" style="font-size: 72px; color: #003057;">{{#each model.mine as |ae15m|}}
+    	 	 <div style="float:left;"><h2 style="color:#003057;">&nbsp;</h2></div>   <div  style="float:right;"><h1 class="dkBlue" style="">{{#each model.mine as |ae15m|}}
         {{ ae15m.fullyear }}%
-        {{/each}} </h2></div>
+        {{/each}} </h1></div>
         {{#each model.mine as |ae15m|}}
           <div class="progress" style="clear:both; background-color:white; border:1px solid #0099D8;">
             <div class="progress-bar" role="progressbar" aria-valuenow="{{ ae15m.fullyear }}" aria-valuemin="0" aria-valuemax="100" style=" width:{{ ae15m.fullyear }}%; ">

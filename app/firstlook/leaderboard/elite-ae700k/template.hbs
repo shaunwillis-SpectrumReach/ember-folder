@@ -1,130 +1,54 @@
 <div class="row" >
-  <div class="col-lg-6" style="text-align: left;"><h1>LEADERBOARD<span class="dkBlue">/AE</span></h1><p class="footnote" style="padding-left: 5px;">Ranking is based on % to goal</p></div>
+  <div class="col-lg-6 leaderboard" style="text-align: left;"><h1>LEADERBOARD<span class="dkBlue">/AE</span></h1><p class="footnote" style="padding-left: 5px;">Ranking is based on % to goal</p></div>
   <div class="col-lg-6 eliteNav" style="">
     {{#link-to 'firstlook.leaderboard.elite-ae15m' replace="true"}}<img src="/assets/img/leaderboard/01_tab.png" />{{/link-to}}
     {{#link-to 'firstlook.leaderboard.elite-ae1m' replace="true"}}<img src="/assets/img/leaderboard/02_tab.png" />{{/link-to}}
     <img src="/assets/img/leaderboard/03_section.png" />
     {{#link-to 'firstlook.leaderboard.elite-ae450k' replace="true"}}<img src="/assets/img/leaderboard/04_tab.png" />{{/link-to}}
     {{#link-to 'firstlook.leaderboard.elite-ae400k' replace="true"}}<img src="/assets/img/leaderboard/05_tab.png" />{{/link-to}}
-    <p class="footnote" style="
-    padding-right: 144px;
-    padding-top: 22px;
-    text-align: right;
-    color: #003057;">
-    Select tabs to view Top 8 by Category
-    </p>
+    <div class="footnote"><p class="" style="">    Select tabs to view Top 8 by Category </p></div>
 
   </div>
 </div>
 
-<div class="row" class="eliteGroup" >
-
-<div class="col-md-12 col-lg-4" >
-  <!--  ////////  1st place   /////////  -->
-
-  <div class="col-lg-12"  style="text-align:left; ">
-    <div class=" image1st" >
-      <img src="/assets/img/AguirreAmber.png"   >
-    </div>
-    <div class=" eliteDatum" >
-      <span class="ltBlue">Name</span>  <span >Amber Aguirre</span><br><span class="ltBlue">Manager</span> Robert Johnson<br> <span class="ltBlue">Division</span> Pacific West<br> <span class="ltBlue">Region</span> Los Angeles
-    </div>
-  </div>
-
-  <!--  /////////  CIRCLE PROGRESS BAR:  https://bootsnipp.com/snippets/featured/circle-progress-bar (renamed progress to progress-l here and in CSS to avoid conflit with  linear progress bar )  //////  -->
-
-   <div class="container" style="margin-top:-345px;">
-      <div class="row" >
-
-        <div id="percent2">40%</div>
-<!--
-  <style>
-  /* to set animation  */
-  .progress-l .progress-l-right .progress-l-bar{
-    animation: loading-5 1.8s linear forwards;
-    /* set: (1=10%; 2=20%; 3=25%; 4=30%  5=40%; 6=50%;  NOTE: set to 6 if more than 50 and add numbers below */
-  }
-  .progress-l.blue .progress-l-left .progress-l-bar {
-     /* animation: loading-3 1.5s linear forwards 1.8s; */
-    /* set: (1=60%;  2=70%; 3=75%; 4=80% 5=90%; 6=100%;   */
-  }
-  </style>
-
-          <div class="col-md-3 col-sm-6" style="margin-left:-264px; ">
-              <div class="progress-l blue">
-                  <span class="progress-l-left">
-                      <span class="progress-l-bar"></span>
-                  </span>
-                  <span class="progress-l-right">
-                      <span class="progress-l-bar"></span>
-                  </span> -->
-                  <!-- <div class="progress-l-value"></div> -->
-              <!-- </div>
-          </div>-->
-      </div>
-  </div>
-  <!-- /////////////   END CIRCLE  /////////////  -->
 
 
-  <!--  ////////  END  First Place  /////////  -->
-
-</div >
-
-<div class=" col-md-12 col-lg-8">
-
-  <div class="row" >
+  <div class="row" class="eliteGroup" >
     {{#each model as |Eliteae700k|}}
-<!--  ////////  2nd place   /////////  -->
-      <div class="col-lg-6 "  style="text-align:left; ">
-        <div class=" image2nd" style="margin: 1rem;">
-          <img style="width: 9rem; margin-top: 0rem; margin-left: 0rem;" src="/assets/img/homepage/nav_generic_thumb.svg"   >
-        </div>
-        <div class=" eliteDatum2  " style=" ">
-          <span class="ltBlue">Name</span>  <span >{{ Eliteae700k.name }}</span><br><span class="ltBlue">Manager</span> {{ Eliteae700k.managername }}<br> <span class="ltBlue">Division</span> {{ Eliteae700k.division }}<br> <span class="ltBlue">Region</span> {{ Eliteae700k.region }}
-        </div>
-      </div>
-      {{/each}}
-      <!--  ////////  3rd place   /////////  -->
 
-      <!-- <div class="col-lg-6 "  style="text-align:left; ">
-        <div class="image2nd img3rd" >
-          <img src="/assets/img/leaderboard/2nd-5th_place.png"   >
-        </div>
-        <div class=" eliteDatum2">
-          <span class="ltBlue">Name</span>  <span >Jane Smith</span><br><span class="ltBlue">Manager</span> Robert Johnson<br> <span class="ltBlue">Division</span> Pacific West<br> <span class="ltBlue">Region</span> Los Angeles
-        </div>
-      </div> -->
+          <div class="col-sm-12 col-md-6 col-lg-3 eliteItem"  style="text-align:left; ">
+            <div class="image1st" style="">
+              <img style="" src="/assets/img/leaderboard/userPhoto.jpg"   >
+              <!-- replace image with user photo  -->
+              <div class="percent" style="">
+                <svg width="80" height="80">
+                    <circle cx="40" cy="40" r="20" fill="#0099D8" />
+                      <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="13px" font-family="Arial" dy=".35em">{{ ae700k.fullyear }}%</text>
+                      <!-- replace text with user percent  -->
+                </svg>
+            </div>
 
-  </div>
-  <!-- <div class="row"  style="margin-top:40px;"> -->
+            </div>
 
-    <!--  ////////  4th place   /////////  -->
+            <div class="eliteProgressBar" style="  ">
+              {{#each model.mine as |ae700k|}}
+                <div class="progress" style="">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="{{ ae700k.fullyear }}" aria-valuemin="0" aria-valuemax="100" style=" width:{{ ae700k.fullyear }}%; ">
+                  </div>
+                </div>
+                {{/each}}
+             <div class="progress" style="">
+               <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style=" width:65%; ">
+               </div>
+             </div>
+           </div>
 
-    <!-- <div class="col-lg-6 "  style="text-align:left; ">
-      <div class="image2nd img4th" >
-        <img src="/assets/img/leaderboard/2nd-5th_place.png"   >
-      </div>
-      <div class=" eliteDatum2">
-        <span class="ltBlue">Name</span>  <span >Jane Smith</span><br><span class="ltBlue">Manager</span> Robert Johnson<br> <span class="ltBlue">Division</span> Pacific West<br> <span class="ltBlue">Region</span> Los Angeles
-      </div>
-    </div> -->
+            <div class="eliteDatum2  " style=" ">
+              <span class="ltBlue">Name</span>  <span >{{ Eliteae700k.name}}</span><br><span class="ltBlue">Manager</span> {{ Eliteae700k.managername}}<br> <span class="ltBlue">Division</span> {{ Eliteae700k.division}}<br> <span class="ltBlue">Region</span> {{ Eliteae700k.region}}
+            </div>
+          </div>
 
-    <!--  ////////  5th place   /////////  -->
-
-    <!-- <div class="col-lg-6 "  style="text-align:left; ">
-      <div class="image2nd img5th" >
-        <img src="/assets/img/leaderboard/2nd-5th_place.png"   >
-      </div>
-      <div class=" eliteDatum2">
-        <span class="ltBlue">Name</span>  <span >Jane Smith</span><br><span class="ltBlue">Manager</span> Robert Johnson<br> <span class="ltBlue">Division</span> Pacific West<br> <span class="ltBlue">Region</span> Los Angeles
-      </div>
-    </div> -->
-    <!--  ////////  END   /////////  -->
-
-    <!-- </div> -->
-
-</div>
-
-</div>
+    {{/each}}
+    </div>
 
 {{outlet}}
