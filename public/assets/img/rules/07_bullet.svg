@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="25px" viewBox="0 0 26 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>07_bullet</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="07_bullet">
+            <g id="number_bullet-copy-6">
+                <ellipse id="Oval" stroke="#003057" cx="13" cy="12.5" rx="12.5" ry="12"></ellipse>
+                <path d="M9.722,16.132 C7.665,16.132 6.312,14.405 6.312,12.172 L6.312,12.15 C6.312,9.917 7.698,8.168 9.744,8.168 C11.779,8.168 13.154,9.895 13.154,12.128 L13.154,12.15 C13.154,14.383 11.779,16.132 9.722,16.132 Z M9.744,14.603 C10.767,14.603 11.416,13.569 11.416,12.172 L11.416,12.15 C11.416,10.753 10.734,9.697 9.722,9.697 C8.71,9.697 8.05,10.72 8.05,12.128 L8.05,12.15 C8.05,13.558 8.721,14.603 9.744,14.603 Z M14.397,16 L16.311,16 L19.765,9.576 L19.765,8.3 L14.221,8.3 L14.221,9.763 L17.84,9.763 L14.397,16 Z" id="00" fill="#003057"></path>
+            </g>
+        </g>
+    </g>
+</svg>
