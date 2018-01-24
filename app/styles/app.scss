@@ -635,9 +635,11 @@ height:24px;
 }
 
 #rules p {
-  padding: 12px;
+  margin-bottom:12px;
+  padding: 12px ;
   color:#003057;
-
+  text-indent: -2.5em;
+	margin-left: 6em;
 }
 
 
@@ -694,7 +696,14 @@ h2 {
   font-family: "GothamMedium", sans-serif;
 }
 
+section {
+overflow:hidden;
+padding:40px 0;
 }
+
+
+}
+
 
 /*  ////////////////////  MEDIA SMALL  //////////////  */
 @media only screen and (max-width: 767px) {
@@ -732,8 +741,9 @@ h2 {
 
   section {
   overflow:hidden;
-  padding:40px 0;
+  padding:20px 0;
   }
+
 #header {
    padding:0 0;
  }

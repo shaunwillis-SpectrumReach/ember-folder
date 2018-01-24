@@ -23,25 +23,13 @@
               <div class="percent" style="">
                 <svg width="80" height="80">
                     <circle cx="40" cy="40" r="20" fill="#0099D8" />
-                      <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="13px" font-family="Arial" dy=".35em">{{ Eliteae700k.fullyear }}%</text>
+                      <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="13px" font-family="Arial" dy=".35em">{{ ae700k.fullyear }}%</text>
                       <!-- replace text with user percent  -->
                 </svg>
             </div>
 
             </div>
 
-            <div class="eliteProgressBar" style="  ">
-
-                <div class="progress" style="">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="{{ Eliteae700k.fullyear }}" aria-valuemin="0" aria-valuemax="100" style=" width:{{ Eliteae700k.fullyear }}%; ">
-                  </div>
-                </div>
-          
-           </div>
-
-            <div class="eliteDatum2  " style=" ">
-              <span class="ltBlue">Name</span>  <span >{{ Eliteae700k.name}}</span><br><span class="ltBlue">Manager</span> {{ Eliteae700k.managername}}<br> <span class="ltBlue">Division</span> {{ Eliteae700k.division}}<br> <span class="ltBlue">Region</span> {{ Eliteae700k.region}}
-            </div>
           </div>
 
     {{/each}}
