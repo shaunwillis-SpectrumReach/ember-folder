@@ -125,11 +125,14 @@ margin-top:45px;
 }
 
 #personalNumbers .image2nd img {
-clip-path: circle(60px at center);
-width:62%;
-height:auto;
-margin-top:-80px;
-margin-left:90px;}
+  clip-path: circle(66px at center);
+  border:2px solid white;
+  border-radius: 50%;
+  width:132px;
+  height:auto;
+  margin-top:-6px;
+  margin-left:100px;
+}
 
 
 #leadingNumbers  .footnote, #lsmLeaders  .footnote  {
@@ -756,6 +759,11 @@ height:8px;
 .userData {
   clear:both;
 }
+
+#personalNumbers .image2nd img {
+  margin-top:-74px;
+}
+
 #personalNumbers h1 {
   font-size:30px !important;
 }
