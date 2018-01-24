@@ -425,7 +425,6 @@ height:8px;
    font-family: "GothamMedium";
   // font-family: 'Open Sans', sans-serif;
   // font-weight:500;
-  color:#003057;
 }
 
 .filters {
@@ -437,7 +436,9 @@ height:8px;
   padding: 0 12px;
 
 }
-
+.filterBtn h3 {
+  color:#0099D8;
+}
 
 .filterBtn:hover {
   cursor:pointer;
@@ -1022,6 +1023,60 @@ height:8px;
     font-size:32px !important;
   }
 
+  .lsmGroup  {
+    margin-top:4px;
+  }
+
+  .lsmMobileRow {
+    text-align: left;
+    background: url("/assets/img/leaderboard/image-rect-with-cutout.png");
+    background-repeat: no-repeat;
+    background-position: top left -16px;
+    background-size:68px;
+    border-bottom: 2px solid gray;
+    padding: 4px 0 4px 0;
+    margin:2px 0;
+    margin-left:-20px;
+  }
+
+  .lsmGroup p {
+    height:45px;
+  }
+
+    .lsmGroup p img {
+    margin-top:-5px;
+    margin-left: 20px;
+    width:64px;
+    clip-path: circle(32px at center);
+  }
+
+  .lsmGroup h5, {
+    text-align: left;
+    font-size:11px;
+    line-height:11px;
+  }
+  .lsmGroup h4 {
+    text-align: left;
+    font-size:13px;
+    line-height:13px;
+    font-weight:bold;
+  }
+
+.lsmDataMobile {
+  display:block;
+  position:absolute;
+  top:4px;
+  left:100px;
+
+}
+.toTop-lb {
+    float:right;
+  }
+.toTop-lb img {
+    padding:3px;
+    margin-right:6px;
+  }
+
 .listHide2 {
     display:none;
   }
@@ -1029,10 +1084,22 @@ height:8px;
 .listHide3 {
   // display:none;
 }
-  .filterBtn h3 {
-    font-size:16px;
 
+.filters {
+  margin: 10px 0;
+}
+
+.filterBtn {
+  float:left;
+  padding: 0 6px;
+
+}
+
+.filterBtn h3 {
+    font-size:12px;
   }
+
+
   #filterCategory {
     margin-left:80px;
     margin-top:32px;
@@ -1064,6 +1131,7 @@ height:8px;
     position:absolute;
     z-index: 10000;
   }
+
 
 }
 /*  ////////////////////  MEDIA SMALL  //////////////  */
