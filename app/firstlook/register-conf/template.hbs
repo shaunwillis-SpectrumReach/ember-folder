@@ -2,6 +2,7 @@
   <div id="contentHome" class="" >
     <section id="header">
       <div class="userNameTop">Welcome, {{ currentUser.pid.firstname }}  <img style="border-radius: 50%;" src="{{currentUser.pid.fullProfilePicUrl}}" width="25"></div>
+
           <img class="l_FirstLook" src="/assets/img/L_FirstLook.png" >
     </section>
 
@@ -12,13 +13,20 @@
       <div  class="container fadein"  style="margin-top:30px; position: relative;" >
 
       <h2>Profile Summary</h2>
+      <!-- {{profile-upload
+        fileUrl=url
+        placeholderUrl="/assets/img/image_upload.svg"
+        onchange=(action (mut url))
+        saveUser=(action "choosePic")
+        }} -->
       {{#if currentUser.pid.fullProfilePicUrl}}
       <p><img style="border-radius: 50%;" src="{{currentUser.pid.fullProfilePicUrl}}" width="120"></p>
       {{else}}
       <p><img src="/assets/img/homepage/nav_generic_thumb.svg" width="120"></p>
-      {{/if}}
-      <p class="comment">Add an image to your profile </p>
+      {{/if}} 
+      <p class="comment">Edit image to your profile </p>
       {{user-profile pid=model myProfile=true onUpdate=(action "update") onChoosePic=(action "choosePic")}}
+
     </div>
     <div class="" style="
     width: 27vmin;
@@ -26,7 +34,7 @@
     text-align: left;">
       <!--  Note:  need a conditional, if image profile picture exists, file path = foo, else display generic thumbnail. - generic_thumbnail.svg  -->
 
-      <!-- <div id="">
+       <div id="">
         <p><span class="userItem">Name: </span>{{currentUser.pid.firstname}} {{currentUser.pid.lastname}}</p>
         <p><span class="userItem">Email: </span>{{currentUser.pid.email}}</p>
         <p><span class="userItem">ID: </span>{{currentUser.pid.pid}} </p>
@@ -34,7 +42,7 @@
         <p><span class="userItem">Manager: </span>{{currentUser.pid.managername}}</p>
         <p><span class="userItem">Region: </span>{{currentUser.pid.region}}</p>
         <p><span class="userItem">Division: </span>{{currentUser.pid.division}}</p>
-      </div> -->
+      </div>
       <!-- <div class="Reg_btn" style="margin-top:40px; text-align: center;">
         {{#link-to 'firstlook.register-thanks' class="SR_btn" name="button" }}Submit{{/link-to}}
       </div> -->

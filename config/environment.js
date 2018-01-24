@@ -12,6 +12,10 @@ module.exports = function(environment) {
       // host: 'https://firstlook-spectrumreach-api.herokuapp.com',
       namespace: 'api',
     },
+    cloudinary: {
+    cloudName: `http-www-firstlookspectrum-com`,
+    uploadPreset: `biiz3ens`,
+    },
 
     modulePrefix: 'ember-folder',
     environment,
