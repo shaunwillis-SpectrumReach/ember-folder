@@ -10,7 +10,9 @@ export default Ember.Controller.extend({
       },
     {
         "title": "",
-        "component": "profileImg"
+        "component": "profileImg",
+        "className": " listHide2 ",
+
       },
   {
     "propertyName": "name",
@@ -23,11 +25,15 @@ export default Ember.Controller.extend({
   // },
   {
     "propertyName": "managername",
-    "title": "Manager"
+    "title": "Manager",
+    "className": " listHide2 ",
+
       },
   {
     "propertyName": "division",
     "title": "Division",
+    "className": " listHide2 ",
+
     "filterWithSelect": true,
     "predefinedFilterOptions": [
       "Northeast",
@@ -39,6 +45,7 @@ export default Ember.Controller.extend({
   {
     "propertyName": "region",
     "title": "Region",
+    "className": " listHide2 ",
     "filterWithSelect": true,
     "predefinedFilterOptions": [
       "Caronlinas",
@@ -58,7 +65,7 @@ export default Ember.Controller.extend({
   {
       "title": "Progress",
       "component": "progressBar",
-      "className": "widerwidth"
+      "className": "widerwidth listHide ",
     },
   {
       "title": "%",
