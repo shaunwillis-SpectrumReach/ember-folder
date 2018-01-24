@@ -45,7 +45,7 @@
              <div class=" "  style="text-align:left; ">
                <div class="image2nd " >
                  {{#each model.mine as |ae15m|}}
-                 <div class="rank ">#{{ae15m.rank}}</div><img style="border-radius: 50%;" src="{{currentUser.pid.fullProfilePicUrl}}" width="120">
+                 <div class="rank ">#{{ae15m.rank}}</div><img style="" src="{{currentUser.pid.fullProfilePicUrl}}" >
                  {{/each}}
                </div>
 
@@ -255,6 +255,7 @@
     </div>
 
     <!-- Tabs section Temporarily until New Tabs are built-->
+    <!-- hide on mobile  -->
      <div class="row" id="Filters"  >
     <div class="col-lg-12 filters " style="    padding-left: 8px;" >
 
@@ -270,8 +271,12 @@
                 <h3  class="">449k-under</h3></div>
 
       </div>
+    </div>
 
-
+<!-- show on mobile size only  -->
+    <div class="row" id="FilterDisclaimer"  >
+      <p>For a more complete listing and interactive listing, plese check this out on your computer's desktop browser.
+        You may also download the complete PDF <a href="#" style="color:#0099D8;">here</a>.</p>
     </div>
 
   </div>
@@ -613,7 +618,7 @@
 </div>
 
 
-<div class="spacer10" style="margin-top:20px;">&nbsp;</div>
+<div class="spacer10" style="">&nbsp;</div>
 </section>
 
 <section id="homepageCornerLogo">
