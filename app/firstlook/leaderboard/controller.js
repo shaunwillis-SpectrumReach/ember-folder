@@ -15,7 +15,7 @@ export default Ember.Controller.extend({
   {
     "propertyName": "name",
     "title": "AE Name",
-    "filterPlaceholder": "Search... (case sensitive)"
+    "filterPlaceholder": "Search..."
   },
   // {
   //   "propertyName": "lastname",
@@ -24,7 +24,7 @@ export default Ember.Controller.extend({
   {
     "propertyName": "managername",
     "title": "Manager",
-    "filterPlaceholder": "Search... (case sensitive)"
+    "filterPlaceholder": "Search..."
       },
   {
     "propertyName": "division",

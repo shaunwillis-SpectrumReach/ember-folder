@@ -23,7 +23,7 @@
               <div class="percent" style="">
                 <svg width="80" height="80">
                     <circle cx="40" cy="40" r="20" fill="#0099D8" />
-                      <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="13px" font-family="Arial" dy=".35em">{{ ae15m.fullyear }}%</text>
+                      <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="13px" font-family="Arial" dy=".35em">{{ Eliteae15m.fullyear }}%</text>
                       <!-- replace text with user percent  -->
                 </svg>
             </div>
@@ -31,16 +31,11 @@
             </div>
 
             <div class="eliteProgressBar" style="  ">
-              {{#each model.mine as |ae15m|}}
+
                 <div class="progress" style="">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="{{ ae15m.fullyear }}" aria-valuemin="0" aria-valuemax="100" style=" width:{{ ae15m.fullyear }}%; ">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="{{ Eliteae15m.fullyear }}" aria-valuemin="0" aria-valuemax="100" style=" width:{{ Eliteae15m.fullyear }}%; ">
                   </div>
                 </div>
-                {{/each}}
-             <div class="progress" style="">
-               <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style=" width:65%; ">
-               </div>
-             </div>
            </div>
 
             <div class="eliteDatum2  " style=" ">
