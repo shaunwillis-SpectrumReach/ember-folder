@@ -42,7 +42,7 @@ model() {
 
   actions: {
 
-    
+
 
     filterCategoryAllaes() {
       $('#ae1m').addClass('hide');
@@ -51,6 +51,14 @@ model() {
       $('#ae499k').addClass('hide');
       $('#ae450k').addClass('hide');
       $('#allae').removeClass('hide');
+
+      $('#ae15mBtn').addClass('AE15mActive');
+      $('#ae450kBtn').removeClass('AE450kActive');
+      $('#ae700kBtn').removeClass('AE700kActive');
+      $('#ae1mBtn').removeClass('AE1mActive');
+      $('#ae499kBtn').removeClass('AE499kActive');
+      $('#ae499kBtn').removeClass('AE499kActive');
+
     },
 
     filterCategoryAE450k() {
@@ -60,6 +68,14 @@ model() {
       $('#ae499k').addClass('hide');
       $('#allae').addClass('hide');
       $('#ae450k').removeClass('hide');
+
+      $('#ae450kBtn').addClass('AE450kActive');
+      $('#ae700kBtn').removeClass('AE700kActive');
+      $('#ae1mBtn').removeClass('AE1mActive');
+      $('#ae499kBtn').removeClass('AE499kActive');
+      $('#ae15mBtn').removeClass('AE15mActive');
+      $('#ae499kBtn').removeClass('AE499kActive');
+
     },
 
     filterCategoryAE700k() {
@@ -69,6 +85,14 @@ model() {
       $('#ae499k').addClass('hide');
       $('#allae').addClass('hide');
       $('#ae700k').removeClass('hide');
+
+      $('#ae700kBtn').addClass('AE700kActive');
+      $('#ae1mBtn').removeClass('AE1mActive');
+      $('#ae499kBtn').removeClass('AE499kActive');
+      $('#ae15mBtn').removeClass('AE15mActive');
+      $('#ae450kBtn').removeClass('AE450kActive');
+      $('#ae499kBtn').removeClass('AE499kActive');
+
     },
 
     filterCategoryAE1m() {
@@ -78,6 +102,14 @@ model() {
       $('#ae499k').addClass('hide');
       $('#allae').addClass('hide');
       $('#ae1m').removeClass('hide');
+
+      $('#ae1mBtn').addClass('AE1mActive');
+      $('#ae499kBtn').removeClass('AE499kActive');
+      $('#ae15mBtn').removeClass('AE15mActive');
+      $('#ae700kBtn').removeClass('AE700kActive');
+      $('#ae450kBtn').removeClass('AE450kActive');
+      $('#ae499kBtn').removeClass('AE499kActive');
+
     },
 
     showAllAEs() {
@@ -96,6 +128,12 @@ model() {
       $('#ae450k').addClass('hide');
       $('#allae').addClass('hide');
       $('#ae499k').removeClass('hide');
+
+      $('#ae499kBtn').addClass('AE499kActive');
+      $('#ae15mBtn').removeClass('AE15mActive');
+      $('#ae1mBtn').removeClass('AE1mActive');
+      $('#ae700kBtn').removeClass('AE700kActive');
+      $('#ae450kBtn').removeClass('AE450kActive');
     },
 
     // filterCategoryAE1m() {
