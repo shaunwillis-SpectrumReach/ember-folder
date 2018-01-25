@@ -1,8 +1,8 @@
 <!-- source: https://www.npmjs.com/package/ember-side-menu -->
 <!-- Note: removed header and other items that were already commented out. Was still working -->
-
+{{#if currentUser.pid}}
  {{#side-menu-toggle id="menuToggle"}}
-<span id="burger" class="hide" style=""><img src="/assets/img/homepage/hamburger.svg" /></span>
+<span id="burger" class="" style=""><img src="/assets/img/homepage/hamburger.svg" /></span>
 {{/side-menu-toggle}}
 
 {{#side-menu width="220px" side="right" id="menuRight"}}
@@ -31,9 +31,9 @@
     </li> -->
 
     <li class="border-top">
-      {{#side-menu-link-to "firstlook.register-conf"}}
+      <a href="https://spectrumreach.typeform.com/to/zdQZSe" target="_blank">
         <img style="border-radius: 50%;" src="{{currentUser.pid.fullProfilePicUrl}}" width="25"> <span>ACCOUNT</span>
-      {{/side-menu-link-to}}
+      </a>
     </li>
 
     <li class="" style="
@@ -48,5 +48,6 @@
 
   </ul>
 {{/side-menu}}
+{{/if}}
 {{content-backdrop}}
 {{outlet}}

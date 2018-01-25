@@ -36,8 +36,7 @@
     </div>
     </div>
     </section>
-
-
+    {{#if currentUser.pid.jobtitle}}
     <section id="personalNumbers" class="graygradient" style="">
       <div  class="container "  >
     <div class="row" >
@@ -80,6 +79,7 @@
     </div>
     </div>
     </section>
+    {{/if}}
 
 <section id="leadingNumbers" class="graygradient" style="">
   <div  class="container "  >
@@ -256,7 +256,7 @@
     <div class="row " >
       <div class="col-lg-7">
         <div class="col-sm-9 col-lg-12 text-left" ><h1>STANDINGS</h1></div>
-        <div id="pdf"  class="col-sm-3 col-lg-12 "> <a href="#" style="color:#0099D8;"><img src="/assets/img/pdf-download.png" alt="download pdf"/></a></div>
+        <div id="pdf"  class="col-sm-3 col-lg-12 "> <a href="/assets/img/FirstlookGoalsData-2copy.pdf" target="_blank" style="color:#0099D8;"><img src="/assets/img/pdf-download.png" alt="download pdf"/></a></div>
     </div>
 
     <!-- Tabs section Temporarily until New Tabs are built-->

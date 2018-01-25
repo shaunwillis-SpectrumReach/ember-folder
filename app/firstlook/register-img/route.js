@@ -12,7 +12,7 @@ export default Route.extend({
       }
     };
 
-    $('#burger').removeClass('hide');
+    // $('#burger').removeClass('hide');
 
   },
   model() {

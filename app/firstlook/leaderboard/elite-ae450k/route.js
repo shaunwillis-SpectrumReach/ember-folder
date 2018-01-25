@@ -1,11 +1,12 @@
 import Route from '@ember/routing/route';
+import AuthenticatedRouteMixin from 'ember-simple-auth/mixins/authenticated-route-mixin';
 
-export default Route.extend({
-
-  beforeModel() {
-    $('#burger').removeClass('hide');
-
-  },
+export default Ember.Route.extend(AuthenticatedRouteMixin, {
+  //
+  // beforeModel() {
+  //   $('#burger').removeClass('hide');
+  //
+  // },
   model() {
     return this.store.query('Eliteae450k', {
           top5: 'Top 5'
