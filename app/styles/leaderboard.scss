@@ -403,11 +403,25 @@ height:8px;
 }
 .lsmGroup p img {
   margin-top:12px;
+  clip-path: circle(100px at center);
+  border:3px solid white;
+  border-radius: 50%;
+  width:200px;
+  height:auto;
 }
 
-.lsmGroup h4, .lsmGroup h5, {
+.lsmGroup h5, {
   text-align: left;
+  font-size:13px;
+  line-height:13px;
 }
+.lsmGroup h4 {
+  text-align: left;
+  font-size:24px;
+  line-height:24px;
+  font-family: "GothamMedium";
+}
+
 .lsmImg {
   width:224px;
   clip-path: circle(112px at center);
