@@ -5,10 +5,10 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
   // model() {
   //    return this.store.findAll('pids');
   // }
-   beforeModel() {
-     $('#burger').removeClass('hide');
-
-   },
+  //  beforeModel() {
+  //    $('#burger').removeClass('hide');
+   //
+  //  },
 
   actions: {
     scrollToMessage() {

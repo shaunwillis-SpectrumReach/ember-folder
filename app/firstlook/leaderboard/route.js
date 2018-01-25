@@ -6,10 +6,10 @@ export default Route.extend({
   //     this.render('loading');
   //   },
 
-
-  beforeModel() {
-    $('#burger').removeClass('hide');
-  },
+  // 
+  // beforeModel() {
+  //   $('#burger').removeClass('hide');
+  // },
 
 model() {
   return RSVP.hash({
