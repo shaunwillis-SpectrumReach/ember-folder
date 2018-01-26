@@ -38,7 +38,7 @@ export default Ember.Controller.extend({
     "predefinedFilterOptions": [
       "Northeast",
       "Central",
-      "Southeast",
+      "South",
       "West"
     ]
   },
