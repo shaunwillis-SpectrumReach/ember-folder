@@ -7,7 +7,11 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
   //   $('#burger').removeClass('hide');
   //
   // },
-
+  model() {
+    return this.store.query('ae15m', {
+     mine: true,
+   });
+ },
  actions: {
    scrollToTop() {
      // document.getElementById('message').scrollIntoView();
