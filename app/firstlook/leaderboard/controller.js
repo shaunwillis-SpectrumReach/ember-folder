@@ -48,7 +48,7 @@ export default Ember.Controller.extend({
     "className": " listHide2 ",
     "filterWithSelect": true,
     "predefinedFilterOptions": [
-      "Caronlinas",
+      "Carolinas",
       "Florida",
       "LA",
       "MidNorth",
@@ -59,7 +59,7 @@ export default Ember.Controller.extend({
       "Pacific States",
       "Southeast",
       "Texas",
-      "Upstate NY - ME"
+      "Upstate NY / ME"
     ]
   },
   {
