@@ -105,6 +105,23 @@ section {
 overflow:hidden;
 padding:60px 0;
 }
+a, button {
+  cursor: pointer;
+}
+a:hover, button:hover {
+  color:#003057;
+}
+
+[data-ember-action]:not(:disabled) {
+  cursor: pointer;
+}
+
+[data-ember-action]:not(:disabled):hover {
+  cursor: pointer;
+  color:#003057 !important;
+}
+
+
 #header {
   padding:0 0;
 }
@@ -260,6 +277,10 @@ a {
   padding:0.8rem;
   min-width:240px;
 }
+.btn:hover {
+  color:#003057;
+}
+
 .fadein {
 
     -webkit-animation: fadein 1s 1; /* Safari, Chrome and Opera > 12.1 */
