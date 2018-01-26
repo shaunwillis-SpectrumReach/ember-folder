@@ -3,7 +3,7 @@
   <div id="contentHome" class="" >
     <section id="header">
       <div class="userNameTop">Welcome, {{ currentUser.pid.firstname}}  <img style="border-radius: 50%;" src="{{currentUser.pid.fullProfilePicUrl}}" width="25"></div>
-          <img class="l_FirstLook" src="/assets/img/L_FirstLook.png" >
+          {{#link-to 'firstlook.leaderboard.elite-ae15m' replace="true"}}<img class="l_FirstLook" src="/assets/img/L_FirstLook.png" >{{/link-to}}
     </section>
 
 
@@ -157,7 +157,9 @@
   <div class="col-12-lg" style="width:100%;">
     <p style="color:white;">Have more questions about First Look?</p>
 
-  <div class="button btn"><a href="mailto:gerald.tarney@charter.com?subject=FirstLook_Question">Contact Us</a></div>
+<a href="mailto:michelle.underwood@charter.com?subject=FirstLook_Question">
+  <div class="button btn" >Contact Us</div>
+</a>
 </div>
 
   </div>
