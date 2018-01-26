@@ -13,6 +13,7 @@ export default Ember.Controller.extend({
 
       this.get('session').authenticate(authenticator, secretStuff).then(() => this.get('currentUser').loadCurrentUser()).then(() => {
         if (this.get('currentUser')) {
+
           this.transitionToRoute('firstlook.leaderboard.elite-ae15m');
         } else {
           this.transitionToRoute('firstlook.login');
