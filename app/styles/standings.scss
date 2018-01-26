@@ -1,7 +1,7 @@
 thead {
     background: url(/assets/img/Main_Header_bg.svg);
     background-size: 102%;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     width: 100.1%;
     color: white;
   }
@@ -20,5 +20,14 @@ tbody tr td {
 }
 
 .widerwidth {
-  width: 20rem;
+   width: 20rem;
+}
+
+@media only screen and (max-width: 1024px) {
+
+ //  this will hide data thead on phone & ipad and some smaller browser windows
+thead {
+  display:none;
+}
+
 }
