@@ -1,7 +1,7 @@
 <div id="wrapper" class="homepageWrapper">
   <div id="contentHome" class="" >
     <section id="header">
-      <div class="userNameTop">Welcome, {{ currentUser.pid.firstname }}  <img style="border-radius: 50%;" src="{{currentUser.pid.fullProfilePicUrl}}" width="25"></div>
+    {{#if model.mine }}  <div class="userNameTop">Welcome, {{ currentUser.pid.firstname }}  <img style="border-radius: 50%;" src="{{currentUser.pid.fullProfilePicUrl}}" width="25"></div>{{/if}}
           {{#link-to 'firstlook.homepage'}}<img class="l_FirstLook" src="/assets/img/L_FirstLook.png" >{{/link-to}}
     </section>
 
@@ -88,7 +88,7 @@
 </div>
 </section>
 
-<section id="lsmLeaders" class="graygradient" style="">
+<!-- <section id="lsmLeaders" class="graygradient" style="">
  <div  class="container "   >
 
    <div class=" row " style=" " >
@@ -245,7 +245,7 @@
 
 
 </div>
-</section>
+</section> -->
 
 
 <section id="standings" class="" style="margin-bottom:-30px;" >
