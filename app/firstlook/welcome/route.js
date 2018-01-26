@@ -8,7 +8,5 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
   //    return this.store.findAll('pids');
   // }
 
-  beforeModel() {
-    this.replaceWith('firstlook.homepage');
-  }
+
 });
