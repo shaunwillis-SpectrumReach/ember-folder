@@ -169,6 +169,15 @@ margin-top:45px;
 
 }
 
+#Filters .footnote p {
+  margin:-20px 0 0 8px;
+  padding:0;
+  font-size:17px;
+  text-align: left;
+  color: #003057;
+
+}
+
 .rank {
   display:none;
 }
@@ -706,11 +715,20 @@ height:8px;
    clip-path: circle(100px at center);
  }
 
- .eliteNav .footnote  p {
+ .eliteNav .footnote  p,   {
    margin-top:8px;
    padding-left:100px;
    padding-top:14px;
    font-size:17px;
+   text-align: left;
+   color: #003057;
+
+ }
+
+#Filters .footnote p {
+   margin:-20px 0 0 8px;
+   padding:0;
+   font-size:14px;
    text-align: left;
    color: #003057;
 
@@ -812,8 +830,33 @@ height:8px;
       margin:8px;
     }
 
+    #Filters .footnote p {
+       margin:-50px 0 0 8px;
+       padding:0;
+       font-size:14px;
+       text-align: left;
+       color: #003057;
+       clear:both;
+
+     }
+
+
 }
 
+/*  ////////////////////  MEDIA SMALL  //////////////  */
+@media only screen and (max-width: 768px) {
+
+  #Filters .footnote p {
+     margin:40px 0 0 20px;
+     padding:0;
+     font-size:14px;
+     text-align:left;
+     color: #003057;
+     clear:both;
+
+   }
+
+}
 /*  ////////////////////  MEDIA SMALL  //////////////  */
 @media only screen and (max-width: 767px) {
 
@@ -1203,6 +1246,15 @@ height:8px;
     width:100%;
     padding-top:16px;
   }
+  #Filters .footnote p {
+     margin:16px 0 20px 16px;
+     padding:0;
+     font-size:14px;
+     text-align:left;
+     color: #003057;
+     clear:both;
+
+   }
 
   .listHide2 {
       display:none;
