@@ -7,9 +7,9 @@ module.exports = function(environment) {
       // LocalHost
       // host: 'http://127.0.0.1:3333',
       // Staging Database
-      //  host: 'https://firstlook-staging-api.herokuapp.com',
+       host: 'https://firstlook-staging-api.herokuapp.com',
       // Production Database
-      host: 'https://firstlook-spectrumreach-api.herokuapp.com',
+      // host: 'https://firstlook-spectrumreach-api.herokuapp.com',
       namespace: 'api',
     },
     cloudinary: {
