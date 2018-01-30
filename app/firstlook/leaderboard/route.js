@@ -17,6 +17,10 @@ model() {
     mine: this.store.query('ae15m', {
         mine: true,
       }),
+    // includes: this.store.query('ae15m', params.pid_id, {
+    //   include: 'pids',
+    // }),
+
     // all: this.store.findAll('ae15m'),
     ae1m: this.store.findAll('ae1m'),
     ae700k: this.store.findAll('ae700k'),
