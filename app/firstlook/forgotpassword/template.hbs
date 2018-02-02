@@ -1,0 +1,43 @@
+<div id="wrapper">
+  <div id="content" class="AnimCorner" >
+<section id="header">
+      <img class="l_FirstLook" src="/assets/img/L_FirstLook.png">
+</section>
+
+
+
+<section id="formHolder" class="fadein" style="">
+<h3 style="color: white; margin-bottom: 2rem;">Reset Your Password</h3>
+<div style="max-width: 310px; margin: auto; margin-bottom: 2rem;">
+  <div class="row">
+    <div class="col-sm align-self-center" style="padding-left: 16px; padding-right: 16px;">
+      <p style="color: white; margin-bottom: 1rem;">Please complete the form below to reset your password.  Once submitted you will receive an email confirmation letting you know that your password was reset and that you can access your account.  Please allow up to 24 hours to receive your confirmation.  Thank you.</p>
+    </div>
+
+  </div>
+</div>
+
+{{#simple-form class="card__form" onsubmit=(action "saveForm") as | formValues |}}
+        {{input class="form__input" type="text" required=true value=formValues.email placeholder="E-Mail"}}<br/>
+        {{input class="form__input" type="password" required=true value=formValues.password placeholder="New Password"}}
+          <div class="button-box ">
+          <button type="submit" class="Reg_btn" style="border-radius: 0rem; width: 280px;">Update Password</button>
+          </div>
+          {{#link-to "firstlook.login"}}<p style="margin-top: 1rem; color: white;">Login</p>{{/link-to}}
+ {{/simple-form}}
+
+
+</section>
+
+
+
+
+
+<section id="bottomLogo">
+  <img src="/assets/img/Spectrum_Reach_Rev_RGB.svg">
+</section>
+
+</div>
+</div>
+
+{{outlet}}

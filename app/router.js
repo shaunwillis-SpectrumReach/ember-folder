@@ -14,6 +14,7 @@ Router.map(function() {
     this.route('register-conf');
     this.route('register-thanks');
     this.route('register-pid');
+    this.route('forgotpassword');
 
     this.route('homepage');
 
@@ -40,7 +41,9 @@ Router.map(function() {
     this.route('rules');
     this.route('faqs');
     this.route('salesforce');
+    this.route('passwordresetconfirmation');
   });
+
 
 });
 

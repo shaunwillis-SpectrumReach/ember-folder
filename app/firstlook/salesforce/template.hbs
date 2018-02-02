@@ -2,7 +2,7 @@
   <div id="contentReg" class="AnimDown" >
 
     <section id="header">
-          <img class="l_FirstLook" src="/assets/img/L_FirstLook.png">
+          {{#link-to "firstlook"}}<img class="l_FirstLook" src="/assets/img/L_FirstLook.png">{{/link-to}}
     </section>
 
 <section id="title">
@@ -18,6 +18,7 @@
   {{input value=formValues.region placeholder="Region"}}<br/>
   {{input value=formValues.jobtitle placeholder="Job Title"}}<br/>
   <button  class="SR_btn">Register</button>
+  {{#link-to "firstlook.login"}}<p style="">Login</p>{{/link-to}}
   {{/simple-form}}
 </section>
 
