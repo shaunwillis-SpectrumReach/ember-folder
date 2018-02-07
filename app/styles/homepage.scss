@@ -78,6 +78,77 @@
   padding:3px;
   border:solid 1px #fff; color:#fff;
 }
+
+// =====  END ALT NAV  ========   //
+
+#altNav {
+ margin:0 auto;
+ padding:0;
+ text-align: center;
+ background-color:#e4e4e4;
+ background: #e4e4e4; /* Old browsers */
+ background: -moz-linear-gradient(right,  #ffffff 0%, #e4e4e4 100%); /* FF3.6-15 */
+ background: -webkit-linear-gradient(right,  #ffffff 0%,#e4e4e4 100%); /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(to right,  #ffffff 0%,#e4e4e4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e4e4e4',GradientType=0 ); /* IE6-9 */
+
+ width:100%;
+}
+
+#altNav2 {
+ margin:0 auto;
+ padding:0;
+ text-align: center;
+ background-color:#e4e4e4;
+ background: #e4e4e4; /* Old browsers */
+ background: -moz-linear-gradient(right,  #0099D8 0%, #e4e4e4 100%); /* FF3.6-15 */
+ background: -webkit-linear-gradient(right,  #0099D8 0%,#e4e4e4 100%); /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(to right,  #0099D8 0%,#e4e4e4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0099D8', endColorstr='#e4e4e4',GradientType=0 ); /* IE6-9 */
+
+ width:100%;
+}
+
+#altNav ul, #altNav2 ul {
+  overflow: auto;
+  list-style-type: none;
+  float:right;
+}
+
+#altNav li, #altNav2 li {
+  height: 24px;
+  width:120px;
+  padding:6px;
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #aaa;
+  color: #0099D8;
+}
+
+#altNav2 li {
+ color: #fff;
+}
+
+#altNav li:last-child, #altNav2 li:last-child  {
+  border-right: none;
+  padding-right:0;
+}
+
+#altNav li a, #altNav2 li a {
+  text-decoration: none;
+  color: #0099D8;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#altNav2 li a {
+  color: #fff;
+}
+
+// =====  END ALT NAV  ========   //
+
 #contentHome {
    margin: auto;
    width: 100%;
@@ -347,6 +418,37 @@ font-size:14px;
       width:70%;
       height:auto;
   }
+
+  #altNav ul, #altNav2 ul {
+    overflow: auto;
+    list-style-type: none;
+    float:right;
+    margin:auto;
+    -webkit-padding-start: 0px;
+
+  }
+
+  #altNav li, #altNav2 li {
+    width:66px;
+    padding:0 6px;
+    float: left;
+    margin-right: 0px;
+    border-right: 1px solid #aaa;
+    color: #fff;
+  }
+
+  #altNav li:last-child, #altNav2 li:last-child  {
+    padding-right:0;
+  }
+  #altNav li a {
+      font-size:0.8rem;
+    }
+
+#altNav2 li a {
+    color: #fff;
+    font-size:0.8rem;
+  }
+
 
   #contentHome .l_FirstLook  {
     margin-left: 30px;
