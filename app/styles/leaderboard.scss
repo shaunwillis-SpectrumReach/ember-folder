@@ -840,6 +840,18 @@ height:8px;
 
      }
 
+     #pdf  {
+       padding-top:16px;
+       text-align: left;
+       margin-top: 0px;
+       float:left;
+       width:100%;
+}
+     #pdf img {
+       padding-top:16px;
+       text-align: left;
+       margin-top:-50px;
+     }
 
 }
 
@@ -1362,11 +1374,16 @@ height:8px;
   font-size: 16px;
 }
 
-#pdf img {
-  width:76px;
+#pdf  {
   padding-top:16px;
   text-align: left;
-  margin-top:-170px;
+  margin-top: 0px;
+}
+#pdf img {
+  width:30%;
+  padding-top:16px;
+  text-align: left;
+  margin-top:-50px;
 }
 .AE15mActive {
   width:176px;
