@@ -24,6 +24,8 @@
     src: url('/assets/fonts/Gotham-Bold.otf');
 }
 
+
+
 /*  ///////////  File Upload  ////////////  */
 
 #files-uploader>.dz-default>.dz-message {
@@ -841,6 +843,20 @@ padding:40px 0;
   @keyframes animDown {
       0%   {background-size: 90vh;}
       100% {background-size: 36vw;}
+  }
+
+}
+
+
+
+
+
+/*  ///////////  Nav side-bar for Edge Browser ////////////  */
+
+@supports (-ms-accelerator:true) {
+
+  #menuRight {
+    left: 0px!important;
   }
 
 }
