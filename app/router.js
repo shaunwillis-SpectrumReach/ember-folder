@@ -45,6 +45,9 @@ Router.map(function() {
   });
 
 
+  this.route('reachnewheights', function() {
+    this.route('admin');
+  });
 });
 
 export default Router;
