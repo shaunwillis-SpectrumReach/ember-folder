@@ -1,6 +1,61 @@
 
 
+  {{#if currentUser.pid.jobtitle }}
+  <section id="personalNumbers" class="graygradient" style="">
+    <div  class="container "  >
+  <div class="row" >
+         <div class="col-md-12 col-lg-6" >
+           <div class=" "  style="text-align:left; ">
+             <div class="image2nd " >
+               <div class="rank ">#{{rollup.rank}}</div><a href="https://spectrumreach.typeform.com/to/zdQZSe" target="_blank"><img style="" src="{{currentUser.pid.fullProfilePicUrl}}" ></a>
+             </div>
 
+           <div class="userData ">
+             <h2 style="font-size: 25px;">{{ currentUser.pid.firstname}} {{ currentUser.pid.lastname}}</h2><h2 style="font-size: 25px;" class="ltBlue">{{ currentUser.pid.pid}}</h2>
+             <div style="font-size:14px; line-height:22px;">
+               <span class="ltBlue">Manager</span> {{ currentUser.pid.managername}}<br> <span class="ltBlue">Division</span> {{ currentUser.pid.division}}<br> <span class="ltBlue">Region</span> {{ currentUser.pid.region}}
+             </div>
+           </div>
+
+           </div>
+         </div >
+         <!-- Personal Progress -->
+      <div class=" col-md-12 col-lg-6" >
+       <div style="float:left;"><h2 style="color:#003057;">&nbsp;</h2></div>   <div  style="float:right;"><h1 class="dkBlue" style="">
+      {{ ae15m.fullyear }}%
+     </h1></div>
+        <div class="progress" style="clear:both; background-color:white; border:1px solid #0099D8;">
+          <div class="progress-bar" role="progressbar" aria-valuenow="{{ ae15m.fullyear }}" aria-valuemin="0" aria-valuemax="100" style=" width:{{ ae15m.fullyear }}%; ">
+            <!-- <span class="">70% </span> -->
+          </div>
+        </div>
+
+        <!-- <div style="float:left; margin-top:10px;"><h2>&nbsp;</h2></div>   <div style="float:right; margin-top:10px;"><h2 style="color:#003057;">$433,500/$510,000 </h2></div> -->
+     </div>
+     {{#each model.all as |rollup| }}
+      <div class=" col-md-12 col-lg-3" >
+       <div style="float:left;"><h2 style="color:#003057;">&nbsp;</h2></div>   <div  style="float:right;">
+         <p class="dkBlue" style="">
+            {{ rollup.firstname }} {{ rollup.lastname }}
+         </p>
+         <p class="dkBlue" style="">
+            {{ rollup.jobtitle }}
+         </p>
+       </div>
+        <div class="progress" style="clear:both; background-color:white; border:1px solid #0099D8;">
+          <div class="progress-bar" role="progressbar" aria-valuenow="{{ rollup.dollars }}" aria-valuemin="0" aria-valuemax="100" style=" width:{{ rollup.dollars }}%; ">
+            <!-- <span class="">70% </span> -->
+          </div>
+        </div>
+
+        <!-- <div style="float:left; margin-top:10px;"><h2>&nbsp;</h2></div>   <div style="float:right; margin-top:10px;"><h2 style="color:#003057;">$433,500/$510,000 </h2></div> -->
+     </div>
+     {{/each}}
+
+  </div>
+  </div>
+  </section>
+  {{/if}}
 
 <section id="standings" class="" style="margin-bottom:-30px;" >
 
@@ -92,7 +147,7 @@
            showComponentFooter=false
            filteringIgnoreCase=true
            columnComponents=(hash
-             editRow=(component "models-table/cell-edit-toggle" saveRowAction=(action "onSaveRow") cancelRowAction=(action "onCancelRow"))
+             rnhName=(component "rnh-name") editRow=(component "models-table/cell-edit-toggle" saveRowAction=(action "onSaveRow") cancelRowAction=(action "onCancelRow"))
            )
            pageSize=755
          }}
@@ -111,7 +166,7 @@
            showComponentFooter=false
            filteringIgnoreCase=true
            columnComponents=(hash
-             editRow=(component "models-table/cell-edit-toggle" saveRowAction=(action "onSaveRow") cancelRowAction=(action "onCancelRow"))
+             rnhName=(component "rnh-name") editRow=(component "models-table/cell-edit-toggle" saveRowAction=(action "onSaveRow") cancelRowAction=(action "onCancelRow"))
            )
            pageSize=755
          }}
@@ -130,7 +185,7 @@
            showComponentFooter=false
            filteringIgnoreCase=true
            columnComponents=(hash
-             editRow=(component "models-table/cell-edit-toggle" saveRowAction=(action "onSaveRow") cancelRowAction=(action "onCancelRow"))
+            rnhName=(component "rnh-name") editRow=(component "models-table/cell-edit-toggle" saveRowAction=(action "onSaveRow") cancelRowAction=(action "onCancelRow"))
            )
            pageSize=755
          }}
@@ -149,7 +204,7 @@
            showComponentFooter=false
            filteringIgnoreCase=true
            columnComponents=(hash
-             editRow=(component "models-table/cell-edit-toggle" saveRowAction=(action "onSaveRow") cancelRowAction=(action "onCancelRow"))
+            rnhName=(component "rnh-name") editRow=(component "models-table/cell-edit-toggle" saveRowAction=(action "onSaveRow") cancelRowAction=(action "onCancelRow"))
            )
            pageSize=755
          }}

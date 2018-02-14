@@ -1,7 +1,8 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  name: DS.attr('string'),
+  firstname: DS.attr('string'),
+  lastname: DS.attr('string'),
   dollars: DS.attr('string'),
   goal: DS.attr('string'),
   numberofcontracts: DS.attr('string'),

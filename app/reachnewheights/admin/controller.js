@@ -9,8 +9,25 @@ import { get } from '@ember/object';
 
       columns: [
         {
-          "propertyName": "name",
+          "title": "Job Title",
+          "propertyName": "jobtitle"
+        },
+        // {
+        //   "title": "Profile Img",
+        //   "component": "profileImg"
+        // },
+        {
+          "title": "Name",
+          "component": "rnhName",
           "editable": false
+        },
+        {
+          "title": "Manager Name",
+          "propertyName": "managername"
+        },
+        {
+          "title": "Region",
+          "propertyName": "region"
         },
         {
           "propertyName": "dollars"
@@ -25,18 +42,6 @@ import { get } from '@ember/object';
         {
           "title": "Name of Contracts",
           "propertyName": "nameofeachcontract"
-        },
-        {
-          "title": "Job Title",
-          "propertyName": "jobtitle"
-        },
-        {
-          "title": "Manager Name",
-          "propertyName": "managername"
-        },
-        {
-          "title": "Region",
-          "propertyName": "region"
         },
         {
           "title": "Edit",
