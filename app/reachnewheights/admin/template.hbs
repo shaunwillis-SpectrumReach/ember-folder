@@ -20,12 +20,12 @@
            </div>
          </div >
          <!-- Personal Progress -->
-      <div class=" col-md-12 col-lg-6" >
+       <div class=" col-md-12 col-lg-6" >
        <div style="float:left;"><h2 style="color:#003057;">&nbsp;</h2></div>   <div  style="float:right;"><h1 class="dkBlue" style="">
-      {{ ae15m.fullyear }}%
+      {{ rollup.jobtitle }}%
      </h1></div>
         <div class="progress" style="clear:both; background-color:white; border:1px solid #0099D8;">
-          <div class="progress-bar" role="progressbar" aria-valuenow="{{ ae15m.fullyear }}" aria-valuemin="0" aria-valuemax="100" style=" width:{{ ae15m.fullyear }}%; ">
+          <div class="progress-bar" role="progressbar" aria-valuenow="{{ rollup.jobtitle }}" aria-valuemin="0" aria-valuemax="100" style=" width:{{ rollup.jobtitle }}%; ">
             <!-- <span class="">70% </span> -->
           </div>
         </div>
@@ -33,7 +33,7 @@
         <!-- <div style="float:left; margin-top:10px;"><h2>&nbsp;</h2></div>   <div style="float:right; margin-top:10px;"><h2 style="color:#003057;">$433,500/$510,000 </h2></div> -->
      </div>
      {{#each model.all as |rollup| }}
-      <div class=" col-md-12 col-lg-3" >
+      <div class=" col-md-12 col-lg-3 dashboard" >
        <div style="float:left;"><h2 style="color:#003057;">&nbsp;</h2></div>   <div  style="float:right;">
          <p class="dkBlue" style="">
             {{ rollup.firstname }} {{ rollup.lastname }}
@@ -51,7 +51,6 @@
         <!-- <div style="float:left; margin-top:10px;"><h2>&nbsp;</h2></div>   <div style="float:right; margin-top:10px;"><h2 style="color:#003057;">$433,500/$510,000 </h2></div> -->
      </div>
      {{/each}}
-
   </div>
   </div>
   </section>
@@ -71,7 +70,7 @@
             </div>
 
             </div>
-        <div id="pdf"  class="col-lg-12 "> <a href="/assets/img/Firstlook_OTBNetRev_byAE_wk5_020118.pdf" target="_blank" style="color:#0099D8;"><img src="/assets/img/ae_pdf.svg" alt="download pdf"/></a>&nbsp; <a href="/assets/img/Firstlook_OTBNetRev_byLSM-Rollup_wk5_020118.pdf" target="_blank" style="color:#0099D8;"><img src="/assets/img/lsm_pdf.svg" alt="download pdf"/></a></div>
+        <!-- <div id="pdf"  class="col-lg-12 "> <a href="/assets/img/Firstlook_OTBNetRev_byAE_wk5_020118.pdf" target="_blank" style="color:#0099D8;"><img src="/assets/img/ae_pdf.svg" alt="download pdf"/></a>&nbsp; <a href="/assets/img/Firstlook_OTBNetRev_byLSM-Rollup_wk5_020118.pdf" target="_blank" style="color:#0099D8;"><img src="/assets/img/lsm_pdf.svg" alt="download pdf"/></a></div> -->
     </div>
 
     <!-- Tabs section Temporarily until New Tabs are built-->
@@ -94,7 +93,7 @@
 
               <div id="ae15mBtn" class="filterBtn filterBtn1 AE15mActive" {{action "filterCategoryAllaes"}}>
                 &nbsp;</div>
-              <div id="ae1mBtn" class="filterBtn filterBtn2" {{action "filterCategoryAE1m"}}>
+              <div id="ae499kBtn" class="filterBtn filterBtn5" {{action "filterCategoryAE499k"}}>
                   &nbsp;</div>
               <div id="ae700kBtn" class="filterBtn filterBtn3" {{action "filterCategoryAE700k"}} >
                   &nbsp;</div>
@@ -102,7 +101,7 @@
                 &nbsp;</div>
 
         </div>
-      <div class="footnote"><p>Select tabs to view by Category</p></div>
+      <!-- <div class="footnote"><p>Select tabs to view by Category</p></div> -->
 
     </div>
   </div>

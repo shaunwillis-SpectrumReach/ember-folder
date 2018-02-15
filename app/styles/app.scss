@@ -25,7 +25,10 @@
     src: url('/assets/fonts/Gotham-Bold.otf');
 }
 
-
+/*  ///////////  Hide personal data record  ////////////  */
+.col-md-12.col-lg-3.dashboard:nth-of-type(3) {
+    display: none;
+}
 
 /*  ///////////  File Upload  ////////////  */
 

@@ -10,7 +10,12 @@ import { get } from '@ember/object';
       columns: [
         {
           "title": "Job Title",
-          "propertyName": "jobtitle"
+          "propertyName": "jobtitle",
+          "filterWithSelect": true,
+          "predefinedFilterOptions": [
+            "Account Executive",
+            "LSM"
+          ]
         },
         // {
         //   "title": "Profile Img",
@@ -36,7 +41,7 @@ import { get } from '@ember/object';
           "propertyName": "goal"
         },
         {
-          "title": "Number of Contracts",
+          "title": "# of Contracts",
           "propertyName": "numberofcontracts"
         },
         {
