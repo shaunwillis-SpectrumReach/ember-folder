@@ -22,16 +22,16 @@
          <!-- Personal Progress -->
        <div class=" col-md-12 col-lg-6" >
        <div style="float:left;"><h2 style="color:#003057;">&nbsp;</h2></div>   <div  style="float:right;"><h1 class="dkBlue" style="">
-      {{ rollup.jobtitle }}%
+      {{ personal.jobtitle }}%
      </h1></div>
         <div class="progress" style="clear:both; background-color:white; border:1px solid #0099D8;">
-          <div class="progress-bar" role="progressbar" aria-valuenow="{{ rollup.jobtitle }}" aria-valuemin="0" aria-valuemax="100" style=" width:{{ rollup.jobtitle }}%; ">
+          <div class="progress-bar" role="progressbar" aria-valuenow="{{ personal.jobtitle }}" aria-valuemin="0" aria-valuemax="100" style=" width:{{ personal.jobtitle }}%; ">
             <!-- <span class="">70% </span> -->
           </div>
         </div>
 
         <!-- <div style="float:left; margin-top:10px;"><h2>&nbsp;</h2></div>   <div style="float:right; margin-top:10px;"><h2 style="color:#003057;">$433,500/$510,000 </h2></div> -->
-     </div>
+      </div>
      {{#each model.all as |rollup| }}
       <div class=" col-md-12 col-lg-3 dashboard" >
        <div style="float:left;"><h2 style="color:#003057;">&nbsp;</h2></div>   <div  style="float:right;">
@@ -146,7 +146,7 @@
            showComponentFooter=false
            filteringIgnoreCase=true
            columnComponents=(hash
-             rnhName=(component "rnh-name") editRow=(component "models-table/cell-edit-toggle" saveRowAction=(action "onSaveRow") cancelRowAction=(action "onCancelRow"))
+             editRow=(component "models-table/cell-edit-toggle" saveRowAction=(action "onSaveRow") cancelRowAction=(action "onCancelRow"))
            )
            pageSize=755
          }}
@@ -165,7 +165,7 @@
            showComponentFooter=false
            filteringIgnoreCase=true
            columnComponents=(hash
-             rnhName=(component "rnh-name") editRow=(component "models-table/cell-edit-toggle" saveRowAction=(action "onSaveRow") cancelRowAction=(action "onCancelRow"))
+             editRow=(component "models-table/cell-edit-toggle" saveRowAction=(action "onSaveRow") cancelRowAction=(action "onCancelRow"))
            )
            pageSize=755
          }}
@@ -184,7 +184,7 @@
            showComponentFooter=false
            filteringIgnoreCase=true
            columnComponents=(hash
-            rnhName=(component "rnh-name") editRow=(component "models-table/cell-edit-toggle" saveRowAction=(action "onSaveRow") cancelRowAction=(action "onCancelRow"))
+            editRow=(component "models-table/cell-edit-toggle" saveRowAction=(action "onSaveRow") cancelRowAction=(action "onCancelRow"))
            )
            pageSize=755
          }}
@@ -203,7 +203,7 @@
            showComponentFooter=false
            filteringIgnoreCase=true
            columnComponents=(hash
-            rnhName=(component "rnh-name") editRow=(component "models-table/cell-edit-toggle" saveRowAction=(action "onSaveRow") cancelRowAction=(action "onCancelRow"))
+            editRow=(component "models-table/cell-edit-toggle" saveRowAction=(action "onSaveRow") cancelRowAction=(action "onCancelRow"))
            )
            pageSize=755
          }}

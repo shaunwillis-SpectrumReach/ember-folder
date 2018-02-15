@@ -23,7 +23,7 @@ import { get } from '@ember/object';
         // },
         {
           "title": "Name",
-          "component": "rnhName",
+          "propertyName": "name",
           "editable": false
         },
         {
