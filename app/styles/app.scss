@@ -1,6 +1,7 @@
 /* @import "progress-b";  */  /* used for circular prgress bar  */
 /* @import "progress-leader";  */
 @import "homepage";
+@import "rnh-admin";
 @import "leaderboard";
 @import "standings";
 @import "ember-side-menu";
@@ -24,7 +25,10 @@
     src: url('/assets/fonts/Gotham-Bold.otf');
 }
 
-
+/*  ///////////  Hide personal data record  ////////////  */
+.col-md-12.col-lg-3.dashboard:nth-of-type(3) {
+    display: none;
+}
 
 /*  ///////////  File Upload  ////////////  */
 
@@ -852,7 +856,7 @@ padding:40px 0;
 
 
 /*  ///////////  Nav side-bar for Edge Browser ////////////  */
-// 
+//
 // @supports (-ms-accelerator:true) {
 //
 //   #menuRight {

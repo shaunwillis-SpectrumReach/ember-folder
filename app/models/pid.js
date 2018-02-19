@@ -12,6 +12,9 @@ export default DS.Model.extend({
   jobtitle: DS.attr('string'),
   ae15ms: DS.hasMany('ae15m'),
   ae1ms: DS.hasMany('ae1m'),
+  RnHalls: DS.belongsTo('rn-hall'),
+  isAdmin: DS.attr('boolean'),
+  isApproved: DS.attr('boolean'),
   profilePicUrl: DS.attr('string'),
   fullProfilePicUrl: Ember.computed('profilePicUrl', function() {
     return `https://s3.amazonaws.com/sr-firstlook/public/${this.get('profilePicUrl')}`
