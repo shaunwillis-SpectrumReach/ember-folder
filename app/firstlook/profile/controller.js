@@ -27,7 +27,7 @@ export default Ember.Controller.extend({
 //   }
 // },
 
-// 
+//
 // actions: {
 //   update(closeForm, formValues) {
 //     this.model.setProperties(formValues);
