@@ -12,6 +12,5 @@ export default DS.Model.extend({
   division: DS.attr('string'),
   region: DS.attr('string'),
   jobtitle: DS.attr('string'),
-  RnHcentral: DS.belongsTo('rn-hcentral'),
   pids: DS.belongsTo('pids')
 });
