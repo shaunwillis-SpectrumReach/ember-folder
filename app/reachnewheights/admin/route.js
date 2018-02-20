@@ -7,7 +7,7 @@ export default Route.extend({
 
   model() {
     return RSVP.hash({
-      mine: this.store.queryRecord('rn-hall', {
+      mine: this.store.query('rn-hall', {
           'mine': true
           // include: 'rn-hcentrals'
         }),
