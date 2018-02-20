@@ -23,8 +23,8 @@ model() {
 
     // all: this.store.findAll('ae15m'),
     ae1m: this.store.findAll('ae1m'),
-    // ae700k: this.store.findAll('aegroupdbview700'),
-    ae700k: this.store.findAll('ae700k'),
+    ae700k: this.store.findAll('aegroupdbview700'),
+    // ae700k: this.store.findAll('ae700k'),
     ae450k: this.store.findAll('ae450k'),
     ae499k: this.store.findAll('ae499k'),
     //Allaes and AE15m needs to be corrected after launch
