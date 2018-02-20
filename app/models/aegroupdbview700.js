@@ -1,13 +1,13 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  name: DS.attr('string'),
-  fullyear: DS.attr('string'),
-  division: DS.attr('string'),
-  region: DS.attr('string'),
-  managername: DS.attr('string'),
-  rank: DS.attr('string'),
-  pid: DS.belongsTo('pid'),
+  FirstName: DS.attr('string'),
+  LastName: DS.attr('string'),
+  FullYear: DS.attr('string'),
+  Division: DS.attr('string'),
+  Region: DS.attr('string'),
+  ManagerName: DS.attr('string'),
+  Rank: DS.attr('string'),
   profilePicUrl: DS.attr('string'),
   fullProfilePicUrl: Ember.computed('profilePicUrl', function() {
     return `https://s3.amazonaws.com/sr-firstlook/public/${this.get('profilePicUrl')}`

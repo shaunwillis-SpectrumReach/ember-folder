@@ -10,7 +10,7 @@ module.exports = function(defaults) {
     plugins: ['transform-object-rest-spread']
   },
   'ember-math-helpers': {
-     only: ['add', 'div', 'round']
+     only: ['add', 'div', 'round', 'mult']
    }
   });
 
