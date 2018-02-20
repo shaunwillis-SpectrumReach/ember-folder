@@ -9,12 +9,7 @@ export default Route.extend({
     return RSVP.hash({
       mine: this.store.query('rn-hall', {
           'mine': true
-          // include: 'rn-hcentrals'
         }),
-      // test: this.store.queryRecord('rn-hall', {
-      //     'central': true ,
-      //   }),
-
       central: this.store.query('rn-hall', {
         'central': true
       }),
@@ -27,7 +22,7 @@ export default Route.extend({
       northeast: this.store.query('rn-hall', {
         'northeast': true
       }),
-      all: this.store.query('rn-hall', {
+      aerollup: this.store.query('rn-hall', {
         'rollup': true
       })
       // central: this.store.findAll('rn-hcentral'),
