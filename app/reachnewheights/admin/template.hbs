@@ -43,7 +43,7 @@
          </p>
        </div>
         <div class="progress" style="clear:both; background-color:white; border:1px solid #0099D8;">
-          <div class="progress-bar" role="progressbar" aria-valuenow="{{ rollup.dollars }}" aria-valuemin="0" aria-valuemax="100" style=" width:{{ rollup.dollars }}%; ">
+          <div class="progress-bar" role="progressbar" aria-valuenow="{{mult (div rollup.dollars rollup.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div rollup.dollars rollup.goal) 100}}%; ">
             <!-- <span class="">70% </span> -->
           </div>
         </div>
