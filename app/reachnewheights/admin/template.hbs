@@ -19,19 +19,22 @@
 
            </div>
          </div >
+      {{#each model.mine as |personal|}}
          <!-- Personal Progress -->
        <div class=" col-md-12 col-lg-6" >
        <div style="float:left;"><h2 style="color:#003057;">&nbsp;</h2></div>   <div  style="float:right;"><h1 class="dkBlue" style="">
-      {{ personal.jobtitle }}%
+      {{mult (div personal.dollars personal.goal) 100}}%
      </h1></div>
         <div class="progress" style="clear:both; background-color:white; border:1px solid #0099D8;">
-          <div class="progress-bar" role="progressbar" aria-valuenow="{{ personal.jobtitle }}" aria-valuemin="0" aria-valuemax="100" style=" width:{{ personal.jobtitle }}%; ">
+          <div class="progress-bar" role="progressbar" aria-valuenow="{{mult (div personal.dollars personal.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div personal.dollars personal.goal) 100}}%; ">
             <!-- <span class="">70% </span> -->
           </div>
         </div>
 
         <!-- <div style="float:left; margin-top:10px;"><h2>&nbsp;</h2></div>   <div style="float:right; margin-top:10px;"><h2 style="color:#003057;">$433,500/$510,000 </h2></div> -->
       </div>
+      {{/each}}
+
      {{#each model.all as |rollup| }}
       <div class=" col-md-12 col-lg-3 dashboard" >
        <div style="float:left;"><h2 style="color:#003057;">&nbsp;</h2></div>   <div  style="float:right;">
