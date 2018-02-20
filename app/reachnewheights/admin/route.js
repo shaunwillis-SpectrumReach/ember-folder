@@ -25,11 +25,6 @@ export default Route.extend({
       aerollup: this.store.query('rn-hall', {
         'rollup': true
       })
-      // central: this.store.findAll('rn-hcentral'),
-      // west: this.store.findAll('rn-hwest'),
-      // south: this.store.findAll('rn-hsouth'),
-      // northeast: this.store.findAll('rn-hnortheast'),
-      // all: this.store.findAll('rn-hall')
       });
 
   },
