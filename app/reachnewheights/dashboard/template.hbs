@@ -1,0 +1,363 @@
+
+
+<div id="wrapper-rnh" >
+  <!-- <div id="contentHome" class="" > -->
+    <section id="header-rnh"  >
+      <div  class="container "  >
+          <div class="row" >
+
+
+      <div class="col-lg-12">
+        {{#link-to 'reachnewheights.dashboard' replace="true"}}{{/link-to}}
+        <img class="logo_rnh " src="/assets/img/rnh/NewBizLogo-Revised-02.svg" >
+     </div>
+     <!-- <div class="userNameTop">Welcome, {{ currentUser.pid.firstname}}
+       <img style="border-radius: 50%;" src="{{currentUser.pid.fullProfilePicUrl}}" width="25">
+     </div> -->
+
+ <!--  /////////////  SHOW FOR MANAGERS ONLY  /////////////   -->
+     {{#if currentUser.pid.jobtitle }}
+     <div  class="companyGoal col-lg-12 " >
+      <div class=" progressBox"  >
+        <div style="float:left;"> <h2 style="color:#003057;">COLLECTIVE GOAL</h2></div>   <div style="float:right; color:#fff;"><h2 style="color:#fff;">89% </h2></div>
+          <div class="progress" style="clear:both; background-color:white; border:1px solid #003057;">
+            <div class="progress-bar" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" style=" width:89%; ">
+              <!-- <span class="">70% </span> -->
+            </div>
+          </div>
+          <div style="float:left; margin-top:10px"><p>23%</p></div>
+      </div>
+     </div>
+  {{/if}}
+
+
+</div>
+</div>
+    </section>
+
+
+<!--  ///////////  AE DASHBOARD   ///////////  -->
+
+{{#if currentUser.pid.jobtitle }}
+<div class="divider-rnh"></div>
+
+  <section id="AE-dash" class="dashboard" style="">
+    <div  class="container "  >
+        <div class="row" >
+
+         <div class="col-md-12 col-lg-6" >
+           <div class=" "  style="text-align:left; ">
+             <div class=" " >
+              <h1>DASHBOARD</h1>
+              <p class="footnote">Personal Data Viewport</p>
+             </div>
+           </div>
+         </div >
+
+
+
+
+      <div class="col-md-12 col-lg-6 imageMine" >
+          <div class="" >
+            <a href="https://spectrumreach.typeform.com/to/zdQZSe" target="_blank"><img style="" src="{{currentUser.pid.fullProfilePicUrl}}" ></a>
+          </div>
+
+        <div class="userData ">
+          <div class="title">
+            Name<br>ID#<br>Manager<br>Location
+          </div>
+          <div class="data">
+            {{ currentUser.pid.firstname}} {{ currentUser.pid.lastname}}<br>{{ currentUser.pid.pid}}<br>{{ currentUser.pid.managername}}<br>{{ currentUser.pid.region}}
+          </div>
+        </div>
+
+      </div >
+
+       <div class=" col-md-12 col-lg-6" >
+       <div style="float:left;">$68,000/$120,000</div>   <div  style="float:right;">&nbsp;</div>
+        <div class="progress" >
+          <div class="progress-bar" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style=" width:67%; ">
+            <!-- <span class="">70% </span> -->
+          </div>
+        </div>
+         <div style="float:left; margin-top:10px;">Team Progress % to collective goal</div>   <div style="float:right; margin-top:10px;"><h3>67%</h3></div>
+      </div>
+
+     {{#each model.mine as |personal|}}
+     <div class=" col-md-12 col-lg-6" >
+     <div style="float:left;">$13,000/$20,000</div>   <div  style="float:right;">&nbsp;</div>
+     <div class="progress" >
+       <div class="progress-bar" role="progressbar" aria-valuenow="{{mult (div personal.dollars personal.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div personal.dollars personal.goal) 100}}%; ">
+         <!-- <span class="">70% </span> -->
+       </div>
+     </div>
+    <div style="float:left; margin-top:10px;">Personal Progress % to collective goal</div>   <div style="float:right; margin-top:10px;"><h3>{{mult (div personal.dollars personal.goal) 100}}% </h3></div>
+     </div>
+     {{/each}}
+
+
+
+  </div>
+  </div>
+  </section>
+  <div class="divider-rnh"></div>
+  {{/if}}
+
+
+  <!--  ///////////  MANAGERS ROLLUPS DASHBOARD     ///////////  -->
+
+
+  {{#if currentUser.pid.jobtitle }}
+  <div class="divider-rnh"></div>
+    <section id="MGR-dash" class="dashboard" style="">
+      <div  class="container "  >
+    <div class="row" >
+
+
+      <div class="col-md-12 col-lg-6" >
+        <div class=" "  style="text-align:left; ">
+          <div class=" " >
+           <h1>DASHBOARD</h1>
+           <p class="footnote">Personal Data Viewport</p>
+          </div>
+        </div>
+      </div >
+
+
+
+
+   <div class="col-md-12 col-lg-6 imageMine" >
+       <div class="" >
+         <a href="https://spectrumreach.typeform.com/to/zdQZSe" target="_blank"><img style="" src="{{currentUser.pid.fullProfilePicUrl}}" ></a>
+       </div>
+
+     <div class="userData ">
+       <div class="title">
+         Name<br>ID#<br>Manager<br>Location
+       </div>
+       <div class="data">
+         {{ currentUser.pid.firstname}} {{ currentUser.pid.lastname}}<br>{{ currentUser.pid.pid}}<br>{{ currentUser.pid.managername}}<br>{{ currentUser.pid.region}}
+       </div>
+     </div>
+
+   </div >
+
+   <div class=" col-md-12 col-lg-6" >
+   <div style="float:left;">$68,000/$120,000</div>   <div  style="float:right;">&nbsp;</div>
+    <div class="progress" >
+      <div class="progress-bar" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style=" width:67%; ">
+        <!-- <span class="">70% </span> -->
+      </div>
+    </div>
+     <div style="float:left; margin-top:10px;">Team Progress % to collective goal</div>   <div style="float:right; margin-top:10px;"><h3>67%</h3></div>
+  </div>
+
+ <div class=" col-md-12 col-lg-6" >
+   &nbsp;
+ </div>
+
+
+
+<!--  ///////////  EMPLOYEE DATA   /////////////   -->
+
+<div class=" col-md-12 col-lg-12" style="text-align:left; padding:40px 0;">
+  INDIVIDUAL DATA BREAKDOWN
+</div>
+
+
+
+       {{#each model.aerollup as |rollup| }}
+        <div class=" col-md-12 col-lg-3 dashboard" >
+         <div style="float:left;"><h2 style="color:#003057;">&nbsp;</h2></div>   <div  style="float:right;">
+           <p class="dkBlue" style="">
+              {{ rollup.firstname }} {{ rollup.lastname }}
+           </p>
+           <p class="dkBlue" style="">
+              {{ rollup.jobtitle }}
+           </p>
+         </div>
+          <div class="progress" style="clear:both; background-color:white; border:1px solid #0099D8;">
+            <div class="progress-bar" role="progressbar" aria-valuenow="{{mult (div rollup.dollars rollup.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div rollup.dollars rollup.goal) 100}}%; ">
+              <!-- <span class="">70% </span> -->
+            </div>
+          </div>
+
+          <!-- <div style="float:left; margin-top:10px;"><h2>&nbsp;</h2></div>   <div style="float:right; margin-top:10px;"><h2 style="color:#003057;">$433,500/$510,000 </h2></div> -->
+       </div>
+       {{/each}}
+
+
+    </div>
+    </div>
+    </section>
+    <div class="divider-rnh"></div>
+    {{/if}}
+
+
+
+
+<section id="standings" class="" style="margin-bottom:-30px;" >
+
+  <div class="container" >
+    <div class="row " >
+      <div class="col-lg-7">
+        <div class="col-sm-9 col-lg-12 text-left" ><h1>STANDINGS</h1>
+        <p class="footnote" style="padding-left: 5px;">Ranking is based on % to goal</p>
+
+        <!-- show on mobile size only  -->
+            <div class="row" id="FilterDisclaimer"  >
+              <p style=" ">Visit our desktop version for more info, searchable data, and filtering capabilities or download the PDF for complete standings.</p>
+            </div>
+
+            </div>
+        <!-- <div id="pdf"  class="col-lg-12 "> <a href="/assets/img/Firstlook_OTBNetRev_byAE_wk5_020118.pdf" target="_blank" style="color:#0099D8;"><img src="/assets/img/ae_pdf.svg" alt="download pdf"/></a>&nbsp; <a href="/assets/img/Firstlook_OTBNetRev_byLSM-Rollup_wk5_020118.pdf" target="_blank" style="color:#0099D8;"><img src="/assets/img/lsm_pdf.svg" alt="download pdf"/></a></div> -->
+    </div>
+
+    <!-- Tabs section Temporarily until New Tabs are built-->
+
+
+     <div class="row col-lg-5" id="Filters"  >
+    <!-- <div class=" filters " style="    padding-left: 8px;" >
+
+            <div id="westmBtn" class="filterBtn filterBtn1 AE15mActive" {{action "filterWest"}}>
+              &nbsp;</div>
+            <div id="southBtn" class="filterBtn filterBtn2" {{action "filterSouth"}}>
+                &nbsp;</div>
+            <div id="northeastBtn" class="filterBtn filterBtn3" {{action "filterNortheast"}} >
+                &nbsp;</div>
+            <div id="centralBtn" class="filterBtn filterBtn4" {{action "filterCentral"}}>
+              &nbsp;</div>
+
+      </div> -->
+      <div class=" filters " style="    padding-left: 8px;" >
+
+              <div id="ae15mBtn" class="filterBtn filterBtn1 AE15mActive" {{action "filterCategoryAllaes"}}>
+                &nbsp;</div>
+              <div id="ae499kBtn" class="filterBtn filterBtn2" {{action "filterCategoryAE499k"}}>
+                  &nbsp;</div>
+              <div id="ae700kBtn" class="filterBtn filterBtn3" {{action "filterCategoryAE700k"}} >
+                  &nbsp;</div>
+              <div id="ae450kBtn" class="filterBtn filterBtn4" {{action "filterCategoryAE450k"}}>
+                &nbsp;</div>
+
+        </div>
+      <!-- <div class="footnote"><p>Select tabs to view by Category</p></div> -->
+
+    </div>
+  </div>
+
+  </div>
+
+</section>
+
+
+<div class="divider-rnh"></div>
+<section id="AElist" class="" style="">
+
+<!--   ================================   -->
+<!--  KEEP THIS AS HEADER  -->
+<!--   ================================   -->
+
+<!-- <div class="dataheader" style=" color:white;">
+  <div class="container-fluid" >
+    <div class="row listHide3" >
+
+      <div class="col-xxs-2 col-sm-2 col-md-1">#</div>
+      <div class="col-xxs-2 col-sm-2 col-md-1">&nbsp;</div>
+        <div class="col-xxs-3 col-sm-3 col-md-2">AE Name</div>
+        <div class="col-xxs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
+        <div class="col-xxs-1 col-md-2 col-lg-1 listHide2">Division</div>
+        <div class="col-xxs-1 col-md-2 col-lg-1 listHide2">Region</div>
+        <div class="col-xxs-1 col-md-3 listHide ">Progress</div>
+        <div class="col-xxs-1 col-sm-1">%</div>
+        <div class="col-xxs-1  col-sm-1"><span class="" style="z-index:10000;" {{action "resetList"}}>Top <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+    </div>
+</div>
+</div> -->
+
+  <div id="datatable" class="container-fluid datatable" >
+
+    <!--   ================================   -->
+    <!--  West table  -->
+    <!--   ================================   -->
+    <div class="row hide" id="ae700k" >
+      <div class="col-lg-12">
+        {{models-table
+           data=model.west
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           columnComponents=(hash
+             editRow=(component "models-table/cell-edit-toggle" saveRowAction=(action "onSaveRow") cancelRowAction=(action "onCancelRow"))
+           )
+           pageSize=755
+         }}
+        </div>
+    </div>
+    <!--   ================================   -->
+    <!--  Northeast table  -->
+    <!--   ================================   -->
+
+    <div class="row hide" id="ae450k" >
+      <div class="col-lg-12">
+        {{models-table
+           data=model.northeast
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           columnComponents=(hash
+             editRow=(component "models-table/cell-edit-toggle" saveRowAction=(action "onSaveRow") cancelRowAction=(action "onCancelRow"))
+           )
+           pageSize=755
+         }}
+        </div>
+    </div>
+
+    <!--   ================================   -->
+    <!--  South table  -->
+    <!--   ================================   -->
+    <div class="row hide" id="ae499k" >
+      <div class="col-lg-12">
+        {{models-table
+           data=model.south
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           columnComponents=(hash
+            editRow=(component "models-table/cell-edit-toggle" saveRowAction=(action "onSaveRow") cancelRowAction=(action "onCancelRow"))
+           )
+           pageSize=755
+         }}
+        </div>
+    </div>
+
+    <!--   ================================   -->
+    <!--  Central table  -->
+    <!--   ================================   -->
+    <div class="row" id="allae" >
+      <div class="col-lg-12">
+        {{models-table
+           data=model.central
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           columnComponents=(hash
+            editRow=(component "models-table/cell-edit-toggle" saveRowAction=(action "onSaveRow") cancelRowAction=(action "onCancelRow"))
+           )
+           pageSize=755
+         }}
+        </div>
+    </div>
+
+</div>
+
+
+<div class="spacer10" style="">&nbsp;&nbsp;</div>
+</section>
+
+</div>
+{{outlet}}
