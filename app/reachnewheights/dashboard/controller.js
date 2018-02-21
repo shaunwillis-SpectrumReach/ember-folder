@@ -23,8 +23,7 @@ import { get } from '@ember/object';
         // },
         {
           "title": "Name",
-          "propertyName": "name",
-          "editable": false
+          "propertyName": "name"
         },
         {
           "title": "Manager Name",
@@ -48,15 +47,10 @@ import { get } from '@ember/object';
           "title": "Name of Contracts",
           "propertyName": "nameofeachcontract"
         },
-        {
-          "title": "Edit",
-          "component": "editRow",
-          "className": "editBtn",
-          "editable": false
-        }
+
       ],
       actions: {
-        
+
 
 
         filterCategoryAllaes() {
