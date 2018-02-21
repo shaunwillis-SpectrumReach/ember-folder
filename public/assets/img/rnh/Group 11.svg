@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="630px" height="66px" viewBox="0 0 630 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 11</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M25.4594155,0 L171,0 L171,51 L0,51 L0,25.4594155 L25.4594155,-1.66533454e-15 Z" id="path-1"></path>
+        <path d="M25.4594155,0 L171,0 L171,51 L0,51 L0,25.4594155 L25.4594155,-1.66533454e-15 Z" id="path-2"></path>
+        <path d="M25.4594155,0 L171,0 L171,51 L0,51 L0,25.4594155 L25.4594155,-1.66533454e-15 Z" id="path-3"></path>
+        <path d="M25.4594155,0 L171,0 L171,51 L0,51 L0,25.4594155 L25.4594155,-1.66533454e-15 Z" id="path-4"></path>
+    </defs>
+    <g id="RNH" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-11">
+            <g id="Group-6">
+                <g id="Combined-Shape-Copy-4">
+                    <use fill="#FFA40A" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <path stroke="#FFFFFF" stroke-width="3" d="M26.0807358,1.5 L1.5,26.0807358 L1.5,49.5 L169.5,49.5 L169.5,1.5 L26.0807358,1.5 Z"></path>
+                </g>
+                <text id="WEST-Copy" font-family="OpenSans-Bold, Open Sans" font-size="18" font-weight="bold" letter-spacing="1.20000005" fill="#FFFFFF">
+                    <tspan x="60" y="31">WEST</tspan>
+                </text>
+            </g>
+            <g id="Group-2-Copy" transform="translate(153.000000, 0.000000)">
+                <g id="Combined-Shape-Copy">
+                    <use fill="#980647" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <path stroke="#FFFFFF" stroke-width="3" d="M26.0807358,1.5 L1.5,26.0807358 L1.5,49.5 L169.5,49.5 L169.5,1.5 L26.0807358,1.5 Z"></path>
+                </g>
+                <text id="CENTRAL" font-family="OpenSans-Bold, Open Sans" font-size="18" font-weight="bold" letter-spacing="1.20000005" fill="#FFFFFF">
+                    <tspan x="42" y="31">CENTRAL</tspan>
+                </text>
+            </g>
+            <g id="Group-7" transform="translate(306.000000, 0.000000)">
+                <g id="Combined-Shape-Copy-5">
+                    <use fill="#510C76" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <path stroke="#FFFFFF" stroke-width="3" d="M26.0807358,1.5 L1.5,26.0807358 L1.5,49.5 L169.5,49.5 L169.5,1.5 L26.0807358,1.5 Z"></path>
+                </g>
+                <text id="NORTHEAST-Copy" font-family="OpenSans-Bold, Open Sans" font-size="18" font-weight="bold" letter-spacing="1.20000005" fill="#FFFFFF">
+                    <tspan x="28" y="31">NORTHEAST</tspan>
+                </text>
+            </g>
+            <g id="Group-8" transform="translate(459.000000, 0.000000)">
+                <g id="Combined-Shape-Copy-6">
+                    <use fill="#019483" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    <path stroke="#FFFFFF" stroke-width="3" d="M26.0807358,1.5 L1.5,26.0807358 L1.5,49.5 L169.5,49.5 L169.5,1.5 L26.0807358,1.5 Z"></path>
+                </g>
+                <text id="SOUTH-Copy" font-family="OpenSans-Bold, Open Sans" font-size="18" font-weight="bold" letter-spacing="1.20000005" fill="#FFFFFF">
+                    <tspan x="53" y="31">SOUTH</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

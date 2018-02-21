@@ -1,0 +1,145 @@
+#wrapper-rnh {
+    width:100%;
+    height: 100%;
+    margin:0;
+    border:0;
+    font-family: "Gotham", "Arial", sans-serif;
+    // font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    background-color: #BFC9D2;
+}
+
+#wrapper-rnh h1 {
+
+}
+.divider-rnh {
+  background: url("../assets/img/Main_Header_bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  // width:102%;
+  height:6px;
+  margin:0;
+
+}
+
+#header-rnh {
+  width:100%;
+  margin:0;
+  padding:0;
+  padding:80px;
+}
+
+#header-rnh .logo_rnh  {
+  float:left;
+  width:50%;
+}
+
+
+.companyGoal {
+  clear:both;
+  padding-top:60px;
+}
+
+#header-rnh   .progressBox {
+    padding-top:40px;
+}
+
+#header-rnh    .progress-bar {
+  background-color:#0099D8;
+
+}
+
+.dashboard {
+  background-color: #fff;
+}
+
+
+#AE-dash .imageMine {
+padding:0 20px;
+}
+
+#AE-dash .imageMine img {
+  clip-path: circle(90px at center);
+  border:2px solid #003057;
+  border-radius: 50%;
+  width:180px;
+  height:auto;
+  margin-top:0;
+  margin-left:0px;
+  float:left;
+  padding:0 20px;
+}
+#AE-dash .imageMine .userData {
+  float:left;
+  padding:28px;
+}
+
+#AE-dash .userData .title {
+  float:left;
+  text-align:right;
+  border-right: 3px solid #003057;
+  font-weight:800;
+  padding-right:12px;
+}
+#AE-dash .userData .data {
+  float:left;
+  text-align: left;
+  font-weight:300;
+  padding-left:12px;
+
+}
+#AE-dash  .progress-bar {
+  background-color:#0099D8;
+
+}
+#AE-dash  .progress {
+    clear:both;
+    background-color:white;
+    border:1px solid #003057;
+}
+
+
+#MGR-dash .imageMine {
+padding:0 20px;
+}
+
+#MGR-dash .imageMine img {
+  clip-path: circle(100px at center);
+  border:2px solid #003057;
+  border-radius: 50%;
+  width:200px;
+  height:auto;
+  margin-top:0;
+  margin-left:0px;
+  float:left;
+  padding:0 20px;
+}
+#MGR-dash .imageMine .userData {
+  float:left;
+  padding:28px;
+}
+
+#MGR-dash .userData .title {
+  float:left;
+  text-align:right;
+  border-right: 3px solid #003057;
+  font-weight:800;
+  padding-right:12px;
+}
+#MGR-dash .userData .data {
+  float:left;
+  text-align: left;
+  font-weight:300;
+  padding-left:12px;
+
+}
+#MGR-dash  .progress-bar {
+  background-color:#0099D8;
+
+}
+#MGR-dash  .progress {
+    clear:both;
+    background-color:white;
+    border:1px solid #003057;
+}
