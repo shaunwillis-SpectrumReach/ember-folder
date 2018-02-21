@@ -21,14 +21,18 @@ model() {
     //   include: 'pids',
     // }),
 
+    ae1m: this.store.findAll('aegroupdbview1m'),
+    ae700k: this.store.findAll('aegroupdbview700'),
+    ae450k: this.store.findAll('aegroupdbview450'),
+    ae499k: this.store.findAll('aegroupdbview449'),
+    allae: this.store.findAll('aegroupdbview15m')
+    // ae1m: this.store.findAll('ae1m'),
     // all: this.store.findAll('ae15m'),
-    ae1m: this.store.findAll('ae1m'),
-    // ae700k: this.store.findAll('aegroupdbview700'),
-    ae700k: this.store.findAll('ae700k'),
-    ae450k: this.store.findAll('ae450k'),
-    ae499k: this.store.findAll('ae499k'),
+    // ae700k: this.store.findAll('ae700k'),
+    // ae450k: this.store.findAll('ae450k'),
+    // ae499k: this.store.findAll('ae499k'),
     //Allaes and AE15m needs to be corrected after launch
-    allae: this.store.findAll('allae')
+    // allae: this.store.findAll('allae')
     // northeast: this.store.findAll('ae15m').then(results => results.filter((ae15m) => {
     //                 return ae15m.get('division') === 'northeast';
     //              })
