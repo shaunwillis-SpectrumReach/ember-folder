@@ -19,16 +19,18 @@
      {{#if currentUser.pid.jobtitle }}
      <div  class="companyGoal col-lg-12 " >
       <div class=" progressBox"  >
-        <div style="float:left;"> <h2 style="color:#003057;">COLLECTIVE GOAL</h2></div>   <div style="float:right; color:#fff;"><h2 style="color:#fff;">89% </h2></div>
+        <div style="float:left;"> <h1 style="color:#fff;">COLLECTIVE GOAL</h1></div>   <div style="float:right; color:#fff;"><h1 style="color:#fff;">92% </h1></div>
           <div class="progress" style="clear:both; background-color:white; border:1px solid #003057;">
-            <div class="progress-bar" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style=" width:23%; ">
-              <!-- <span class="">70% </span> -->
-            </div>
-            <div class="progress-bar" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style=" width:23%; ">
-              <!-- <span class="">70% </span> -->
-            </div>
+            <div class="progress-bar northeast-bar" role="progressbar" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100" style=" width:22%; "></div>
+            <div class="progress-bar south-bar" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style=" width:23%; "></div>
+            <div class="progress-bar central-bar" role="progressbar" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100" style=" width:24%; "></div>
+            <div class="progress-bar west-bar" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style=" width:23%; "></div>
           </div>
-          <div style="float:left; margin-top:10px"><p>23%</p></div>
+          <div class="northeast-bar-label" style=" "><p>Northeast 22%</p></div>
+          <div class="south-bar-label" style=" "><p>South 23%</p></div>
+          <div class="central-bar-label" style=" "><p>Central 23%</p></div>
+          <div class="west-bar-label" style=""><p>West 23%</p></div>
+
       </div>
      </div>
   {{/if}}
@@ -41,8 +43,9 @@
 
 <!--  ///////////  AE DASHBOARD   ///////////  -->
 
-{{#if currentUser.pid.jobtitle }}
 <div class="divider-rnh"></div>
+
+{{#if currentUser.pid.jobtitle }}
 
   <section id="AE-dash" class="dashboard" style="">
     <div  class="container "  >
@@ -52,7 +55,7 @@
            <div class=" "  style="text-align:left; ">
              <div class=" " >
               <h1>DASHBOARD</h1>
-              <p class="footnote">Personal Data Viewport</p>
+              <p class="footnote-dash">Personal Data Viewport</p>
              </div>
            </div>
          </div >
@@ -65,36 +68,36 @@
             <a href="https://spectrumreach.typeform.com/to/zdQZSe" target="_blank"><img style="" src="{{currentUser.pid.fullProfilePicUrl}}" ></a>
           </div>
 
-        <div class="userData ">
+        <div class="userData " style="margin-top:24px;">
           <div class="title">
-            Name<br>ID#<br>Manager<br>Location
+            <h4>Name<br>ID#<br>Manager<br>Location</h4>
           </div>
           <div class="data">
-            {{ currentUser.pid.firstname}} {{ currentUser.pid.lastname}}<br>{{ currentUser.pid.pid}}<br>{{ currentUser.pid.managername}}<br>{{ currentUser.pid.region}}
+            <h4>{{ currentUser.pid.firstname}} {{ currentUser.pid.lastname}}<br>{{ currentUser.pid.pid}}<br>{{ currentUser.pid.managername}}<br>{{ currentUser.pid.region}}</h4>
           </div>
         </div>
 
       </div >
 
+      <div class="col-lg-12 "><p style="margin-top:24px;">&nbsp;</p></div>
+
        <div class=" col-md-12 col-lg-6" >
-       <div style="float:left;">$68,000/$120,000</div>   <div  style="float:right;">&nbsp;</div>
+       <div style="float:left;"><p>$68,000/$120,000</p></div>   <div  style="float:right;">&nbsp;</div>
         <div class="progress" >
-          <div class="progress-bar" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style=" width:67%; ">
-            <!-- <span class="">70% </span> -->
+          <div class="progress-bar south-bar" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style=" width:67%; ">
           </div>
         </div>
-         <div style="float:left; margin-top:10px;">Team Progress % to collective goal</div>   <div style="float:right; margin-top:10px;"><h3>67%</h3></div>
+         <div style="float:left; margin-top:10px;"><p>Team Progress % to collective goal</p></div>   <div style="float:right; margin-top:10px;"><h3>67%</h3></div>
       </div>
 
      {{#each model.mine as |personal|}}
      <div class=" col-md-12 col-lg-6" >
-     <div style="float:left;">$13,000/$20,000</div>   <div  style="float:right;">&nbsp;</div>
+     <div style="float:left;"><p>$13,000/$20,000</p></div>   <div  style="float:right;">&nbsp;</div>
      <div class="progress" >
-       <div class="progress-bar" role="progressbar" aria-valuenow="{{mult (div personal.dollars personal.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div personal.dollars personal.goal) 100}}%; ">
-         <!-- <span class="">70% </span> -->
+       <div class="progress-bar south-bar" role="progressbar" aria-valuenow="{{mult (div personal.dollars personal.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div personal.dollars personal.goal) 100}}%; ">
        </div>
      </div>
-    <div style="float:left; margin-top:10px;">Personal Progress % to collective goal</div>   <div style="float:right; margin-top:10px;"><h3>{{mult (div personal.dollars personal.goal) 100}}% </h3></div>
+    <div style="float:left; margin-top:10px;"><p>Personal Progress % to collective goal</p></div>   <div style="float:right; margin-top:10px;"><h3>{{mult (div personal.dollars personal.goal) 100}}% </h3></div>
      </div>
      {{/each}}
 
@@ -103,7 +106,6 @@
   </div>
   </div>
   </section>
-  <div class="divider-rnh"></div>
   {{/if}}
 
 
@@ -111,7 +113,6 @@
 
 
   {{#if currentUser.pid.jobtitle }}
-  <div class="divider-rnh"></div>
     <section id="MGR-dash" class="dashboard" style="">
       <div  class="container "  >
     <div class="row" >
@@ -121,7 +122,7 @@
         <div class=" "  style="text-align:left; ">
           <div class=" " >
            <h1>DASHBOARD</h1>
-           <p class="footnote">Personal Data Viewport</p>
+           <p class="footnote-dash">Personal Data Viewport</p>
           </div>
         </div>
       </div >
@@ -134,25 +135,24 @@
          <a href="https://spectrumreach.typeform.com/to/zdQZSe" target="_blank"><img style="" src="{{currentUser.pid.fullProfilePicUrl}}" ></a>
        </div>
 
-     <div class="userData ">
+     <div class="userData " style="margin-top:32px;">
        <div class="title">
-         Name<br>ID#<br>Manager<br>Location
+         <h4>Name<br>ID#<br>Manager<br>Location</h4>
        </div>
        <div class="data">
-         {{ currentUser.pid.firstname}} {{ currentUser.pid.lastname}}<br>{{ currentUser.pid.pid}}<br>{{ currentUser.pid.managername}}<br>{{ currentUser.pid.region}}
+         <h4>{{ currentUser.pid.firstname}} {{ currentUser.pid.lastname}}<br>{{ currentUser.pid.pid}}<br>{{ currentUser.pid.managername}}<br>{{ currentUser.pid.region}}</h4>
        </div>
      </div>
 
    </div >
 
    <div class=" col-md-12 col-lg-6" >
-   <div style="float:left;">$68,000/$120,000</div>   <div  style="float:right;">&nbsp;</div>
+   <div style="float:left;"><p>$68,000/$120,000</p></div>   <div  style="float:right;">&nbsp;</div>
     <div class="progress" >
-      <div class="progress-bar" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style=" width:67%; ">
-        <!-- <span class="">70% </span> -->
+      <div class="progress-bar northeast-bar" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style=" width:67%; ">
       </div>
     </div>
-     <div style="float:left; margin-top:10px;">Team Progress % to collective goal</div>   <div style="float:right; margin-top:10px;"><h3>67%</h3></div>
+     <div style="float:left; margin-top:10px;"><p>Team Progress % to collective goal</p></div>   <div style="float:right; margin-top:10px;"><h3>67%</h3></div>
   </div>
 
  <div class=" col-md-12 col-lg-6" >
@@ -164,48 +164,41 @@
 <!--  ///////////  EMPLOYEE DATA   /////////////   -->
 
 <div class=" col-md-12 col-lg-12" style="text-align:left; padding:40px 0;">
-  INDIVIDUAL DATA BREAKDOWN
+  <h4>INDIVIDUAL DATA BREAKDOWN</h4>
 </div>
 
 
 
        {{#each model.aerollup as |rollup| }}
-        <div class=" col-md-12 col-lg-3 dashboard" >
-         <div style="float:left;"><h2 style="color:#003057;">&nbsp;</h2></div>   <div  style="float:right;">
-           <p class="dkBlue" style="">
-              {{ rollup.firstname }} {{ rollup.lastname }}
-           </p>
-           <p class="dkBlue" style="">
-              {{ rollup.jobtitle }}
-           </p>
+        <div class=" col-md-12 col-lg-3 dashboard indyData" >
+         <div style="float:left; margin: 10px 10px 10px 6px;"><img style="" src="{{currentUser.pid.fullProfilePicUrl}}"></div>
+         <div  style="float:left; margin: 18px 0 0 6px;"><p  style="">{{ rollup.firstname }} {{ rollup.lastname }}</p></div>
+         <div class="progress" >
+           <div class="progress-bar northeast-bar" role="progressbar" aria-valuenow="{{mult (div rollup.dollars rollup.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div rollup.dollars rollup.goal) 100}}%; ">
+           </div>
          </div>
-          <div class="progress" style="clear:both; background-color:white; border:1px solid #0099D8;">
-            <div class="progress-bar" role="progressbar" aria-valuenow="{{mult (div rollup.dollars rollup.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div rollup.dollars rollup.goal) 100}}%; ">
-              <!-- <span class="">70% </span> -->
-            </div>
-          </div>
+          <div style="float:left; margin-top:10px;"><p>Progress % to goal</p></div>   <div style="float:right; margin-top:10px;"><h4 style="color:#003057;" >{{mult (div rollup.dollars rollup.goal) 100}}% </h4></div>
 
-          <!-- <div style="float:left; margin-top:10px;"><h2>&nbsp;</h2></div>   <div style="float:right; margin-top:10px;"><h2 style="color:#003057;">$433,500/$510,000 </h2></div> -->
-       </div>
+          </div>
        {{/each}}
 
 
     </div>
     </div>
     </section>
-    <div class="divider-rnh"></div>
     {{/if}}
+    <div class="divider-rnh"></div>
 
 
 
 
-<section id="standings" class="" style="margin-bottom:-30px;" >
+<section id="standings"  >
 
   <div class="container" >
-    <div class="row " >
-      <div class="col-lg-7">
-        <div class="col-sm-9 col-lg-12 text-left" ><h1>STANDINGS</h1>
-        <p class="footnote" style="padding-left: 5px;">Ranking is based on % to goal</p>
+    <div class="row "  >
+      <div class="col-lg-5">
+        <div class="col-sm-9 col-lg-12 text-left" ><h1 style="color:#fff;">STANDINGS</h1>
+        <p class="footnote-dash" style="">Ranking is based on % to goal</p>
 
         <!-- show on mobile size only  -->
             <div class="row" id="FilterDisclaimer"  >
@@ -216,31 +209,17 @@
         <!-- <div id="pdf"  class="col-lg-12 "> <a href="/assets/img/Firstlook_OTBNetRev_byAE_wk5_020118.pdf" target="_blank" style="color:#0099D8;"><img src="/assets/img/ae_pdf.svg" alt="download pdf"/></a>&nbsp; <a href="/assets/img/Firstlook_OTBNetRev_byLSM-Rollup_wk5_020118.pdf" target="_blank" style="color:#0099D8;"><img src="/assets/img/lsm_pdf.svg" alt="download pdf"/></a></div> -->
     </div>
 
-    <!-- Tabs section Temporarily until New Tabs are built-->
 
-
-     <div class="row col-lg-5" id="Filters"  >
-    <!-- <div class=" filters " style="    padding-left: 8px;" >
-
-            <div id="westmBtn" class="filterBtn filterBtn1 AE15mActive" {{action "filterWest"}}>
-              &nbsp;</div>
-            <div id="southBtn" class="filterBtn filterBtn2" {{action "filterSouth"}}>
-                &nbsp;</div>
-            <div id="northeastBtn" class="filterBtn filterBtn3" {{action "filterNortheast"}} >
-                &nbsp;</div>
-            <div id="centralBtn" class="filterBtn filterBtn4" {{action "filterCentral"}}>
-              &nbsp;</div>
-
-      </div> -->
+     <div class="row col-lg-7" id="Filters"  >
       <div class=" filters " style="    padding-left: 8px;" >
-
-              <div id="ae15mBtn" class="filterBtn filterBtn1 AE15mActive" {{action "filterCategoryAllaes"}}>
+            <div style="margin:auto; text-align:center;"><p>Select tab to view each divisional roll-up</p></div>
+              <div id="divCentral" class="divisionBtn divisionBtn1 divisionBtn1-Active" {{action "filterCategoryCentral"}}>
                 &nbsp;</div>
-              <div id="ae499kBtn" class="filterBtn filterBtn2" {{action "filterCategoryAE499k"}}>
+              <div id="divSouth" class="divisionBtn divisionBtn2" {{action "filterCategorySouth"}}>
                   &nbsp;</div>
-              <div id="ae700kBtn" class="filterBtn filterBtn3" {{action "filterCategoryAE700k"}} >
+              <div id="divWest" class="divisionBtn divisionBtn3" {{action "filterCategoryWest"}} >
                   &nbsp;</div>
-              <div id="ae450kBtn" class="filterBtn filterBtn4" {{action "filterCategoryAE450k"}}>
+              <div id="divNortheast" class="divisionBtn divisionBtn4" {{action "filterCategoryNortheast"}}>
                 &nbsp;</div>
 
         </div>
@@ -252,38 +231,19 @@
   </div>
 
 </section>
-
-
 <div class="divider-rnh"></div>
-<section id="AElist" class="" style="">
 
-<!--   ================================   -->
-<!--  KEEP THIS AS HEADER  -->
-<!--   ================================   -->
 
-<!-- <div class="dataheader" style=" color:white;">
-  <div class="container-fluid" >
-    <div class="row listHide3" >
+<section id="AElist" class="" >
 
-      <div class="col-xxs-2 col-sm-2 col-md-1">#</div>
-      <div class="col-xxs-2 col-sm-2 col-md-1">&nbsp;</div>
-        <div class="col-xxs-3 col-sm-3 col-md-2">AE Name</div>
-        <div class="col-xxs-3 col-sm-3 col-md-2 col-lg-1 ">Manager</div>
-        <div class="col-xxs-1 col-md-2 col-lg-1 listHide2">Division</div>
-        <div class="col-xxs-1 col-md-2 col-lg-1 listHide2">Region</div>
-        <div class="col-xxs-1 col-md-3 listHide ">Progress</div>
-        <div class="col-xxs-1 col-sm-1">%</div>
-        <div class="col-xxs-1  col-sm-1"><span class="" style="z-index:10000;" {{action "resetList"}}>Top <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
-    </div>
-</div>
-</div> -->
+  <div id="datatable" class="container-fluid datatable" style="margin-top:-70px; ">
 
-  <div id="datatable" class="container-fluid datatable" >
 
     <!--   ================================   -->
     <!--  West table  -->
     <!--   ================================   -->
-    <div class="row hide" id="ae700k" >
+    <div class="row hide" id="aeWest" >
+
       <div class="col-lg-12">
         {{models-table
            data=model.west
@@ -299,7 +259,7 @@
     <!--  Northeast table  -->
     <!--   ================================   -->
 
-    <div class="row hide" id="ae450k" >
+    <div class="row hide" id="aeNortheast" >
       <div class="col-lg-12">
         {{models-table
            data=model.northeast
@@ -315,7 +275,7 @@
     <!--   ================================   -->
     <!--  South table  -->
     <!--   ================================   -->
-    <div class="row hide" id="ae499k" >
+    <div class="row hide" id="aeSouth" >
       <div class="col-lg-12">
         {{models-table
            data=model.south
@@ -331,7 +291,7 @@
     <!--   ================================   -->
     <!--  Central table  -->
     <!--   ================================   -->
-    <div class="row" id="allae" >
+    <div class="row" id="aeCentral" >
       <div class="col-lg-12">
         {{models-table
            data=model.central
