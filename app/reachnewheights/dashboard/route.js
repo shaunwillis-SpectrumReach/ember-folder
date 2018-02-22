@@ -10,6 +10,9 @@ export default Route.extend({
       mine: this.store.query('rn-hall', {
           'mine': true
         }),
+      managername: this.store.query('rn-hall', {
+          'managername': true
+        }),
       central: this.store.query('rn-hall', {
         'central': true
       }),
