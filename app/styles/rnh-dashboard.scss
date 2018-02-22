@@ -11,8 +11,36 @@
 }
 
 #wrapper-rnh h1 {
+  font-family: 'Gotham', 'Open Sans', Arial, sans-serif;
+  color: #BFC9D2;
+  font-size: 64px;
+}
+
+#wrapper-rnh h2 {
+  font-family: 'Gotham', 'Open Sans', Arial, sans-serif;
+  color: #FFF;
+  font-size: 32px;
+}
+
+#wrapper-rnh h3 {
+  font-family: 'Gotham', 'Open Sans', Arial, sans-serif;
+  color: #003057;
+  font-size: 24px;
+}
+#wrapper-rnh h4 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #466D8F;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#wrapper-rnh p {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #003057;
+  font-size: 14px;
 
 }
+
 .divider-rnh {
   background: url("../assets/img/Main_Header_bg.svg");
   background-size: cover;
@@ -40,18 +68,65 @@
   clear:both;
   padding-top:60px;
 }
+.companyGoal .progress {
+  clear:both;
+  background-color:white;
+  border:2px solid #003057;
+  border-radius: 20px;
+}
 
-#header-rnh   .progressBox {
+#header-rnh   .Box {
     padding-top:40px;
 }
 
-#header-rnh    .progress-bar {
+#header-rnh    .-bar {
   background-color:#0099D8;
 
+}
+ .footnote-dash  {
+  font-size:16px;
+  text-align: left;
+  padding:0 0 0 0px;
+  margin-top:-12px;
+  margin-left:4px;
+  color: #003057;
 }
 
 .dashboard {
   background-color: #fff;
+}
+
+.northeast-bar {
+  background-color: #500778 !important;
+}
+.northeast-bar-label {
+  float:left;
+  margin-top:10px;
+  margin-left:7%;
+}
+.south-bar {
+  background-color: #009e8c  !important;
+}
+.south-bar-label {
+  float:left;
+  margin-top:10px;
+  margin-left:13%;
+}
+.central-bar {
+  background-color: #96004d  !important;
+}
+.central-bar-label {
+  float:left;
+  margin-top:10px;
+  margin-left:17%;
+}
+.west-bar {
+  background-color: #faa41a  !important;
+}
+.west-bar-label {
+  float:left;
+  margin-top:10px;
+  margin-left:16%;
 }
 
 
@@ -90,14 +165,15 @@ padding:0 20px;
   padding-left:12px;
 
 }
-#AE-dash  .progress-bar {
+#AE-dash  .-bar {
   background-color:#0099D8;
 
 }
 #AE-dash  .progress {
     clear:both;
     background-color:white;
-    border:1px solid #003057;
+    border:2px solid #003057;
+    border-radius: 20px;
 }
 
 
@@ -142,5 +218,80 @@ padding:0 20px;
 #MGR-dash  .progress {
     clear:both;
     background-color:white;
-    border:1px solid #003057;
+    border:2px solid #003057;
+    border-radius: 20px;
 }
+#MGR-dash  .indyData img {
+  border:1px solid #003057;
+  border-radius: 50%;
+  width:40px;
+  height:auto;
+  }
+
+.divisionBtn {
+    float:left;
+    padding: 0 12px;
+    color:#003057;
+    background-repeat: no-repeat;
+    background-position: top left;
+    width:171px;
+    height:66px;
+  }
+
+.divisionBtn1 {
+    background-image: url("/assets/img/rnh/divisioncentral-off.png");
+    z-index: 500;
+  }
+  .divisionBtn2 {
+    background-image: url("/assets/img/rnh/divisionsouth-off.png");
+    margin-left: -18px;
+    z-index: 500;
+  }
+  .divisionBtn3 {
+    background-image: url("/assets/img/rnh/divisionwest-off.png");
+    margin-left: -18px;
+    z-index: 500;
+  }
+  .divisionBtn4 {
+    background-image: url("/assets/img/rnh/divisionnortheast-off.png");
+    margin-left: -18px;
+    z-index: 500;
+  }
+
+  .divisionBtn:hover {
+    cursor:pointer;
+
+  }
+  .divisionBtn1-Active {
+    background-image: url("/assets/img/rnh/divisioncentral-on.png");
+    z-index: 10000;
+  }
+
+  .divisionBtn2-Active {
+    background-image: url("/assets/img/rnh/divisionsouth-on.png");
+    z-index: 10000;
+  }
+
+  .divisionBtn3-Active {
+    background-image: url("/assets/img/rnh/divisionwest-on.png");
+    z-index: 10000;
+  }
+  .divisionBtn4-Active {
+    background-image: url("/assets/img/rnh/divisionnortheast-on.png");
+    z-index: 10000;
+  }
+
+  #wrapper-rnh #standings {
+    margin-bottom:0;
+    background-color: #BFC9D2;
+  }
+#wrapper-rnh #AElist {
+  margin:0;
+  background-color: #ffffff;
+}
+  @media only screen and (min-width:1300px)  {
+    .container {
+      max-width:1280px;
+    }
+
+  }

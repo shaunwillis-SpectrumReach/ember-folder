@@ -51,98 +51,69 @@ import { get } from '@ember/object';
       ],
       actions: {
 
-
-
-        filterCategoryAllaes() {
-          $('#ae1m').addClass('hide');
-          $('#ae15m').addClass('hide');
-          $('#ae700k').addClass('hide');
-          $('#ae499k').addClass('hide');
-          $('#ae450k').addClass('hide');
-          $('#allae').removeClass('hide');
-
-          $('#ae15mBtn').addClass('AE15mActive');
-          $('#ae450kBtn').removeClass('AE450kActive');
-          $('#ae700kBtn').removeClass('AE700kActive');
-          $('#ae1mBtn').removeClass('AE1mActive');
-          $('#ae499kBtn').removeClass('AE499kActive');
-          $('#ae499kBtn').removeClass('AE499kActive');
-
-        },
-
-        filterCategoryAE450k() {
-          $('#ae1m').addClass('hide');
-          $('#ae15m').addClass('hide');
-          $('#ae700k').addClass('hide');
-          $('#ae499k').addClass('hide');
-          $('#allae').addClass('hide');
-          $('#ae450k').removeClass('hide');
-
-          $('#ae450kBtn').addClass('AE450kActive');
-          $('#ae700kBtn').removeClass('AE700kActive');
-          $('#ae1mBtn').removeClass('AE1mActive');
-          $('#ae499kBtn').removeClass('AE499kActive');
-          $('#ae15mBtn').removeClass('AE15mActive');
-          $('#ae499kBtn').removeClass('AE499kActive');
-
-        },
-
-        filterCategoryAE700k() {
-          $('#ae1m').addClass('hide');
-          $('#ae15m').addClass('hide');
-          $('#ae450k').addClass('hide');
-          $('#ae499k').addClass('hide');
-          $('#allae').addClass('hide');
-          $('#ae700k').removeClass('hide');
-
-          $('#ae700kBtn').addClass('AE700kActive');
-          $('#ae1mBtn').removeClass('AE1mActive');
-          $('#ae499kBtn').removeClass('AE499kActive');
-          $('#ae15mBtn').removeClass('AE15mActive');
-          $('#ae450kBtn').removeClass('AE450kActive');
-          $('#ae499kBtn').removeClass('AE499kActive');
-
-        },
-
-        filterCategoryAE1m() {
-          $('#ae15m').addClass('hide');
-          $('#ae700k').addClass('hide');
-          $('#ae450k').addClass('hide');
-          $('#ae499k').addClass('hide');
-          $('#allae').addClass('hide');
-          $('#ae1m').removeClass('hide');
-
-          $('#ae1mBtn').addClass('AE1mActive');
-          $('#ae499kBtn').removeClass('AE499kActive');
-          $('#ae15mBtn').removeClass('AE15mActive');
-          $('#ae700kBtn').removeClass('AE700kActive');
-          $('#ae450kBtn').removeClass('AE450kActive');
-          $('#ae499kBtn').removeClass('AE499kActive');
-
-        },
-
         showAllAEs() {
-          $('#ae1m').addClass('hide');
-          $('#ae700k').addClass('hide');
-          $('#ae450k').addClass('hide');
-          $('#ae499k').addClass('hide');
-          $('#allae').addClass('hide');
-          $('#ae15m').removeClass('hide');
+          $('#aeWest').addClass('hide');
+          $('#aeNortheast').addClass('hide');
+          $('#aeSouth').addClass('hide');
+          $('#aeCentral').addClass('hide');
         },
 
-        filterCategoryAE499k() {
-          $('#ae1m').addClass('hide');
-          $('#ae15m').addClass('hide');
-          $('#ae700k').addClass('hide');
-          $('#ae450k').addClass('hide');
-          $('#allae').addClass('hide');
-          $('#ae499k').removeClass('hide');
+        filterCategoryCentral() {
+          $('#aeWest').addClass('hide');
+          $('#aeSouth').addClass('hide');
+          $('#aeNortheast').addClass('hide');
+          $('#aeCentral').removeClass('hide');
 
-          $('#ae499kBtn').addClass('AE499kActive');
-          $('#ae15mBtn').removeClass('AE15mActive');
+          $('#divCentral').addClass('divisionBtn1-Active');
+          $('#divNortheast').removeClass('divisionBtn4-Active');
+          $('#divWest').removeClass('divisionBtn3-Active');
           $('#ae1mBtn').removeClass('AE1mActive');
-          $('#ae700kBtn').removeClass('AE700kActive');
-          $('#ae450kBtn').removeClass('AE450kActive');
+          $('#divSouth').removeClass('divisionBtn2-Active');
+          $('#ae499kBtn').removeClass('AE499kActive');
+
+        },
+
+        filterCategoryNortheast() {
+          $('#aeWest').addClass('hide');
+          $('#aeSouth').addClass('hide');
+          $('#aeCentral').addClass('hide');
+          $('#aeNortheast').removeClass('hide');
+
+          $('#divNortheast').addClass('divisionBtn4-Active');
+          $('#divWest').removeClass('divisionBtn3-Active');
+          $('#ae1mBtn').removeClass('AE1mActive');
+          $('#divSouth').removeClass('divisionBtn2-Active');
+          $('#divCentral').removeClass('divisionBtn1-Active');
+          $('#ae499kBtn').removeClass('AE499kActive');
+
+        },
+
+        filterCategoryWest() {
+          $('#aeNortheast').addClass('hide');
+          $('#aeSouth').addClass('hide');
+          $('#aeCentral').addClass('hide');
+          $('#aeWest').removeClass('hide');
+
+          $('#divWest').addClass('divisionBtn3-Active');
+          $('#ae1mBtn').removeClass('AE1mActive');
+          $('#ae499kBtn').removeClass('AE499kActive');
+          $('#divCentral').removeClass('divisionBtn1-Active');
+          $('#divNortheast').removeClass('divisionBtn4-Active');
+          $('#divSouth').removeClass('divisionBtn2-Active');
+
+        },
+
+        filterCategorySouth() {
+          $('#aeWest').addClass('hide');
+          $('#aeNortheast').addClass('hide');
+          $('#aeCentral').addClass('hide');
+          $('#aeSouth').removeClass('hide');
+
+          $('#divSouth').addClass('divisionBtn2-Active');
+          $('#divCentral').removeClass('divisionBtn1-Active');
+          $('#ae1mBtn').removeClass('AE1mActive');
+          $('#divWest').removeClass('divisionBtn3-Active');
+          $('#divNortheast').removeClass('divisionBtn4-Active');
         },
 
         // filterCategoryAE1m() {
