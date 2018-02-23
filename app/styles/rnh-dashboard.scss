@@ -328,6 +328,40 @@ padding:0 20px;
 
   }
 
+  /* //////////////////////  Small Tweaks From Shaun  /////////////////////  */
   .border-right-line {
     border-right: 1px solid #003057;
+  }
+
+
+#wrapper-rnh .table-striped tbody tr:nth-of-type(odd) {
+    background-color: white;
+
+  }
+
+#wrapper-rnh .datatable .table-bordered {
+    border: 0px!important;
+  }
+
+#wrapper-rnh .datatable .table-bordered td {
+    border: 0px!important;
+  }
+
+  th.rnhprogress {
+      position: absolute;
+      top: 0.3%;
+    }
+
+#wrapper-rnh .form-group select  {
+  border-radius: 0px!important;
+  border: 2px solid white!important;
+  height: 41px;
+}
+
+#wrapper-rnh .noborder .form-group .form-control{
+  border: 0px!important;
+}
+
+  .placeholdercolor .form-group input::-webkit-input-placeholder {
+    color: #003057;
   }
