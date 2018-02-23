@@ -3,7 +3,7 @@
     height: 100%;
     margin:0;
     border:0;
-    font-family: "Gotham", "Arial", sans-serif;
+    font-family: "Gotham",  sans-serif;
     // font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     text-align: center;
@@ -11,35 +11,37 @@
 }
 
 #wrapper-rnh h1 {
-  font-family: 'Gotham', 'Open Sans', Arial, sans-serif;
+  font-family: 'Gotham', 'Open Sans', sans-serif;
   color: #BFC9D2;
   font-size: 64px;
 }
 
 #wrapper-rnh h2 {
-  font-family: 'Gotham', 'Open Sans', Arial, sans-serif;
-  color: #FFF;
-  font-size: 32px;
-}
-
-#wrapper-rnh h3 {
-  font-family: 'Gotham', 'Open Sans', Arial, sans-serif;
-  color: #003057;
+  font-family: 'Open Sans', sans-serif;
+  color: #466d8f;
   font-size: 24px;
-}
-#wrapper-rnh h4 {
-  font-family: 'Open Sans', Arial, sans-serif;
-  color: #466D8F;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: 600;
+  line-height: 36px;
 }
 
-#wrapper-rnh p {
-  font-family: 'Open Sans', Arial, sans-serif;
+#wrapper-rnh h3,  {
+  font-family: 'Open Sans', sans-serif;
   color: #003057;
-  font-size: 14px;
-
+  font-size: 36px;
+  font-weight: 600;
 }
+#wrapper-rnh p {
+  font-family: 'Open Sans', sans-serif;
+  color: #003057;
+  font-size: 18px;
+  font-weight: 600;
+}
+// #wrapper-rnh p {
+//   font-family: 'Open Sans', sans-serif;
+//   color: #003057;
+//   font-size: 16px;
+//
+// }
 
 .divider-rnh {
   background: url("../assets/img/Main_Header_bg.svg");
@@ -138,7 +140,7 @@ padding:0 20px;
   /* clip-path: circle(90px at center);  */
   border:2px solid #003057;
   border-radius: 50%;
-  width:180px;
+  width:200px;
   height:auto;
   margin-top:0;
   margin-left:0px;
@@ -148,20 +150,18 @@ padding:0 20px;
 
 #AE-dash .imageMine .userData {
   float:left;
-  padding:28px;
+  padding:20px 0 0 12px;
 }
 
 #AE-dash .userData .title {
   float:left;
   text-align:right;
   border-right: 3px solid #003057;
-  font-weight:800;
   padding-right:12px;
 }
 #AE-dash .userData .data {
   float:left;
   text-align: left;
-  font-weight:300;
   padding-left:12px;
 
 }
@@ -194,20 +194,18 @@ padding:0 20px;
 }
 #MGR-dash .imageMine .userData {
   float:left;
-  padding:28px;
+  padding:8px 0 0 12px;
 }
 
 #MGR-dash .userData .title {
   float:left;
   text-align:right;
   border-right: 3px solid #003057;
-  font-weight:800;
   padding-right:12px;
 }
 #MGR-dash .userData .data {
   float:left;
   text-align: left;
-  font-weight:300;
   padding-left:12px;
 
 }
@@ -289,13 +287,16 @@ padding:0 20px;
   margin:0;
   background-color: #ffffff;
 }
+
+
+/* //////////////////////  MEDIA  /////////////////////  */
+
   @media only screen and (min-width:1300px)  {
     .container {
       max-width:1280px;
     }
 
   }
-
 
   .border-right-line {
     border-right: 1px solid #003057;
