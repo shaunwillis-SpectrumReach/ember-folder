@@ -15,7 +15,10 @@
        <img style="border-radius: 50%;" src="{{currentUser.pid.fullProfilePicUrl}}" width="25">
      </div> -->
 
+<!--  //////////////////////////////////////// -->
  <!--  /////////////  SHOW FOR MANAGERS ONLY  /////////////   -->
+ <!--  //////////////////////////////////////// -->
+
      {{#if currentUser.pid.jobtitle }}
      <div  class="companyGoal col-lg-12 " >
       <div class=" progressBox"  >
@@ -79,12 +82,12 @@
             <a href="https://spectrumreach.typeform.com/to/zdQZSe" target="_blank"><img style="" src="{{currentUser.pid.fullProfilePicUrl}}" ></a>
           </div>
 
-        <div class="userData " style="margin-top:24px;">
+        <div class="userData " style="">
           <div class="title">
-            <h4>Name<br>ID#<br>Manager<br>Location</h4>
+            <h2 style="font-weight:600;">Name<br>ID#<br>Manager<br>Location</h2>
           </div>
           <div class="data">
-            <h4>{{ currentUser.pid.firstname}} {{ currentUser.pid.lastname}}<br>{{ currentUser.pid.pid}}<br>{{ currentUser.pid.managername}}<br>{{ currentUser.pid.division}} / {{ currentUser.pid.region}}</h4>
+            <h2>{{ currentUser.pid.firstname}} {{ currentUser.pid.lastname}}<br>{{ currentUser.pid.pid}}<br>{{ currentUser.pid.managername}}<br>{{ currentUser.pid.division}} / {{ currentUser.pid.region}}</h2>
           </div>
         </div>
 
@@ -151,12 +154,12 @@
          <a href="https://spectrumreach.typeform.com/to/zdQZSe" target="_blank"><img style="" src="{{currentUser.pid.fullProfilePicUrl}}" ></a>
        </div>
 
-     <div class="userData " style="margin-top:32px;">
+     <div class="userData " style="margin-top:20px;">
        <div class="title">
-         <h4>Name<br>ID#<br>Manager<br>Location</h4>
+         <h2 style="font-weight:600;">Name<br>ID#<br>Manager<br>Location</h2>
        </div>
        <div class="data">
-         <h4>{{ currentUser.pid.firstname}} {{ currentUser.pid.lastname}}<br>{{ currentUser.pid.pid}}<br>{{ currentUser.pid.managername}}<br>{{ currentUser.pid.division}} / {{ currentUser.pid.region}}</h4>
+         <h2>{{ currentUser.pid.firstname}} {{ currentUser.pid.lastname}}<br>{{ currentUser.pid.pid}}<br>{{ currentUser.pid.managername}}<br>{{ currentUser.pid.division}} / {{ currentUser.pid.region}}</h2>
        </div>
      </div>
 
@@ -183,7 +186,7 @@
 <!--  ///////////  EMPLOYEE DATA   /////////////   -->
 
 <div class=" col-md-12 col-lg-12" style="text-align:left; padding:40px 0;">
-  <h4>INDIVIDUAL DATA BREAKDOWN</h4>
+  <h2>INDIVIDUAL DATA BREAKDOWN</h2>
 </div>
 
 
@@ -196,7 +199,7 @@
            <div class="progress-bar {{ currentUser.pid.division }}-bar" role="progressbar" aria-valuenow="{{mult (div rollup.dollars rollup.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div rollup.dollars rollup.goal) 100}}%; ">
            </div>
          </div>
-          <div style="float:left; margin-top:10px;"><p>Progress % to goal</p></div>   <div style="float:right; margin-top:10px;"><h4 style="color:#003057;" >{{mult (div rollup.dollars rollup.goal) 100}}% </h4></div>
+          <div style="float:left; margin-top:10px;"><p>Progress % to goal</p></div>   <div style="float:right; margin-top:10px;"><h3 style="color:#003057;" >{{mult (div rollup.dollars rollup.goal) 100}}% </h3></div>
 
           </div>
        {{/each}}
