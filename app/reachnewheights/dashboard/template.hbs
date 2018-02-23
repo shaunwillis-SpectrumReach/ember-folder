@@ -70,10 +70,6 @@
              </div>
            </div>
          </div >
-
-
-
-
       <div class="col-md-12 col-lg-6 imageMine" >
           <div class="" >
             <a href="https://spectrumreach.typeform.com/to/zdQZSe" target="_blank"><img style="" src="{{currentUser.pid.fullProfilePicUrl}}" ></a>
@@ -93,19 +89,27 @@
       <div class="col-lg-12 "><p style="margin-top:24px;">&nbsp;</p></div>
       <!--  ///////////  TEAM PROGRESS    ///////////  -->
        <div class=" col-md-12 col-lg-6" >
+         {{#if model.managername}}
         {{#each model.managername as |personal|}}
        <div style="float:left;"><p>${{number-format personal.dollars decimals=0}} / ${{number-format personal.goal decimals=0}}</p></div>
 
        <div  style="float:right;">&nbsp;</div>
         <div class="progress" >
-          <div class="progress-bar {{ currentUser.pid.division}}-bar" role="progressbar" aria-valuenow="{{mult (div personal.dollars personal.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div personal.dollars personal.goal) 100}}%; ">
+          <div class="progress-bar {{ currentUser.pid.division}}-bar" role="progressbar" aria-valuenow="{{number-format mult (div personal.dollars personal.goal) 100 decimals=0 thousandsSeparator=''}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div personal.dollars personal.goal) 100}}%; ">
           </div>
         </div>
          <div style="float:left; margin-top:10px;"><p>Team Progress % to collective goal</p></div>   <div style="float:right; margin-top:10px;"><h3>{{mult (div personal.dollars personal.goal) 100}}%</h3></div>
          {{/each}}
-
+         {{else}}
+         <div class="col-md-8 col-md-offset-2" style="float:left;">
+            <h4>Your Team Goal is not showing for these reasons:</h4>
+            <p>1) Your manager is NOT signed up for this incentive. If so, please reach out to your manager to have them sign up so that you can track your team goal</p>
+            <p>2) Double Check your Manager's Name. If your Manager's Name does not match exactly with what we have showing in standings, then our data will NOT sync with their data. You will need to email support.</p>
+        </div>
+         {{/if}}
       </div>
       <!--  ///////////  PERSONAL PROGRESS    ///////////  -->
+
      {{#each model.mine as |personal|}}
      <div class=" col-md-12 col-lg-6" >
      <div style="float:left;"><p>${{number-format personal.dollars decimals=0}} / ${{number-format personal.goal decimals=0}}</p></div>   <div  style="float:right;">&nbsp;</div>
@@ -161,9 +165,9 @@
      </div>
 
    </div >
-
+   <!--  /////////// TEAM PROGRESS   ///////////  -->
    <div class=" col-md-12 col-lg-6" >
-     {{#each model.managername as |personal|}}
+     {{#each model.mine as |personal|}}
     <div style="float:left;"><p>${{number-format personal.dollars decimals=0}} / ${{number-format personal.goal decimals=0}}</p></div>
    <div  style="float:right;">&nbsp;</div>
     <div class="progress" >
