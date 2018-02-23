@@ -118,7 +118,7 @@ import { get } from '@ember/object';
 
         scrollToTop() {
           // document.getElementById('message').scrollIntoView();
-          $('html, body').animate({ scrollTop: $('#wrapper').offset().top }, 'slow');
+          $('html, body').animate({ scrollTop: $('#wrapper-rnh').offset().top }, 'slow');
                return false;
         },
 
