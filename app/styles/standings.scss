@@ -31,3 +31,26 @@ thead {
 }
 
 }
+#wrapper-rnh thead {
+  background: none;
+  background-color:#BFC9D2;
+  width: 1200px;
+    max-width:100.2%;
+    color: #003057;
+  }
+
+#wrapper-rnh  .form-control  {
+  border:2px solid white !important;
+  background-color:#BFC9D2 !important;
+  color: #003057;
+  border-radius:0;
+
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+/* IE10+ CSS styles go here */
+thead {
+    background-size: 1800px;
+    background-repeat: repeat;
+  }
+
+}
