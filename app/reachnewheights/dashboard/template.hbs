@@ -253,20 +253,35 @@
   </div>
 
 </section>
-<div class="divider-rnh"></div>
 
 
 <section id="AElist" class="" >
 
-  <div id="datatable" class="container-fluid datatable" style="margin-top:-70px; ">
+  <div id="datatable" class="container-fluid datatable" style=" ">
+
+
+    <!--   ================================   -->
+    <!--  Central table  -->
+    <!--   ================================   -->
+    <div class="row" id="aeCentral" style="">
+      <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        {{models-table
+           data=model.central
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           pageSize=755
+         }}
+        </div>
+    </div>
 
 
     <!--   ================================   -->
     <!--  West table  -->
     <!--   ================================   -->
     <div class="row hide" id="aeWest" >
-
-      <div class="col-lg-12">
+      <div class="col-lg-12" >
         {{models-table
            data=model.west
            columns=columns
@@ -310,21 +325,7 @@
         </div>
     </div>
 
-    <!--   ================================   -->
-    <!--  Central table  -->
-    <!--   ================================   -->
-    <div class="row" id="aeCentral" >
-      <div class="col-lg-12">
-        {{models-table
-           data=model.central
-           columns=columns
-           showGlobalFilter=false
-           showComponentFooter=false
-           filteringIgnoreCase=true
-           pageSize=755
-         }}
-        </div>
-    </div>
+
 
 </div>
 

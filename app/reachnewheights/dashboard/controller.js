@@ -23,7 +23,8 @@ import { get } from '@ember/object';
         // },
         {
           "title": "Name",
-          "propertyName": "name"
+          "propertyName": "name",
+          "placeholder": "Name"
         },
         {
           "title": "Manager Name",
@@ -67,9 +68,7 @@ import { get } from '@ember/object';
           $('#divCentral').addClass('divisionBtn1-Active');
           $('#divNortheast').removeClass('divisionBtn4-Active');
           $('#divWest').removeClass('divisionBtn3-Active');
-          $('#ae1mBtn').removeClass('AE1mActive');
           $('#divSouth').removeClass('divisionBtn2-Active');
-          $('#ae499kBtn').removeClass('AE499kActive');
 
         },
 
@@ -79,12 +78,10 @@ import { get } from '@ember/object';
           $('#aeCentral').addClass('hide');
           $('#aeNortheast').removeClass('hide');
 
-          $('#divNortheast').addClass('divisionBtn4-Active');
           $('#divWest').removeClass('divisionBtn3-Active');
           $('#ae1mBtn').removeClass('AE1mActive');
           $('#divSouth').removeClass('divisionBtn2-Active');
           $('#divCentral').removeClass('divisionBtn1-Active');
-          $('#ae499kBtn').removeClass('AE499kActive');
 
         },
 
@@ -95,8 +92,6 @@ import { get } from '@ember/object';
           $('#aeWest').removeClass('hide');
 
           $('#divWest').addClass('divisionBtn3-Active');
-          $('#ae1mBtn').removeClass('AE1mActive');
-          $('#ae499kBtn').removeClass('AE499kActive');
           $('#divCentral').removeClass('divisionBtn1-Active');
           $('#divNortheast').removeClass('divisionBtn4-Active');
           $('#divSouth').removeClass('divisionBtn2-Active');
@@ -111,7 +106,6 @@ import { get } from '@ember/object';
 
           $('#divSouth').addClass('divisionBtn2-Active');
           $('#divCentral').removeClass('divisionBtn1-Active');
-          $('#ae1mBtn').removeClass('AE1mActive');
           $('#divWest').removeClass('divisionBtn3-Active');
           $('#divNortheast').removeClass('divisionBtn4-Active');
         },
