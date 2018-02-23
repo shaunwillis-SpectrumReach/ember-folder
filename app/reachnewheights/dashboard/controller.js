@@ -9,45 +9,51 @@ import { get } from '@ember/object';
 
       columns: [
         {
-          "title": "Job Title",
+          "title": "",
           "propertyName": "jobtitle",
+          "className": "text-center",
+          "filterPlaceholder": "Sort by title",
           "filterWithSelect": true,
           "predefinedFilterOptions": [
-            "Account Executive",
+            "AE",
             "LSM"
           ]
         },
-        // {
-        //   "title": "Profile Img",
-        //   "component": "profileImg"
-        // },
         {
-          "title": "Name",
-          "propertyName": "name",
-          "placeholder": "Name"
+          "title": "",
+          "component": "profileImg"
         },
         {
-          "title": "Manager Name",
+          "title": "",
+          "filterPlaceholder": "Search Name...",
+          "className": "placeholdercolor",
+          "propertyName": "name"
+        },
+        {
+          "title": "",
+          "filterPlaceholder": "Search Manager...",
+          "className": "placeholdercolor",
           "propertyName": "managername"
         },
         {
-          "title": "Region",
+          "title": "",
+          "filterPlaceholder": "Sort by region",
+          "className": "placeholdercolor",
           "propertyName": "region"
         },
         {
-          "propertyName": "dollars"
-        },
+            "title": "Progress Meter",
+            "component": "rnhprogressBar",
+            "className": "widerwidth listHide rnhprogress placeholdercolor",
+          },
+
         {
-          "propertyName": "goal"
-        },
-        {
-          "title": "# of Contracts",
+          "title": "",
+          "filterPlaceholder": "# of Contracts",
+          "className": "placeholdercolor noborder",
           "propertyName": "numberofcontracts"
         },
-        {
-          "title": "Name of Contracts",
-          "propertyName": "nameofeachcontract"
-        },
+
 
       ],
       actions: {

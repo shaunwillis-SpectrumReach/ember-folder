@@ -98,7 +98,7 @@
 
        <div  style="float:right;">&nbsp;</div>
         <div class="progress" >
-          <div class="progress-bar {{ currentUser.pid.division}}-bar" role="progressbar" aria-valuenow="{{number-format mult (div personal.dollars personal.goal) 100 decimals=0 thousandsSeparator=''}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div personal.dollars personal.goal) 100}}%; ">
+          <div class="progress-bar {{ currentUser.pid.division}}-bar" role="progressbar" aria-valuenow="{{mult (div personal.dollars personal.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div personal.dollars personal.goal) 100}}%; ">
           </div>
         </div>
          <div style="float:left; margin-top:10px;"><p>Team Progress % to collective goal</p></div>   <div style="float:right; margin-top:10px;"><h3>{{mult (div personal.dollars personal.goal) 100}}%</h3></div>
@@ -223,8 +223,8 @@
   <div class="container" >
     <div class="row "  >
       <div class="col-lg-5">
-        <div class="col-sm-9 col-lg-12 text-left" ><h1 style="color:#fff;">STANDINGS</h1>
-        <p class="footnote-dash" style="">Ranking is based on % to goal</p>
+        <div class="col-sm-9 col-lg-12 text-left" ><h1 style="color:#fff; padding-top: 3rem;">STANDINGS</h1>
+        <p class="footnote-dash" style="">Sort Data with Filters below</p>
 
         <!-- show on mobile size only  -->
             <div class="row" id="FilterDisclaimer"  >
@@ -261,7 +261,7 @@
 
 <section id="AElist" class="" style="" >
 
-  <div id="datatable" class="container-fluid datatable2" style=" ">
+  <div id="datatable" class="container-fluid datatable" style=" ">
 
 
     <!--   ================================   -->
@@ -275,6 +275,7 @@
            showGlobalFilter=false
            showComponentFooter=false
            filteringIgnoreCase=true
+           columnComponents=(hash rnhprogressBar=(component "rnhprogress-bar") profileImg=(component "profile-img"))
            pageSize=755
          }}
         </div>
@@ -292,6 +293,7 @@
            showGlobalFilter=false
            showComponentFooter=false
            filteringIgnoreCase=true
+           columnComponents=(hash rnhprogressBar=(component "rnhprogress-bar") profileImg=(component "profile-img"))
            pageSize=755
          }}
         </div>
@@ -308,6 +310,7 @@
            showGlobalFilter=false
            showComponentFooter=false
            filteringIgnoreCase=true
+           columnComponents=(hash rnhprogressBar=(component "rnhprogress-bar") profileImg=(component "profile-img"))
            pageSize=755
          }}
         </div>
@@ -324,6 +327,7 @@
            showGlobalFilter=false
            showComponentFooter=false
            filteringIgnoreCase=true
+           columnComponents=(hash rnhprogressBar=(component "rnhprogress-bar") profileImg=(component "profile-img"))
            pageSize=755
          }}
         </div>
