@@ -14,6 +14,7 @@ export default DS.Model.extend({
   ae1ms: DS.hasMany('ae1m'),
   RnHalls: DS.belongsTo('rn-hall'),
   isAdmin: DS.attr('boolean'),
+  isAe: DS.attr('boolean'),
   isApproved: DS.attr('boolean'),
   profilePicUrl: DS.attr('string'),
   fullProfilePicUrl: Ember.computed('profilePicUrl', function() {
