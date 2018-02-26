@@ -111,7 +111,7 @@
        {{/if}}
 
 
-         <div style="float:left; margin-top:10px;"><p>Team Progress % to collective goal</p></div>   <div style="float:right; margin-top:10px;"><h3>{{mult (div personal.dollars personal.goal) 100}}%</h3></div>
+         <div style="float:left; margin-top:10px;"><p>Team Progress % to collective goal</p></div>   <div style="float:right; margin-top:10px;"><h3>{{number-format (mult (div personal.dollars personal.goal) 100) decimals=0}}%</h3></div>
          {{/each}}
          {{else}}
          <div class="col-md-8 col-md-offset-2" style="float:left;">
@@ -137,7 +137,7 @@
         </div>
       </div>
      {{/if}}
-    <div style="float:left; margin-top:10px;"><p>Personal Progress % to collective goal</p></div>   <div style="float:right; margin-top:10px;"><h3>{{mult (div personal.dollars personal.goal) 100}}% </h3></div>
+    <div style="float:left; margin-top:10px;"><p>Personal Progress % to collective goal</p></div>   <div style="float:right; margin-top:10px;"><h3>{{number-format (mult (div personal.dollars personal.goal) 100) decimals=0}}% </h3></div>
      </div>
      {{/each}}
 
@@ -201,7 +201,7 @@
     </div>
 
     {{/if}}
-     <div style="float:left; margin-top:10px;"><p>Team Progress % to collective goal</p></div>   <div style="float:right; margin-top:10px;"><h3>{{mult (div personal.dollars personal.goal) 100}}%</h3></div>
+     <div style="float:left; margin-top:10px;"><p>Team Progress % to collective goal</p></div>   <div style="float:right; margin-top:10px;"><h3>{{number-format (mult (div personal.dollars personal.goal) 100) decimals=0}}%</h3></div>
      {{/each}}
   </div>
 
@@ -234,7 +234,7 @@
            </div>
          </div>
          {{/if}}
-          <div style="float:left; margin-top:10px;"><p>Progress % to goal</p></div>   <div style="float:right; margin-top:10px;"><h3 style="color:#003057;" >{{mult (div rollup.dollars rollup.goal) 100}}% </h3></div>
+          <div style="float:left; margin-top:10px;"><p>Progress % to goal</p></div>   <div style="float:right; margin-top:10px;"><h3 style="color:#003057;" >{{number-format (mult (div rollup.dollars rollup.goal) 100) decimals=0}}% </h3></div>
 
           </div>
        {{/each}}
