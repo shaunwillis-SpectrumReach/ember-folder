@@ -84,15 +84,9 @@ import { get } from '@ember/object';
           $('#aeCentral').addClass('hide');
           $('#aeNortheast').removeClass('hide');
 
-<<<<<<< HEAD
-          $('#divNortheast').addClass('divisionBtn4-Active');
-          $('#divWest').removeClass('divisionBtn3-Active');
-          // $('#ae1mBtn').removeClass('AE1mActive');
-=======
           $('#divCentral').removeClass('divisionBtn1-Active');
           $('#divNortheast').addClass('divisionBtn4-Active');
           $('#divWest').removeClass('divisionBtn3-Active');
->>>>>>> 535bb8e896c03c53ed108e56d5a91271009f31e8
           $('#divSouth').removeClass('divisionBtn2-Active');
 
         },
