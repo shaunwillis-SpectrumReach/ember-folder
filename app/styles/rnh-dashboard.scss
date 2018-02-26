@@ -293,7 +293,6 @@ padding:0 20px;
   background-color: #ffffff;
 }
 
-
 /* //////////////////////  Small Tweaks From Shaun  /////////////////////  */
 .border-right-line {
   border-right: 1px solid #003057;
@@ -338,6 +337,32 @@ border: 0px!important;
 
 .models-table-wrapper select ~ .clearFilterIcon {
   margin-right: inherit!important;
+}
+
+#wrapper-rnh  .datatable {
+  margin:0;
+  margin-top:-100px;
+  background-color: #BFC9D2;
+  padding:0 30px;
+  // overflow-y: none;
+  // max-height:400px;
+}
+
+#aeCentral, #aeWest, #aeNortheast, #aeSouth {
+  background-color: #F1F1F1;
+  margin:0;
+  padding-top:14px;
+}
+.datatable .row {
+  display: flex;
+  align-items: center;
+  padding:5px 0;
+
+}
+
+.datatable .row:nth-child(odd){
+   //background-color: #F1F1F1;
+
 }
 
 
