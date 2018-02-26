@@ -16,7 +16,10 @@ import { get } from '@ember/object';
           "filterWithSelect": true,
           "predefinedFilterOptions": [
             "AE",
-            "LSM"
+            "LSM",
+            "DOS",
+            "RVP",
+            "DVP"
           ]
         },
         {
