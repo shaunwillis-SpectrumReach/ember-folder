@@ -9,47 +9,61 @@ import { get } from '@ember/object';
 
       columns: [
         {
-          "title": "Job Title",
+          "title": "",
           "propertyName": "jobtitle",
+          "className": "text-center placeholdercolor",
+          "filterPlaceholder": "Job Title",
           "filterWithSelect": true,
           "predefinedFilterOptions": [
-            "Account Executive",
+            "AE",
             "LSM"
           ]
         },
-        // {
-        //   "title": "Profile Img",
-        //   "component": "profileImg"
-        // },
         {
-          "title": "Name",
+          "title": "",
           "propertyName": "name",
+          "filterPlaceholder": "Search Name...",
+          "className": "placeholdercolor",
           "editable": false
         },
         {
-          "title": "Manager Name",
+          "title": "",
+          "filterPlaceholder": "Sort Manager...",
+          "className": "placeholdercolor",
           "propertyName": "managername"
         },
         {
-          "title": "Region",
+          "title": "",
+          "filterPlaceholder": "Sort by Region",
+          "className": "placeholdercolor",
           "propertyName": "region"
         },
         {
+          "title": "",
+          "filterPlaceholder": "Dollars",
+          "className": "placeholdercolor noborder",
           "propertyName": "dollars"
         },
         {
+          "title": "",
+          "filterPlaceholder": "Goal",
+          "className": "placeholdercolor noborder",
           "propertyName": "goal"
         },
         {
-          "title": "# of Contracts",
+          "title": "",
+          "filterPlaceholder": "# of Contracts",
+          "className": "placeholdercolor noborder",
           "propertyName": "numberofcontracts"
         },
         {
-          "title": "Name of Contracts",
+          "title": "",
+          "filterPlaceholder": "Contracts",
+          "className": "placeholdercolor noborder",
           "propertyName": "nameofeachcontract"
         },
         {
-          "title": "Edit",
+          "title": "",
           "component": "editRow",
           "className": "editBtn",
           "editable": false
@@ -73,96 +87,64 @@ import { get } from '@ember/object';
 
 
 
-        filterCategoryAllaes() {
-          $('#ae1m').addClass('hide');
-          $('#ae15m').addClass('hide');
-          $('#ae700k').addClass('hide');
-          $('#ae499k').addClass('hide');
-          $('#ae450k').addClass('hide');
-          $('#allae').removeClass('hide');
 
-          $('#ae15mBtn').addClass('AE15mActive');
-          $('#ae450kBtn').removeClass('AE450kActive');
-          $('#ae700kBtn').removeClass('AE700kActive');
-          $('#ae1mBtn').removeClass('AE1mActive');
-          $('#ae499kBtn').removeClass('AE499kActive');
-          $('#ae499kBtn').removeClass('AE499kActive');
-
-        },
-
-        filterCategoryAE450k() {
-          $('#ae1m').addClass('hide');
-          $('#ae15m').addClass('hide');
-          $('#ae700k').addClass('hide');
-          $('#ae499k').addClass('hide');
-          $('#allae').addClass('hide');
-          $('#ae450k').removeClass('hide');
-
-          $('#ae450kBtn').addClass('AE450kActive');
-          $('#ae700kBtn').removeClass('AE700kActive');
-          $('#ae1mBtn').removeClass('AE1mActive');
-          $('#ae499kBtn').removeClass('AE499kActive');
-          $('#ae15mBtn').removeClass('AE15mActive');
-          $('#ae499kBtn').removeClass('AE499kActive');
-
-        },
-
-        filterCategoryAE700k() {
-          $('#ae1m').addClass('hide');
-          $('#ae15m').addClass('hide');
-          $('#ae450k').addClass('hide');
-          $('#ae499k').addClass('hide');
-          $('#allae').addClass('hide');
-          $('#ae700k').removeClass('hide');
-
-          $('#ae700kBtn').addClass('AE700kActive');
-          $('#ae1mBtn').removeClass('AE1mActive');
-          $('#ae499kBtn').removeClass('AE499kActive');
-          $('#ae15mBtn').removeClass('AE15mActive');
-          $('#ae450kBtn').removeClass('AE450kActive');
-          $('#ae499kBtn').removeClass('AE499kActive');
-
-        },
-
-        filterCategoryAE1m() {
-          $('#ae15m').addClass('hide');
-          $('#ae700k').addClass('hide');
-          $('#ae450k').addClass('hide');
-          $('#ae499k').addClass('hide');
-          $('#allae').addClass('hide');
-          $('#ae1m').removeClass('hide');
-
-          $('#ae1mBtn').addClass('AE1mActive');
-          $('#ae499kBtn').removeClass('AE499kActive');
-          $('#ae15mBtn').removeClass('AE15mActive');
-          $('#ae700kBtn').removeClass('AE700kActive');
-          $('#ae450kBtn').removeClass('AE450kActive');
-          $('#ae499kBtn').removeClass('AE499kActive');
-
-        },
 
         showAllAEs() {
-          $('#ae1m').addClass('hide');
-          $('#ae700k').addClass('hide');
-          $('#ae450k').addClass('hide');
-          $('#ae499k').addClass('hide');
-          $('#allae').addClass('hide');
-          $('#ae15m').removeClass('hide');
+          $('#aeWest').addClass('hide');
+          $('#aeNortheast').addClass('hide');
+          $('#aeSouth').addClass('hide');
+          $('#aeCentral').addClass('hide');
         },
 
-        filterCategoryAE499k() {
-          $('#ae1m').addClass('hide');
-          $('#ae15m').addClass('hide');
-          $('#ae700k').addClass('hide');
-          $('#ae450k').addClass('hide');
-          $('#allae').addClass('hide');
-          $('#ae499k').removeClass('hide');
+        filterCategoryCentral() {
+          $('#aeWest').addClass('hide');
+          $('#aeSouth').addClass('hide');
+          $('#aeNortheast').addClass('hide');
+          $('#aeCentral').removeClass('hide');
 
-          $('#ae499kBtn').addClass('AE499kActive');
-          $('#ae15mBtn').removeClass('AE15mActive');
-          $('#ae1mBtn').removeClass('AE1mActive');
-          $('#ae700kBtn').removeClass('AE700kActive');
-          $('#ae450kBtn').removeClass('AE450kActive');
+          $('#divCentral').addClass('divisionBtn1-Active');
+          $('#divNortheast').removeClass('divisionBtn4-Active');
+          $('#divWest').removeClass('divisionBtn3-Active');
+          $('#divSouth').removeClass('divisionBtn2-Active');
+
+        },
+
+        filterCategoryNortheast() {
+          $('#aeWest').addClass('hide');
+          $('#aeSouth').addClass('hide');
+          $('#aeCentral').addClass('hide');
+          $('#aeNortheast').removeClass('hide');
+
+          $('#divCentral').removeClass('divisionBtn1-Active');
+          $('#divNortheast').addClass('divisionBtn4-Active');
+          $('#divWest').removeClass('divisionBtn3-Active');
+          $('#divSouth').removeClass('divisionBtn2-Active');
+
+        },
+
+        filterCategoryWest() {
+          $('#aeNortheast').addClass('hide');
+          $('#aeSouth').addClass('hide');
+          $('#aeCentral').addClass('hide');
+          $('#aeWest').removeClass('hide');
+
+          $('#divWest').addClass('divisionBtn3-Active');
+          $('#divCentral').removeClass('divisionBtn1-Active');
+          $('#divNortheast').removeClass('divisionBtn4-Active');
+          $('#divSouth').removeClass('divisionBtn2-Active');
+
+        },
+
+        filterCategorySouth() {
+          $('#aeWest').addClass('hide');
+          $('#aeNortheast').addClass('hide');
+          $('#aeCentral').addClass('hide');
+          $('#aeSouth').removeClass('hide');
+
+          $('#divSouth').addClass('divisionBtn2-Active');
+          $('#divCentral').removeClass('divisionBtn1-Active');
+          $('#divWest').removeClass('divisionBtn3-Active');
+          $('#divNortheast').removeClass('divisionBtn4-Active');
         },
 
         // filterCategoryAE1m() {
@@ -173,7 +155,7 @@ import { get } from '@ember/object';
 
         scrollToTop() {
           // document.getElementById('message').scrollIntoView();
-          $('html, body').animate({ scrollTop: $('#wrapper').offset().top }, 'slow');
+          $('html, body').animate({ scrollTop: $('#wrapper-rnh').offset().top }, 'slow');
                return false;
         },
 
@@ -256,6 +238,7 @@ import { get } from '@ember/object';
           $('#filterManagers').addClass('hide');
           $('#filterAEs').addClass('hide');
         },
+
 
       },
     });

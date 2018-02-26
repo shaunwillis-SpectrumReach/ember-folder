@@ -37,7 +37,7 @@ import { get } from '@ember/object';
         },
         {
           "title": "",
-          "filterPlaceholder": "Sort by region",
+          "filterPlaceholder": "Sort by Region...",
           "className": "placeholdercolor",
           "propertyName": "region"
         },
