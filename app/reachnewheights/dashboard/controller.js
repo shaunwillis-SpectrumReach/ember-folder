@@ -65,7 +65,7 @@ import { get } from '@ember/object';
         {
           "title": "",
           "filterPlaceholder": "# of Contracts",
-          "className": "placeholdercolor noborder",
+          "className": "placeholdercolor noborder text-center",
           "propertyName": "numberofcontracts"
         },
 
