@@ -37,9 +37,24 @@ import { get } from '@ember/object';
         },
         {
           "title": "",
-          "filterPlaceholder": "Sort by Region...",
+          "filterPlaceholder": "Sort by Region",
           "className": "placeholdercolor",
-          "propertyName": "region"
+          "propertyName": "region",
+          "filterWithSelect": true,
+          "predefinedFilterOptions": [
+            "Pacific States",
+            "LA",
+            "Texas",
+            "MidNorth",
+            "MidWest",
+            "Florida",
+            "Upstate NY / ME",
+            "Mountain States",
+            "New York",
+            "Carolinas",
+            "Ohio",
+            "Southeast"
+          ]
         },
         {
             "title": "",
