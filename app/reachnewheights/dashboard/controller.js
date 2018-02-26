@@ -42,7 +42,7 @@ import { get } from '@ember/object';
           "propertyName": "region"
         },
         {
-            "title": "Progress Meter",
+            "title": "",
             "component": "rnhprogressBar",
             "className": "widerwidth listHide rnhprogress placeholdercolor",
           },
@@ -84,8 +84,9 @@ import { get } from '@ember/object';
           $('#aeCentral').addClass('hide');
           $('#aeNortheast').removeClass('hide');
 
+          $('#divNortheast').addClass('divisionBtn4-Active');
           $('#divWest').removeClass('divisionBtn3-Active');
-          $('#ae1mBtn').removeClass('AE1mActive');
+          // $('#ae1mBtn').removeClass('AE1mActive');
           $('#divSouth').removeClass('divisionBtn2-Active');
           $('#divCentral').removeClass('divisionBtn1-Active');
 

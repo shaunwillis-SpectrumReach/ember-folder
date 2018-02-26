@@ -369,3 +369,8 @@ padding:0 20px;
   .placeholdercolor .form-group input::-webkit-input-placeholder {
     color: #003057;
   }
+
+
+.models-table-wrapper select ~ .clearFilterIcon {
+  margin-right: inherit!important;
+}
