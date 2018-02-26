@@ -98,7 +98,7 @@
 
        <div  style="float:right;">&nbsp;</div>
 
-       {{#if (gte (mult (div record.dollars record.goal) 100) 100)}}
+       {{#if (gte (mult (div personal.dollars personal.goal) 100) 100)}}
        <div class="progress" >
          <div class="progress-bar {{ currentUser.pid.division}}-bar" role="progressbar" aria-valuenow="{{mult (div personal.dollars personal.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div personal.dollars personal.goal) 100}}%; ">
          </div>
@@ -126,7 +126,7 @@
      {{#each model.mine as |personal|}}
      <div class=" col-md-12 col-lg-6 personalProgress"  >
      <div style="float:left;"><p>${{number-format personal.dollars decimals=0}} / ${{number-format personal.goal decimals=0}}</p></div>   <div  style="float:right;">&nbsp;</div>
-    {{#if (gte (mult (div record.dollars record.goal) 100) 100)}}
+    {{#if (gte (mult (div personal.dollars personal.goal) 100) 100)}}
     <div class="progress" >
        <div class="progress-bar {{ currentUser.pid.division}}-bar" role="progressbar" aria-valuenow="{{mult (div personal.dollars personal.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div personal.dollars personal.goal) 100}}%; ">
        </div>
@@ -189,7 +189,7 @@
      {{#each model.mine as |personal|}}
     <div style="float:left;"><p>${{number-format personal.dollars decimals=0}} / ${{number-format personal.goal decimals=0}}</p></div>
    <div  style="float:right;">&nbsp;</div>
-   {{#if (gte (mult (div record.dollars record.goal) 100) 100)}}
+   {{#if (gte (mult (div personal.dollars personal.goal) 100) 100)}}
     <div class="progress" >
       <div class="progress-bar {{ currentUser.pid.division}}-bar" role="progressbar" aria-valuenow="{{mult (div personal.dollars personal.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div personal.dollars personal.goal) 100}}%; ">
       </div>
@@ -223,7 +223,7 @@
         <div class=" col-md-12 col-lg-3 dashboard indyData" >
          <div style="float:left; margin: 10px 10px 10px 6px;"><img style="" src="{{currentUser.pid.fullProfilePicUrl}}"></div>
          <div  style="float:left; margin: 18px 0 0 6px;"><p  style="">{{ rollup.firstname }} {{ rollup.lastname }}</p></div>
-        {{#if (gte (mult (div record.dollars record.goal) 100) 100)}}
+        {{#if (gte (mult (div rollup.dollars rollup.goal) 100) 100)}}
          <div class="progress" >
            <div class="progress-bar {{ currentUser.pid.division }}-bar" role="progressbar" aria-valuenow="{{mult (div rollup.dollars rollup.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div rollup.dollars rollup.goal) 100}}%; ">
            </div>
