@@ -22,7 +22,7 @@
      {{#if currentUser.pid.jobtitle }}
      <div  class="companyGoal col-lg-12 " >
       <div class=" progressBox"  >
-        <div style="float:left;"> <h1 style="color:#fff;">COLLECTIVE GOAL</h1></div>   <div style="float:right; color:#fff;"><h1 style="color:#fff;">92% </h1></div>
+        <div class="colGoalTitle" style="float:left;"> <h1 style="color:#fff;">COLLECTIVE GOAL</h1></div>   <div style="float:right; color:#fff;"><h1 style="color:#fff;">92% </h1></div>
           <div class="progress" style="clear:both; background-color:white; border:1px solid #003057;">
             <div class="progress-bar Northeast-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style=" width:10%; "></div>
             <div class="progress-bar South-bar" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style=" width:23%; "></div>
@@ -74,7 +74,7 @@
            </div>
          </div >
       <div class="col-md-12 col-lg-6 imageMine" >
-          <div class="" >
+          <div class="userPic" >
             <a href="https://spectrumreach.typeform.com/to/zdQZSe" target="_blank"><img style="" src="{{currentUser.pid.fullProfilePicUrl}}" ></a>
           </div>
 
@@ -91,10 +91,10 @@
 
       <div class="col-lg-12 "><p style="margin-top:24px;">&nbsp;</p></div>
       <!--  ///////////  TEAM PROGRESS    ///////////  -->
-       <div class=" col-md-12 col-lg-6" >
+       <div class=" col-md-12 col-lg-6 teamProgress" >
          {{#if model.managername}}
         {{#each model.managername as |personal|}}
-       <div style="float:left;"><p>${{number-format personal.dollars decimals=0}} / ${{number-format personal.goal decimals=0}}</p></div>
+       <div  style="float:left;"><p>${{number-format personal.dollars decimals=0}} / ${{number-format personal.goal decimals=0}}</p></div>
 
        <div  style="float:right;">&nbsp;</div>
         <div class="progress" >
@@ -114,7 +114,7 @@
       <!--  ///////////  PERSONAL PROGRESS    ///////////  -->
 
      {{#each model.mine as |personal|}}
-     <div class=" col-md-12 col-lg-6" >
+     <div class=" col-md-12 col-lg-6 personalProgress"  >
      <div style="float:left;"><p>${{number-format personal.dollars decimals=0}} / ${{number-format personal.goal decimals=0}}</p></div>   <div  style="float:right;">&nbsp;</div>
      <div class="progress" >
        <div class="progress-bar {{ currentUser.pid.division}}-bar" role="progressbar" aria-valuenow="{{mult (div personal.dollars personal.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div personal.dollars personal.goal) 100}}%; ">
@@ -154,11 +154,11 @@
 
 
    <div class="col-md-12 col-lg-6 imageMine" >
-       <div class="" >
+       <div class="userPic" style="">
          <a href="https://spectrumreach.typeform.com/to/zdQZSe" target="_blank"><img style="" src="{{currentUser.pid.fullProfilePicUrl}}" ></a>
        </div>
 
-     <div class="userData " style="margin-top:20px;">
+     <div class="userData " style="margin-top:20px; ">
        <div class="title">
          <h2 style="font-weight:600; color: #003057;">Name<br>ID#<br>Manager<br>Location</h2>
        </div>
@@ -169,7 +169,7 @@
 
    </div >
    <!--  /////////// TEAM PROGRESS   ///////////  -->
-   <div class=" col-md-12 col-lg-6" >
+   <div class=" col-md-12 col-lg-6 teamProgress" >
      {{#each model.mine as |personal|}}
     <div style="float:left;"><p>${{number-format personal.dollars decimals=0}} / ${{number-format personal.goal decimals=0}}</p></div>
    <div  style="float:right;">&nbsp;</div>

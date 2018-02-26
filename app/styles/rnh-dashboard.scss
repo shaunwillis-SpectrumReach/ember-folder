@@ -136,6 +136,9 @@
 padding:0 20px;
 }
 
+#AE-dash .userPic {
+
+}
 #AE-dash .imageMine img {
   /* clip-path: circle(90px at center);  */
   border:2px solid #003057;
@@ -180,7 +183,9 @@ padding:0 20px;
 #MGR-dash .imageMine {
 padding:0 20px;
 }
+#MGR-dash .userPic {
 
+}
 #MGR-dash .imageMine img {
   // clip-path: circle(100px at center);
   border:2px solid #003057;
@@ -319,6 +324,48 @@ padding:0 20px;
 }
 
 
+/* //////////////////////  Small Tweaks From Shaun  /////////////////////  */
+.border-right-line {
+  border-right: 1px solid #003057;
+}
+
+
+#wrapper-rnh .table-striped tbody tr:nth-of-type(odd) {
+  background-color: white;
+
+}
+
+#wrapper-rnh .datatable .table-bordered {
+  border: 0px!important;
+}
+
+#wrapper-rnh .datatable .table-bordered td {
+  border: 0px!important;
+}
+
+th.rnhprogress {
+    position: absolute;
+    top: 0.3%;
+  }
+
+#wrapper-rnh .form-group select  {
+border-radius: 0px!important;
+border: 2px solid white!important;
+height: 41px;
+}
+
+#wrapper-rnh .form-control {
+border-radius: 4px!important;
+}
+
+#wrapper-rnh .noborder .form-group .form-control{
+border: 0px!important;
+}
+
+.placeholdercolor .form-group input::-webkit-input-placeholder {
+  color: #003057;
+}
+
 /* //////////////////////  MEDIA  /////////////////////  */
 
   @media only screen and (min-width:1300px)  {
@@ -328,44 +375,253 @@ padding:0 20px;
 
   }
 
-  /* //////////////////////  Small Tweaks From Shaun  /////////////////////  */
-  .border-right-line {
-    border-right: 1px solid #003057;
-  }
+  /* //////////////////////  MEDIA  1299   /////////////////////  */
+
+  @media only screen and (max-width:1299px)  {
 
 
-#wrapper-rnh .table-striped tbody tr:nth-of-type(odd) {
-    background-color: white;
-
-  }
-
-#wrapper-rnh .datatable .table-bordered {
-    border: 0px!important;
-  }
-
-#wrapper-rnh .datatable .table-bordered td {
-    border: 0px!important;
-  }
-
-  th.rnhprogress {
-      position: absolute;
-      top: 0.3%;
+    #wrapper-rnh h2 {
+      font-family: 'Open Sans', sans-serif;
+      color: #466d8f;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 30px;
     }
 
-#wrapper-rnh .form-group select  {
-  border-radius: 0px!important;
-  border: 2px solid white!important;
-  height: 41px;
-}
+    #wrapper-rnh h3,  {
+      font-family: 'Open Sans', sans-serif;
+      color: #003057;
+      font-size: 30px;
+      font-weight: 600;
+    }
 
-#wrapper-rnh .form-control {
-  border-radius: 4px!important;
-}
+    #header-rnh .logo_rnh  {
+      width:60%;
+    }
 
-#wrapper-rnh .noborder .form-group .form-control{
-  border: 0px!important;
-}
+    .divisionBtn {
+        background-size: cover;
+        width:154px;
+        height:59px;
+      }
 
-  .placeholdercolor .form-group input::-webkit-input-placeholder {
-    color: #003057;
+
   }
+
+  /* //////////////////////  MEDIA  1200   /////////////////////  */
+
+  @media only screen and (max-width:1200px)  {
+
+
+     #wrapper-rnh h1 {
+       font-family: 'Gotham', 'Open Sans', sans-serif;
+       color: #BFC9D2;
+       font-size: 58px;
+     }
+
+    #wrapper-rnh h2 {
+      font-family: 'Open Sans', sans-serif;
+      color: #466d8f;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 30px;
+    }
+
+    #wrapper-rnh h3,  {
+      font-family: 'Open Sans', sans-serif;
+      color: #003057;
+      font-size: 22px;
+      font-weight: 600;
+    }
+     #wrapper-rnh p {
+       font-family: 'Open Sans', sans-serif;
+       color: #003057;
+       font-size: 16px;
+       font-weight: 600;
+     }
+
+     #header-rnh .logo_rnh  {
+       width:70%;
+     }
+
+
+     #AE-dash .imageMine img {
+       width:160px;
+       height:auto;
+     }
+
+     #MGR-dash .imageMine img {
+       width:160px;
+       height:auto;
+     }
+
+    .divisionBtn {
+        background-size: cover;
+        width:140px;
+        height:53px;
+      }
+        .divisionBtn2 {
+          margin-left: -14px;
+        }
+        .divisionBtn3 {
+          margin-left: -14px;
+        }
+        .divisionBtn4 {
+          margin-left: -14px;
+        }
+
+
+  }
+
+  /* //////////////////////  MEDIA  991   /////////////////////  */
+
+  @media only screen and (max-width:991px)  {
+
+
+     #wrapper-rnh h1 {
+       font-family: 'Gotham', 'Open Sans', sans-serif;
+       color: #BFC9D2;
+       font-size: 52px;
+     }
+
+    #wrapper-rnh h2 {
+      font-family: 'Open Sans', sans-serif;
+      color: #466d8f;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 30px;
+    }
+
+    #wrapper-rnh h3,  {
+      font-family: 'Open Sans', sans-serif;
+      color: #003057;
+      font-size: 28px;
+      font-weight: 600;
+    }
+     #wrapper-rnh p {
+       font-family: 'Open Sans', sans-serif;
+       color: #003057;
+       font-size: 18px;
+       font-weight: 600;
+     }
+
+     #AE-dash .imageMine {
+       margin-top:36px;
+     }
+     #MGR-dash .imageMine {
+       margin-top:36px;
+     }
+     #AE-dash .imageMine img {
+       width:200px;
+       height:auto;
+     }
+
+     #MGR-dash .imageMine img {
+       width:200px;
+       height:auto;
+     }
+     #MGR-dash .teamProgress {
+     }
+
+     #AE-dash .teamProgress {
+     }
+     #MGR-dash .teamProgress {
+       padding-top:36px;
+     }
+
+     #AE-dash .teamProgress {
+     }
+     #MGR-dash .indyData {
+
+     }
+    .divisionBtn {
+        background-size: cover;
+        width:171px;
+        height:66px;
+      }
+
+  }
+
+  /* //////////////////////  MEDIA  1200   /////////////////////  */
+
+  @media only screen and (max-width:767px)  {
+
+
+     #wrapper-rnh h1 {
+       font-family: 'Gotham', 'Open Sans', sans-serif;
+       color: #BFC9D2;
+       font-size: 36px;
+     }
+    #wrapper-rnh h2 {
+      font-family: 'Open Sans', sans-serif;
+      color: #466d8f;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 30px;
+    }
+
+    #wrapper-rnh h3,  {
+      font-family: 'Open Sans', sans-serif;
+      color: #003057;
+      font-size: 20px;
+      font-weight: 600;
+    }
+     #wrapper-rnh p {
+       font-family: 'Open Sans', sans-serif;
+       color: #003057;
+       font-size: 16px;
+       font-weight: 600;
+     }
+
+     #header-rnh .logo_rnh  {
+       width:80%;
+     }
+
+
+  #AE-dash .userPic {
+    width:36%;
+    float:left;
+  }
+  #AE-dash .userData {
+    float:left;
+    clear:none;
+  }
+
+
+     #AE-dash .imageMine img {
+       width:140px;
+       height:auto;
+     }
+
+     #MGR-dash .imageMine img {
+       width:140px;
+       height:auto;
+     }
+    .divisionBtn {
+        background-size: cover;
+        width:136px;
+        height:50px;
+      }
+
+  }
+
+  /* //////////////////////  MEDIA  1200   /////////////////////  */
+
+  @media only screen and (max-width:600px)  {
+    .colGoalTitle {
+      display:none;
+    }
+    #header-rnh .logo_rnh  {
+      width:96%;
+      margin:auto;
+      float:none;
+    }
+
+
+    .divisionBtn {
+        background-size: cover;
+        width:24vw;
+        height:4vh;
+      }
+
+}

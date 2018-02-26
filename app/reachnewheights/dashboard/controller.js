@@ -84,10 +84,10 @@ import { get } from '@ember/object';
           $('#aeCentral').addClass('hide');
           $('#aeNortheast').removeClass('hide');
 
-          $('#divWest').removeClass('divisionBtn3-Active');
-          $('#ae1mBtn').removeClass('AE1mActive');
-          $('#divSouth').removeClass('divisionBtn2-Active');
           $('#divCentral').removeClass('divisionBtn1-Active');
+          $('#divNortheast').addClass('divisionBtn4-Active');
+          $('#divWest').removeClass('divisionBtn3-Active');
+          $('#divSouth').removeClass('divisionBtn2-Active');
 
         },
 
