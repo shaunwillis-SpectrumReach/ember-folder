@@ -49,6 +49,7 @@ Router.map(function() {
     this.route('admin');
     this.route('dashboard');
   });
+  this.route('launchpad');
 });
 
 export default Router;
