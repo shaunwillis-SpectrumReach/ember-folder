@@ -1,0 +1,77 @@
+<div id="wrapper-launch" >
+  <div id="contentHome" class="" >
+    <section id="header">
+     <div class="userNameTop">Welcome, {{ currentUser.pid.firstname}}  <img style="border-radius: 50%;" src="{{currentUser.pid.fullProfilePicUrl}}" width="25"></div>
+      {{#link-to 'firstlook.leaderboard.elite-ae15m' replace="true"}}<img class="l_FirstLook" src="/assets/img/L_FirstLook.png" >{{/link-to}}
+    </section>
+
+
+<section id="altNav" >
+<div class="container fadein " >
+  <ul>
+      <li><a href="/firstlook/homepage">Overview</a></li>
+      <li><a href="/firstlook/leaderboard/elite-ae15m">Standings</a></li>
+      <li><a href="/firstlook/rules">Rules</a></li>
+      <li><a href="https://spectrumreach.typeform.com/to/zdQZSe" target="_blank">Account</a></li>
+      <li><a href="/firstlook/logout">Sign Out</a></li>
+  </ul>
+</div>
+</section>
+
+<section id="welcome" >
+
+      <div  class="container fadein"  style="min-height:80vh;">
+
+
+  <div class="row " style="">
+
+
+    <div class=" col-sm-12 col-lg-6" style="border: 1px solid gray; width:80%; height:auto; margin:auto;">
+
+
+
+      {{#link-to 'firstlook.leaderboard.elite-ae15m' replace="true"}}
+      <img class="logo_rnh " src="/assets/img/L_FirstLook.png" >
+      {{/link-to}}
+
+
+
+
+  </div>
+    <div class=" col-sm-12  col-lg-6 " style="border: 1px solid gray; width:80%; height:auto; margin:auto;">
+
+
+      {{#link-to 'reachnewheights.dashboard' replace="true"}}
+      <img class="logo_rnh " src="/assets/img/rnh/NewBizLogo-Revised-02.svg" >
+      {{/link-to}}
+
+
+    </div>
+
+
+  </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+<section id="homepageCornerLogo">
+  <img src="/assets/img/Spectrum_Reach_Rev_RGB.svg">
+</section>
+
+<section id="stickyFooter">
+<div class="copyright"><p style="">Copyright 2018 • Spectrum Reach • All Rights Reserved</p></div>
+ <div class="toTop"><span class="" {{action "scrollToTop"}}><span style="color:#fff;">Top</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+
+</section>
+
+</div>
+<!--  END WRAPPER  -->
+</div>
