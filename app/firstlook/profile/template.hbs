@@ -8,7 +8,7 @@
 
     <div id="" class="graygradient" style="min-height:calc(100vh - 130px ) !important;min-height:600px;">
 
-    <section id="title">
+    <!-- <section id="title">
       <div  class="container fadein"  style="margin-top:30px;" >
 
       <h2>Profile Summary</h2>
@@ -19,13 +19,13 @@
 
       {{/link-to}}
     </div>
-      </section>
+      </section> -->
 
   <section id="profileSummary" style="">
      <div class="">
     <!--  Note:  need a conditional, if image profile picture exists, file path = foo, else display generic thumbnail. - generic_thumbnail.svg  -->
 
- <div id="">
+ <!-- <div id="">
   <p><span class="userItem">Name: </span>{{currentUser.pid.firstname}} {{currentUser.pid.lastname}}</p>
   <p><span class="userItem">Email: </span>{{currentUser.pid.email}}</p>
   <p><span class="userItem">ID: </span>{{currentUser.pid.pid}} </p>
@@ -33,30 +33,30 @@
   <p><span class="userItem">Manager: </span>{{currentUser.pid.managername}}</p>
   <p><span class="userItem">Region: </span>{{currentUser.pid.region}}</p>
   <p><span class="userItem">Division: </span>{{currentUser.pid.division}}</p>
-</div>
+</div> -->
 <!-- <div class="Reg_btn" style="margin-top:40px; ">
       {{#link-to 'firstlook.register-thanks' class="SR_btn" name="button" }}Submit{{/link-to}}
 </div> -->
 </div>
 <!-- this form submits, but isn't working with Ember data properly. I'm still working on this -->
-<div class="profile">
-   {{#simple-form class="profile" startingValues=wizard.userInfo onsubmit=(action "saveForm") as | formValues |}}
+<div class="">
+   {{#simple-form class="profile" startingValues=currentUser.pid onsubmit=(action "saveForm") as | formValues |}}
         <label for="pid" >Employee ID</label>
-    {{input class="userItem" type="text" id="pid"  value=formValues.pid placeholder="XXXXXXX"}}<br>
+    {{input class="userItem" type="text" id="pid"  value=currentUser.pid placeholder="XXXXXXX"}}<br>
         <label for="firstname" >First Name</label>
-    {{input class="userItem" type="text"  id="firstname" value=formValues.firstname placeholder="First Name"}}<br>
+    {{input class="userItem" type="text"  id="firstname" value=currentUser.firstname placeholder="First Name"}}<br>
         <label for="lastname" >Last Name</label>
-    {{input class="userItem" type="text"  id="lastname" value=formValues.lastname placeholder="Last Name"}}<br>
+    {{input class="userItem" type="text"  id="lastname" value=currentUser.lastname placeholder="Last Name"}}<br>
         <label for="email" >Email</label>
-    {{input class="userItem" type="text"   id="email" value=formValues.email placeholder="Email"}}<br>
+    {{input class="userItem" type="text"   id="email" value=currentUser.email placeholder="Email"}}<br>
         <label for="password" >Password</label>
-    {{input class="userItem" type="password"   id="password" value=formValues.password placeholder="Password"}}<br>
+    {{input class="userItem" type="password"   id="password" value=currentUser.password placeholder="Password"}}<br>
         <label for="managername" >Manager Name</label>
-    {{input class="userItem" type="text"   id="managername" value=formValues.managername placeholder="Manager Name"}}<br>
+    {{input class="userItem" type="text"   id="managername" value=currentUser.managername placeholder="Manager Name"}}<br>
         <label for="division" >Division</label>
-    {{input class="userItem" type="text"   id="division" value=formValues.division placeholder="Division"}}<br>
+    {{input class="userItem" type="text"   id="division" value=currentUser.division placeholder="Division"}}<br>
         <label for="region" >Region</label>
-    {{input class="userItem" type="text"   id="region" value=formValues.region placeholder="Region"}}<br>
+    {{input class="userItem" type="text"   id="region" value=currentUser.region placeholder="Region"}}<br>
     <div class="button-box">
       <button type="submit" style="border-radius: 0rem;" class="Reg_btn submit">Submit</button>
     </div>
