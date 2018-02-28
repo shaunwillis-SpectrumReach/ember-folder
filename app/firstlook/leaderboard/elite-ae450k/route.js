@@ -8,8 +8,6 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
   //
   // },
   model() {
-    return this.store.query('Eliteae450k', {
-          top5: 'Top 5'
-        });
+    return this.store.findAll('aegroupdbviewelite450');
   },
 });

@@ -14,9 +14,7 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
   //     });
   // },
   model() {
-    return this.store.query('Eliteae15m', {
-          top5: 'Top 5'
-        });
+    return this.store.findAll('aegroupdbviewelite15m');
   },
 
 });
