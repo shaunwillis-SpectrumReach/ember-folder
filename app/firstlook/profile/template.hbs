@@ -26,44 +26,42 @@
     <!--  Note:  need a conditional, if image profile picture exists, file path = foo, else display generic thumbnail. - generic_thumbnail.svg  -->
 
  <div id="">
-  <p><span class="userItem">Name: </span>{{currentUser.userInfo.first}} {{currentUser.userInfo.last}}</p>
-  <p><span class="userItem">Email: </span>{{currentUser.userInfo.email}}</p>
-  <p><span class="userItem">ID: </span>{{currentUser.userInfo.pid}} </p>
-  <p><span class="userItem">Job Title: </span>{{currentUser.userInfo.jobtitle}}</p>
-  <p><span class="userItem">Manager: </span>{{currentUser.userInfo.managername}}</p>
-  <p><span class="userItem">Region: </span>{{currentUser.userInfo.region}}</p>
-  <p><span class="userItem">Division: </span>{{currentUser.userInfo.division}}</p>
+  <p><span class="userItem">Name: </span>{{currentUser.pid.firstname}} {{currentUser.pid.lastname}}</p>
+  <p><span class="userItem">Email: </span>{{currentUser.pid.email}}</p>
+  <p><span class="userItem">ID: </span>{{currentUser.pid.pid}} </p>
+  <p><span class="userItem">Job Title: </span>{{currentUser.pid.jobtitle}}</p>
+  <p><span class="userItem">Manager: </span>{{currentUser.pid.managername}}</p>
+  <p><span class="userItem">Region: </span>{{currentUser.pid.region}}</p>
+  <p><span class="userItem">Division: </span>{{currentUser.pid.division}}</p>
 </div>
 <!-- <div class="Reg_btn" style="margin-top:40px; ">
       {{#link-to 'firstlook.register-thanks' class="SR_btn" name="button" }}Submit{{/link-to}}
 </div> -->
 </div>
 <!-- this form submits, but isn't working with Ember data properly. I'm still working on this -->
-<!-- <div class="profile">
+<div class="profile">
    {{#simple-form class="profile" startingValues=wizard.userInfo onsubmit=(action "saveForm") as | formValues |}}
-    <!-- {{log formValues}} -->
-    <!--
-    <label for="pid" >Employee ID</label>
+        <label for="pid" >Employee ID</label>
     {{input class="userItem" type="text" id="pid"  value=formValues.pid placeholder="XXXXXXX"}}<br>
-<label for="firstname" >First Name</label>
+        <label for="firstname" >First Name</label>
     {{input class="userItem" type="text"  id="firstname" value=formValues.firstname placeholder="First Name"}}<br>
-<label for="lastname" >Last Name</label>
+        <label for="lastname" >Last Name</label>
     {{input class="userItem" type="text"  id="lastname" value=formValues.lastname placeholder="Last Name"}}<br>
-<label for="email" >Email</label>
+        <label for="email" >Email</label>
     {{input class="userItem" type="text"   id="email" value=formValues.email placeholder="Email"}}<br>
-<label for="password" >Password</label>
+        <label for="password" >Password</label>
     {{input class="userItem" type="password"   id="password" value=formValues.password placeholder="Password"}}<br>
-<label for="managername" >Manager Name</label>
+        <label for="managername" >Manager Name</label>
     {{input class="userItem" type="text"   id="managername" value=formValues.managername placeholder="Manager Name"}}<br>
- <label for="division" >Division</label>
+        <label for="division" >Division</label>
     {{input class="userItem" type="text"   id="division" value=formValues.division placeholder="Division"}}<br>
-<label for="region" >Region</label>
+        <label for="region" >Region</label>
     {{input class="userItem" type="text"   id="region" value=formValues.region placeholder="Region"}}<br>
     <div class="button-box">
       <button type="submit" style="border-radius: 0rem;" class="Reg_btn submit">Submit</button>
     </div>
   {{/simple-form}}
-</div> -->
+</div>
 
   <!-- <form id="final-form" onsubmit={{action "save"}}>
     <span class="userItem">Name: </span>{{input class="form__input" type="text"  value=wizard.userInfo.pid placeholder="P•XXXXXXX"}}<br>

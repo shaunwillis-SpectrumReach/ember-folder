@@ -27,19 +27,19 @@ export default Ember.Controller.extend({
 //   }
 // },
 
-//
-// actions: {
-//   update(closeForm, formValues) {
-//     this.model.setProperties(formValues);
-//     this.model.save().then(() => {
-//       closeForm();
-//     });
-//   },
-//
-//   choosePic(formValues) {
-//     this.get('filesystem').prompt().then((upload) => {
-//       this.saveUser(upload[0]);
-//     });
-//   }
-// }
+
+actions: {
+  update(closeForm, formValues) {
+    this.model.setProperties(formValues);
+    this.model.save().then(() => {
+      closeForm();
+    });
+  },
+
+  // choosePic(formValues) {
+  //   this.get('filesystem').prompt().then((upload) => {
+  //     this.saveUser(upload[0]);
+  //   });
+  // }
+}
   });

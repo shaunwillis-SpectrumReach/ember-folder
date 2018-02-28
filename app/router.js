@@ -17,6 +17,7 @@ Router.map(function() {
     this.route('forgotpassword');
 
     this.route('homepage');
+    this.route('profile');
 
     this.route('login');
 
