@@ -215,7 +215,7 @@ padding:0 20px;
 
 }
 #MGR-dash  .progress-bar {
-  background-color:#0099D8;
+  background-color:#003057;
 
 }
 #MGR-dash  .progress {
@@ -473,6 +473,20 @@ border: 0px!important;
 
   }
 
+
+
+    /* //////////////////////  MEDIA  991   /////////////////////  */
+
+    @media only screen and (max-width:1024px)  {
+
+  #wrapper-rnh  .datatable {
+    margin-top:-76px;
+  }
+
+}
+
+
+
   /* //////////////////////  MEDIA  991   /////////////////////  */
 
   @media only screen and (max-width:991px)  {
@@ -539,7 +553,9 @@ border: 0px!important;
         width:171px;
         height:66px;
       }
-
+    .hideUnder992 {
+        display:none;
+      }
   }
 
   /* //////////////////////  MEDIA  1200   /////////////////////  */
@@ -605,7 +621,7 @@ border: 0px!important;
 
   }
 
-  /* //////////////////////  MEDIA  1200   /////////////////////  */
+  /* //////////////////////  MEDIA  600   /////////////////////  */
 
   @media only screen and (max-width:600px)  {
     .colGoalTitle {
@@ -622,6 +638,9 @@ border: 0px!important;
         background-size: cover;
         width:24vw;
         height:4vh;
+      }
+    #wrapper-rnh  .datatable {
+        margin-top:-56px;
       }
 
 }

@@ -11,7 +11,7 @@ import { get } from '@ember/object';
         {
           "title": "",
           "propertyName": "jobtitle",
-          "className": "text-center",
+          "className": "text-center hideUnder992",
           "filterPlaceholder": "Sort by title",
           "filterWithSelect": true,
           "predefinedFilterOptions": [
@@ -24,7 +24,8 @@ import { get } from '@ember/object';
         },
         {
           "title": "",
-          "component": "profileImg"
+          "component": "profileImg",
+          "className": "hideUnder992"
         },
         {
           "title": "",

@@ -93,6 +93,7 @@
       <!--  ///////////  TEAM PROGRESS    ///////////  -->
        <div class=" col-md-12 col-lg-6 teamProgress" >
          {{#if model.managername}}
+
         {{#each model.managername as |personal|}}
        <div  style="float:left;"><p>${{number-format personal.dollars decimals=0}} / ${{number-format personal.goal decimals=0}}</p></div>
 
@@ -110,15 +111,22 @@
           </div>
        {{/if}}
 
-
          <div style="float:left; margin-top:10px;"><p>Team Progress % to collective goal</p></div>   <div style="float:right; margin-top:10px;"><h3>{{number-format (mult (div personal.dollars personal.goal) 100) decimals=0}}%</h3></div>
          {{/each}}
+
          {{else}}
-         <div class="col-md-8 col-md-offset-2" style="float:left;">
-            <h4>Your Team Goal is not showing for these reasons:</h4>
-            <p>1) Your manager is NOT signed up for this incentive. If so, please reach out to your manager to have them sign up so that you can track your team goal</p>
-            <p>2) Double Check your Manager's Name. If your Manager's Name does not match exactly with what we have showing in standings, then our data will NOT sync with their data. You will need to email support.</p>
+         <div class="" style="">
+           <div  style="float:left;"><p><img class="logo_rnh " src="/assets/img/rnh/error.svg" width="24" > DATA ERROR</p></div>
+           <div  style="float:right;">&nbsp;</div>
+
+           <div class="progress" >
+             <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style=" width:0%; ">
+             </div>
+           </div>
+           <div style="float:left; margin-top:10px;"><p>Team Progress % to collective goal</p></div>   <div style="float:right; margin-top:10px;"><h3>00%</h3></div>
+
         </div>
+
          {{/if}}
       </div>
       <!--  ///////////  PERSONAL PROGRESS    ///////////  -->
@@ -262,7 +270,7 @@
 
         <!-- show on mobile size only  -->
             <div class="row" id="FilterDisclaimer"  >
-              <p style=" ">Visit our desktop version for more info, searchable data, and filtering capabilities or download the PDF for complete standings.</p>
+              <p style=" ">Visit our desktop version for more info, searchable data, and filtering capabilities.</p>
             </div>
 
             </div>
