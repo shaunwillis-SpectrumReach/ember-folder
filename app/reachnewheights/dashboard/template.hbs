@@ -115,8 +115,15 @@
          {{/each}}
 
          {{else}}
+         <div class="error">
+         <div class="tooltiptext">
+      <span ><strong>Your Team Goal is not showing for these reasons:</strong><br><br>
+      1. Your manager is NOT signed up for this incentive. If so, please reach out to your manager to have them sign up.<br><br>
+      2. If you have confirmed that your manager is signed up, please <a href="mailto:shaun.willis@charter.com" style="color:#0099D8;">contact support</a>.
+      </span>
+      </div>
          <div class="" style="">
-           <div  style="float:left;"><p><img class="logo_rnh " src="/assets/img/rnh/error.svg" width="24" > DATA ERROR</p></div>
+     <div  style="float:left;" class=""><p><img class="logo_rnh  " src="/assets/img/rnh/error.svg" width="24" > DATA ERROR</p></div>
            <div  style="float:right;">&nbsp;</div>
 
            <div class="progress" >
@@ -126,6 +133,7 @@
            <div style="float:left; margin-top:10px;"><p>Team Progress % to collective goal</p></div>   <div style="float:right; margin-top:10px;"><h3>00%</h3></div>
 
         </div>
+      </div>
 
          {{/if}}
       </div>
