@@ -36,7 +36,7 @@ import { get } from '@ember/object';
         {
           "title": "",
           "filterPlaceholder": "Search Manager...",
-          "className": "placeholdercolor",
+          "className": "placeholdercolor hideUnder767",
           "propertyName": "managername"
         },
         {
