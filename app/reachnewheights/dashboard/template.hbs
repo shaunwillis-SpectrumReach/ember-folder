@@ -76,6 +76,7 @@
 <!--  ///////////  AE DASHBOARD   ///////////  -->
 <!--  //////////////////////////////////////   -->
 <div class="divider-rnh"></div>
+{{#if (not currentUser.pid.isGuest) }}
 
 {{#if currentUser.pid.isAe }}
 
@@ -277,6 +278,7 @@
     </div>
     </div>
     </section>
+    {{/if}}
     {{/if}}
 <div class="divider-rnh"></div>
 
