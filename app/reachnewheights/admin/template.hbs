@@ -1,3 +1,5 @@
+{{#if currentUser.pid.isAdmin}}
+
 <div id="wrapper-rnh" >
 
   <section id="header">
@@ -162,5 +164,15 @@
 </section>
 
 </div>
+
+{{else}}
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h2 style="margin-top: 8rem;">You are not an Admin Page. Please <a href="mailTo:shaun.willis@charter.com" style="color: #003057;">contact support</a> for help.</h2>
+    </div>
+  </div>
+</div>
+{{/if}}
 
 {{outlet}}

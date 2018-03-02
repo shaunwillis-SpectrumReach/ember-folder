@@ -45,11 +45,16 @@
       {{#link-to 'reachnewheights.dashboard' replace="true"}}
       <img class=" " src="/assets/img/launch/rnh-app-opt.jpg"  >
       {{/link-to}}
+      {{#if currentUser.pid.isAdmin}}
+        {{#link-to 'reachnewheights.admin' replace="true"}}
+        <p style="text-align:center;">Click here for Admin</p>
+        {{/link-to}}
 
-      {{#link-to 'reachnewheights.admin' replace="true"}}
-      <p style="text-align:center;">Click here for Admin</p>
-      {{/link-to}}
+        {{else}}
+        <p style="text-align:center; visibility: hidden;">Click here for Admin</p>
 
+
+      {{/if}}
     </div>
 
 
