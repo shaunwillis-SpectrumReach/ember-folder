@@ -42,6 +42,33 @@
 //   font-size: 16px;
 //
 // }
+#wrapper-rnh   #header {
+  background: none;
+  background-color: #002039;
+  width:100%;
+  height:90px;
+  margin:0 0 0 -1px;
+}
+
+#wrapper-rnh  .srilogo  {
+  margin-left: 60px;
+  float:left;
+    padding-top:30px;
+    padding-bottom:0px;
+    // width:100%;
+    height:auto;
+
+}
+#wrapper-rnh  .logoText {
+  color:#fff;
+  text-align: left;
+  margin:40px 20px;
+  float:left;
+  font-size: 24px;
+  font-family: "Gotham",  sans-serif;
+
+}
+
 
 .divider-rnh {
   background: url("../assets/img/Main_Header_bg.svg");
@@ -53,14 +80,79 @@
 
 }
 
-#header-rnh {
+// =====  ALT NAV  ========   //
+
+#wrapper-rnh #altNav {
+  margin:0 ;
+  padding:0;
+  text-align: left;
+  background: #003057; /* Old browsers */
+  background-color:#003057;
+  color:#fff;
+  width:100%;
+  text-transform:uppercase;
+    font-size:0.9rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  border-top:2px solid #0099D8;
+  border-bottom:2px solid #FFF;
+}
+
+#wrapper-rnh   #altNav ul {
+  overflow: auto;
+  list-style-type: none;
+  text-align: center;
+  margin:0 ;
+  -webkit-padding-start: 0;
+  width:100%;
+
+}
+
+#wrapper-rnh  #altNav li {
+  height: 30px;
+  display: inline-block;
+  padding:6px;
+  margin-right: 0;
+ // border-right: 1px solid #aaa;
+  border-right: none;
+  color: #fff;
+  width:154px;
+  float:left;
+
+}
+
+#wrapper-rnh  #altNav li:last-child  {
+  border-right: none;
+  padding-right:0;
+}
+#wrapper-rnh  #altNav li:last-child  {
+  margin-left:0;
+}
+#wrapper-rnh  #altNav li a {
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+#wrapper-rnh  #altNav li a {
+  color: #fff;
+}
+#wrapper-rnh  #altNav li a:hover {
+  color: #0099d8;
+}
+
+// =====  END ALT NAV  ========   //
+
+#rnh-goal {
   width:100%;
   margin:0;
   padding:0;
   padding:80px;
 }
 
-#header-rnh .logo_rnh  {
+#rnh-goal .logo_rnh  {
   float:left;
   width:50%;
 }
@@ -77,11 +169,11 @@
   border-radius: 20px;
 }
 
-#header-rnh   .Box {
+#rnh-goal   .Box {
     padding-top:40px;
 }
 
-#header-rnh    .-bar {
+#rnh-goal    .-bar {
   background-color:#0099D8;
 
 }
@@ -407,7 +499,7 @@ border: 0px!important;
 
   @media only screen and (max-width:1299px)  {
 
-    #header-rnh .logo_rnh  {
+    #rnh-goal .logo_rnh  {
       width:60%;
     }
 
@@ -442,7 +534,7 @@ border: 0px!important;
        font-size: 16px;
      }
 
-     #header-rnh .logo_rnh  {
+     #rnh-goal .logo_rnh  {
        width:70%;
      }
 
@@ -571,8 +663,18 @@ border: 0px!important;
        font-size: 14px;
      }
 
-     #header-rnh .logo_rnh  {
+     #rnh-goal .logo_rnh  {
        width:80%;
+     }
+
+     #wrapper-rnh  .logoText {
+       margin:12px 60px;
+       font-size: 18px;
+       clear:both;
+
+     }
+     #wrapper-rnh   #header {
+       height:120px;
      }
 
 
@@ -612,7 +714,7 @@ border: 0px!important;
     .colGoalTitle {
       display:none;
     }
-    #header-rnh .logo_rnh  {
+    #rnh-goal .logo_rnh  {
       width:96%;
       margin:auto;
       float:none;
