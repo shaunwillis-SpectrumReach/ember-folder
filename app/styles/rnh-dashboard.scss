@@ -152,7 +152,7 @@
   padding:80px;
 }
 
-#rnh-goal .logo_rnh  {
+#rnh-goal .logo_rnh, #rnh-ovTitle .logo_rnh {
   float:left;
   width:50%;
 }
@@ -499,7 +499,7 @@ border: 0px!important;
 
   @media only screen and (max-width:1299px)  {
 
-    #rnh-goal .logo_rnh  {
+    #rnh-goal .logo_rnh, #rnh-ovTitle .logo_rnh  {
       width:60%;
     }
 
@@ -534,7 +534,7 @@ border: 0px!important;
        font-size: 16px;
      }
 
-     #rnh-goal .logo_rnh  {
+     #rnh-goal .logo_rnh, #rnh-ovTitle .logo_rnh  {
        width:70%;
      }
 
@@ -663,7 +663,7 @@ border: 0px!important;
        font-size: 14px;
      }
 
-     #rnh-goal .logo_rnh  {
+     #rnh-goal .logo_rnh, #rnh-ovTitle .logo_rnh  {
        width:80%;
      }
 
@@ -714,7 +714,7 @@ border: 0px!important;
     .colGoalTitle {
       display:none;
     }
-    #rnh-goal .logo_rnh  {
+    #rnh-goal .logo_rnh, #rnh-ovTitle .logo_rnh  {
       width:96%;
       margin:auto;
       float:none;

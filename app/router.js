@@ -49,6 +49,8 @@ Router.map(function() {
   this.route('reachnewheights', function() {
     this.route('admin');
     this.route('dashboard');
+    this.route('overview');
+    this.route('faqs');
   });
   this.route('launchpad');
 });
