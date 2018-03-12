@@ -9,6 +9,35 @@
   color:#fff;
   text-align:left;
 }
+
+.subTitle {
+  clear: both;
+  position:absolute;
+  bottom:20px;
+  left:calc((100vw - 1280px)/2);
+  max-width:1100px;
+  float:center;
+  margin: 0 auto;
+  padding:0;
+  text-align:left;
+  }
+
+.quote {
+  font-family: "Times New Roman", serif !important;
+  font-size: 2.0rem !important;
+  font-style: italic;
+  font-weight: 800 !important;
+  color:#0099D8 !important;
+  text-align: center;
+  margin:auto;
+  padding:3.0rem 0;
+}
+
+#specifics h2, #specifics img,  #win h2, #win img {
+  padding:18px 0;
+}
+
+
 #rnh-stickyFooter {
   background: none;
   background-color:#bfc9d2;
@@ -72,6 +101,58 @@
 
 }
 
+/*  ////////////////////  MEDIUM SMALL  //////////////  */
+
+@media only screen and (max-width: 1299px) {
+
+.subTitle {
+  left:calc((100vw - 1120px)/2);
+  max-width:929px;
+  }
+
+}
+
+/*  ////////////////////  MEDIUM SMALL  //////////////  */
+
+@media only screen and (max-width: 1200px) {
+
+.subTitle {
+  left:calc((100vw - 929px)/2);
+  max-width:929px;
+  }
+
+}
+
+/*  ////////////////////  MEDIUM SMALL  //////////////  */
+
+@media only screen and (max-width: 1024px) {
+
+#goodword img {
+      padding:16px;
+    }
+
+}
+
+
+/*  ////////////////////  MEDIUM SMALL  //////////////  */
+
+@media only screen and (max-width: 991px) {
+
+  #rnh-ovTitle h4 {
+      margin-top:-30px;
+    }
+
+
+.subTitle {
+  left:calc((100vw - 700px)/2);
+  max-width:800px;
+  }
+  #goodword img {
+      padding:16px;
+    }
+
+}
+
 /*  ////////////////////  MEDIA SMALL  //////////////  */
 
 @media only screen and (max-width: 767px) {
@@ -90,11 +171,51 @@
     max-width:12vmin;
 
   }
+  .subTitle {
+    left:calc((100vw - 520px)/2);
+    max-width:530px;
+    }
 
   #rnh-stickyFooter  .rnh-copyright p {
     color:#003057;
     text-align: center;
     font-size:9px;
+  }
+
+}
+
+
+/*  ////////////////////  MEDIUM SMALL  //////////////  */
+
+@media only screen and (max-width: 575px) {
+
+  #rnh-ovTitle {
+    background-size: cover;
+    min-height:10vmin;
+  }
+
+
+#rnh-ovTitle h4 {
+    margin-top:-40px;
+  }
+
+.subTitle {
+
+  clear: both;
+  position:relative;
+  float:none;
+  left:0;
+  margin-left:16px;
+  margin-top:60px;
+  bottom:-50px;
+  padding:0;
+  text-align:left;
+  max-width:480px;
+  }
+  .quote {
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    padding:2.0rem 0;
   }
 
 }
