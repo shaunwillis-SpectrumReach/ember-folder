@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="784px" height="86px" viewBox="0 0 784 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>rnh_long_logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="5.52249777%" x2="-1.53403001%" y2="72.5263005%" id="linearGradient-1">
+            <stop stop-color="#0099D8" offset="0%"></stop>
+            <stop stop-color="#003057" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="70.1760166%" y1="83.1054688%" x2="70.1760173%" y2="18.359375%" id="linearGradient-2">
+            <stop stop-color="#003057" offset="0%"></stop>
+            <stop stop-color="#0099D8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="rnh_long_logo">
+            <g id="Group-11">
+                <path d="M735.855455,38.4789694 L688.663084,0.725072796 C687.341428,-0.0225547995 686.17542,-0.0716097547 685.165059,0.57790793 C684.154698,1.22742562 683.685602,2.53494379 683.757771,4.50046246 L683,80.0082558 C683.216506,81.4698388 683.938192,82.4893049 685.165059,83.0666539 C686.391926,83.644003 687.87255,83.5683843 689.606932,82.839798 L768.303323,22.0119915 C769.458021,21.1446189 770.03537,20.2064267 770.03537,19.1974149 C770.03537,18.1884031 769.653618,17.3794244 768.890115,16.7704789 L759.210075,8.80513194 L781.618435,7.33200471 L782.103979,26.208953 C782.141126,27.0344045 781.979278,27.6636361 781.618435,28.0966479 C781.257592,28.5296597 780.790208,28.5296597 780.216284,28.0966479 L771.721657,22.4335634 L780.216284,29.9843427 C781.474747,30.6594383 782.51948,30.5278901 783.350482,29.5896979 C783.791085,29.0922619 784.004816,27.965347 783.991674,26.208953 L783.991674,7.33200471 C784.056585,6.30879469 783.741969,5.53688604 783.047826,5.01627878 C782.353683,4.49567151 781.409836,4.32373274 780.216284,4.50046246 L758.127546,5.44430988 C756.947165,5.72831491 756.15331,6.52383009 755.745981,7.83085541 C755.338651,9.13788073 755.630024,10.2300604 756.620098,11.1073944 L766.058573,19.6020211 L688.663084,77.1767135 L687.546624,3.50073751 L713.203117,22.4335634 L735.855455,38.4789694 Z" id="Path-2" fill="url(#linearGradient-1)"></path>
+                <text id="REACH" font-family="Gotham-Book, Gotham" font-size="64" font-weight="300" letter-spacing="-1" fill="#003057">
+                    <tspan x="0" y="53">REAC</tspan>
+                    <tspan x="180.32" y="53">H</tspan>
+                </text>
+                <text id="NEW" fill="url(#linearGradient-2)" font-family="Gotham-Bold, Gotham" font-size="64" font-weight="bold">
+                    <tspan x="232" y="54">NEW</tspan>
+                </text>
+                <text id="HEIGHTS" font-family="Gotham-Book, Gotham" font-size="64" font-weight="300" letter-spacing="-1.89999998" fill="#003057">
+                    <tspan x="397" y="54">HEIGHT</tspan>
+                    <tspan x="636.032" y="54">S</tspan>
+                </text>
+                <text id="NEW-BUSINESS-SALES-I" font-family="Gotham-Medium, Gotham" font-size="24" font-weight="400" letter-spacing="0.400000006" fill="#0099D8">
+                    <tspan x="236" y="81">NEW BUSINESS SALES INCENTIV</tspan>
+                    <tspan x="654.944" y="81">E</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
