@@ -3,32 +3,57 @@
     height: 100%;
     margin:0;
     border:0;
-    font-family: "Gotham",  sans-serif;
-    // font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans",  sans-serif;
     font-size: 14px;
     text-align: center;
     background-color: #BFC9D2;
 }
 
 #wrapper-rnh h1 {
-  font-family: 'Gotham', 'Open Sans', sans-serif;
+  font-family: 'Gotham', sans-serif;
   color: #BFC9D2;
-  font-size: 60px;
+  font-size: 64px;
+  letter-spacing: 1.2px;
 }
 
 #wrapper-rnh h2 {
   font-family: 'Open Sans', sans-serif;
   color: #466d8f;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: 600;
   line-height: 36px;
+  letter-spacing: 0.4px;
 }
 
 #wrapper-rnh h3,  {
   font-family: 'Open Sans', sans-serif;
   color: #003057;
-  font-size: 30px;
+  font-size: 18px;
   font-weight: 600;
+  letter-spacing: 0.3px;
+}
+#wrapper-rnh h4,  {
+  font-family: 'Open Sans', sans-serif;
+  color: #003057;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#wrapper-rnh h5,  {
+  font-family: 'Open Sans', sans-serif;
+  color: #4f2972;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+#wrapper-rnh h6,  {
+  font-family: 'Open Sans', sans-serif;
+  color: #003057;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.3px;
 }
 #wrapper-rnh p {
   font-family: 'Open Sans', sans-serif;
@@ -55,7 +80,7 @@
   float:left;
     padding-top:30px;
     padding-bottom:0px;
-    // width:100%;
+    //width:40%;
     height:auto;
 
 }
@@ -569,13 +594,14 @@ border: 0px!important;
 
 
 
-    /* //////////////////////  MEDIA  991   /////////////////////  */
+    /* //////////////////////  MEDIA  1024 (ipad)    /////////////////////  */
 
     @media only screen and (max-width:1024px)  {
 
   #wrapper-rnh  .datatable {
     margin-top:-76px;
   }
+
 
 }
 
@@ -584,6 +610,7 @@ border: 0px!important;
   /* //////////////////////  MEDIA  991   /////////////////////  */
 
   @media only screen and (max-width:991px)  {
+
 
 
      #wrapper-rnh h1 {
@@ -643,10 +670,19 @@ border: 0px!important;
       }
   }
 
-  /* //////////////////////  MEDIA  1200   /////////////////////  */
+  /* //////////////////////  MEDIA  767   /////////////////////  */
 
   @media only screen and (max-width:767px)  {
 
+    #wrapper-rnh  .srilogo  {
+      margin-left: 30px;
+      float:left;
+        padding-top:50px;
+        padding-bottom:0px;
+        width:65%;
+        height:auto;
+
+    }
 
      #wrapper-rnh h1 {
        font-size: 36px;
@@ -675,6 +711,11 @@ border: 0px!important;
      }
      #wrapper-rnh   #header {
        height:120px;
+     }
+
+     #wrapper-rnh  #altNav li {
+       width:90px;
+      font-size:11px;
      }
 
 
