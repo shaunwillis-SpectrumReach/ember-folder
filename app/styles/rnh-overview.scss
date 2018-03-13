@@ -9,6 +9,10 @@
   color:#fff;
   text-align:left;
 }
+#rnh-ovTitle h2 {
+  margin-top:-30px;
+}
+
 
 .subTitle {
   clear: both;
@@ -22,19 +26,18 @@
   text-align:left;
   }
 
-  #specifics h2, #specifics img,  #win h2, #win img,   {
-    padding:18px 0 !important;
+  #specifics h2, #specifics img,  #win h2, #win h2, #win img,   {
+    padding:24px 0 !important;
   }
 
 .quote {
   font-size: 36px !important;
   font-family: 'Noto Serif', serif !important;
   font-style: italic !important;
-  font-weight: 700 !important;
+  font-weight: 400 !important;
   color:#0099D8 !important;
   text-align: center;
-  margin:auto;
-  padding:60px 0 !important;
+  margin:42px auto;
   line-height:3.0rem !important;
 }
 
@@ -84,6 +87,38 @@
 
 /*  ////////////////////  MEDIUM SMALL  //////////////  */
 
+@media only screen and (max-width: 1299px) {
+
+.subTitle {
+  left:calc((100vw - 1120px)/2);
+  max-width:929px;
+  }
+
+  #rnh-ovTitle h2 {
+    margin-top:-20px;
+
+  }
+}
+
+/*  ////////////////////  MEDIUM SMALL  //////////////  */
+
+@media only screen and (max-width: 1200px) {
+
+.subTitle {
+  left:calc((100vw - 929px)/2);
+  max-width:929px;
+  }
+
+  #rnh-ovTitle h2 {
+    margin-top:-20px;
+  }
+
+
+}
+
+
+/*  ////////////////////  MEDIUM SMALL  //////////////  */
+
 @media only screen and (max-width: 1024px) {
   #wrapper-rnh #contentHome #homepageCornerLogo  {
     height:24vmin;
@@ -100,35 +135,6 @@
 
   }
 
-
-}
-
-/*  ////////////////////  MEDIUM SMALL  //////////////  */
-
-@media only screen and (max-width: 1299px) {
-
-.subTitle {
-  left:calc((100vw - 1120px)/2);
-  max-width:929px;
-  }
-
-}
-
-/*  ////////////////////  MEDIUM SMALL  //////////////  */
-
-@media only screen and (max-width: 1200px) {
-
-.subTitle {
-  left:calc((100vw - 929px)/2);
-  max-width:929px;
-  }
-
-}
-
-/*  ////////////////////  MEDIUM SMALL  //////////////  */
-
-@media only screen and (max-width: 1024px) {
-
 #goodword img {
       padding:16px;
     }
@@ -140,15 +146,18 @@
 
 @media only screen and (max-width: 991px) {
 
-  #rnh-ovTitle h4 {
-      margin-top:-30px;
+  #rnh-ovTitle h2 {
+      margin-top:-10px;
     }
-
+  #rnh-ovTitle .logo_rnh {
+      margin-left:-4px !important;
+    }
 
 .subTitle {
   left:calc((100vw - 700px)/2);
   max-width:800px;
   }
+
   #goodword img {
       padding:16px;
     }
@@ -197,8 +206,8 @@
   }
 
 
-#rnh-ovTitle h4 {
-    margin-top:-40px;
+#rnh-ovTitle h2 {
+    margin-top:-10px;
   }
 
 .subTitle {
@@ -209,15 +218,14 @@
   left:0;
   margin-left:16px;
   margin-top:60px;
-  bottom:-50px;
+  bottom:-20px;
   padding:0;
   text-align:left;
-  max-width:480px;
+  max-width:410px;
   }
   .quote {
     font-size: 1.2rem !important;
     font-weight: 600 !important;
-    padding:2.0rem 0;
   }
 
 }

@@ -18,7 +18,7 @@
 
 #wrapper-rnh h2 {
   font-family: 'Open Sans', sans-serif;
-  color: #466d8f;
+  color: #003057;
   font-size: 24px;
   font-weight: 600;
   line-height: 36px;
@@ -41,7 +41,7 @@
 
 #wrapper-rnh h5,  {
   font-family: 'Open Sans', sans-serif;
-  color: #4f2972;
+  color: #003057;
   font-size: 18px;
   font-style: italic;
   font-weight: 800;
@@ -57,16 +57,10 @@
 }
 #wrapper-rnh p {
   font-family: 'Open Sans', sans-serif;
-  color: #003057;
-  font-size: 18px;
-  font-weight: 600;
+  color: #596679;
+  font-size: 14px;
+  font-weight: 400;
 }
-// #wrapper-rnh p {
-//   font-family: 'Open Sans', sans-serif;
-//   color: #003057;
-//   font-size: 16px;
-//
-// }
 #wrapper-rnh   #header {
   background: none;
   background-color: #002039;
@@ -80,17 +74,7 @@
   float:left;
     padding-top:30px;
     padding-bottom:0px;
-    //width:40%;
     height:auto;
-
-}
-#wrapper-rnh  .logoText {
-  color:#fff;
-  text-align: left;
-  margin:40px 20px;
-  float:left;
-  font-size: 24px;
-  font-family: "Gotham",  sans-serif;
 
 }
 
@@ -121,6 +105,9 @@
   font-weight: 600;
   border-top:2px solid #0099D8;
   border-bottom:2px solid #FFF;
+}
+#wrapper-rnh #altNav .active {
+  color:#0099D8;
 }
 
 #wrapper-rnh   #altNav ul {
@@ -179,7 +166,10 @@
 
 #rnh-goal .logo_rnh, #rnh-ovTitle .logo_rnh {
   float:left;
-  width:50%;
+  width:770px;
+  height:auto;
+  max-width:80%;
+  margin-left:-9px;
 }
 
 
@@ -541,6 +531,9 @@ border: 0px!important;
 
   @media only screen and (max-width:1200px)  {
 
+     #rnh-ovTitle {
+     }
+
 
      #wrapper-rnh h1 {
        font-size: 54px;
@@ -685,7 +678,7 @@ border: 0px!important;
     }
 
      #wrapper-rnh h1 {
-       font-size: 36px;
+       font-size: 30px;
      }
     #wrapper-rnh h2 {
       font-size: 18px;
@@ -756,10 +749,16 @@ border: 0px!important;
       display:none;
     }
     #rnh-goal .logo_rnh, #rnh-ovTitle .logo_rnh  {
-      width:96%;
+      width:100%;
       margin:auto;
       float:none;
     }
+
+    #wrapper-rnh  #altNav li {
+      width:84px;
+     font-size:10px;
+    }
+
 
 
     .divisionBtn {
