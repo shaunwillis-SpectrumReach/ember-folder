@@ -31,6 +31,7 @@
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.3px;
+  line-height:22px;
 }
 #wrapper-rnh h4,  {
   font-family: 'Open Sans', sans-serif;
@@ -39,13 +40,14 @@
   font-weight: 400;
 }
 
-#wrapper-rnh h5,  {
+#wrapper-rnh h5, #wrapper-rnh .h5,  {
   font-family: 'Open Sans', sans-serif;
-  color: #003057;
+  color: #4F2972;
   font-size: 18px;
   font-style: italic;
   font-weight: 800;
   letter-spacing: 0.3px;
+  line-height: 28px;
 }
 #wrapper-rnh h6,  {
   font-family: 'Open Sans', sans-serif;
@@ -61,6 +63,19 @@
   font-size: 14px;
   font-weight: 400;
 }
+
+.fontGray {
+  color: #596679 !important;
+}
+#wrapper-rnh .ProgressPercent {
+    font-size: 36px;
+    letter-spacing: 0.4px ;
+  }
+#wrapper-rnh .IndvProgressPercent {
+font-size: 28px;
+letter-spacing: 0.4px ;
+}
+
 #wrapper-rnh   #header {
   background: none;
   background-color: #002039;
@@ -70,7 +85,7 @@
 }
 
 #wrapper-rnh  .srilogo  {
-  margin-left: 60px;
+  margin-left: 50px;
   float:left;
     padding-top:30px;
     padding-bottom:0px;
@@ -128,7 +143,7 @@
  // border-right: 1px solid #aaa;
   border-right: none;
   color: #fff;
-  width:154px;
+  width:120px;
   float:left;
 
 }
@@ -160,8 +175,7 @@
 #rnh-goal {
   width:100%;
   margin:0;
-  padding:0;
-  padding:80px;
+  padding:60px 0 ;
 }
 
 #rnh-goal .logo_rnh, #rnh-ovTitle .logo_rnh {
@@ -175,8 +189,9 @@
 
 .companyGoal {
   clear:both;
-  padding-top:60px;
+  padding-top:140px;
 }
+
 .companyGoal .progress {
   clear:both;
   background-color:white;
@@ -193,12 +208,10 @@
 
 }
  .footnote-dash  {
-  font-size:16px;
   text-align: left;
   padding:0 0 0 0px;
   margin-top:-12px;
   margin-left:4px;
-  color: #003057;
 }
 
 .dashboard {
@@ -239,14 +252,11 @@
 }
 
 
-#AE-dash .imageMine {
+#AE-dash .imageMine, #MGR-dash .imageMine  {
 padding:0 20px;
 }
 
-#AE-dash .userPic {
-
-}
-#AE-dash .imageMine img {
+#AE-dash .imageMine img, #MGR-dash .imageMine img  {
   /* clip-path: circle(90px at center);  */
   border:2px solid #003057;
   border-radius: 50%;
@@ -263,18 +273,22 @@ padding:0 20px;
   padding:20px 0 0 12px;
 }
 
-#AE-dash .userData .title {
+#AE-dash .userData .title, #MGR-dash .userData .title  {
   float:left;
   text-align:right;
   border-right: 3px solid #003057;
   padding-right:12px;
 }
-#AE-dash .userData .data {
+#AE-dash .userData .data, #MGR-dash .userData .data {
   float:left;
   text-align: left;
   padding-left:12px;
-
 }
+
+#AE-dash .data h2, #MGR-dash .data h2  {
+  color: #466D8F;
+}
+
 #AE-dash  .-bar {
   background-color:#0099D8;
 
@@ -286,41 +300,12 @@ padding:0 20px;
     border-radius: 20px;
 }
 
-
-#MGR-dash .imageMine {
-padding:0 20px;
-}
-#MGR-dash .userPic {
-
-}
-#MGR-dash .imageMine img {
-  // clip-path: circle(100px at center);
-  border:2px solid #003057;
-  border-radius: 50%;
-  width:200px;
-  height:auto;
-  margin-top:0;
-  margin-left:0px;
-  float:left;
-  // padding:0 20px;
-}
 #MGR-dash .imageMine .userData {
   float:left;
   padding:8px 0 0 12px;
 }
 
-#MGR-dash .userData .title {
-  float:left;
-  text-align:right;
-  border-right: 3px solid #003057;
-  padding-right:12px;
-}
-#MGR-dash .userData .data {
-  float:left;
-  text-align: left;
-  padding-left:12px;
 
-}
 #MGR-dash  .progress-bar {
   background-color:#003057;
 
@@ -331,6 +316,16 @@ padding:0 20px;
     border:2px solid #003057;
     border-radius: 20px;
 }
+
+#MGR-dash  .IndyTitle {
+   text-align:left;
+   padding:80px 0 20px 0;
+ }
+
+#MGR-dash  .indyData  {
+  margin:20px 0;
+}
+
 #MGR-dash  .indyData img {
   border:1px solid #003057;
   border-radius: 50%;
@@ -540,22 +535,39 @@ border: 0px!important;
      }
 
     #wrapper-rnh h2 {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 30px;
 
     }
 
     #wrapper-rnh h3,  {
-      font-size: 22px;
+      font-size: 16px;
     }
-     #wrapper-rnh p {
-       font-size: 16px;
-     }
+    #wrapper-rnh h4,  {
+    font-size: 14px;
+  }
+
+  #wrapper-rnh h5,  {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+  }
+  #wrapper-rnh h6,  {
+    font-size: 12px;
+  }
+  #wrapper-rnh p {
+    font-size: 13px;
+  }
 
      #rnh-goal .logo_rnh, #rnh-ovTitle .logo_rnh  {
        width:70%;
      }
 
+
+  .companyGoal {
+       clear:both;
+       padding-top:100px;
+     }
 
      #AE-dash .imageMine img {
        width:160px;
@@ -566,6 +578,10 @@ border: 0px!important;
        width:160px;
        height:auto;
      }
+#MGR-dash  .IndyTitle {
+   text-align:left;
+   padding:60px 0 10px 0;
+ }
 
     .divisionBtn {
         background-size: cover;
@@ -587,7 +603,7 @@ border: 0px!important;
 
 
 
-    /* //////////////////////  MEDIA  1024 (ipad)    /////////////////////  */
+    /* //////////////////////  MEDIA  1024 (ipad Pro)    /////////////////////  */
 
     @media only screen and (max-width:1024px)  {
 
@@ -595,12 +611,31 @@ border: 0px!important;
     margin-top:-76px;
   }
 
+  #wrapper-rnh .ProgressPercent {
+      font-size: 30px;
+      letter-spacing: 0.4px ;
+    }
+  #wrapper-rnh .IndvProgressPercent {
+    font-size: 24px;
+    letter-spacing: 0.4px ;
+    }
+
+#AE-dash .userPic,   #MGR-dash .userPic {
+    width:120px;
+    float:left;
+    padding-top:28px;
+    }
+
+#MGR-dash  .IndyTitle {
+       text-align:left;
+       padding:60px 0 10px 0;
+     }
 
 }
 
 
 
-  /* //////////////////////  MEDIA  991   /////////////////////  */
+  /* //////////////////////  MEDIA  991  iPad  /////////////////////  */
 
   @media only screen and (max-width:991px)  {
 
@@ -610,55 +645,104 @@ border: 0px!important;
        font-size: 48px;
      }
 
-    #wrapper-rnh h2 {
-      font-size: 20px;
-    }
-
-    #wrapper-rnh h3,  {
-      font-size: 28px;
-    }
-     #wrapper-rnh p {
+     #wrapper-rnh h2 {
        font-size: 18px;
+       line-height: 24px;
+
      }
 
-     #AE-dash .imageMine {
+     #wrapper-rnh h3,  {
+       font-size: 14px;
+     }
+     #wrapper-rnh h4,  {
+     font-size: 13px;
+   }
+
+   #wrapper-rnh h5,  {
+     font-size: 14px;
+     font-style: italic;
+     font-weight: 600;
+   }
+   #wrapper-rnh h6,  {
+     font-size: 11px;
+   }
+   #wrapper-rnh p {
+     font-size: 12px;
+   }
+
+   #wrapper-rnh  #altNav li {
+     width:100px;
+    font-size:12px;
+   }
+
+   #rnh-goal {
+     padding:40px 0 ;
+   }
+
+   .toTop img {
+       margin-right:0px !important;
+   }
+
+   #wrapper-rnh  .srilogo {
+     margin-left: 40px !important;
+   }
+
+ .companyGoal {
+      clear:both;
+      padding-top:80px;
+    }
+
+ #AE-dash .imageMine {
        margin-top:36px;
      }
-     #MGR-dash .imageMine {
+  #MGR-dash .imageMine {
        margin-top:36px;
      }
-     #AE-dash .imageMine img {
+  #AE-dash .imageMine img {
        width:200px;
        height:auto;
      }
 
-     #MGR-dash .imageMine img {
+  #MGR-dash .imageMine img {
        width:200px;
        height:auto;
      }
-     #MGR-dash .teamProgress {
-     }
 
-     #AE-dash .teamProgress {
-     }
-     #MGR-dash .teamProgress {
+ #wrapper-rnh .ProgressPercent {
+     font-size: 28px;
+     letter-spacing: 0.4px ;
+   }
+ #wrapper-rnh .IndvProgressPercent {
+   font-size: 20px;
+   letter-spacing: 0.4px ;
+   }
+
+
+ #AE-dash .userPic,   #MGR-dash .userPic {
+         width:120px;
+         float:left;
+         padding-top:14px;
+         margin-right:30px;
+         }
+
+ #MGR-dash  .IndyTitle {
+            text-align:left;
+            padding:20px 0 0px 0;
+          }
+
+  #MGR-dash .teamProgress {
        padding-top:36px;
      }
 
-     #AE-dash .teamProgress {
-     }
-     #MGR-dash .indyData {
-
-     }
-     .tooltiptext {
+  .tooltiptext {
        width: 90vw;
        }
-    .divisionBtn {
+.divisionBtn {
         background-size: cover;
         width:171px;
         height:66px;
       }
-    .hideUnder992 {
+.hideUnder992 {
         display:none;
       }
   }
@@ -680,17 +764,7 @@ border: 0px!important;
      #wrapper-rnh h1 {
        font-size: 30px;
      }
-    #wrapper-rnh h2 {
-      font-size: 18px;
-      line-height:24px;
-    }
 
-    #wrapper-rnh h3,  {
-      font-size: 20px;
-    }
-     #wrapper-rnh p {
-       font-size: 14px;
-     }
 
      #rnh-goal .logo_rnh, #rnh-ovTitle .logo_rnh  {
        width:80%;
@@ -760,14 +834,57 @@ border: 0px!important;
     }
 
 
-
-    .divisionBtn {
+    #wrapper-rnh #altNav {
+        font-size:0.7rem;
+    }
+  #rnh-goal  .companyGoal {
+         clear:both;
+         padding-top:40px;
+       }
+  #rnh-goal .companyGoal h3 {
+    font-size:12px;
+    font-weight:400;
+       }
+  .divisionBtn {
         background-size: cover;
         width:24vw;
         height:4vh;
       }
-    #wrapper-rnh  .datatable {
+
+ #wrapper-rnh .ProgressPercent {
+       font-size: 20px;
+       letter-spacing: 0.4px ;
+     }
+ #wrapper-rnh .IndvProgressPercent {
+     font-size: 18px;
+     letter-spacing: 0.4px ;
+     }
+
+
+ #AE-dash .userPic,   #MGR-dash .userPic {
+    display:none;
+     }
+
+#MGR-dash  .IndyTitle {
+      text-align:left;
+      padding:20px 0 0 14px;
+    }
+
+#MGR-dash  .indyData {
+       margin:10px 0;
+     }
+
+
+#AE-dash .imageMine, #MGR-dash .imageMine {
+           margin:auto;
+           margin-top:0px;
+         }
+
+  #wrapper-rnh  .datatable {
         margin-top:-56px;
       }
-
+#Filters .filters {
+  margin:10px auto;
+  text-align: center;
+}
 }
