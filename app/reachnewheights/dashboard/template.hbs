@@ -3,25 +3,24 @@
   <section id="header">
 
    <div class="userNameTop">Welcome, {{ currentUser.pid.firstname}}  <img style="border-radius: 50%;" src="{{currentUser.pid.fullProfilePicUrl}}" width="25"></div>
-   <div ><img class="srilogo" src="/assets/img/rnh/sri_logo.svg" > </div>
+   <div ><a href="/launchpad"><img class="srilogo" src="/assets/img/rnh/sri_logo.svg" ></a> </div>
     <!-- <div> <div class="logoText" >Spectrum Reach Incentives</div></div> -->
   </section>
 <section id="altNav" >
-  <div class="container  " >
+  <div class="  " style="padding-left:24px;"  >
     <ul>
         <li><a href="/launchpad">Launchpad</a></li>
-        <!-- <li><a href="/firstlook/leaderboard/elite-ae15m">Standings</a></li> -->
-        <!-- <li>Reach New Heights</li> -->
+        <li><a href="/reachnewheights/overview">Overview</a></li>
+        <li class="active">Standings</li>
+        <!-- <li><a href="/reachnewheights/faqs">FAQ</a></li> -->
         {{#if currentUser.pid.isAdmin}}
           <li><a href="/reachnewheights/admin">Admin</a></li>
         {{/if}}
-        <!-- <li><a href="https://spectrumreach.typeform.com/to/zdQZSe" target="_blank">Account</a></li> -->
-        <!-- <li><a href="/firstlook/logout">Sign Out</a></li> -->
     </ul>
   </div>
   </section>
 
-    <section id="rnh-goal" style="padding: 60px 0 60px 0;" >
+    <section id="rnh-goal" style="" >
       <div  class="container "  >
           <div class="row" >
 
@@ -41,7 +40,7 @@
      {{#if currentUser.pid.jobtitle }}
      <div  class="companyGoal col-lg-12 " >
       <div class=" progressBox"  >
-        <div class="colGoalTitle" style="float:left;"> <h1 style="color:#fff;">COLLECTIVE GOAL</h1></div>   <div style="float:right; color:#fff;"><h1 style="color:#fff;">92% </h1></div>
+        <div  style="float:left;"> <h1 style="color:#fff;"><span class="colGoalTitle">COLLECTIVE </span>GOAL</h1></div>   <div style="float:right; color:#fff;"><h1 style="color:#fff;">92% </h1></div>
           <div class="progress" style="clear:both; background-color:white; border:1px solid #003057;">
             <div class="progress-bar Northeast-bar" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style=" width:23%; "></div>
             <div class="progress-bar South-bar" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style=" width:23%; "></div>
@@ -49,18 +48,18 @@
             <div class="progress-bar West-bar" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style=" width:23%; "></div>
           </div>
 
-          <div class="progress" style="clear:both; background-color:transparent; border:0px; height: 42px;">
+          <div class="progress" style="clear:both; background-color:transparent; border:0px; min-height: 48px;">
             <div class="border-right-line" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style=" width:23%; height: 9px;">
-              <div class="northeast-bar-label" style=" "><p>Northeast 23%</p></div>
+              <div class="northeast-bar-label" style=" "><h3>Northeast 23%</h3></div>
             </div>
             <div class="border-right-line" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style=" width:23%; height: 9px;">
-              <div class="south-bar-label" style=" "><p>South 23%</p></div>
+              <div class="south-bar-label" style=" "><h3>South 23%</h3></div>
             </div>
             <div class="border-right-line" role="progressbar" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100" style=" width:24%; height: 9px;">
-              <div class="central-bar-label" style=" "><p>Central 23%</p></div>
+              <div class="central-bar-label" style=" "><h3>Central 23%</h3></div>
             </div>
             <div class="border-right-line" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style=" width:23%; height: 9px;">
-              <div class="west-bar-label" style=""><p>West 23%</p></div>
+              <div class="west-bar-label" style=""><h3>West 23%</h3></div>
             </div>
           </div>
 
@@ -89,7 +88,7 @@
            <div class=" "  style="text-align:left; ">
              <div class=" " >
               <h1>DASHBOARD</h1>
-              <p class="footnote-dash">Personal Data Viewport</p>
+              <h3 class="footnote-dash">Personal Data Viewport</h3>
              </div>
            </div>
          </div >
@@ -100,7 +99,7 @@
 
         <div class="userData " style="">
           <div class="title">
-            <h2 style="font-weight:600; color: #003057;">Name<br>ID#<br>Manager<br>Location</h2>
+            <h2 style="">Name<br>ID#<br>Manager<br>Location</h2>
           </div>
           <div class="data">
             <h2>{{ currentUser.pid.firstname}} {{ currentUser.pid.lastname}}<br>{{ currentUser.pid.pid}}<br>{{ currentUser.pid.managername}}<br>{{ currentUser.pid.division}} / {{ currentUser.pid.region}}</h2>
@@ -115,7 +114,7 @@
          {{#if model.managername}}
 
         {{#each model.managername as |personal|}}
-       <div  style="float:left;"><p>${{number-format personal.dollars decimals=0}} / ${{number-format personal.goal decimals=0}}</p></div>
+       <div  style="float:left;"><h3>${{number-format personal.dollars decimals=0}} / ${{number-format personal.goal decimals=0}}</h3></div>
 
        <div  style="float:right;">&nbsp;</div>
 
@@ -131,7 +130,7 @@
           </div>
        {{/if}}
 
-         <div style="float:left; margin-top:10px;"><p>Team Progress % to collective goal</p></div>   <div style="float:right; margin-top:10px;"><h3 class="dashCurrentTotal">{{number-format (mult (div personal.dollars personal.goal) 100) decimals=0}}%</h3></div>
+         <div style="float:left; margin-top:10px;"><h3>Team Progress % to collective goal</h3></div>   <div style="float:right; margin-top:10px;"><h3 class="ProgressPercent">{{number-format (mult (div personal.dollars personal.goal) 100) decimals=0}}%</h3></div>
          {{/each}}
 
          {{else}}
@@ -143,14 +142,14 @@
       </span>
       </div>
          <div class="" style="">
-     <div  style="float:left;" class=""><p><img class="logo_rnh  " src="/assets/img/rnh/error.svg" width="24" > DATA ERROR</p></div>
+     <div  style="float:left;" class=""><h3><img class="logo_rnh  " src="/assets/img/rnh/error.svg" width="24" > DATA ERROR</h3></div>
            <div  style="float:right;">&nbsp;</div>
 
            <div class="progress" >
              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style=" width:0%; ">
              </div>
            </div>
-           <div style="float:left; margin-top:10px;"><p>Team Progress % to collective goal</p></div>   <div style="float:right; margin-top:10px;"><h3>00%</h3></div>
+           <div style="float:left; margin-top:10px;"><h3>Team Progress % to collective goal</h3></div>   <div style="float:right; margin-top:10px;"><h3 class="ProgressPercent">00%</h3></div>
 
         </div>
       </div>
@@ -161,7 +160,7 @@
 
      {{#each model.mine as |personal|}}
      <div class=" col-md-12 col-lg-6 personalProgress"  >
-     <div style="float:left;"><p>${{number-format personal.dollars decimals=0}} / ${{number-format personal.goal decimals=0}}</p></div>   <div  style="float:right;">&nbsp;</div>
+     <div style="float:left;"><h3>${{number-format personal.dollars decimals=0}} / ${{number-format personal.goal decimals=0}}</h3></div>   <div  style="float:right;">&nbsp;</div>
     {{#if (gte (mult (div personal.dollars personal.goal) 100) 100)}}
     <div class="progress" >
        <div class="progress-bar {{ currentUser.pid.division}}-bar" role="progressbar" aria-valuenow="{{mult (div personal.dollars personal.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div personal.dollars personal.goal) 100}}%; ">
@@ -173,7 +172,7 @@
         </div>
       </div>
      {{/if}}
-    <div style="float:left; margin-top:10px;"><p>Personal Progress % to collective goal</p></div>   <div style="float:right; margin-top:10px;"><h3>{{number-format (mult (div personal.dollars personal.goal) 100) decimals=0}}% </h3></div>
+    <div style="float:left; margin-top:10px;"><h3>Personal Progress % to collective goal</h3></div>   <div style="float:right; margin-top:10px;"><h3 class="ProgressPercent">{{number-format (mult (div personal.dollars personal.goal) 100) decimals=0}}% </h3></div>
      </div>
      {{/each}}
 
@@ -197,7 +196,7 @@
         <div class=" "  style="text-align:left; ">
           <div class=" " >
            <h1>DASHBOARD</h1>
-           <p class="footnote-dash">Personal Data Viewport</p>
+           <h3 class="footnote-dash">Personal Data Viewport</h3>
           </div>
         </div>
       </div >
@@ -223,7 +222,7 @@
    <!--  /////////// TEAM PROGRESS   ///////////  -->
    <div class=" col-md-12 col-lg-6 teamProgress" >
      {{#each model.mine as |personal|}}
-    <div style="float:left;"><p>${{number-format personal.dollars decimals=0}} / ${{number-format personal.goal decimals=0}}</p></div>
+    <div style="float:left;"><h3>${{number-format personal.dollars decimals=0}} / ${{number-format personal.goal decimals=0}}</h3></div>
    <div  style="float:right;">&nbsp;</div>
    {{#if (gte (mult (div personal.dollars personal.goal) 100) 100)}}
     <div class="progress" >
@@ -237,7 +236,7 @@
     </div>
 
     {{/if}}
-     <div style="float:left; margin-top:10px;"><p>Team Progress % to collective goal</p></div>   <div style="float:right; margin-top:10px;"><h3>{{number-format (mult (div personal.dollars personal.goal) 100) decimals=0}}%</h3></div>
+     <div style="float:left; margin-top:10px;"><h3>Team Progress % to collective goal</h3></div>   <div style="float:right; margin-top:10px;"><h3 class="ProgressPercent">{{number-format (mult (div personal.dollars personal.goal) 100) decimals=0}}%</h3></div>
      {{/each}}
   </div>
 
@@ -249,16 +248,16 @@
 
 <!--  ///////////  EMPLOYEE DATA   /////////////   -->
 
-<div class=" col-md-12 col-lg-12" style="text-align:left; padding:40px 0;">
-  <h2>INDIVIDUAL DATA BREAKDOWN</h2>
+<div class=" col-md-12 col-lg-12 IndyTitle" style="">
+  <h2 style="color: #466D8F; ">INDIVIDUAL DATA BREAKDOWN</h2>
 </div>
 
 
 
        {{#each model.aerollup as |rollup| }}
-        <div class=" col-md-12 col-lg-3 dashboard indyData" >
+        <div class="col-sm-12 col-md-6 col-lg-4 dashboard indyData" >
          <div style="float:left; margin: 10px 10px 10px 6px;"><img style="" src="{{currentUser.pid.fullProfilePicUrl}}"></div>
-         <div  style="float:left; margin: 18px 0 0 6px;"><p  style="">{{ rollup.firstname }} {{ rollup.lastname }}</p></div>
+         <div  style="float:left; margin: 18px 0 0 6px;"><h3  style="">{{ rollup.firstname }} {{ rollup.lastname }}</h3></div>
         {{#if (gte (mult (div rollup.dollars rollup.goal) 100) 100)}}
          <div class="progress" >
            <div class="progress-bar {{ currentUser.pid.division }}-bar" role="progressbar" aria-valuenow="{{mult (div rollup.dollars rollup.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div rollup.dollars rollup.goal) 100}}%; ">
@@ -270,7 +269,7 @@
            </div>
          </div>
          {{/if}}
-          <div style="float:left; margin-top:10px;"><p>Progress % to goal</p></div>   <div style="float:right; margin-top:10px;"><h3 style="color:#003057;" >{{number-format (mult (div rollup.dollars rollup.goal) 100) decimals=0}}% </h3></div>
+          <div style="float:left; margin-top:10px;"><h3>Progress % to goal</h3></div>   <div style="float:right; margin-top:10px;"><h3 class="IndvProgressPercent" >{{number-format (mult (div rollup.dollars rollup.goal) 100) decimals=0}}% </h3></div>
 
           </div>
        {{/each}}
@@ -298,11 +297,11 @@
     <div class="row "  >
       <div class="col-lg-5">
         <div class="col-sm-9 col-lg-12 text-left" ><h1 style="color:#fff; padding-top: 3rem;">STANDINGS</h1>
-        <p class="footnote-dash" style="">Sort Data with Filters below</p>
+        <h3 class="footnote-dash" style="">Sort Data with Filters below</h3>
 
         <!-- show on mobile size only  -->
             <div class="row" id="FilterDisclaimer"  >
-              <p style=" ">Visit our desktop version for more info, searchable data, and filtering capabilities.</p>
+              <h3 style=" ">Visit our desktop version for more info, searchable data, and filtering capabilities.</h3>
             </div>
 
             </div>
@@ -312,7 +311,7 @@
 
      <div class="row col-lg-7" id="Filters"  >
       <div class=" filters " style="    padding-left: 8px;" >
-            <div style="margin:auto; text-align:center;"><p>Select tab to view each divisional roll-up</p></div>
+            <div style="margin:auto; text-align:center;"><h3>Select tab to view each divisional roll-up</h3></div>
               <div id="divCentral" class="divisionBtn divisionBtn1 divisionBtn1-Active" {{action "filterCategoryCentral"}}>
                 &nbsp;</div>
               <div id="divSouth" class="divisionBtn divisionBtn2" {{action "filterCategorySouth"}}>
@@ -323,7 +322,7 @@
                 &nbsp;</div>
 
         </div>
-      <!-- <div class="footnote"><p>Select tabs to view by Category</p></div> -->
+      <!-- <div class="footnote"><h3>Select tabs to view by Category</p></div> -->
 
     </div>
   </div>

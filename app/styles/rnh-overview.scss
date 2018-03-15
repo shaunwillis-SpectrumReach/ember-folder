@@ -9,6 +9,10 @@
   color:#fff;
   text-align:left;
 }
+#rnh-ovTitle h2 {
+  margin-top:-30px;
+}
+
 
 .subTitle {
   clear: both;
@@ -21,22 +25,44 @@
   padding:0;
   text-align:left;
   }
+  #specifics  h2   {
+   padding:20px 0 6px 0 !important;
+ }
+ #specifics img   {
+  padding:20px 0 40px 0 !important;
+}
+#win h1,   {
+  padding:0 0 24px 0  !important;
+}
 
-  #specifics h2, #specifics img,  #win h2, #win img,   {
-    padding:18px 0 !important;
+#win h2,   {
+    padding:24px 0 6px 0  !important;
+  }
+
+#win img   {
+    padding:24px 0 !important;
+  }
+
+
+  #goodword h1,   {
+    padding:10px 0 42px 0  !important;
   }
 
 .quote {
   font-size: 36px !important;
   font-family: 'Noto Serif', serif !important;
   font-style: italic !important;
-  font-weight: 700 !important;
+  font-weight: 400 !important;
   color:#0099D8 !important;
   text-align: center;
-  margin:auto;
-  padding:60px 0 !important;
+  margin:42px auto;
   line-height:3.0rem !important;
 }
+
+  #goodword .quote {
+    margin:60px auto 40px auto;
+
+  }
 
 
 
@@ -84,6 +110,38 @@
 
 /*  ////////////////////  MEDIUM SMALL  //////////////  */
 
+@media only screen and (max-width: 1299px) {
+
+.subTitle {
+  left:calc((100vw - 1120px)/2);
+  max-width:929px;
+  }
+
+  #rnh-ovTitle h2 {
+    margin-top:-20px;
+
+  }
+}
+
+/*  ////////////////////  MEDIUM SMALL  //////////////  */
+
+@media only screen and (max-width: 1200px) {
+
+.subTitle {
+  left:calc((100vw - 929px)/2);
+  max-width:929px;
+  }
+
+  #rnh-ovTitle h2 {
+    margin-top:-20px;
+  }
+
+
+}
+
+
+/*  ////////////////////  MEDIUM SMALL  ipad horizontal //////////////  */
+
 @media only screen and (max-width: 1024px) {
   #wrapper-rnh #contentHome #homepageCornerLogo  {
     height:24vmin;
@@ -99,35 +157,20 @@
     max-width:12vmin;
 
   }
-
-
-}
-
-/*  ////////////////////  MEDIUM SMALL  //////////////  */
-
-@media only screen and (max-width: 1299px) {
-
-.subTitle {
-  left:calc((100vw - 1120px)/2);
-  max-width:929px;
+  .quote {
+    font-size: 28px !important;
+    margin:36px auto;
+    line-height:3.0rem !important;
   }
 
-}
+#goodword h1 {
+    padding:10px 0 20px 0 !important;
 
-/*  ////////////////////  MEDIUM SMALL  //////////////  */
+    }
 
-@media only screen and (max-width: 1200px) {
-
-.subTitle {
-  left:calc((100vw - 929px)/2);
-  max-width:929px;
-  }
-
-}
-
-/*  ////////////////////  MEDIUM SMALL  //////////////  */
-
-@media only screen and (max-width: 1024px) {
+#goodword .quote {
+    margin:28px auto 18px auto;
+    }
 
 #goodword img {
       padding:16px;
@@ -136,30 +179,40 @@
 }
 
 
-/*  ////////////////////  MEDIUM SMALL  //////////////  */
+/*  ////////////////////  MEDIUM SMALL  ipad vertical  //////////////  */
 
 @media only screen and (max-width: 991px) {
 
-  #rnh-ovTitle h4 {
-      margin-top:-30px;
+  #rnh-ovTitle h2 {
+      margin-top:-10px;
     }
-
+  #rnh-ovTitle .logo_rnh {
+      margin-left:-4px !important;
+    }
 
 .subTitle {
   left:calc((100vw - 700px)/2);
   max-width:800px;
   }
+  #specifics img   {
+   padding:10px 0 30px 0 !important;
+ }
+
   #goodword img {
       padding:16px;
     }
 
 }
 
-/*  ////////////////////  MEDIA SMALL  //////////////  */
+/*  ////////////////////  MEDIA SMALL phones only //////////////  */
 
 @media only screen and (max-width: 767px) {
 
-  #wrapper-rnh #contentHome #homepageCornerLogo  {
+#specifics h1, #win h1, #goodword h1  {
+  text-align: center !important;
+}
+
+#wrapper-rnh #contentHome #homepageCornerLogo  {
     height:22vmin;
     width: 22vmin;
     margin-top:-22vmin;
@@ -184,6 +237,22 @@
     font-size:9px;
   }
 
+  #specifics img   {
+   padding:10px 0 12px 0 !important;
+ }
+
+ #win h1,   {
+     padding:0 0 0px 0  !important;
+   }
+
+ #win h2,   {
+     padding:10px 0 0px 0  !important;
+   }
+
+ #win img   {
+     padding:30px 0 8px 0  !important;
+   }
+
 }
 
 
@@ -197,8 +266,8 @@
   }
 
 
-#rnh-ovTitle h4 {
-    margin-top:-40px;
+#rnh-ovTitle h2 {
+    margin-top:-10px;
   }
 
 .subTitle {
@@ -209,15 +278,15 @@
   left:0;
   margin-left:16px;
   margin-top:60px;
-  bottom:-50px;
+  bottom:-20px;
   padding:0;
   text-align:left;
-  max-width:480px;
+  max-width:410px;
   }
   .quote {
-    font-size: 1.2rem !important;
-    font-weight: 600 !important;
-    padding:2.0rem 0;
-  }
+      font-size: 20px !important;
+      margin:2px auto;
+      line-height:26px !important;
+    }
 
 }
