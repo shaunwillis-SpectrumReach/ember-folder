@@ -12,45 +12,34 @@
   <img src="/assets/img/homepage/hamburger-menu.png" alt="menu"/></span>
 {{/side-menu-toggle}}
 
+
 {{#side-menu width="320px" side="right" id="menuRight"}}
 
+{{#side-menu-toggle id=""}}<div style="float:left; width:24px; ">x</div>{{/side-menu-toggle}}
   <ul class="nav">
     <li>
-      {{#side-menu-link-to "launchpad"}}
-        <img src="/assets/img/homepage/iconOverview.svg" /> <span >LAUNCHPAD</span>
-      {{/side-menu-link-to}}
+      {{#side-menu-link-to "launchpad"}}<span >Launch Pad</span>{{/side-menu-link-to}}
     </li>
     <li>
       <a href="/firstlook/leaderboard/elite-ae15m">
-        <img src="/assets/img/homepage/iconStandings.svg" /> <span>FIRSTLOOK STANDINGS</span>
+      <span>First Look</span>
         </a>
     </li>
-    <!-- <li>
-      {{#side-menu-link-to "reachnewheights.overview"}}
-        <img src="/assets/img/homepage/iconRules.svg" /> <span>REACH NEW HEIGHTS</span>
-      {{/side-menu-link-to}}
-    </li> -->
+    <li>
+      {{#side-menu-link-to "reachnewheights.dashboard"}}<span>Reach New Heights</span>{{/side-menu-link-to}}
+    </li>
 
-    <!-- <li>
-      {{#side-menu-link-to "firstlook.faqs"}}
-        <img src="/assets/img/homepage/iconFaq.svg" /> <span>FAQS</span>
-      {{/side-menu-link-to}}
-    </li> -->
-    <li class="border-top">
+
+    <li class="border-top" style="margin-top:100px;">
       <a href="https://spectrumreach.typeform.com/to/zdQZSe" target="_blank">
-        <img style="border-radius: 50%;" src="{{currentUser.pid.fullProfilePicUrl}}" width="25"> <span>ACCOUNT</span>
+        <img style="border-radius: 50%;" src="{{currentUser.pid.fullProfilePicUrl}}" width="25"> <span>Manage Profile</span>
       </a>
     </li>
     {{#link-to 'firstlook.logout' class=" " replace="true"}}
-    <li class="" style="
-    border: 1px solid white;
-    padding: 8px 27px;
-    font-size: 14px; ">
+    <li class="signOut" style=" ">
       SIGN OUT
-      <!-- <img src="/assets/img/homepage/signout.svg" style="width:100%; height:auto;" /> -->
-
     </li>
-      {{/link-to}}
+    {{/link-to}}
 
   </ul>
 {{/side-menu}}
