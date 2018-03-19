@@ -821,9 +821,6 @@ height:8px;
 /*  ////////////////////  MEDIA SMALL  //////////////  */
 @media only screen and (max-width: 1024px) {
 
-#FilterDisclaimer {
-      display:block;
-    }
 
 #FilterDisclaimer p {
       text-align:left;
@@ -871,6 +868,10 @@ height:8px;
    color: #003057;
 
  }
+ #FilterDisclaimer {
+       display:block;
+     }
+
 }
 
 
