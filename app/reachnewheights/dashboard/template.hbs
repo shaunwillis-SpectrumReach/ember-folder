@@ -373,7 +373,7 @@
 
        {{#each model.aerollup as |rollup| }}
         <div class="col-sm-12 col-md-6 col-lg-4 dashboard indyData" >
-         <div style="float:left; margin: 10px 10px 10px 6px;"><img style="" src="{{currentUser.pid.fullProfilePicUrl}}"></div>
+         <div style="float:left; margin: 10px 10px 10px 6px;"><img style="" src="{{rollup.fullProfilePicUrl}}"></div>
          <div  style="float:left; margin: 18px 0 0 6px;"><h3  style="">{{ rollup.name }} </h3></div>
         {{#if (gte (mult (div rollup.dollars rollup.goal) 100) 100)}}
          <div class="progress" >
@@ -396,7 +396,7 @@
 
        {{#each model.aerolluplsm as |rollup| }}
         <div class="col-sm-12 col-md-6 col-lg-4 dashboard indyData" >
-         <div style="float:left; margin: 10px 10px 10px 6px;"><img style="" src="{{currentUser.pid.fullProfilePicUrl}}"></div>
+         <div style="float:left; margin: 10px 10px 10px 6px;"><img style="" src="{{rollup.fullProfilePicUrl}}"></div>
          <div  style="float:left; margin: 18px 0 0 6px;"><h3  style="">{{ rollup.name }} </h3></div>
         {{#if (gte (mult (div rollup.dollars rollup.goal) 100) 100)}}
          <div class="progress" >
@@ -420,7 +420,7 @@
 
        {{#each model.aerollupdos as |rollup| }}
         <div class="col-sm-12 col-md-6 col-lg-4 dashboard indyData" >
-         <div style="float:left; margin: 10px 10px 10px 6px;"><img style="" src="{{currentUser.pid.fullProfilePicUrl}}"></div>
+         <div style="float:left; margin: 10px 10px 10px 6px;"><img style="" src="{{rollup.fullProfilePicUrl}}"></div>
          <div  style="float:left; margin: 18px 0 0 6px;"><h3  style="">{{ rollup.name }} </h3></div>
         {{#if (gte (mult (div rollup.dollars rollup.goal) 100) 100)}}
          <div class="progress" >
@@ -445,7 +445,7 @@
 
        {{#each model.aerolluprvp as |rollup| }}
         <div class="col-sm-12 col-md-6 col-lg-4 dashboard indyData" >
-         <div style="float:left; margin: 10px 10px 10px 6px;"><img style="" src="{{currentUser.pid.fullProfilePicUrl}}"></div>
+         <div style="float:left; margin: 10px 10px 10px 6px;"><img style="" src="{{rollup.fullProfilePicUrl}}"></div>
          <div  style="float:left; margin: 18px 0 0 6px;"><h3  style="">{{ rollup.name }} </h3></div>
         {{#if (gte (mult (div rollup.dollars rollup.goal) 100) 100)}}
          <div class="progress" >
