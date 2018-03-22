@@ -37,36 +37,52 @@
  <!--  /////////////  SHOW FOR MANAGERS ONLY  /////////////   -->
  <!--  //////////////////////////////////////// -->
 
-     {{#if currentUser.pid.jobtitle }}
      <div  class="companyGoal col-lg-12 " >
       <div class=" progressBox"  >
-        <div  style="float:left;"> <h1 style="color:#fff;"><span class="colGoalTitle">COLLECTIVE </span>GOAL</h1></div>   <div style="float:right; color:#fff;"><h1 style="color:#fff;">92% </h1></div>
+        <div  style="float:left;"> <h1 style="color:#fff;"><span class="colGoalTitle">COLLECTIVE </span>GOAL</h1></div>   <div style="float:right; color:#fff;"><h1 style="color:#fff;">20% </h1></div>
           <div class="progress" style="clear:both; background-color:white; border:1px solid #003057;">
-            <div class="progress-bar Northeast-bar" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style=" width:23%; "></div>
-            <div class="progress-bar South-bar" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style=" width:23%; "></div>
-            <div class="progress-bar Central-bar" role="progressbar" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100" style=" width:24%; "></div>
-            <div class="progress-bar West-bar" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style=" width:23%; "></div>
+            {{#each model.managernamedvpnortheast as |collective|}}
+            <div class="progress-bar Northeast-bar" role="progressbar" aria-valuenow="{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%; "></div>
+            {{/each}}
+            {{#each model.managernamedvpsouth as |collective|}}
+            <div class="progress-bar South-bar" role="progressbar" aria-valuenow="{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%; "></div>
+            {{/each}}
+            {{#each model.managernamedvpcentral as |collective|}}
+            <div class="progress-bar Central-bar" role="progressbar" aria-valuenow="{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%; "></div>
+            {{/each}}
+            {{#each model.managernamedvpwest as |collective|}}
+            <div class="progress-bar West-bar" role="progressbar" aria-valuenow="{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%; "></div>
+            {{/each}}
           </div>
 
-          <div class="progress" style="clear:both; background-color:transparent; border:0px; min-height: 48px;">
-            <div class="border-right-line" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style=" width:23%; height: 9px;">
-              <div class="northeast-bar-label" style=" "><h3>Northeast 23%</h3></div>
+          <!-- <div class="progress" style="clear:both; background-color:transparent; border:0px; min-height: 48px;">
+            {{#each model.managernamedvpnortheast as |collective|}}
+            <div class="border-right-line" role="progressbar" aria-valuenow="{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%; height: 9px;">
+              <div class="northeast-bar-label" style=" "><h3>Northeast {{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%</h3></div>
             </div>
-            <div class="border-right-line" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style=" width:23%; height: 9px;">
-              <div class="south-bar-label" style=" "><h3>South 23%</h3></div>
+            {{/each}}
+
+            {{#each model.managernamedvpsouth as |collective|}}
+            <div class="border-right-line" role="progressbar" aria-valuenow="{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%; height: 9px;">
+              <div class="south-bar-label" style=" "><h3>South {{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%</h3></div>
             </div>
-            <div class="border-right-line" role="progressbar" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100" style=" width:24%; height: 9px;">
-              <div class="central-bar-label" style=" "><h3>Central 23%</h3></div>
+            {{/each}}
+
+            {{#each model.managernamedvpcentral as |collective|}}
+            <div class="border-right-line" role="progressbar" aria-valuenow="{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%; height: 9px;">
+              <div class="central-bar-label" style=" "><h3>Central {{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%</h3></div>
             </div>
-            <div class="border-right-line" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style=" width:23%; height: 9px;">
-              <div class="west-bar-label" style=""><h3>West 23%</h3></div>
+            {{/each}}
+
+            {{#each model.managernamedvpwest as |collective|}}
+            <div class="border-right-line" role="progressbar" aria-valuenow="{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%; height: 9px;">
+              <div class="west-bar-label" style=""><h3>West {{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%</h3></div>
             </div>
-          </div>
+            {{/each}}
+          </div> -->
 
       </div>
      </div>
-  {{/if}}
-
 
 </div>
 </div>
@@ -111,9 +127,9 @@
       <div class="col-lg-12 "><p style="margin-top:24px;">&nbsp;</p></div>
       <!--  ///////////  TEAM PROGRESS    ///////////  -->
        <div class=" col-md-12 col-lg-6 teamProgress" >
-         {{#if model.managername}}
+         {{#if model.managernameae}}
 
-        {{#each model.managername as |personal|}}
+        {{#each model.managernameae as |personal|}}
        <div  style="float:left;"><h3>${{number-format personal.dollars decimals=0}} / ${{number-format personal.goal decimals=0}}</h3></div>
 
        <div  style="float:right;">&nbsp;</div>
@@ -157,8 +173,8 @@
          {{/if}}
       </div>
       <!--  ///////////  PERSONAL PROGRESS    ///////////  -->
-
-     {{#each model.mine as |personal|}}
+  {{#if model.mineae}}
+     {{#each model.mineae as |personal|}}
      <div class=" col-md-12 col-lg-6 personalProgress"  >
      <div style="float:left;"><h3>${{number-format personal.dollars decimals=0}} / ${{number-format personal.goal decimals=0}}</h3></div>   <div  style="float:right;">&nbsp;</div>
     {{#if (gte (mult (div personal.dollars personal.goal) 100) 100)}}
@@ -175,7 +191,26 @@
     <div style="float:left; margin-top:10px;"><h3>Personal Progress % to collective goal</h3></div>   <div style="float:right; margin-top:10px;"><h3 class="ProgressPercent">{{number-format (mult (div personal.dollars personal.goal) 100) decimals=0}}% </h3></div>
      </div>
      {{/each}}
-
+  {{/if}}
+  {{#if model.minedos}}
+     {{#each model.minedos as |personal|}}
+     <div class=" col-md-12 col-lg-6 personalProgress"  >
+     <div style="float:left;"><h3>${{number-format personal.dollars decimals=0}} / ${{number-format personal.goal decimals=0}}</h3></div>   <div  style="float:right;">&nbsp;</div>
+    {{#if (gte (mult (div personal.dollars personal.goal) 100) 100)}}
+    <div class="progress" >
+       <div class="progress-bar {{ currentUser.pid.division}}-bar" role="progressbar" aria-valuenow="{{mult (div personal.dollars personal.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div personal.dollars personal.goal) 100}}%; ">
+       </div>
+     </div>
+     {{else}}
+     <div class="progress" >
+        <div class="progress-bar" role="progressbar" aria-valuenow="{{mult (div personal.dollars personal.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div personal.dollars personal.goal) 100}}%; ">
+        </div>
+      </div>
+     {{/if}}
+    <div style="float:left; margin-top:10px;"><h3>Personal Progress % to collective goal</h3></div>   <div style="float:right; margin-top:10px;"><h3 class="ProgressPercent">{{number-format (mult (div personal.dollars personal.goal) 100) decimals=0}}% </h3></div>
+     </div>
+     {{/each}}
+     {{/if}}
 
 
   </div>
@@ -221,7 +256,8 @@
    </div >
    <!--  /////////// TEAM PROGRESS   ///////////  -->
    <div class=" col-md-12 col-lg-6 teamProgress" >
-     {{#each model.mine as |personal|}}
+     {{#if model.mineae}}
+     {{#each model.mineae as |personal|}}
     <div style="float:left;"><h3>${{number-format personal.dollars decimals=0}} / ${{number-format personal.goal decimals=0}}</h3></div>
    <div  style="float:right;">&nbsp;</div>
    {{#if (gte (mult (div personal.dollars personal.goal) 100) 100)}}
@@ -238,6 +274,103 @@
     {{/if}}
      <div style="float:left; margin-top:10px;"><h3>Team Progress % to collective goal</h3></div>   <div style="float:right; margin-top:10px;"><h3 class="ProgressPercent">{{number-format (mult (div personal.dollars personal.goal) 100) decimals=0}}%</h3></div>
      {{/each}}
+     {{/if}}
+
+
+
+
+     {{#if model.minelsm}}
+     {{#each model.minelsm as |personal|}}
+    <div style="float:left;"><h3>${{number-format personal.dollars decimals=0}} / ${{number-format personal.goal decimals=0}}</h3></div>
+   <div  style="float:right;">&nbsp;</div>
+   {{#if (gte (mult (div personal.dollars personal.goal) 100) 100)}}
+    <div class="progress" >
+      <div class="progress-bar {{ currentUser.pid.division}}-bar" role="progressbar" aria-valuenow="{{mult (div personal.dollars personal.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div personal.dollars personal.goal) 100}}%; ">
+      </div>
+    </div>
+    {{else}}
+    <div class="progress" >
+      <div class="progress-bar" role="progressbar" aria-valuenow="{{mult (div personal.dollars personal.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div personal.dollars personal.goal) 100}}%; ">
+      </div>
+    </div>
+
+    {{/if}}
+     <div style="float:left; margin-top:10px;"><h3>Team Progress % to collective goal</h3></div>   <div style="float:right; margin-top:10px;"><h3 class="ProgressPercent">{{number-format (mult (div personal.dollars personal.goal) 100) decimals=0}}%</h3></div>
+     {{/each}}
+     {{/if}}
+
+
+
+
+     {{#if model.minedos}}
+     {{#each model.minedos as |personal|}}
+    <div style="float:left;"><h3>${{number-format personal.dollars decimals=0}} / ${{number-format personal.goal decimals=0}}</h3></div>
+   <div  style="float:right;">&nbsp;</div>
+   {{#if (gte (mult (div personal.dollars personal.goal) 100) 100)}}
+    <div class="progress" >
+      <div class="progress-bar {{ currentUser.pid.division}}-bar" role="progressbar" aria-valuenow="{{mult (div personal.dollars personal.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div personal.dollars personal.goal) 100}}%; ">
+      </div>
+    </div>
+    {{else}}
+    <div class="progress" >
+      <div class="progress-bar" role="progressbar" aria-valuenow="{{mult (div personal.dollars personal.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div personal.dollars personal.goal) 100}}%; ">
+      </div>
+    </div>
+
+    {{/if}}
+     <div style="float:left; margin-top:10px;"><h3>Team Progress % to collective goal</h3></div>   <div style="float:right; margin-top:10px;"><h3 class="ProgressPercent">{{number-format (mult (div personal.dollars personal.goal) 100) decimals=0}}%</h3></div>
+     {{/each}}
+     {{/if}}
+
+
+
+
+     {{#if model.minervp}}
+     {{#each model.minervp as |personal|}}
+    <div style="float:left;"><h3>${{number-format personal.dollars decimals=0}} / ${{number-format personal.goal decimals=0}}</h3></div>
+   <div  style="float:right;">&nbsp;</div>
+   {{#if (gte (mult (div personal.dollars personal.goal) 100) 100)}}
+    <div class="progress" >
+      <div class="progress-bar {{ currentUser.pid.division}}-bar" role="progressbar" aria-valuenow="{{mult (div personal.dollars personal.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div personal.dollars personal.goal) 100}}%; ">
+      </div>
+    </div>
+    {{else}}
+    <div class="progress" >
+      <div class="progress-bar" role="progressbar" aria-valuenow="{{mult (div personal.dollars personal.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div personal.dollars personal.goal) 100}}%; ">
+      </div>
+    </div>
+
+    {{/if}}
+     <div style="float:left; margin-top:10px;"><h3>Team Progress % to collective goal</h3></div>   <div style="float:right; margin-top:10px;"><h3 class="ProgressPercent">{{number-format (mult (div personal.dollars personal.goal) 100) decimals=0}}%</h3></div>
+     {{/each}}
+     {{/if}}
+
+
+
+
+     {{#if model.minedvp}}
+     {{#each model.minedvp as |personal|}}
+    <div style="float:left;"><h3>${{number-format personal.dollars decimals=0}} / ${{number-format personal.goal decimals=0}}</h3></div>
+   <div  style="float:right;">&nbsp;</div>
+   {{#if (gte (mult (div personal.dollars personal.goal) 100) 100)}}
+    <div class="progress" >
+      <div class="progress-bar {{ currentUser.pid.division}}-bar" role="progressbar" aria-valuenow="{{mult (div personal.dollars personal.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div personal.dollars personal.goal) 100}}%; ">
+      </div>
+    </div>
+    {{else}}
+    <div class="progress" >
+      <div class="progress-bar" role="progressbar" aria-valuenow="{{mult (div personal.dollars personal.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div personal.dollars personal.goal) 100}}%; ">
+      </div>
+    </div>
+
+    {{/if}}
+     <div style="float:left; margin-top:10px;"><h3>Team Progress % to collective goal</h3></div>   <div style="float:right; margin-top:10px;"><h3 class="ProgressPercent">{{number-format (mult (div personal.dollars personal.goal) 100) decimals=0}}%</h3></div>
+     {{/each}}
+     {{/if}}
+
+
+
+
   </div>
 
  <div class=" col-md-12 col-lg-6" >
@@ -257,7 +390,79 @@
        {{#each model.aerollup as |rollup| }}
         <div class="col-sm-12 col-md-6 col-lg-4 dashboard indyData" >
          <div style="float:left; margin: 10px 10px 10px 6px;"><img style="" src="{{currentUser.pid.fullProfilePicUrl}}"></div>
-         <div  style="float:left; margin: 18px 0 0 6px;"><h3  style="">{{ rollup.firstname }} {{ rollup.lastname }}</h3></div>
+         <div  style="float:left; margin: 18px 0 0 6px;"><h3  style="">{{ rollup.name }} </h3></div>
+        {{#if (gte (mult (div rollup.dollars rollup.goal) 100) 100)}}
+         <div class="progress" >
+           <div class="progress-bar {{ currentUser.pid.division }}-bar" role="progressbar" aria-valuenow="{{mult (div rollup.dollars rollup.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div rollup.dollars rollup.goal) 100}}%; ">
+           </div>
+         </div>
+         {{else}}
+         <div class="progress" >
+           <div class="progress-bar" role="progressbar" aria-valuenow="{{mult (div rollup.dollars rollup.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div rollup.dollars rollup.goal) 100}}%; ">
+           </div>
+         </div>
+         {{/if}}
+          <div style="float:left; margin-top:10px;"><h3>Progress % to goal</h3></div>   <div style="float:right; margin-top:10px;"><h3 class="IndvProgressPercent" >{{number-format (mult (div rollup.dollars rollup.goal) 100) decimals=0}}% </h3></div>
+
+          </div>
+       {{/each}}
+
+
+
+
+       {{#each model.aerolluplsm as |rollup| }}
+        <div class="col-sm-12 col-md-6 col-lg-4 dashboard indyData" >
+         <div style="float:left; margin: 10px 10px 10px 6px;"><img style="" src="{{currentUser.pid.fullProfilePicUrl}}"></div>
+         <div  style="float:left; margin: 18px 0 0 6px;"><h3  style="">{{ rollup.name }} </h3></div>
+        {{#if (gte (mult (div rollup.dollars rollup.goal) 100) 100)}}
+         <div class="progress" >
+           <div class="progress-bar {{ currentUser.pid.division }}-bar" role="progressbar" aria-valuenow="{{mult (div rollup.dollars rollup.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div rollup.dollars rollup.goal) 100}}%; ">
+           </div>
+         </div>
+         {{else}}
+         <div class="progress" >
+           <div class="progress-bar" role="progressbar" aria-valuenow="{{mult (div rollup.dollars rollup.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div rollup.dollars rollup.goal) 100}}%; ">
+           </div>
+         </div>
+         {{/if}}
+          <div style="float:left; margin-top:10px;"><h3>Progress % to goal</h3></div>   <div style="float:right; margin-top:10px;"><h3 class="IndvProgressPercent" >{{number-format (mult (div rollup.dollars rollup.goal) 100) decimals=0}}% </h3></div>
+
+          </div>
+       {{/each}}
+
+
+
+
+
+       {{#each model.aerollupdos as |rollup| }}
+        <div class="col-sm-12 col-md-6 col-lg-4 dashboard indyData" >
+         <div style="float:left; margin: 10px 10px 10px 6px;"><img style="" src="{{currentUser.pid.fullProfilePicUrl}}"></div>
+         <div  style="float:left; margin: 18px 0 0 6px;"><h3  style="">{{ rollup.name }} </h3></div>
+        {{#if (gte (mult (div rollup.dollars rollup.goal) 100) 100)}}
+         <div class="progress" >
+           <div class="progress-bar {{ currentUser.pid.division }}-bar" role="progressbar" aria-valuenow="{{mult (div rollup.dollars rollup.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div rollup.dollars rollup.goal) 100}}%; ">
+           </div>
+         </div>
+         {{else}}
+         <div class="progress" >
+           <div class="progress-bar" role="progressbar" aria-valuenow="{{mult (div rollup.dollars rollup.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div rollup.dollars rollup.goal) 100}}%; ">
+           </div>
+         </div>
+         {{/if}}
+          <div style="float:left; margin-top:10px;"><h3>Progress % to goal</h3></div>   <div style="float:right; margin-top:10px;"><h3 class="IndvProgressPercent" >{{number-format (mult (div rollup.dollars rollup.goal) 100) decimals=0}}% </h3></div>
+
+          </div>
+       {{/each}}
+
+
+
+
+
+
+       {{#each model.aerolluprvp as |rollup| }}
+        <div class="col-sm-12 col-md-6 col-lg-4 dashboard indyData" >
+         <div style="float:left; margin: 10px 10px 10px 6px;"><img style="" src="{{currentUser.pid.fullProfilePicUrl}}"></div>
+         <div  style="float:left; margin: 18px 0 0 6px;"><h3  style="">{{ rollup.name }} </h3></div>
         {{#if (gte (mult (div rollup.dollars rollup.goal) 100) 100)}}
          <div class="progress" >
            <div class="progress-bar {{ currentUser.pid.division }}-bar" role="progressbar" aria-valuenow="{{mult (div rollup.dollars rollup.goal) 100}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{mult (div rollup.dollars rollup.goal) 100}}%; ">
