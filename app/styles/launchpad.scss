@@ -6,7 +6,15 @@
    background-color: #fff;
    text-align: center;
    color:#003057;
+}
 
+
+#wrapper-launch #contentHome  #launch {
+  background-image: url("../assets/img/launch/block_head.jpg");
+  background-size: contain;
+  background-position:  top center;
+  background-repeat: no-repeat;
+  padding-top:20vmin;
 }
 
 #wrapper-launch  #contentHome #header {
@@ -36,13 +44,6 @@
 
 }
 
-#wrapper-launch #contentHome  #launch {
-  background-image: url("../assets/img/launch/block_head.jpg");
-  background-size: contain;
-  background-position:  top center;
-  background-repeat: no-repeat;
-  padding-top:20vmin;
-}
 
 #wrapper-launch #contentHome  #launch img {
   width:90%;

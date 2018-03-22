@@ -53,6 +53,8 @@ Router.map(function() {
     this.route('faqs');
   });
   this.route('launchpad');
+  this.route('login');
+  this.route('supportform');
 });
 
 export default Router;
