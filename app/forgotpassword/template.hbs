@@ -1,0 +1,70 @@
+<div id="wrapper-launch" >
+  <div id="contentHome" class="" style="background: #0099d8;" >
+    <section id="header">
+
+     <div ><a href="/launchpad"><img class="srilogo" src="/assets/img/rnh/sri_logo.svg" ></a> </div>
+    </section>
+
+
+<section id="launch" style="  background-image: url('../assets/img/launch/block_head_blue.jpg'); padding-top: 13px;" >
+
+      <div  class="container fadein"  style="min-height:80vh;">
+
+
+  <div class="row " style="">
+
+
+
+
+
+    <!-- //////////////////////////////////////// -->
+    <!-- This is for when RNH is Ready for Launch -->
+    <!-- //////////////////////////////////////// -->
+     <div class=" col-xs-12  col-lg-12 " style=" width:80%; height:auto; margin:auto;">
+
+       <section id="formHolder" class="fadein" style="">
+       <div style="max-width: 310px; margin: auto; margin-bottom: 2rem;">
+         <div class="row">
+           <div class="col-sm align-self-center" style="padding-left: 16px; padding-right: 16px;">
+             <h3 style="color: white; margin-bottom: 2rem;">Reset Your Password</h3>
+             <p style="color: white; margin-bottom: 1rem;">Please complete the form below to reset your password.  Once submitted you will receive an email confirmation letting you know that your password was reset and that you can access your account.  Please allow up to 24 hours to receive your confirmation.  Thank you.</p>
+           </div>
+
+         </div>
+       </div>
+
+       {{#simple-form class="card__form" onsubmit=(action "saveForm") as | formValues |}}
+               {{input class="form__input" type="text" required=true value=formValues.email placeholder="E-Mail"}}<br/>
+               {{input class="form__input" type="password" required=true value=formValues.password placeholder="New Password"}}
+                 <div class="button-box ">
+                 <button type="submit" class="Reg_btn sriloginbtn" style="border-radius: 0rem; width: 280px; background-color: #003057;">Update Password</button>
+                 </div>
+                 {{#link-to "login"}}<p style="margin-top: 1rem; color: white; sriloginbtn">Login</p>{{/link-to}}
+        {{/simple-form}}
+
+
+       </section>
+    </div>
+
+
+  </div>
+
+  </div>
+
+</section>
+
+
+
+<section id="homepageCornerLogo">
+  <img src="/assets/img/Spectrum_Reach_Rev_RGB.svg">
+</section>
+
+<section id="stickyFooter">
+<div class="copyright"><p style="">Copyright 2018 • Spectrum Reach • All Rights Reserved</p></div>
+ <div class="toTop"><span class="" {{action "scrollToTop"}}><span style="color:#fff;">Top</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+
+</section>
+
+</div>
+<!--  END WRAPPER  -->
+</div>

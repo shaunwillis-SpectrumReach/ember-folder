@@ -13,9 +13,9 @@ export default Route.extend({
         mineae: this.store.query('rn-haedbview', {
           'mine': true
         }),
-        // minelsm: this.store.query('rn-hlsmdbview', {
-        //   'mine': true
-        // }),
+        minelsm: this.store.query('rn-hlsmdbview', {
+          'mine': true
+        }),
         minedos: this.store.query('rn-hdosdbview', {
           'mine': true
         }),

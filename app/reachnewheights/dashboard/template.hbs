@@ -38,52 +38,33 @@
  <!--  /////////////  SHOW FOR MANAGERS ONLY  /////////////   -->
  <!--  //////////////////////////////////////// -->
 
-     <div  class="companyGoal col-lg-12 " >
-      <div class=" progressBox"  >
-        <div  style="float:left;"> <h1 style="color:#fff;"><span class="colGoalTitle">COLLECTIVE </span>GOAL</h1></div>   <div style="float:right; color:#fff;"><h1 style="color:#fff;">20% </h1></div>
-          <div class="progress" style="clear:both; background-color:white; border:1px solid #003057;">
-            {{#each model.managernamedvpnortheast as |collective|}}
-            <div class="progress-bar Northeast-bar" role="progressbar" aria-valuenow="{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%; "></div>
-            {{/each}}
-            {{#each model.managernamedvpsouth as |collective|}}
-            <div class="progress-bar South-bar" role="progressbar" aria-valuenow="{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%; "></div>
-            {{/each}}
-            {{#each model.managernamedvpcentral as |collective|}}
-            <div class="progress-bar Central-bar" role="progressbar" aria-valuenow="{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%; "></div>
-            {{/each}}
-            {{#each model.managernamedvpwest as |collective|}}
-            <div class="progress-bar West-bar" role="progressbar" aria-valuenow="{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%; "></div>
-            {{/each}}
-          </div>
+      <div  class="companyGoal col-lg-12 " style="padding-top: 13px;" >
+       <div class=" progressBox"  >
+         <div  style="float:left;"> <h1 style="color:#fff;"><span class="colGoalTitle">COLLECTIVE </span>GOAL</h1></div>   <div style="float:right; color:#fff;"><h1 style="color:#fff;">92% </h1></div>
+           <div class="progress" style="clear:both; background-color:white; border:1px solid #003057;">
+             <div class="progress-bar Northeast-bar" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style=" width:23%; "></div>
+             <div class="progress-bar South-bar" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style=" width:23%; "></div>
+             <div class="progress-bar Central-bar" role="progressbar" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100" style=" width:24%; "></div>
+             <div class="progress-bar West-bar" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style=" width:23%; "></div>
+           </div>
 
-          <!-- <div class="progress" style="clear:both; background-color:transparent; border:0px; min-height: 48px;">
-            {{#each model.managernamedvpnortheast as |collective|}}
-            <div class="border-right-line" role="progressbar" aria-valuenow="{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%; height: 9px;">
-              <div class="northeast-bar-label" style=" "><h3>Northeast {{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%</h3></div>
-            </div>
-            {{/each}}
+           <div class="progress" style="clear:both; background-color:transparent; border:0px; min-height: 48px;">
+             <div class="border-right-line" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style=" width:23%; height: 9px;">
+               <div class="northeast-bar-label" style=" "><h3>Northeast 23%</h3></div>
+             </div>
+             <div class="border-right-line" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style=" width:23%; height: 9px;">
+               <div class="south-bar-label" style=" "><h3>South 23%</h3></div>
+             </div>
+             <div class="border-right-line" role="progressbar" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100" style=" width:24%; height: 9px;">
+               <div class="central-bar-label" style=" "><h3>Central 23%</h3></div>
+             </div>
+             <div class="border-right-line" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style=" width:23%; height: 9px;">
+               <div class="west-bar-label" style=""><h3>West 23%</h3></div>
+             </div>
+           </div>
 
-            {{#each model.managernamedvpsouth as |collective|}}
-            <div class="border-right-line" role="progressbar" aria-valuenow="{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%; height: 9px;">
-              <div class="south-bar-label" style=" "><h3>South {{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%</h3></div>
-            </div>
-            {{/each}}
-
-            {{#each model.managernamedvpcentral as |collective|}}
-            <div class="border-right-line" role="progressbar" aria-valuenow="{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%; height: 9px;">
-              <div class="central-bar-label" style=" "><h3>Central {{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%</h3></div>
-            </div>
-            {{/each}}
-
-            {{#each model.managernamedvpwest as |collective|}}
-            <div class="border-right-line" role="progressbar" aria-valuenow="{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}" aria-valuemin="0" aria-valuemax="100" style=" width:{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%; height: 9px;">
-              <div class="west-bar-label" style=""><h3>West {{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%</h3></div>
-            </div>
-            {{/each}}
-          </div> -->
-
+       </div>
       </div>
-     </div>
 
 </div>
 </div>
