@@ -5,6 +5,6 @@ export default Route.extend({
   //   this.replaceWith('firstlook.login');
   // }
   beforeModel() {
-    this.replaceWith('firstlook.login');
+    this.replaceWith('login');
   }
 });
