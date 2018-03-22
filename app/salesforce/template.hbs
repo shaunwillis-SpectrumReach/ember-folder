@@ -1,0 +1,70 @@
+<div id="wrapper-launch" >
+  <div id="contentHome" class="" style="background: #0099d8;" >
+    <section id="header">
+
+     <div ><a href="/launchpad"><img class="srilogo" src="/assets/img/rnh/sri_logo.svg" ></a> </div>
+    </section>
+
+
+<section id="launch" style="  background-image: url('../assets/img/launch/block_head_blue.jpg'); padding-top: 13px;" >
+
+      <div  class="container fadein"  style="min-height:80vh;">
+
+
+  <div class="row " style="">
+
+
+
+
+
+    <!-- //////////////////////////////////////// -->
+    <!-- This is for when RNH is Ready for Launch -->
+    <!-- //////////////////////////////////////// -->
+     <div class=" col-xs-12  col-lg-12 " style=" width:100%; height:auto; margin:auto;">
+
+       <section id="title" style="padding-top: 13px;">
+         <div style="max-width: 376px; margin: auto; margin-bottom: 2rem;">
+           <div class="row">
+             <div class="col-sm align-self-center" style="padding-left: 16px; padding-right: 16px;">
+               <h3 style="">Official Sales Team Sign Up</h3>
+             </div>
+           </div>
+         </div>
+         {{#simple-form onsubmit=(action "saveForm") as |formValues|}}
+         {{input value=formValues.pid placeholder="Employee ID"}}<br/>
+         {{input value=formValues.firstname placeholder="First Name"}}<br/>
+         {{input value=formValues.lastname placeholder="Last Name"}}<br/>
+         {{input value=formValues.email placeholder="Email"}}<br/>
+         {{input type="password" value=formValues.password placeholder="Password"}}<br/>
+         {{input value=formValues.managername placeholder="Manager Name"}}<br/>
+         {{input value=formValues.division placeholder="Division"}}<br/>
+         {{input value=formValues.region placeholder="Region"}}<br/>
+         {{input value=formValues.jobtitle placeholder="Job Title"}}<br/>
+         <button  class="SR_btn sriloginbtn" style="background-color: #003057;">Register</button>
+         {{#link-to "login"}}<p style="color: white;">Login</p>{{/link-to}}
+         {{/simple-form}}
+       </section>
+    </div>
+
+
+  </div>
+
+  </div>
+
+</section>
+
+
+
+<section id="homepageCornerLogo">
+  <img src="/assets/img/Spectrum_Reach_Rev_RGB.svg">
+</section>
+
+<section id="stickyFooter">
+<div class="copyright"><p style="">Copyright 2018 • Spectrum Reach • All Rights Reserved</p></div>
+ <div class="toTop"><span class="" {{action "scrollToTop"}}><span style="color:#fff;">Top</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+
+</section>
+
+</div>
+<!--  END WRAPPER  -->
+</div>

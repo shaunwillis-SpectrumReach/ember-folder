@@ -55,6 +55,8 @@ Router.map(function() {
   this.route('launchpad');
   this.route('login');
   this.route('supportform');
+  this.route('forgotpassword');
+  this.route('salesforce');
 });
 
 export default Router;
