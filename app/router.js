@@ -54,6 +54,7 @@ Router.map(function() {
   });
   this.route('launchpad');
   this.route('login');
+  this.route('supportform');
 });
 
 export default Router;

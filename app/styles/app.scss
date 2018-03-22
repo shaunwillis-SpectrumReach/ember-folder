@@ -33,6 +33,13 @@
     // display: none;
 }
 
+.clickherebtn {
+  font-style: italic;
+  text-decoration: underline;
+  color: #0099d8;
+}
+
+
 /*  ///////////  File Upload  ////////////  */
 
 #files-uploader>.dz-default>.dz-message {
@@ -363,8 +370,6 @@ form input, form select, btn {
     	position: absolute;
     	z-index: -1;
     }
-
-
 
 
 /* Shauns changes to file upload*/
