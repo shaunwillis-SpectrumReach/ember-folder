@@ -201,6 +201,8 @@ background:  -webkit-linear-gradient(-55deg,  #003057 0%,#0099D8 100%); /* Chrom
 background:  linear-gradient(125deg,  #003057 0%,#0099D8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003057', endColorstr='#0099D8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
+
 #content {
     margin: auto;
     width: 100%;
@@ -213,6 +215,8 @@ background-repeat: no-repeat;
   text-align: center;
   color:white;
 }
+
+
 #contentReg {
     margin: auto;
     width: 100%;
@@ -322,7 +326,7 @@ a {
     to   { opacity: 1; }
 }
 /*  ///////////  elements  ////////////  */
-form input, form select, btn{
+form input, form select, btn {
   font-family: "Gotham", "Arial", sans-serif;
   //font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -330,7 +334,6 @@ form input, form select, btn{
   border-radius: 0;
   }
 
-  /* Gerry's file upload style */
 
   .hidden {
     position: relative;
@@ -361,10 +364,10 @@ form input, form select, btn{
     	z-index: -1;
     }
 
-  /*Gerry's changes end here*/
 
 
-/*Shaun's changes to file upload*/
+
+/* Shauns changes to file upload*/
 /*.hidden {
   position: relative;
   opacity: 0;

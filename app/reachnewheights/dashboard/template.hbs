@@ -3,19 +3,20 @@
   <section id="header">
 
    <div class="userNameTop">Welcome, {{ currentUser.pid.firstname}}  <img style="border-radius: 50%;" src="{{currentUser.pid.fullProfilePicUrl}}" width="25"></div>
-   <div ><a href="/launchpad"><img class="srilogo" src="/assets/img/rnh/sri_logo.svg" ></a> </div>
+   <div ><a href="/launchpad"><img class="srilogo" src="/assets/img/rnh/sri_logo.svg" style="max-width: 16rem;"></a> </div>
     <!-- <div> <div class="logoText" >Spectrum Reach Incentives</div></div> -->
   </section>
 <section id="altNav" >
   <div class="  " style="padding-left:24px;"  >
     <ul>
-        <li><a href="/launchpad">Launchpad</a></li>
+        <!-- <li><a href="/launchpad">Launchpad</a></li> -->
         <li><a href="/reachnewheights/overview">Overview</a></li>
         <li class="active">Standings</li>
         <!-- <li><a href="/reachnewheights/faqs">FAQ</a></li> -->
         {{#if currentUser.pid.isAdmin}}
           <li><a href="/reachnewheights/admin">Admin</a></li>
         {{/if}}
+        <li style="float: right; width: 200px;">Reach New Heights</li>
     </ul>
   </div>
   </section>
@@ -25,10 +26,10 @@
           <div class="row" >
 
 
-      <div class="col-lg-12">
+      <!-- <div class="col-lg-12">
         {{#link-to 'reachnewheights.dashboard' replace="true"}}{{/link-to}}
         <img class="logo_rnh " src="/assets/img/rnh/NewBizLogo-Revised-02.svg" >
-     </div>
+     </div> -->
      <!-- <div class="userNameTop">Welcome, {{ currentUser.pid.firstname}}
        <img style="border-radius: 50%;" src="{{currentUser.pid.fullProfilePicUrl}}" width="25">
      </div> -->
@@ -38,7 +39,7 @@
  <!--  //////////////////////////////////////// -->
 
      {{#if currentUser.pid.jobtitle }}
-     <div  class="companyGoal col-lg-12 " >
+     <div  class="companyGoal col-lg-12 " style="padding-top: 13px;" >
       <div class=" progressBox"  >
         <div  style="float:left;"> <h1 style="color:#fff;"><span class="colGoalTitle">COLLECTIVE </span>GOAL</h1></div>   <div style="float:right; color:#fff;"><h1 style="color:#fff;">92% </h1></div>
           <div class="progress" style="clear:both; background-color:white; border:1px solid #003057;">
@@ -192,8 +193,8 @@
     <div class="row" >
 
 
-      <div class="col-md-12 col-lg-6" >
-        <div class=" "  style="text-align:left; ">
+      <div class="col-md-12 col-lg-12" >
+        <div class=" "  style="text-align:left; margin-bottom: 4rem;">
           <div class=" " >
            <h1>DASHBOARD</h1>
            <h3 class="footnote-dash">Personal Data Viewport</h3>
@@ -204,6 +205,7 @@
 
 
 
+      <!--  /////////// PERSONAL INFO   ///////////  -->
    <div class="col-md-12 col-lg-6 imageMine" >
        <div class="userPic" style="">
          <a href="https://spectrumreach.typeform.com/to/zdQZSe" target="_blank"><img style="" src="{{currentUser.pid.fullProfilePicUrl}}" ></a>
@@ -218,7 +220,7 @@
        </div>
      </div>
 
-   </div >
+   </div>
    <!--  /////////// TEAM PROGRESS   ///////////  -->
    <div class=" col-md-12 col-lg-6 teamProgress" >
      {{#each model.mine as |personal|}}
@@ -237,6 +239,7 @@
 
     {{/if}}
      <div style="float:left; margin-top:10px;"><h3>Team Progress % to collective goal</h3></div>   <div style="float:right; margin-top:10px;"><h3 class="ProgressPercent">{{number-format (mult (div personal.dollars personal.goal) 100) decimals=0}}%</h3></div>
+     <!-- <div style="float: right;"><p>Team collective contract count <span> </span></p></div> -->
      {{/each}}
   </div>
 
@@ -249,7 +252,7 @@
 <!--  ///////////  EMPLOYEE DATA   /////////////   -->
 
 <div class=" col-md-12 col-lg-12 IndyTitle" style="">
-  <h2 style="color: #466D8F; ">INDIVIDUAL DATA BREAKDOWN</h2>
+  <h2 style="color: #466D8F; ">INDIVIDUAL DATA BREAKDOWN <span style="font-size: 14px;">Are you seeing your whole team? If not, <a href="#" target="_blank" style="font-style: italic; text-decoration: underline; color: #0099d8;">click here</a></span></h2>
 </div>
 
 

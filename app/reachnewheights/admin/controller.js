@@ -15,12 +15,13 @@ import { get } from '@ember/object';
           "filterPlaceholder": "Job Title",
           "filterWithSelect": true,
           "predefinedFilterOptions": [
-            "AE",
-            "LSM",
-            "DOS",
-            "RVP",
-            "DVP"
-          ]
+            "AE"
+            // "LSM",
+            // "DOS",
+            // "RVP",
+            // "DVP"
+          ],
+            "editable": false
         },
         {
           "title": "",
@@ -33,7 +34,8 @@ import { get } from '@ember/object';
           "title": "",
           "filterPlaceholder": "Search Manager...",
           "className": "placeholdercolor",
-          "propertyName": "managername"
+          "propertyName": "managername",
+          "editable": false
         },
         {
           "title": "",
@@ -54,7 +56,8 @@ import { get } from '@ember/object';
             "Carolinas",
             "Ohio",
             "Southeast"
-          ]
+          ],
+          "editable": false
         },
         {
           "title": "",

@@ -1,292 +1,269 @@
 .bgcolor-gray {
-  background-color:#bfc9d2;
+  background-color: #bfc9d2;
 }
+
 #rnh-ovTitle {
   background: url("../assets/img/rnh/overview/rnh_overview_header_cropped.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height:60vmin;
-  color:#fff;
-  text-align:left;
-}
-#rnh-ovTitle h2 {
-  margin-top:-30px;
+  min-height: 60vmin;
+  color: #fff;
+  text-align: left;
 }
 
+#rnh-ovTitle h2 {
+  margin-top: -30px;
+}
 
 .subTitle {
   clear: both;
-  position:absolute;
-  bottom:20px;
-  left:calc((100vw - 1280px)/2);
-  max-width:1100px;
-  float:center;
+  position: absolute;
+  bottom: 20px;
+  left: calc((100vw - 1280px)/2);
+  max-width: 1100px;
+  float: center;
   margin: 0 auto;
-  padding:0;
-  text-align:left;
-  }
-  #specifics  h2   {
-   padding:20px 0 6px 0 !important;
- }
- #specifics img   {
-  padding:20px 0 40px 0 !important;
-}
-#win h1,   {
-  padding:0 0 24px 0  !important;
+  padding: 0;
+  text-align: left;
 }
 
-#win h2,   {
-    padding:24px 0 6px 0  !important;
-  }
+#specifics h2 {
+  padding: 20px 0 6px 0 !important;
+}
 
-#win img   {
-    padding:24px 0 !important;
-  }
+#specifics img {
+  padding: 20px 0 40px 0 !important;
+}
 
+,
+#win h1 {
+  padding: 0 0 24px 0 !important;
+}
 
-  #goodword h1,   {
-    padding:10px 0 42px 0  !important;
-  }
+,
+#win h2 {
+  padding: 24px 0 6px 0 !important;
+}
+
+#win img {
+  padding: 24px 0 !important;
+}
+
+,
+#goodword h1 {
+  padding: 10px 0 42px 0 !important;
+}
 
 .quote {
   font-size: 36px !important;
   font-family: 'Noto Serif', serif !important;
   font-style: italic !important;
   font-weight: 400 !important;
-  color:#0099D8 !important;
+  color: #0099D8 !important;
   text-align: center;
-  margin:42px auto;
-  line-height:3.0rem !important;
+  margin: 42px auto;
+  line-height: 3.0rem !important;
 }
 
-  #goodword .quote {
-    margin:60px auto 40px auto;
-
-  }
-
-
+#goodword .quote {
+  margin: 60px auto 40px;
+}
 
 #rnh-stickyFooter {
   background: none;
-  background-color:#bfc9d2;
-  width:100.1%;
-  margin:0 0 -8px -1px;
-  height:50px;
-  padding:12px 0 0 24px;
-  overflow:visible;
+  // background-color:#bfc9d2;
+  width: 100.1%;
+  margin: 0 0 -8px -1px;
+  height: 50px;
+  padding: 12px 0 0 24px;
+  overflow: visible;
 }
 
-#wrapper-rnh #contentHome #homepageCornerLogo  {
-  height:26vmin;
+#wrapper-rnh #contentHome #homepageCornerLogo {
+  height: 27vmin;
   width: 26vmin;
-  margin-top:-26vmin;
-  float:right;
+  margin-top: -26vmin;
+  float: right;
   position: relative;
   background-image: url("../assets/img/TriCorner.svg");
-  background-size: 26vmin;
+  background-size: 21vmin;
   background-position: bottom right;
   background-repeat: no-repeat;
 }
 
-
-#wrapper-rnh  #contentHome #homepageCornerLogo img {
+#wrapper-rnh #contentHome #homepageCornerLogo img {
   position: relative;
-  left:5vmin;
-  top:15vmin;
-  max-width:12vmin;
-
+  left: 7vmin;
+  top: 19vmin;
+  max-width: 8vmin;
 }
 
-
-#rnh-stickyFooter  .rnh-copyright p {
-  color:#003057;
+#rnh-stickyFooter .rnh-copyright p {
+  color: #003057;
   text-align: center;
-  font-size:14px;
+  font-size: 14px;
 }
+
 .rnh-copyright {
-  float:center;
-
+  float: center;
 }
-
 /*  ////////////////////  MEDIUM SMALL  //////////////  */
-
 @media only screen and (max-width: 1299px) {
-
-.subTitle {
-  left:calc((100vw - 1120px)/2);
-  max-width:929px;
+  .subTitle {
+    left: calc((100vw - 1120px)/2);
+    max-width: 929px;
   }
 
   #rnh-ovTitle h2 {
-    margin-top:-20px;
-
+    margin-top: -20px;
   }
 }
-
 /*  ////////////////////  MEDIUM SMALL  //////////////  */
-
 @media only screen and (max-width: 1200px) {
-
-.subTitle {
-  left:calc((100vw - 929px)/2);
-  max-width:929px;
+  .subTitle {
+    left: calc((100vw - 929px)/2);
+    max-width: 929px;
   }
 
   #rnh-ovTitle h2 {
-    margin-top:-20px;
+    margin-top: -20px;
   }
-
-
 }
-
-
 /*  ////////////////////  MEDIUM SMALL  ipad horizontal //////////////  */
-
 @media only screen and (max-width: 1024px) {
-  #wrapper-rnh #contentHome #homepageCornerLogo  {
-    height:24vmin;
+  #wrapper-rnh #contentHome #homepageCornerLogo {
+    height: 24vmin;
     width: 24vmin;
-    margin-top:-24vmin;
+    margin-top: -24vmin;
     background-size: 24vmin;
   }
 
-#wrapper-rnh  #contentHome #homepageCornerLogo img {
+  #wrapper-rnh #contentHome #homepageCornerLogo img {
     position: relative;
-    left:5.5vmin;
-    top:15vmin;
-    max-width:12vmin;
-
+    left: 5.5vmin;
+    top: 15vmin;
+    max-width: 12vmin;
   }
+
   .quote {
     font-size: 28px !important;
-    margin:36px auto;
-    line-height:3.0rem !important;
+    margin: 36px auto;
+    line-height: 3.0rem !important;
   }
 
-#goodword h1 {
-    padding:10px 0 20px 0 !important;
-
-    }
-
-#goodword .quote {
-    margin:28px auto 18px auto;
-    }
-
-#goodword img {
-      padding:16px;
-    }
-
-}
-
-
-/*  ////////////////////  MEDIUM SMALL  ipad vertical  //////////////  */
-
-@media only screen and (max-width: 991px) {
-
-  #rnh-ovTitle h2 {
-      margin-top:-10px;
-    }
-  #rnh-ovTitle .logo_rnh {
-      margin-left:-4px !important;
-    }
-
-.subTitle {
-  left:calc((100vw - 700px)/2);
-  max-width:800px;
+  #goodword h1 {
+    padding: 10px 0 20px 0 !important;
   }
-  #specifics img   {
-   padding:10px 0 30px 0 !important;
- }
+
+  #goodword .quote {
+    margin: 28px auto 18px;
+  }
 
   #goodword img {
-      padding:16px;
-    }
-
+    padding: 16px;
+  }
 }
+/*  ////////////////////  MEDIUM SMALL  ipad vertical  //////////////  */
+@media only screen and (max-width: 991px) {
+  #rnh-ovTitle h2 {
+    margin-top: -10px;
+  }
 
+  #rnh-ovTitle .logo_rnh {
+    margin-left: -4px !important;
+  }
+
+  .subTitle {
+    left: calc((100vw - 700px)/2);
+    max-width: 800px;
+  }
+
+  #specifics img {
+    padding: 10px 0 30px 0 !important;
+  }
+
+  #goodword img {
+    padding: 16px;
+  }
+}
 /*  ////////////////////  MEDIA SMALL phones only //////////////  */
-
 @media only screen and (max-width: 767px) {
+  #goodword h1,
+  #specifics h1,
+  #win h1 {
+    text-align: center !important;
+  }
 
-#specifics h1, #win h1, #goodword h1  {
-  text-align: center !important;
-}
-
-#wrapper-rnh #contentHome #homepageCornerLogo  {
-    height:22vmin;
+  #wrapper-rnh #contentHome #homepageCornerLogo {
+    height: 22vmin;
     width: 22vmin;
-    margin-top:-22vmin;
+    margin-top: -22vmin;
     background-size: 22vmin;
   }
 
-#wrapper-rnh  #contentHome #homepageCornerLogo img {
+  #wrapper-rnh #contentHome #homepageCornerLogo img {
     position: relative;
-    left:4vmin;
-    top:12vmin;
-    max-width:12vmin;
-
+    left: 4vmin;
+    top: 12vmin;
+    max-width: 12vmin;
   }
+
   .subTitle {
-    left:calc((100vw - 520px)/2);
-    max-width:530px;
-    }
-
-  #rnh-stickyFooter  .rnh-copyright p {
-    color:#003057;
-    text-align: center;
-    font-size:9px;
+    left: calc((100vw - 520px)/2);
+    max-width: 530px;
   }
 
-  #specifics img   {
-   padding:10px 0 12px 0 !important;
- }
+  #rnh-stickyFooter .rnh-copyright p {
+    color: #003057;
+    text-align: center;
+    font-size: 9px;
+  }
 
- #win h1,   {
-     padding:0 0 0px 0  !important;
-   }
+  #specifics img {
+    padding: 10px 0 12px 0 !important;
+  }
 
- #win h2,   {
-     padding:10px 0 0px 0  !important;
-   }
+  ,
+  #win h1 {
+    padding: 0 0 0 0 !important;
+  }
 
- #win img   {
-     padding:30px 0 8px 0  !important;
-   }
+  ,
+  #win h2 {
+    padding: 10px 0 0 0 !important;
+  }
 
+  #win img {
+    padding: 30px 0 8px 0 !important;
+  }
 }
-
-
 /*  ////////////////////  MEDIUM SMALL  //////////////  */
-
 @media only screen and (max-width: 575px) {
-
   #rnh-ovTitle {
     background-size: cover;
-    min-height:10vmin;
+    min-height: 10vmin;
   }
 
-
-#rnh-ovTitle h2 {
-    margin-top:-10px;
+  #rnh-ovTitle h2 {
+    margin-top: -10px;
   }
 
-.subTitle {
-
-  clear: both;
-  position:relative;
-  float:none;
-  left:0;
-  margin-left:16px;
-  margin-top:60px;
-  bottom:-20px;
-  padding:0;
-  text-align:left;
-  max-width:410px;
+  .subTitle {
+    clear: both;
+    position: relative;
+    float: none;
+    left: 0;
+    margin-left: 16px;
+    margin-top: 60px;
+    bottom: -20px;
+    padding: 0;
+    text-align: left;
+    max-width: 410px;
   }
+
   .quote {
-      font-size: 20px !important;
-      margin:2px auto;
-      line-height:26px !important;
-    }
-
+    font-size: 20px !important;
+    margin: 2px auto;
+    line-height: 26px !important;
+  }
 }

@@ -1,12 +1,12 @@
 #wrapper-rnh {
-    width:100%;
-    height: 100%;
-    margin:0;
-    border:0;
-    font-family: "Open Sans",  sans-serif;
-    font-size: 14px;
-    text-align: center;
-    background-color: #BFC9D2;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  background-color: #BFC9D2;
 }
 
 #wrapper-rnh h1 {
@@ -25,22 +25,27 @@
   letter-spacing: 0.4px;
 }
 
-#wrapper-rnh h3,  {
+,
+#wrapper-rnh h3 {
   font-family: 'Open Sans', sans-serif;
   color: #003057;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.3px;
-  line-height:22px;
+  line-height: 22px;
 }
-#wrapper-rnh h4,  {
+
+,
+#wrapper-rnh h4 {
   font-family: 'Open Sans', sans-serif;
   color: #003057;
   font-size: 16px;
   font-weight: 400;
 }
 
-#wrapper-rnh h5, #wrapper-rnh .h5,  {
+,
+#wrapper-rnh .h5,
+#wrapper-rnh h5 {
   font-family: 'Open Sans', sans-serif;
   color: #4F2972;
   font-size: 18px;
@@ -49,7 +54,9 @@
   letter-spacing: 0.3px;
   line-height: 28px;
 }
-#wrapper-rnh h6,  {
+
+,
+#wrapper-rnh h6 {
   font-family: 'Open Sans', sans-serif;
   color: #003057;
   font-size: 13px;
@@ -57,6 +64,7 @@
   font-weight: 400;
   letter-spacing: 0.3px;
 }
+
 #wrapper-rnh p {
   font-family: 'Open Sans', sans-serif;
   color: #596679;
@@ -67,95 +75,94 @@
 .fontGray {
   color: #596679 !important;
 }
+
 #wrapper-rnh .ProgressPercent {
-    font-size: 36px;
-    letter-spacing: 0.4px ;
-  }
-#wrapper-rnh .IndvProgressPercent {
-font-size: 28px;
-letter-spacing: 0.4px ;
+  font-size: 36px;
+  letter-spacing: 0.4px;
 }
 
-#wrapper-rnh   #header {
+#wrapper-rnh .IndvProgressPercent {
+  font-size: 28px;
+  letter-spacing: 0.4px;
+}
+
+#wrapper-rnh #header {
   background: none;
   background-color: #002039;
-  width:100%;
-  height:90px;
-  margin:0 0 0 -1px;
+  width: 100%;
+  height: 90px;
+  margin: 0 0 0 -1px;
 }
 
-#wrapper-rnh  .srilogo  {
+#wrapper-rnh .srilogo {
   margin-left: 50px;
-  float:left;
-    padding-top:30px;
-    padding-bottom:0px;
-    height:auto;
-
+  float: left;
+  padding-top: 30px;
+  padding-bottom: 0;
+  height: auto;
 }
-
 
 .divider-rnh {
   background: url("../assets/img/Main_Header_bg.svg");
   background-size: cover;
   background-repeat: no-repeat;
   // width:102%;
-  height:6px;
-  margin:0;
-
+  height: 6px;
+  margin: 0;
 }
-
 // =====  ALT NAV  ========   //
-
 #wrapper-rnh #altNav {
-  margin:0 ;
-  padding:0;
+  margin: 0;
+  padding: 0;
   text-align: left;
-  background: #003057; /* Old browsers */
-  background-color:#003057;
-  color:#fff;
-  width:100%;
-  text-transform:uppercase;
-    font-size:0.9rem;
+  background: #003057;
+  /* Old browsers */
+  background-color: #003057;
+  color: #fff;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 0.9rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  border-top:2px solid #0099D8;
-  border-bottom:2px solid #FFF;
-}
-#wrapper-rnh #altNav .active {
-  color:#0099D8;
+  border-top: 2px solid #0099D8;
+  border-bottom: 2px solid #FFF;
 }
 
-#wrapper-rnh   #altNav ul {
+#wrapper-rnh #altNav .active {
+  color: #0099D8;
+}
+
+#wrapper-rnh #altNav ul {
   overflow: auto;
   list-style-type: none;
   text-align: center;
-  margin:0 ;
+  margin: 0;
   -webkit-padding-start: 0;
-  width:100%;
-
+  width: 100%;
 }
 
-#wrapper-rnh  #altNav li {
+#wrapper-rnh #altNav li {
   height: 30px;
   display: inline-block;
-  padding:6px;
+  padding: 6px;
   margin-right: 0;
- // border-right: 1px solid #aaa;
+  // border-right: 1px solid #aaa;
   border-right: none;
   color: #fff;
-  width:120px;
-  float:left;
-
+  width: 120px;
+  float: left;
 }
 
-#wrapper-rnh  #altNav li:last-child  {
+#wrapper-rnh #altNav li:last-child {
   border-right: none;
-  padding-right:0;
+  padding-right: 0;
 }
-#wrapper-rnh  #altNav li:last-child  {
-  margin-left:0;
+
+#wrapper-rnh #altNav li:last-child {
+  margin-left: 0;
 }
-#wrapper-rnh  #altNav li a {
+
+#wrapper-rnh #altNav li a {
   text-decoration: none;
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
@@ -163,55 +170,55 @@ letter-spacing: 0.4px ;
   -ms-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
-#wrapper-rnh  #altNav li a {
+
+#wrapper-rnh #altNav li a {
   color: #fff;
 }
-#wrapper-rnh  #altNav li a:hover {
+
+#wrapper-rnh #altNav li a:hover {
   color: #0099d8;
 }
-
 // =====  END ALT NAV  ========   //
-
 #rnh-goal {
-  width:100%;
-  margin:0;
-  padding:60px 0 ;
+  width: 100%;
+  margin: 0;
+  padding: 60px 0;
 }
 
-#rnh-goal .logo_rnh, #rnh-ovTitle .logo_rnh {
-  float:left;
-  width:770px;
-  height:auto;
-  max-width:80%;
-  margin-left:-9px;
+#rnh-goal .logo_rnh,
+#rnh-ovTitle .logo_rnh {
+  float: left;
+  width: 770px;
+  height: auto;
+  max-width: 80%;
+  margin-left: -9px;
 }
-
 
 .companyGoal {
-  clear:both;
-  padding-top:140px;
+  clear: both;
+  padding-top: 140px;
 }
 
 .companyGoal .progress {
-  clear:both;
-  background-color:white;
-  border:2px solid #003057;
+  clear: both;
+  background-color: white;
+  border: 2px solid #003057;
   border-radius: 20px;
 }
 
-#rnh-goal   .Box {
-    padding-top:40px;
+#rnh-goal .Box {
+  padding-top: 40px;
 }
 
-#rnh-goal    .-bar {
-  background-color:#0099D8;
-
+#rnh-goal .-bar {
+  background-color: #0099D8;
 }
- .footnote-dash  {
+
+.footnote-dash {
   text-align: left;
-  padding:0 0 0 0px;
-  margin-top:-12px;
-  margin-left:4px;
+  padding: 0;
+  margin-top: -12px;
+  margin-left: 4px;
 }
 
 .dashboard {
@@ -221,225 +228,237 @@ letter-spacing: 0.4px ;
 .Northeast-bar {
   background-color: #500778 !important;
 }
+
 .northeast-bar-label {
-  float:right;
-  margin-top:10px;
-  margin-left:7%;
+  float: right;
+  margin-top: 10px;
+  margin-left: 7%;
 }
+
 .South-bar {
-  background-color: #009e8c  !important;
+  background-color: #009e8c !important;
 }
+
 .south-bar-label {
-  float:right;
-  margin-top:10px;
-  margin-left:13%;
+  float: right;
+  margin-top: 10px;
+  margin-left: 13%;
 }
+
 .Central-bar {
-  background-color: #96004d  !important;
+  background-color: #96004d !important;
 }
+
 .central-bar-label {
-  float:right;
-  margin-top:10px;
-  margin-left:17%;
+  float: right;
+  margin-top: 10px;
+  margin-left: 17%;
 }
+
 .West-bar {
-  background-color: #faa41a  !important;
+  background-color: #faa41a !important;
 }
+
 .west-bar-label {
-  float:right;
-  margin-top:10px;
-  margin-left:16%;
+  float: right;
+  margin-top: 10px;
+  margin-left: 16%;
 }
 
-
-#AE-dash .imageMine, #MGR-dash .imageMine  {
-padding:0 20px;
+#AE-dash .imageMine,
+#MGR-dash .imageMine {
+  padding: 0 20px;
 }
 
-#AE-dash .imageMine img, #MGR-dash .imageMine img  {
+#AE-dash .imageMine img,
+#MGR-dash .imageMine img {
   /* clip-path: circle(90px at center);  */
-  border:2px solid #003057;
+  border: 2px solid #003057;
   border-radius: 50%;
-  width:200px;
-  height:auto;
-  margin-top:0;
-  margin-left:0px;
-  float:left;
-/*  padding:0 20px;  */
+  width: 200px;
+  height: auto;
+  margin-top: 0;
+  margin-left: 0;
+  float: left;
+  /*  padding:0 20px;  */
 }
 
 #AE-dash .imageMine .userData {
-  float:left;
-  padding:20px 0 0 12px;
+  float: left;
+  padding: 20px 0 0 12px;
 }
 
-#AE-dash .userData .title, #MGR-dash .userData .title  {
-  float:left;
-  text-align:right;
+#AE-dash .userData .title,
+#MGR-dash .userData .title {
+  float: left;
+  text-align: right;
   border-right: 3px solid #003057;
-  padding-right:12px;
-}
-#AE-dash .userData .data, #MGR-dash .userData .data {
-  float:left;
-  text-align: left;
-  padding-left:12px;
+  padding-right: 12px;
 }
 
-#AE-dash .data h2, #MGR-dash .data h2  {
+#AE-dash .userData .data,
+#MGR-dash .userData .data {
+  float: left;
+  text-align: left;
+  padding-left: 12px;
+}
+
+#AE-dash .data h2,
+#MGR-dash .data h2 {
   color: #466D8F;
 }
 
-#AE-dash  .-bar {
-  background-color:#0099D8;
-
+#AE-dash .-bar {
+  background-color: #0099D8;
 }
-#AE-dash  .progress {
-    clear:both;
-    background-color:white;
-    border:2px solid #003057;
-    border-radius: 20px;
+
+#AE-dash .progress {
+  clear: both;
+  background-color: white;
+  border: 2px solid #003057;
+  border-radius: 20px;
 }
 
 #MGR-dash .imageMine .userData {
-  float:left;
-  padding:8px 0 0 12px;
+  float: left;
+  padding: 8px 0 0 12px;
 }
 
-
-#MGR-dash  .progress-bar {
-  background-color:#003057;
-
-}
-#MGR-dash  .progress {
-    clear:both;
-    background-color:white;
-    border:2px solid #003057;
-    border-radius: 20px;
+#MGR-dash .progress-bar {
+  background-color: #003057;
 }
 
-#MGR-dash  .IndyTitle {
-   text-align:left;
-   padding:80px 0 20px 0;
- }
-
-#MGR-dash  .indyData  {
-  margin:20px 0;
+#MGR-dash .progress {
+  clear: both;
+  background-color: white;
+  border: 2px solid #003057;
+  border-radius: 20px;
 }
 
-#MGR-dash  .indyData img {
-  border:1px solid #003057;
+#MGR-dash .IndyTitle {
+  text-align: left;
+  padding: 80px 0 20px;
+}
+
+#MGR-dash .indyData {
+  margin: 20px 0;
+}
+
+#MGR-dash .indyData img {
+  border: 1px solid #003057;
   border-radius: 50%;
-  width:40px;
-  height:auto;
-  }
+  width: 40px;
+  height: auto;
+}
 
-  .error {
-    overflow: visible;
-  }
-  .tooltiptext {
-      width: 40vw;
-      max-width:500px;
-      background-color: #e5e9ed;
-      color: #003057;
-      text-align: left;
-      border-radius: 0;
-      padding: 30px ;
-      border:1px solid #700413;
-      box-shadow: 2px 2px 5px rgba(0,48,87,0.5);
-      display: none;
+.error {
+  overflow: visible;
+}
 
+.tooltiptext {
+  width: 40vw;
+  max-width: 500px;
+  background-color: #e5e9ed;
+  color: #003057;
+  text-align: left;
+  border-radius: 0;
+  padding: 30px;
+  border: 1px solid #700413;
+  box-shadow: 2px 2px 5px rgba(0,48,87,0.5);
+  display: none;
+  /* Position the tooltip */
+  position: absolute;
+}
 
-      /* Position the tooltip */
-      position: absolute;
-
-  }
-
-  .error:hover  .tooltiptext {
-      display: block;
-      cursor: pointer;
-      top:-150px;
-      left:20px;
-  }
+.error:hover .tooltiptext {
+  display: block;
+  cursor: pointer;
+  top: -150px;
+  left: 20px;
+}
 
 .divisionBtn {
-    float:left;
-    padding: 0 12px;
-    color:#003057;
-    background-repeat: no-repeat;
-    background-position: top left;
-    width:171px;
-    height:66px;
-  }
-
-.divisionBtn1 {
-    background-image: url("/assets/img/rnh/divisioncentral-off.png");
-    z-index: 500;
-  }
-  .divisionBtn2 {
-    background-image: url("/assets/img/rnh/divisionsouth-off.png");
-    margin-left: -18px;
-    z-index: 500;
-  }
-  .divisionBtn3 {
-    background-image: url("/assets/img/rnh/divisionwest-off.png");
-    margin-left: -18px;
-    z-index: 500;
-  }
-  .divisionBtn4 {
-    background-image: url("/assets/img/rnh/divisionnortheast-off.png");
-    margin-left: -18px;
-    z-index: 500;
-  }
-
-  .divisionBtn:hover {
-    cursor:pointer;
-
-  }
-  .divisionBtn1-Active {
-    background-image: url("/assets/img/rnh/divisioncentral-on.png");
-    z-index: 10000;
-  }
-
-  .divisionBtn2-Active {
-    background-image: url("/assets/img/rnh/divisionsouth-on.png");
-    z-index: 10000;
-  }
-
-  .divisionBtn3-Active {
-    background-image: url("/assets/img/rnh/divisionwest-on.png");
-    z-index: 10000;
-  }
-  .divisionBtn4-Active {
-    background-image: url("/assets/img/rnh/divisionnortheast-on.png");
-    z-index: 10000;
-  }
-
-  #wrapper-rnh #standings {
-    margin-bottom:0;
-    background-color: #BFC9D2;
-  }
-#wrapper-rnh #AElist {
-  margin:0;
-  background-color: #ffffff;
+  float: left;
+  padding: 0 12px;
+  color: #003057;
+  background-repeat: no-repeat;
+  background-position: top left;
+  width: 171px;
+  height: 66px;
 }
 
+.divisionBtn1 {
+  background-image: url("/assets/img/rnh/divisioncentral-off.png");
+  z-index: 500;
+}
+
+.divisionBtn2 {
+  background-image: url("/assets/img/rnh/divisionsouth-off.png");
+  margin-left: -18px;
+  z-index: 500;
+}
+
+.divisionBtn3 {
+  background-image: url("/assets/img/rnh/divisionwest-off.png");
+  margin-left: -18px;
+  z-index: 500;
+}
+
+.divisionBtn4 {
+  background-image: url("/assets/img/rnh/divisionnortheast-off.png");
+  margin-left: -18px;
+  z-index: 500;
+}
+
+.divisionBtn:hover {
+  cursor: pointer;
+}
+
+.divisionBtn1-Active {
+  background-image: url("/assets/img/rnh/divisioncentral-on.png");
+  z-index: 10000;
+}
+
+.divisionBtn2-Active {
+  background-image: url("/assets/img/rnh/divisionsouth-on.png");
+  z-index: 10000;
+}
+
+.divisionBtn3-Active {
+  background-image: url("/assets/img/rnh/divisionwest-on.png");
+  z-index: 10000;
+}
+
+.divisionBtn4-Active {
+  background-image: url("/assets/img/rnh/divisionnortheast-on.png");
+  z-index: 10000;
+}
+
+#wrapper-rnh #standings {
+  margin-bottom: 0;
+  background-color: #BFC9D2;
+}
+
+#wrapper-rnh #AElist {
+  margin: 0;
+  background-color: #ffffff;
+}
 /* //////////////////////  Small Tweaks From Shaun  /////////////////////  */
 .border-right-line {
   border-right: 1px solid #003057;
 }
 
-
 #wrapper-rnh .table-striped tbody tr:nth-of-type(odd) {
   background-color: white;
 }
+
 #wrapper-rnh .table-striped tbody tr:nth-of-type(even) {
   background-color: #E8ECEF;
 }
 
 #wrapper-rnh .table-striped tbody tr td:nth-of-type(1) {
-  font-weight:bold;
+  font-weight: bold;
 }
-
 
 #wrapper-rnh .datatable .table-bordered {
   border: 0px!important;
@@ -450,22 +469,22 @@ padding:0 20px;
 }
 
 th.rnhprogress {
-    position: absolute;
-    top: 0.3%;
-  }
+  position: absolute;
+  top: 0.3%;
+}
 
-#wrapper-rnh .form-group select  {
-border-radius: 0px!important;
-border: 2px solid white!important;
-height: 41px;
+#wrapper-rnh .form-group select {
+  border-radius: 0px!important;
+  border: 2px solid white!important;
+  height: 41px;
 }
 
 #wrapper-rnh .form-control {
-border-radius: 4px!important;
+  border-radius: 4px!important;
 }
 
-#wrapper-rnh .noborder .form-group .form-control{
-border: 0px!important;
+#wrapper-rnh .noborder .form-group .form-control {
+  border: 0px!important;
 }
 
 .placeholdercolor .form-group input::-webkit-input-placeholder {
@@ -476,422 +495,417 @@ border: 0px!important;
   margin-right: inherit!important;
 }
 
-#wrapper-rnh  .datatable {
-  margin:0;
-  margin-top:-100px;
+#wrapper-rnh .datatable {
+  margin: -100px 0 0;
   background-color: #BFC9D2;
-  padding:0 30px;
+  padding: 0 30px;
   // overflow-y: none;
   // max-height:400px;
 }
 
-#aeCentral, #aeWest, #aeNortheast, #aeSouth {
+#aeCentral,
+#aeNortheast,
+#aeSouth,
+#aeWest {
   background-color: #F1F1F1;
-  margin:0;
-  padding-top:14px;
+  margin: 0;
+  padding-top: 14px;
 }
+
 .datatable .row {
   display: flex;
   align-items: center;
-  padding:5px 0;
-
+  padding: 5px 0;
 }
 
-.datatable .row:nth-child(odd){
+.datatable .row:nth-child(odd) {
   // background-color: #FF0000;
-
 }
-
-
 /* //////////////////////  MEDIA  /////////////////////  */
-
-  @media only screen and (min-width:1300px)  {
-    .container {
-      max-width:1280px;
-    }
-
+@media only screen and (min-width:1300px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+/* //////////////////////  MEDIA  1299   /////////////////////  */
+@media only screen and (max-width:1299px) {
+  #rnh-goal .logo_rnh,
+  #rnh-ovTitle .logo_rnh {
+    width: 60%;
   }
 
-  /* //////////////////////  MEDIA  1299   /////////////////////  */
+  .divisionBtn {
+    background-size: cover;
+    width: 154px;
+    height: 59px;
+  }
+}
+/* //////////////////////  MEDIA  1200   /////////////////////  */
+@media only screen and (max-width:1200px) {
+  #rnh-ovTitle {}
 
-  @media only screen and (max-width:1299px)  {
-
-    #rnh-goal .logo_rnh, #rnh-ovTitle .logo_rnh  {
-      width:60%;
-    }
-
-    .divisionBtn {
-        background-size: cover;
-        width:154px;
-        height:59px;
-      }
-
-
+  #wrapper-rnh h1 {
+    font-size: 54px;
   }
 
-  /* //////////////////////  MEDIA  1200   /////////////////////  */
+  #wrapper-rnh h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
-  @media only screen and (max-width:1200px)  {
+  ,
+  #wrapper-rnh h3 {
+    font-size: 16px;
+  }
 
-     #rnh-ovTitle {
-     }
-
-
-     #wrapper-rnh h1 {
-       font-size: 54px;
-     }
-
-    #wrapper-rnh h2 {
-      font-size: 20px;
-      line-height: 30px;
-
-    }
-
-    #wrapper-rnh h3,  {
-      font-size: 16px;
-    }
-    #wrapper-rnh h4,  {
+  ,
+  #wrapper-rnh h4 {
     font-size: 14px;
   }
 
-  #wrapper-rnh h5,  {
+  ,
+  #wrapper-rnh h5 {
     font-size: 16px;
     font-style: italic;
     font-weight: 600;
   }
-  #wrapper-rnh h6,  {
+
+  ,
+  #wrapper-rnh h6 {
     font-size: 12px;
   }
+
   #wrapper-rnh p {
     font-size: 13px;
   }
 
-     #rnh-goal .logo_rnh, #rnh-ovTitle .logo_rnh  {
-       width:70%;
-     }
-
-
-  .companyGoal {
-       clear:both;
-       padding-top:100px;
-     }
-
-     #AE-dash .imageMine img {
-       width:160px;
-       height:auto;
-     }
-
-     #MGR-dash .imageMine img {
-       width:160px;
-       height:auto;
-     }
-#MGR-dash  .IndyTitle {
-   text-align:left;
-   padding:60px 0 10px 0;
- }
-
-    .divisionBtn {
-        background-size: cover;
-        width:140px;
-        height:53px;
-      }
-        .divisionBtn2 {
-          margin-left: -14px;
-        }
-        .divisionBtn3 {
-          margin-left: -14px;
-        }
-        .divisionBtn4 {
-          margin-left: -14px;
-        }
-
-
+  #rnh-goal .logo_rnh,
+  #rnh-ovTitle .logo_rnh {
+    width: 70%;
   }
 
+  .companyGoal {
+    clear: both;
+    padding-top: 100px;
+  }
 
+  #AE-dash .imageMine img {
+    width: 160px;
+    height: auto;
+  }
 
-    /* //////////////////////  MEDIA  1024 (ipad Pro)    /////////////////////  */
+  #MGR-dash .imageMine img {
+    width: 160px;
+    height: auto;
+  }
 
-    @media only screen and (max-width:1024px)  {
+  #MGR-dash .IndyTitle {
+    text-align: left;
+    padding: 60px 0 10px;
+  }
 
-  #wrapper-rnh  .datatable {
-    margin-top:-76px;
+  .divisionBtn {
+    background-size: cover;
+    width: 140px;
+    height: 53px;
+  }
+
+  .divisionBtn2 {
+    margin-left: -14px;
+  }
+
+  .divisionBtn3 {
+    margin-left: -14px;
+  }
+
+  .divisionBtn4 {
+    margin-left: -14px;
+  }
+}
+/* //////////////////////  MEDIA  1024 (ipad Pro)    /////////////////////  */
+@media only screen and (max-width:1024px) {
+  #wrapper-rnh .datatable {
+    margin-top: -76px;
   }
 
   #wrapper-rnh .ProgressPercent {
-      font-size: 30px;
-      letter-spacing: 0.4px ;
-    }
+    font-size: 30px;
+    letter-spacing: 0.4px;
+  }
+
   #wrapper-rnh .IndvProgressPercent {
     font-size: 24px;
-    letter-spacing: 0.4px ;
-    }
+    letter-spacing: 0.4px;
+  }
 
-#AE-dash .userPic,   #MGR-dash .userPic {
-    width:120px;
-    float:left;
-    padding-top:28px;
-    }
+  #AE-dash .userPic,
+  #MGR-dash .userPic {
+    width: 120px;
+    float: left;
+    padding-top: 28px;
+  }
 
-#MGR-dash  .IndyTitle {
-       text-align:left;
-       padding:60px 0 10px 0;
-     }
-
+  #MGR-dash .IndyTitle {
+    text-align: left;
+    padding: 60px 0 10px;
+  }
 }
+/* //////////////////////  MEDIA  991  iPad  /////////////////////  */
+@media only screen and (max-width:991px) {
+  #wrapper-rnh h1 {
+    font-size: 48px;
+  }
 
+  #wrapper-rnh h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
 
+  ,
+  #wrapper-rnh h3 {
+    font-size: 14px;
+  }
 
-  /* //////////////////////  MEDIA  991  iPad  /////////////////////  */
+  ,
+  #wrapper-rnh h4 {
+    font-size: 13px;
+  }
 
-  @media only screen and (max-width:991px)  {
+  ,
+  #wrapper-rnh h5 {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+  }
 
+  ,
+  #wrapper-rnh h6 {
+    font-size: 11px;
+  }
 
+  #wrapper-rnh p {
+    font-size: 12px;
+  }
 
-     #wrapper-rnh h1 {
-       font-size: 48px;
-     }
+  #wrapper-rnh #altNav li {
+    width: 100px;
+    font-size: 12px;
+  }
 
-     #wrapper-rnh h2 {
-       font-size: 18px;
-       line-height: 24px;
+  #rnh-goal {
+    padding: 40px 0;
+  }
 
-     }
+  .toTop img {
+    margin-right: 0 !important;
+  }
 
-     #wrapper-rnh h3,  {
-       font-size: 14px;
-     }
-     #wrapper-rnh h4,  {
-     font-size: 13px;
-   }
+  #wrapper-rnh .srilogo {
+    margin-left: 40px !important;
+  }
 
-   #wrapper-rnh h5,  {
-     font-size: 14px;
-     font-style: italic;
-     font-weight: 600;
-   }
-   #wrapper-rnh h6,  {
-     font-size: 11px;
-   }
-   #wrapper-rnh p {
-     font-size: 12px;
-   }
+  .companyGoal {
+    clear: both;
+    padding-top: 80px;
+  }
 
-   #wrapper-rnh  #altNav li {
-     width:100px;
-    font-size:12px;
-   }
+  #AE-dash .imageMine {
+    margin-top: 36px;
+  }
 
-   #rnh-goal {
-     padding:40px 0 ;
-   }
-
-   .toTop img {
-       margin-right:0px !important;
-   }
-
-   #wrapper-rnh  .srilogo {
-     margin-left: 40px !important;
-   }
-
- .companyGoal {
-      clear:both;
-      padding-top:80px;
-    }
-
- #AE-dash .imageMine {
-       margin-top:36px;
-     }
   #MGR-dash .imageMine {
-       margin-top:36px;
-     }
+    margin-top: 36px;
+  }
+
   #AE-dash .imageMine img {
-       width:200px;
-       height:auto;
-     }
+    width: 200px;
+    height: auto;
+  }
 
   #MGR-dash .imageMine img {
-       width:200px;
-       height:auto;
-     }
+    width: 200px;
+    height: auto;
+  }
 
- #wrapper-rnh .ProgressPercent {
-     font-size: 28px;
-     letter-spacing: 0.4px ;
-   }
- #wrapper-rnh .IndvProgressPercent {
-   font-size: 20px;
-   letter-spacing: 0.4px ;
-   }
+  #wrapper-rnh .ProgressPercent {
+    font-size: 28px;
+    letter-spacing: 0.4px;
+  }
 
+  #wrapper-rnh .IndvProgressPercent {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+  }
 
- #AE-dash .userPic,   #MGR-dash .userPic {
-         width:120px;
-         float:left;
-         padding-top:14px;
-         margin-right:30px;
-         }
+  #AE-dash .userPic,
+  #MGR-dash .userPic {
+    width: 120px;
+    float: left;
+    padding-top: 14px;
+    margin-right: 30px;
+  }
 
- #MGR-dash  .IndyTitle {
-            text-align:left;
-            padding:20px 0 0px 0;
-          }
+  #MGR-dash .IndyTitle {
+    text-align: left;
+    padding: 20px 0 0;
+  }
 
   #MGR-dash .teamProgress {
-       padding-top:36px;
-     }
+    padding-top: 36px;
+  }
 
   .tooltiptext {
-       width: 90vw;
-       }
-.divisionBtn {
-        background-size: cover;
-        width:171px;
-        height:66px;
-      }
-.hideUnder992 {
-        display:none;
-      }
+    width: 90vw;
   }
 
-  /* //////////////////////  MEDIA  767   /////////////////////  */
+  .divisionBtn {
+    background-size: cover;
+    width: 171px;
+    height: 66px;
+  }
 
-  @media only screen and (max-width:767px)  {
+  .hideUnder992 {
+    display: none;
+  }
+}
+/* //////////////////////  MEDIA  767   /////////////////////  */
+@media only screen and (max-width:767px) {
+  #wrapper-rnh .srilogo {
+    margin-left: 30px;
+    float: left;
+    padding-top: 50px;
+    padding-bottom: 0;
+    width: 65%;
+    height: auto;
+  }
 
-    #wrapper-rnh  .srilogo  {
-      margin-left: 30px;
-      float:left;
-        padding-top:50px;
-        padding-bottom:0px;
-        width:65%;
-        height:auto;
+  #wrapper-rnh h1 {
+    font-size: 30px;
+  }
 
-    }
+  #rnh-goal .logo_rnh,
+  #rnh-ovTitle .logo_rnh {
+    width: 80%;
+  }
 
-     #wrapper-rnh h1 {
-       font-size: 30px;
-     }
+  #wrapper-rnh .logoText {
+    margin: 12px 60px;
+    font-size: 18px;
+    clear: both;
+  }
 
+  #wrapper-rnh #header {
+    height: 120px;
+  }
 
-     #rnh-goal .logo_rnh, #rnh-ovTitle .logo_rnh  {
-       width:80%;
-     }
-
-     #wrapper-rnh  .logoText {
-       margin:12px 60px;
-       font-size: 18px;
-       clear:both;
-
-     }
-     #wrapper-rnh   #header {
-       height:120px;
-     }
-
-     #wrapper-rnh  #altNav li {
-       width:90px;
-      font-size:11px;
-     }
-
+  #wrapper-rnh #altNav li {
+    width: 90px;
+    font-size: 11px;
+  }
 
   #AE-dash .userPic {
-    width:36%;
-    float:left;
+    width: 36%;
+    float: left;
   }
+
   #AE-dash .userData {
-    float:left;
-    clear:none;
+    float: left;
+    clear: none;
   }
 
-
-     #AE-dash .imageMine img {
-       width:140px;
-       height:auto;
-     }
-
-     #MGR-dash .imageMine img {
-       width:140px;
-       height:auto;
-     }
-    .divisionBtn {
-        background-size: cover;
-        width:136px;
-        height:50px;
-      }
-    .hideUnder767 {
-          display:none;
-        }
-
+  #AE-dash .imageMine img {
+    width: 140px;
+    height: auto;
   }
 
-  /* //////////////////////  MEDIA  600   /////////////////////  */
+  #MGR-dash .imageMine img {
+    width: 140px;
+    height: auto;
+  }
 
-  @media only screen and (max-width:600px)  {
-    .colGoalTitle {
-      display:none;
-    }
-    #rnh-goal .logo_rnh, #rnh-ovTitle .logo_rnh  {
-      width:100%;
-      margin:auto;
-      float:none;
-    }
-
-    #wrapper-rnh  #altNav li {
-      width:84px;
-     font-size:10px;
-    }
-
-
-    #wrapper-rnh #altNav {
-        font-size:0.7rem;
-    }
-  #rnh-goal  .companyGoal {
-         clear:both;
-         padding-top:40px;
-       }
-  #rnh-goal .companyGoal h3 {
-    font-size:12px;
-    font-weight:400;
-       }
   .divisionBtn {
-        background-size: cover;
-        width:24vw;
-        height:4vh;
-      }
+    background-size: cover;
+    width: 136px;
+    height: 50px;
+  }
 
- #wrapper-rnh .ProgressPercent {
-       font-size: 20px;
-       letter-spacing: 0.4px ;
-     }
- #wrapper-rnh .IndvProgressPercent {
-     font-size: 18px;
-     letter-spacing: 0.4px ;
-     }
-
-
- #AE-dash .userPic,   #MGR-dash .userPic {
-    display:none;
-     }
-
-#MGR-dash  .IndyTitle {
-      text-align:left;
-      padding:20px 0 0 14px;
-    }
-
-#MGR-dash  .indyData {
-       margin:10px 0;
-     }
-
-
-#AE-dash .imageMine, #MGR-dash .imageMine {
-           margin:auto;
-           margin-top:0px;
-         }
-
-  #wrapper-rnh  .datatable {
-        margin-top:-56px;
-      }
-#Filters .filters {
-  margin:10px auto;
-  text-align: center;
+  .hideUnder767 {
+    display: none;
+  }
 }
+/* //////////////////////  MEDIA  600   /////////////////////  */
+@media only screen and (max-width:600px) {
+  .colGoalTitle {
+    display: none;
+  }
+
+  #rnh-goal .logo_rnh,
+  #rnh-ovTitle .logo_rnh {
+    width: 100%;
+    margin: auto;
+    float: none;
+  }
+
+  #wrapper-rnh #altNav li {
+    width: 84px;
+    font-size: 10px;
+  }
+
+  #wrapper-rnh #altNav {
+    font-size: 0.7rem;
+  }
+
+  #rnh-goal .companyGoal {
+    clear: both;
+    padding-top: 40px;
+  }
+
+  #rnh-goal .companyGoal h3 {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .divisionBtn {
+    background-size: cover;
+    width: 24vw;
+    height: 4vh;
+  }
+
+  #wrapper-rnh .ProgressPercent {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+  }
+
+  #wrapper-rnh .IndvProgressPercent {
+    font-size: 18px;
+    letter-spacing: 0.4px;
+  }
+
+  #AE-dash .userPic,
+  #MGR-dash .userPic {
+    display: none;
+  }
+
+  #MGR-dash .IndyTitle {
+    text-align: left;
+    padding: 20px 0 0 14px;
+  }
+
+  #MGR-dash .indyData {
+    margin: 10px 0;
+  }
+
+  #AE-dash .imageMine,
+  #MGR-dash .imageMine {
+    margin: 0 auto auto;
+  }
+
+  #wrapper-rnh .datatable {
+    margin-top: -56px;
+  }
+
+  #Filters .filters {
+    margin: 10px auto;
+    text-align: center;
+  }
 }
