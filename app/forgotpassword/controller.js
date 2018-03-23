@@ -7,7 +7,7 @@ export default Ember.Controller.extend({
         profile.save().then(() => {
           profile.set('forgotpassword', profile);
         })
-        this.transitionToRoute('firstlook.passwordresetconfirmation');
+        this.transitionToRoute('passwordresetconfirmation');
 
   },
 },
