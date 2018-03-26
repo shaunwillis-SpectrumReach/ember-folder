@@ -11,7 +11,8 @@ module.exports = function(defaults) {
   },
   'ember-math-helpers': {
      only: ['add', 'div', 'round', 'mult']
-   }
+   },
+
   });
 
   // Use `app.import` to add additional libraries to the generated
