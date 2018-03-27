@@ -12,7 +12,9 @@
     <ul>
         <!-- <li><a href="/launchpad">Launchpad</a></li> -->
         <li class="active">Overview</li>
+        {{#if currentUser.pid.isAdmin}}
         <li><a href="/reachnewheights/dashboard">Standings</a></li>
+        {{/if}}
         <!-- <li><a href="/reachnewheights/faqs">FAQ</a></li> -->
         {{#if currentUser.pid.isAdmin}}
           <li><a href="/reachnewheights/admin">Admin</a></li>
