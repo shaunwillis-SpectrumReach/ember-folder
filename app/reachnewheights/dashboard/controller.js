@@ -11,16 +11,16 @@ import { get } from '@ember/object';
         {
           "title": "",
           "propertyName": "jobtitle",
-          "className": "text-center hideUnder992",
-          "filterPlaceholder": "Sort by title",
-          "filterWithSelect": true,
-          "predefinedFilterOptions": [
-            "AE",
-            "LSM",
-            "DOS",
-            "RVP",
-            "DVP"
-          ]
+          "className": "text-center placeholdercolor hideUnder992 noborder listHide",
+          "filterPlaceholder": "Job Title",
+          // "filterWithSelect": true,
+          // "predefinedFilterOptions": [
+          //   "AE",
+          //   "LSM",
+          //   "DOS",
+          //   "RVP",
+          //   "DVP"
+          // ]
         },
         {
           "title": "",

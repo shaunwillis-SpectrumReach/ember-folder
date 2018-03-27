@@ -43,16 +43,16 @@ export default Route.extend({
       managernamedvpwest: this.store.query('rn-hdvpdbview', {
           'west': true
         }),
-      central: this.store.query('rn-hall', {
+      central: this.store.query('rn-haedbview', {
         'central': true
       }),
-      west: this.store.query('rn-hall', {
+      west: this.store.query('rn-haedbview', {
         'west': true
       }),
-      south: this.store.query('rn-hall', {
+      south: this.store.query('rn-haedbview', {
         'south': true
       }),
-      northeast: this.store.query('rn-hall', {
+      northeast: this.store.query('rn-haedbview', {
         'northeast': true
       }),
       aerollup: this.store.query('rn-haedbview', {
