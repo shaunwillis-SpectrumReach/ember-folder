@@ -7,8 +7,12 @@ export default Ember.Controller.extend({
         profile.save().then(() => {
           profile.set('forgotpassword', profile);
         })
-        this.transitionToRoute('passwordresetconfirmation');
-
+        .then(() => {
+          this.transitionToRoute('passwordresetconfirmation');
+        })
+        .catch(() => {
+          alert('User Error. One password reset per email address in 24 hour period.');
+        })
   },
 },
 });
