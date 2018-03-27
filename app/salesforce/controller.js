@@ -10,7 +10,9 @@ export default Ember.Controller.extend({
           this.transitionToRoute('firstlook.register-thanks');
 
         })
-
+        .catch(() => {
+                alert('Email address has already been used.');
+              });
   },
 },
 });

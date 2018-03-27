@@ -18,7 +18,10 @@ export default Ember.Controller.extend({
         } else {
           this.transitionToRoute('login');
         }
-      });
+      })
+      .catch(() => {
+              alert('email address or password is incorrect.');
+            });
     }
   }
 });

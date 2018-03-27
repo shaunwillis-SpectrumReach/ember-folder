@@ -58,6 +58,7 @@ Router.map(function() {
   this.route('forgotpassword');
   this.route('salesforce');
   this.route('passwordresetconfirmation');
+  this.route('logout');
 });
 
 export default Router;
