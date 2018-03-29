@@ -43,6 +43,42 @@ export default Route.extend({
       managernamedvpwest: this.store.query('rn-hdvpdbview', {
           'west': true
         }),
+      managernamervpnortheast: this.store.query('rn-hrvpdbview', {
+          'northeast': true
+        }),
+      managernamervpsouth: this.store.query('rn-hrvpdbview', {
+          'south': true
+        }),
+      managernamervpcentral: this.store.query('rn-hrvpdbview', {
+          'central': true
+        }),
+      managernamervpwest: this.store.query('rn-hrvpdbview', {
+          'west': true
+        }),
+      managernamedosnortheast: this.store.query('rn-hdosdbview', {
+          'northeast': true
+        }),
+      managernamedossouth: this.store.query('rn-hdosdbview', {
+          'south': true
+        }),
+      managernamedoscentral: this.store.query('rn-hdosdbview', {
+          'central': true
+        }),
+      managernamedoswest: this.store.query('rn-hdosdbview', {
+          'west': true
+        }),
+      managernamelsmnortheast: this.store.query('rn-hlsmdbview', {
+          'northeast': true
+        }),
+      managernamelsmsouth: this.store.query('rn-hlsmdbview', {
+          'south': true
+        }),
+      managernamelsmcentral: this.store.query('rn-hlsmdbview', {
+          'central': true
+        }),
+      managernamelsmwest: this.store.query('rn-hlsmdbview', {
+          'west': true
+        }),
       central: this.store.query('rn-haedbview', {
         'central': true
       }),
