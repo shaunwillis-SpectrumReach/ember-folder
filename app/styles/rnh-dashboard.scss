@@ -503,13 +503,19 @@ th.rnhprogress {
   // max-height:400px;
 }
 
-#aeCentral,
-#aeNortheast,
-#aeSouth,
-#aeWest {
-  background-color: #F1F1F1;
+.aeCentral,
+.aeNortheast,
+.aeSouth,
+.aeWest {
   margin: 0;
   padding-top: 14px;
+}
+
+.aeCentral h3,
+.aeNortheast h3,
+.aeSouth h3,
+.aeWest h3 {
+  margin-bottom:-40px;
 }
 
 .datatable .row {
