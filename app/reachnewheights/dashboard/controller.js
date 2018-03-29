@@ -78,62 +78,62 @@ import { get } from '@ember/object';
       actions: {
 
         showAllAEs() {
-          $('#aeWest').addClass('hide');
-          $('#aeNortheast').addClass('hide');
-          $('#aeSouth').addClass('hide');
-          $('#aeCentral').addClass('hide');
-        },
+        $('.aeWest').addClass('hide');
+        $('.aeNortheast').addClass('hide');
+        $('.aeSouth').addClass('hide');
+        $('.aeCentral').addClass('hide');
+      },
 
-        filterCategoryCentral() {
-          $('#aeWest').addClass('hide');
-          $('#aeSouth').addClass('hide');
-          $('#aeNortheast').addClass('hide');
-          $('#aeCentral').removeClass('hide');
+      filterCategoryCentral() {
+        $('.aeWest').addClass('hide');
+        $('.aeSouth').addClass('hide');
+        $('.aeNortheast').addClass('hide');
+        $('.aeCentral').removeClass('hide');
 
-          $('#divCentral').addClass('divisionBtn1-Active');
-          $('#divNortheast').removeClass('divisionBtn4-Active');
-          $('#divWest').removeClass('divisionBtn3-Active');
-          $('#divSouth').removeClass('divisionBtn2-Active');
+        $('#divCentral').addClass('divisionBtn1-Active');
+        $('#divNortheast').removeClass('divisionBtn4-Active');
+        $('#divWest').removeClass('divisionBtn3-Active');
+        $('#divSouth').removeClass('divisionBtn2-Active');
 
-        },
+      },
 
-        filterCategoryNortheast() {
-          $('#aeWest').addClass('hide');
-          $('#aeSouth').addClass('hide');
-          $('#aeCentral').addClass('hide');
-          $('#aeNortheast').removeClass('hide');
+      filterCategoryNortheast() {
+        $('.aeWest').addClass('hide');
+        $('.aeSouth').addClass('hide');
+        $('.aeCentral').addClass('hide');
+        $('.aeNortheast').removeClass('hide');
 
-          $('#divCentral').removeClass('divisionBtn1-Active');
-          $('#divNortheast').addClass('divisionBtn4-Active');
-          $('#divWest').removeClass('divisionBtn3-Active');
-          $('#divSouth').removeClass('divisionBtn2-Active');
+        $('#divCentral').removeClass('divisionBtn1-Active');
+        $('#divNortheast').addClass('divisionBtn4-Active');
+        $('#divWest').removeClass('divisionBtn3-Active');
+        $('#divSouth').removeClass('divisionBtn2-Active');
 
-        },
+      },
 
-        filterCategoryWest() {
-          $('#aeNortheast').addClass('hide');
-          $('#aeSouth').addClass('hide');
-          $('#aeCentral').addClass('hide');
-          $('#aeWest').removeClass('hide');
+      filterCategoryWest() {
+        $('.aeNortheast').addClass('hide');
+        $('.aeSouth').addClass('hide');
+        $('.aeCentral').addClass('hide');
+        $('.aeWest').removeClass('hide');
 
-          $('#divWest').addClass('divisionBtn3-Active');
-          $('#divCentral').removeClass('divisionBtn1-Active');
-          $('#divNortheast').removeClass('divisionBtn4-Active');
-          $('#divSouth').removeClass('divisionBtn2-Active');
+        $('#divWest').addClass('divisionBtn3-Active');
+        $('#divCentral').removeClass('divisionBtn1-Active');
+        $('#divNortheast').removeClass('divisionBtn4-Active');
+        $('#divSouth').removeClass('divisionBtn2-Active');
 
-        },
+      },
 
-        filterCategorySouth() {
-          $('#aeWest').addClass('hide');
-          $('#aeNortheast').addClass('hide');
-          $('#aeCentral').addClass('hide');
-          $('#aeSouth').removeClass('hide');
+      filterCategorySouth() {
+        $('.aeWest').addClass('hide');
+        $('.aeNortheast').addClass('hide');
+        $('.aeCentral').addClass('hide');
+        $('.aeSouth').removeClass('hide');
 
-          $('#divSouth').addClass('divisionBtn2-Active');
-          $('#divCentral').removeClass('divisionBtn1-Active');
-          $('#divWest').removeClass('divisionBtn3-Active');
-          $('#divNortheast').removeClass('divisionBtn4-Active');
-        },
+        $('#divSouth').addClass('divisionBtn2-Active');
+        $('#divCentral').removeClass('divisionBtn1-Active');
+        $('#divWest').removeClass('divisionBtn3-Active');
+        $('#divNortheast').removeClass('divisionBtn4-Active');
+      },
 
         // filterCategoryAE1m() {
         //   // return this.store.query('ae15m', {
@@ -144,6 +144,12 @@ import { get } from '@ember/object';
         scrollToTop() {
           // document.getElementById('message').scrollIntoView();
           $('html, body').animate({ scrollTop: $('#wrapper-rnh').offset().top }, 'slow');
+               return false;
+        },
+
+        scrollToFilters() {
+          // document.getElementById('message').scrollIntoView();
+          $('html, body').animate({ scrollTop: $('#Filters').offset().top }, 'slow');
                return false;
         },
 

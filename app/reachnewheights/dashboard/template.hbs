@@ -509,6 +509,11 @@
                   &nbsp;</div>
               <div id="divNortheast" class="divisionBtn divisionBtn4" {{action "filterCategoryNortheast"}}>
                 &nbsp;</div>
+                <div style="margin:auto; text-align:center; font-size:14px; padding-top:24px; clear:both;" class="aeCentral"><a href="#dvpStandings">DVP View</a> | <a href="#rvpStandings">RVP View</a> | <a href="#dosStandings">DOS View</a> | <a href="#lsmStandings">LSM View</a> | <a href="#aeStandings">AE View</a></div>
+                <div style="margin:auto; text-align:center; font-size:14px; padding-top:24px; clear:both;" class="aeWest hide"><a href="#dvpStandings-w">DVP View</a> | <a href="#rvpStandings-w">RVP View</a> | <a href="#dosStandings-w">DOS View</a> | <a href="#lsmStandings-w">LSM View</a> | <a href="#aeStandings-w">AE View</a></div>
+                <div style="margin:auto; text-align:center; font-size:14px; padding-top:24px; clear:both;" class="aeSouth hide"><a href="#dvpStandings-s">DVP View</a> | <a href="#rvpStandings-s">RVP View</a> | <a href="#dosStandings-s">DOS View</a> | <a href="#lsmStandings-s">LSM View</a> | <a href="#aeStandings-s">AE View</a></div>
+                <div style="margin:auto; text-align:center; font-size:14px; padding-top: 24px; clear:both;" class="aeNortheast hide"><a href="#dvpStandings-n">DVP View</a> | <a href="#rvpStandings-n">RVP View</a> | <a href="#dosStandings-n">DOS View</a> | <a href="#lsmStandings-n">LSM View</a> | <a href="#aeStandings-n">AE View</a></div>
+
 
         </div>
       <!-- <div class="footnote"><h3>Select tabs to view by Category</p></div> -->
@@ -527,10 +532,29 @@
 
 
     <!--   ================================   -->
-    <!--  Central table  -->
+    <!--  Central GROUP (x5 tables) -->
     <!--   ================================   -->
-    <div class="row" id="aeCentral" style="">
+
+    <div id="dvpStandings" class="row aeCentral" style="">
       <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        <div ><h3>DVP VIEW - CENTRAL</h3></div>
+        {{models-table
+           data=model.managernamedvpcentral
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           columnComponents=(hash rnhprogressBar=(component "rnhprogress-bar") profileImg=(component "profile-img"))
+           pageSize=755
+         }}
+         <div class="toTop"><span class="" {{action "scrollToFilters"}}><span style="color:#fff;">Return to Filters</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+
+        </div>
+    </div>
+
+    <div  id="rvpStandings"  class="row aeCentral" style="">
+      <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        <div><h3>RVP VIEW - CENTRAL</h3></div>
         {{models-table
            data=model.central
            columns=columns
@@ -540,15 +564,87 @@
            columnComponents=(hash rnhprogressBar=(component "rnhprogress-bar") profileImg=(component "profile-img"))
            pageSize=755
          }}
+         <div class="toTop"><span class="" {{action "scrollToFilters"}}><span style="color:#fff;">Return to Filters</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+
+        </div>
+    </div>
+
+    <div  id="dosStandings" class="row aeCentral" style="">
+      <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        <div><h3>DOS VIEW - CENTRAL</h3></div>
+        {{models-table
+           data=model.central
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           columnComponents=(hash rnhprogressBar=(component "rnhprogress-bar") profileImg=(component "profile-img"))
+           pageSize=755
+         }}
+         <div class="toTop"><span class="" {{action "scrollToFilters"}}><span style="color:#fff;">Return to Filters</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+
         </div>
     </div>
 
 
-    <!--   ================================   -->
-    <!--  West table  -->
-    <!--   ================================   -->
-    <div class="row hide" id="aeWest" >
+    <div  id="lsmStandings" class="row aeCentral" style="">
       <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        <div><h3>LSM VIEW - CENTRAL</h3></div>
+        {{models-table
+           data=model.central
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           columnComponents=(hash rnhprogressBar=(component "rnhprogress-bar") profileImg=(component "profile-img"))
+           pageSize=755
+         }}
+         <div class="toTop"><span class="" {{action "scrollToFilters"}}><span style="color:#fff;">Return to Filters</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+
+        </div>
+    </div>
+
+    <div  id="aeStandings" class="row aeCentral" style="">
+      <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        <div><h3>AE VIEW - CENTRAL</h3></div>
+        {{models-table
+           data=model.central
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           columnComponents=(hash rnhprogressBar=(component "rnhprogress-bar") profileImg=(component "profile-img"))
+           pageSize=755
+         }}
+         <div class="toTop"><span class="" {{action "scrollToFilters"}}><span style="color:#fff;">Return to Filters</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+
+        </div>
+    </div>
+
+    <!--   ================================   -->
+    <!--  West GROUP (x 5 tables)  -->
+    <!--   ================================   -->
+
+    <div  id="dvpStandings-w" class="row hide aeWest" >
+      <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        <div ><h3>DVP VIEW - West</h3></div>
+        {{models-table
+           data=model.managernamedvpwest
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           columnComponents=(hash rnhprogressBar=(component "rnhprogress-bar") profileImg=(component "profile-img"))
+           pageSize=755
+         }}
+         <div class="toTop"><span class="" {{action "scrollToFilters"}}><span style="color:#fff;">Return to Filters</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+
+        </div>
+    </div>
+
+    <div  id="rvpStandings-w" class="row hide aeWest" >
+      <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        <div><h3>RVP VIEW - West</h3></div>
         {{models-table
            data=model.west
            columns=columns
@@ -558,14 +654,85 @@
            columnComponents=(hash rnhprogressBar=(component "rnhprogress-bar") profileImg=(component "profile-img"))
            pageSize=755
          }}
+         <div class="toTop"><span class="" {{action "scrollToFilters"}}><span style="color:#fff;">Return to Filters</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+
         </div>
     </div>
+
+    <div  id="dosStandings-w" class="row hide aeWest" >
+      <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        <div><h3>DOS VIEW - West</h3></div>
+        {{models-table
+           data=model.west
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           columnComponents=(hash rnhprogressBar=(component "rnhprogress-bar") profileImg=(component "profile-img"))
+           pageSize=755
+         }}
+         <div class="toTop"><span class="" {{action "scrollToFilters"}}><span style="color:#fff;">Return to Filters</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+
+        </div>
+    </div>
+
+    <div  id="lsmStandings-w" class="row hide aeWest" >
+      <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        <div><h3>LSM VIEW - West</h3></div>
+        {{models-table
+           data=model.west
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           columnComponents=(hash rnhprogressBar=(component "rnhprogress-bar") profileImg=(component "profile-img"))
+           pageSize=755
+         }}
+         <div class="toTop"><span class="" {{action "scrollToFilters"}}><span style="color:#fff;">Return to Filters</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+
+        </div>
+    </div>
+
+    <div  id="aeStandings-w" class="row hide aeWest" >
+      <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        <div><h3>AE VIEW - West</h3></div>
+        {{models-table
+           data=model.west
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           columnComponents=(hash rnhprogressBar=(component "rnhprogress-bar") profileImg=(component "profile-img"))
+           pageSize=755
+         }}
+         <div class="toTop"><span class="" {{action "scrollToFilters"}}><span style="color:#fff;">Return to Filters</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+        </div>
+    </div>
+
     <!--   ================================   -->
-    <!--  Northeast table  -->
+    <!--  Northeast GROUP (x5 tables)  -->
     <!--   ================================   -->
 
-    <div class="row hide" id="aeNortheast" >
+    <div id="dvpStandings-n" class="row hide aeNortheast" >
       <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        <div ><h3>DVP VIEW - Northeast</h3></div>
+        {{models-table
+           data=model.managernamedvpnortheast
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           columnComponents=(hash rnhprogressBar=(component "rnhprogress-bar") profileImg=(component "profile-img"))
+           pageSize=755
+         }}
+         <div class="toTop"><span class="" {{action "scrollToFilters"}}><span style="color:#fff;">Return to Filters</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+
+        </div>
+    </div>
+
+    <div id="rvpStandings-n"  class="row hide aeNortheast" >
+      <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        <div><h3>RVP VIEW - Northeast</h3></div>
         {{models-table
            data=model.northeast
            columns=columns
@@ -575,14 +742,85 @@
            columnComponents=(hash rnhprogressBar=(component "rnhprogress-bar") profileImg=(component "profile-img"))
            pageSize=755
          }}
+         <div class="toTop"><span class="" {{action "scrollToFilters"}}><span style="color:#fff;">Return to Filters</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+
+        </div>
+    </div>
+
+    <div id="dosStandings-n" class="row hide aeNortheast" >
+      <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        <div><h3>DOS VIEW - Northeast</h3></div>
+        {{models-table
+           data=model.northeast
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           columnComponents=(hash rnhprogressBar=(component "rnhprogress-bar") profileImg=(component "profile-img"))
+           pageSize=755
+         }}
+         <div class="toTop"><span class="" {{action "scrollToFilters"}}><span style="color:#fff;">Return to Filters</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+
+        </div>
+    </div>
+
+    <div id="lsmStandings-n" class="row hide aeNortheast" >
+      <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        <div><h3>LSM VIEW - Northeast</h3></div>
+        {{models-table
+           data=model.northeast
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           columnComponents=(hash rnhprogressBar=(component "rnhprogress-bar") profileImg=(component "profile-img"))
+           pageSize=755
+         }}
+         <div class="toTop"><span class="" {{action "scrollToFilters"}}><span style="color:#fff;">Return to Filters</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+
+        </div>
+    </div>
+
+    <div id="aeStandings-n" class="row hide aeNortheast" >
+      <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        <div><h3>AE VIEW - Northeast</h3></div>
+        {{models-table
+           data=model.northeast
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           columnComponents=(hash rnhprogressBar=(component "rnhprogress-bar") profileImg=(component "profile-img"))
+           pageSize=755
+         }}
+         <div class="toTop"><span class="" {{action "scrollToFilters"}}><span style="color:#fff;">Return to Filters</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+
         </div>
     </div>
 
     <!--   ================================   -->
-    <!--  South table  -->
+    <!--  South GROUP (x5 tables) -->
     <!--   ================================   -->
-    <div class="row hide" id="aeSouth" >
+    <div id="dvpStandings-s" class="row hide aeSouth" >
       <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        <div ><h3>DVP VIEW - South</h3></div>
+        {{models-table
+           data=model.managernamedvpsouth
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           columnComponents=(hash rnhprogressBar=(component "rnhprogress-bar") profileImg=(component "profile-img"))
+           pageSize=755
+         }}
+         <div class="toTop"><span class="" {{action "scrollToFilters"}}><span style="color:#fff;">Return to Filters</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+
+        </div>
+    </div>
+
+    <div id="rvpStandings-s" class="row hide aeSouth" >
+      <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        <div><h3>RVP VIEW - South</h3></div>
         {{models-table
            data=model.south
            columns=columns
@@ -592,16 +830,69 @@
            columnComponents=(hash rnhprogressBar=(component "rnhprogress-bar") profileImg=(component "profile-img"))
            pageSize=755
          }}
+         <div class="toTop"><span class="" {{action "scrollToFilters"}}><span style="color:#fff;">Return to Filters</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+
+        </div>
+    </div>
+
+    <div id="dosStandings-s" class="row hide aeSouth" >
+      <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        <div><h3>DOS VIEW - South</h3></div>
+        {{models-table
+           data=model.south
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           columnComponents=(hash rnhprogressBar=(component "rnhprogress-bar") profileImg=(component "profile-img"))
+           pageSize=755
+         }}
+         <div class="toTop"><span class="" {{action "scrollToFilters"}}><span style="color:#fff;">Return to Filters</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+
+        </div>
+    </div>
+
+    <div id="lsmStandings-s" class="row hide aeSouth" >
+      <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        <div><h3>LSM VIEW - South</h3></div>
+        {{models-table
+           data=model.south
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           columnComponents=(hash rnhprogressBar=(component "rnhprogress-bar") profileImg=(component "profile-img"))
+           pageSize=755
+         }}
+         <div class="toTop"><span class="" {{action "scrollToFilters"}}><span style="color:#fff;">Return to Filters</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+
+        </div>
+    </div>
+
+    <div id="aeStandings-s" class="row hide aeSouth" >
+      <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        <div><h3>AE VIEW - South</h3></div>
+        {{models-table
+           data=model.south
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           columnComponents=(hash rnhprogressBar=(component "rnhprogress-bar") profileImg=(component "profile-img"))
+           pageSize=755
+         }}
+         <div class="toTop"><span class="" {{action "scrollToFilters"}}><span style="color:#fff;">Return to Filters</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+
         </div>
     </div>
 
 
-
 </div>
 
-
-<!-- <div class="spacer10" style="">&nbsp;&nbsp;</div> -->
 </section>
+
+
+
 <section id="stickyFooter">
 <div class="copyright"><p style="padding:24px;">Copyright 2018 • Spectrum Reach • All Rights Reserved</p></div>
  <div class="toTop"><span class="" {{action "scrollToTop"}}><span style="color:#fff;">Top</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
