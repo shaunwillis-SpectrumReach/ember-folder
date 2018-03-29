@@ -10,6 +10,9 @@ export default Route.extend({
       // mine: this.store.query('rn-hall', {
       //     'mine': true
       //   }),
+        goal: this.store.query('rn-hgoaldbview', {
+          'goal': true
+        }),
         mineae: this.store.query('rn-haedbview', {
           'mine': true
         }),
