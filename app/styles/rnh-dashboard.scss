@@ -436,6 +436,7 @@
 
 #wrapper-rnh #standings {
   margin-bottom: 0;
+  padding-bottom: 0;
   background-color: #BFC9D2;
 }
 
@@ -467,6 +468,12 @@
 #wrapper-rnh .datatable .table-bordered td {
   border: 0px!important;
 }
+#wrapper-rnh .datatable .footnote {
+  padding: 20px 0 0 30px;
+  margin-bottom:-30px;
+  text-align:left;
+}
+
 
 th.rnhprogress {
   position: absolute;
@@ -496,7 +503,7 @@ th.rnhprogress {
 }
 
 #wrapper-rnh .datatable {
-  margin: -100px 0 0;
+  margin: -60px 0 0;
   background-color: #BFC9D2;
   padding: 0 30px;
   // overflow-y: none;
@@ -631,7 +638,7 @@ th.rnhprogress {
 /* //////////////////////  MEDIA  1024 (ipad Pro)    /////////////////////  */
 @media only screen and (max-width:1024px) {
   #wrapper-rnh .datatable {
-    margin-top: -76px;
+    margin-top: -40px;
   }
 
   #wrapper-rnh .ProgressPercent {
@@ -655,6 +662,12 @@ th.rnhprogress {
     text-align: left;
     padding: 60px 0 10px;
   }
+  #wrapper-rnh .datatable .footnote {
+    padding: 20px 10px;
+    margin-bottom:0px;
+    text-align:left;
+  }
+
 }
 /* //////////////////////  MEDIA  991  iPad  /////////////////////  */
 @media only screen and (max-width:991px) {
@@ -907,7 +920,7 @@ th.rnhprogress {
   }
 
   #wrapper-rnh .datatable {
-    margin-top: -56px;
+    margin-top: -0px;
   }
 
   #Filters .filters {

@@ -36,48 +36,53 @@
 
   <div class="container" >
     <div class="row "  >
-      <div class="col-lg-5">
-        <div class="col-sm-9 col-lg-12 text-left" ><h1 style="color:#fff; padding-top: 3rem;">ADMIN</h1>
-        <p class="footnote-dash" style="">Sort Data with Filters below</p>
-        <p style="font-size: 14px;">Is someone not showing up? <a href="/supportform" target="_blank" style="font-style: italic; text-decoration: underline; color: white;">click here</a></p>
+
+      <div class="col-lg-9">
+
+        <div class="row text-left" >
+          <h1 class="row" style="color:#fff; padding-top: 3rem;">ADMIN</h1>
+
+        <div class="row" id="Filters"  >
+          <p class=" row footnote-dash" style="">Sort Data with Filters below. Select tab to view each divisional roll-up.</p>
+           <div class=" filters " style="" >
+                       <div id="divCentral" class="divisionBtn divisionBtn1 divisionBtn1-Active" {{action "filterCategoryCentral"}}>
+                         &nbsp;</div>
+                       <div id="divSouth" class="divisionBtn divisionBtn2" {{action "filterCategorySouth"}}>
+                           &nbsp;</div>
+                       <div id="divWest" class="divisionBtn divisionBtn3" {{action "filterCategoryWest"}} >
+                           &nbsp;</div>
+                       <div id="divNortheast" class="divisionBtn divisionBtn4" {{action "filterCategoryNortheast"}}>
+                         &nbsp;</div>
+           </div>
+       </div>
 
 
-        <!-- show on mobile size only  -->
-            <div class="row" id="FilterDisclaimer"  >
-              <p style=" ">Visit our desktop version for more info, searchable data, and filtering capabilities.</p>
-            </div>
-
-            </div>
+          </div>
         <!-- <div id="pdf"  class="col-lg-12 "> <a href="/assets/img/Firstlook_OTBNetRev_byAE_wk5_020118.pdf" target="_blank" style="color:#0099D8;"><img src="/assets/img/ae_pdf.svg" alt="download pdf"/></a>&nbsp; <a href="/assets/img/Firstlook_OTBNetRev_byLSM-Rollup_wk5_020118.pdf" target="_blank" style="color:#0099D8;"><img src="/assets/img/lsm_pdf.svg" alt="download pdf"/></a></div> -->
     </div>
 
 
-     <div class="row col-lg-7" id="Filters"  >
-      <div class=" filters " style="    padding-left: 8px;" >
-            <div style="margin:auto; text-align:center;"><p>Select tab to view each divisional roll-up</p></div>
-              <div id="divCentral" class="divisionBtn divisionBtn1 divisionBtn1-Active" {{action "filterCategoryCentral"}}>
-                &nbsp;</div>
-              <div id="divSouth" class="divisionBtn divisionBtn2" {{action "filterCategorySouth"}}>
-                  &nbsp;</div>
-              <div id="divWest" class="divisionBtn divisionBtn3" {{action "filterCategoryWest"}} >
-                  &nbsp;</div>
-              <div id="divNortheast" class="divisionBtn divisionBtn4" {{action "filterCategoryNortheast"}}>
-                &nbsp;</div>
-
-        </div>
-
-      <!-- <div class="footnote"><p>Select tabs to view by Category</p></div> -->
-
+    <div>
+      <h3>Admin Instructional Resources</h3>
+      <p style="text-align:left;"><a href="https://vimeo.com/261421594" target="_blank"><img src="/assets/img/rnh/videoTutorial.png" width="121" height="70" style="margin-right:12px;">Watch Video Tutorial</a></p>
+      <p style="text-align:left;"><a href="/assets/img/rnh/SR_IncentivesManager_Training.pdf" target="_blank"><img src="/assets/img/rnh/PDF-download-rnhAdmin.png" width="28" height="34" style="margin-right:12px;"> Download detailed PDF Tutorial</a></p>
+      <p style="text-align:left;"><a href="#"><img src="/assets/img/rnh/clickHere.png" width="59" height="37" style="margin-right:12px;">If someone is not showing up</a></p>
     </div>
-  </div>
+
+    <div class="row" id="FilterDisclaimer"  >
+      <p style=" ">Visit our desktop version for more info, searchable data, and filtering capabilities.</p>
+    </div>
 
   </div>
-
+  </div>
 </section>
+
+
+
 <section id="AElist" class="" style="padding-bottom: 0px;" >
+  <div id="datatable" class="container-fluid datatable" style="">
 
-  <div id="datatable" class="container-fluid datatable" style=" ">
-
+    <p class="footnote" style=""><em>Note: for all numerical data, use numbers only; do not use special characters: . , # $</em></p>
 
     <!--   ================================   -->
     <!--  Central table  -->
