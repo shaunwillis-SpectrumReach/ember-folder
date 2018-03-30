@@ -78,55 +78,55 @@
 
        </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4  ">
         <div class="row">
           {{#each model.managernamedvpwest as |collective|}}
-          <div class="col-lg-4" style="">
+          <div class="col-lg-4 col-md-4 col-xs-4" style="">
               <p class="West-bar" style="padding: 0.5rem 1rem; color:#fff; border: 1px solid white; font-weight: 600;">WEST</p>
           </div>
-            <div class="col-lg-7" style="text-align: left; margin-top: 0.5rem; margin-bottom: 1rem;">
+            <div class="col-lg-7 col-md-7 col-xs-7" style="text-align: left; margin-top: 0.5rem; margin-bottom: 1rem;">
               <h4>${{number-format collective.dollars}} / <span style="color: #fff;">${{number-format collective.goal}}</span></h4>
             </div>
-            <div class="col-lg-1">
+            <div class="col-lg-1 col-md-1 col-xs-1">
               <h3> <span style="color: #003057;">{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%</span></h3>
              </div>
             {{/each}}
         </div>
         <div class="row">
           {{#each model.managernamedvpcentral as |collective|}}
-          <div class="col-lg-4" style="">
+          <div class="col-lg-4 col-md-4 col-xs-4" style="">
               <p class="Central-bar" style="padding: 0.5rem 1rem; color:#fff; border: 1px solid white; font-weight: 600;">CENTRAL</p>
           </div>
-            <div class="col-lg-7" style="text-align: left; margin-top: 0.5rem; margin-bottom: 1rem;">
+            <div class="col-lg-7 col-md-7 col-xs-7" style="text-align: left; margin-top: 0.5rem; margin-bottom: 1rem;">
               <h4>${{number-format collective.dollars}} / <span style="color: #fff;">${{number-format collective.goal}}</span></h4>
             </div>
-            <div class="col-lg-1">
+            <div class="col-lg-1 col-md-1 col-xs-1">
               <h3> <span style="color: #003057;">{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%</span></h3>
              </div>
             {{/each}}
         </div>
         <div class="row">
           {{#each model.managernamedvpnortheast as |collective|}}
-          <div class="col-lg-4" style="">
+          <div class="col-lg-4 col-md-4 col-xs-4" style="">
               <p class="Northeast-bar" style="padding: 0.5rem 1rem; color:#fff; border: 1px solid white; font-weight: 600;">NORTHEAST</p>
           </div>
-            <div class="col-lg-7" style="text-align: left; margin-top: 0.5rem; margin-bottom: 1rem;">
+            <div class="col-lg-7 col-md-7 col-xs-7" style="text-align: left; margin-top: 0.5rem; margin-bottom: 1rem;">
               <h4>${{number-format collective.dollars}} / <span style="color: #fff;">${{number-format collective.goal}}</span></h4>
             </div>
-            <div class="col-lg-1">
+            <div class="col-lg-1 col-md-1 col-xs-1">
               <h3> <span style="color: #003057;">{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%</span></h3>
              </div>
             {{/each}}
         </div>
         <div class="row">
           {{#each model.managernamedvpsouth as |collective|}}
-          <div class="col-lg-4" style="">
+          <div class="col-lg-4 col-md-4 col-xs-4" style="">
               <p class="South-bar" style="padding: 0.5rem 1rem; color:#fff; border: 1px solid white; font-weight: 600;">SOUTH</p>
           </div>
-            <div class="col-lg-7" style="text-align: left; margin-top: 0.5rem; margin-bottom: 1rem;">
+            <div class="col-lg-7 col-md-7 col-xs-7" style="text-align: left; margin-top: 0.5rem; margin-bottom: 1rem;">
               <h4>${{number-format collective.dollars}} / <span style="color: #fff;">${{number-format collective.goal}}</span></h4>
             </div>
-            <div class="col-lg-1">
+            <div class="col-lg-1 col-md-1 col-xs-1">
               <h3> <span style="color: #003057;">{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%</span></h3>
              </div>
             {{/each}}
