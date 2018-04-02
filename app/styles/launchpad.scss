@@ -59,10 +59,41 @@
 
 }
 
+#wrapper-launch  #stickyFooter {
+  background: url("../assets/img/Main_Header_bg.svg");
+  background-size: 102%;
+  background-repeat: no-repeat;
+  width: 100.1%;
+  height: 60px;
+  margin: 0 0 -8px -1px;
+  height: 50px;
+  padding: 12px 0 0 24px;
+
+}
+
+
 /*  ////////////////////  MEDIA SMALL  //////////////  */
 @media only screen and (max-width: 929px) {
   #wrapper-launch #contentHome  h3 {
     display:none;
   }
+
+
+#wrapper-launch #contentHome  #launch img {
+  width:50%;
+
+}
+
+}
+
+
+/*  ////////////////////  MEDIA SMALL  //////////////  */
+@media only screen and (max-width: 767px) {
+
+
+#wrapper-launch #contentHome  #launch img {
+  width:65%;
+
+}
 
 }
