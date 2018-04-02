@@ -18,7 +18,7 @@
         {{#if currentUser.pid.isAdmin}}
           <li class="active">Admin</li>
         {{/if}}
-        <li style="float: right; width: 200px;">Reach New Heights</li>
+        <li class="hideUnder767" style="float: right; width: 200px;">Reach New Heights</li>
     </ul>
   </div>
   </section>
@@ -40,7 +40,7 @@
       <div class="col-lg-9">
 
         <div class="row text-left" >
-          <h1 class="row" style="color:#fff; padding-top: 3rem;">ADMIN</h1>
+          <h1 class="row" style="color:#fff; ">ADMIN</h1>
 
         <div class="row" id="Filters"  >
           <p class=" row footnote-dash" style="">Sort Data with Filters below. Select tab to view each divisional roll-up.</p>
@@ -70,7 +70,7 @@
     </div>
 
     <div class="row" id="FilterDisclaimer"  >
-      <p style=" ">Visit our desktop version for more info, searchable data, and filtering capabilities.</p>
+      <p style=" ">Visit our desktop version for more info, searchable data, and filtering capabilities.<span class="hideUnder992"><br>Please use iPad or larger device for editing.</span></p>
     </div>
 
   </div>
@@ -168,7 +168,7 @@
 
 <!-- <div class="spacer10" style="">&nbsp;&nbsp;</div> -->
 </section>
-<section id="stickyFooter">
+<section id="stickyFooter" style="margin-bottom:0; padding-bottom:0;">
 <div class="copyright"><p style="padding:24px;">Copyright 2018 • Spectrum Reach • All Rights Reserved</p></div>
  <div class="toTop"><span class="" {{action "scrollToTop"}}><span style="color:#fff;">Top</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
 

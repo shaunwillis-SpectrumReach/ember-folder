@@ -469,7 +469,7 @@
   border: 0px!important;
 }
 #wrapper-rnh .datatable .footnote {
-  padding: 20px 0 0 30px;
+  padding: 60px 0 0 30px;
   margin-bottom:-30px;
   text-align:left;
 }
@@ -534,6 +534,13 @@ th.rnhprogress {
 .datatable .row:nth-child(odd) {
   // background-color: #FF0000;
 }
+/* //////////////////////  MEDIA  /////////////////////  */
+@media only screen and (min-width:768px) {
+  .showUnder768 {
+    display:none;
+  }
+}
+
 /* //////////////////////  MEDIA  /////////////////////  */
 @media only screen and (min-width:1300px) {
   .container {
@@ -663,7 +670,7 @@ th.rnhprogress {
     padding: 60px 0 10px;
   }
   #wrapper-rnh .datatable .footnote {
-    padding: 20px 10px;
+    padding: 40px 10px 0 10px;
     margin-bottom:0px;
     text-align:left;
   }
@@ -729,11 +736,11 @@ th.rnhprogress {
   }
 
   #AE-dash .imageMine {
-    margin-top: 36px;
+    margin-top: 2px;
   }
 
   #MGR-dash .imageMine {
-    margin-top: 36px;
+    margin-top: 2px;
   }
 
   #AE-dash .imageMine img {

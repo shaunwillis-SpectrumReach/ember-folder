@@ -370,9 +370,27 @@
   background-size: 26vmin;
   background-position: bottom right;
   background-repeat: no-repeat;
+
 }
 
-#contentHome #homepageCornerLogo img {
+#contentHome #homepageCornerLogo-login {
+  height: 26vmin;
+  width: 26vmin;
+  margin-top: -26vmin;
+  float: right;
+  position: relative;
+  background-image: url("../assets/img/TriCorner.svg");
+  background-size: 26vmin;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+
+  position:absolute;
+  bottom:40px;
+  right:0;
+
+}
+
+#contentHome #homepageCornerLogo img, #contentHome #homepageCornerLogo-login img  {
   position: relative;
   left: 5vmin;
   top: 12vmin;
