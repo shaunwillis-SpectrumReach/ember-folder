@@ -59,7 +59,7 @@
              {{/each}}
            </div>
            {{#each model.goal as |total|}}
-           <div style="float:left;"><h3 style="color:#003057;">${{number-format total.dollars}} / $ {{number-format total.goal}} </h3></div>
+           <div style="float:left;"><h3 style="color:#003057;">${{number-format total.dollars decimals=0}} / $ {{number-format total.goal decimals=0}} </h3></div>
            {{/each}}
            <!-- <div class="progress" style="clear:both; background-color:transparent; border:0px; min-height: 48px;">
              <div class="border-right-line" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style=" width:23%; height: 9px;">
@@ -85,7 +85,7 @@
               <p class="West-bar" style="padding: 0.5rem 1rem; color:#fff; border: 1px solid white; font-weight: 600;">WEST</p>
           </div>
             <div class="col-xl-7 col-lg-5 col-sm-7" style="text-align: left; margin-top: 0.5rem; margin-bottom: 1rem;">
-              <h4>${{number-format collective.dollars}} / <span style="color: #fff;">${{number-format collective.goal}}</span></h4>
+              <h4>${{number-format collective.dollars decimals=0}} / <span style="color: #fff;">${{number-format collective.goal decimals=0}}</span></h4>
             </div>
             <div class="col-xl-1 col-lg-2 col-sm-1">
               <h3> <span style="color: #003057;">{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%</span></h3>
@@ -98,7 +98,7 @@
               <p class="Central-bar" style="padding: 0.5rem 1rem; color:#fff; border: 1px solid white; font-weight: 600;">CENTRAL</p>
           </div>
             <div class="col-xl-7 col-lg-5 col-sm-7" style="text-align: left; margin-top: 0.5rem; margin-bottom: 1rem;">
-              <h4>${{number-format collective.dollars}} / <span style="color: #fff;">${{number-format collective.goal}}</span></h4>
+              <h4>${{number-format collective.dollars decimals=0}} / <span style="color: #fff;">${{number-format collective.goal decimals=0}}</span></h4>
             </div>
             <div class="col-xl-1 col-lg-2 col-sm-1">
               <h3> <span style="color: #003057;">{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%</span></h3>
@@ -111,7 +111,7 @@
               <p class="Northeast-bar" style="padding: 0.5rem 1rem; color:#fff; border: 1px solid white; font-weight: 600;">NORTHEAST</p>
           </div>
             <div class="col-xl-7 col-lg-5 col-sm-7" style="text-align: left; margin-top: 0.5rem; margin-bottom: 1rem;">
-              <h4>${{number-format collective.dollars}} / <span style="color: #fff;">${{number-format collective.goal}}</span></h4>
+              <h4>${{number-format collective.dollars decimals=0}} / <span style="color: #fff;">${{number-format collective.goal decimals=0}}</span></h4>
             </div>
             <div class="col-xl-1 col-lg-2 col-sm-1">
               <h3> <span style="color: #003057;">{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%</span></h3>
@@ -124,7 +124,7 @@
               <p class="South-bar" style="padding: 0.5rem 1rem; color:#fff; border: 1px solid white; font-weight: 600;">SOUTH</p>
           </div>
             <div class="col-xl-7 col-lg-5 col-sm-7" style="text-align: left; margin-top: 0.5rem; margin-bottom: 1rem;">
-              <h4>${{number-format collective.dollars}} / <span style="color: #fff;">${{number-format collective.goal}}</span></h4>
+              <h4>${{number-format collective.dollars decimals=0}} / <span style="color: #fff;">${{number-format collective.goal decimals=0}}</span></h4>
             </div>
             <div class="col-xl-1 col-lg-2 col-sm-1">
               <h3> <span style="color: #003057;">{{number-format (mult (div collective.dollars collective.goal) 100) decimals=0}}%</span></h3>
