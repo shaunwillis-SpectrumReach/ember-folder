@@ -60,6 +60,7 @@ Router.map(function() {
   this.route('passwordresetconfirmation');
   this.route('logout');
   this.route('error');
+  this.route('register-thanks');
 });
 
 export default Router;

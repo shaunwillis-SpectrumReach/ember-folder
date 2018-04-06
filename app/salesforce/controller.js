@@ -7,8 +7,7 @@ export default Ember.Controller.extend({
         profile.save().then(() => {
           profile.set('pid', profile);
         }).then(() => {
-          this.transitionToRoute('firstlook.register-thanks');
-
+          this.transitionToRoute('register-thanks');
         })
         .catch(() => {
                 alert('Email address has already been used.');
