@@ -2,7 +2,7 @@ import Ember from 'ember';
 // import config from './config/environment';
 
 export default Ember.Controller.extend({
-  wizard: Ember.inject.service('wizard'),
+  // wizard: Ember.inject.service('wizard'),
   // filesystem: Ember.inject.service(),
   currentUser: Ember.inject.service(),
   session: Ember.inject.service(),
@@ -29,11 +29,15 @@ export default Ember.Controller.extend({
 
 
 actions: {
-  update(closeForm, formValues) {
-    this.model.setProperties(formValues);
-    this.model.save().then(() => {
-      closeForm();
-    });
+  update(formValues) {
+          this.store.queryRecord('pid', formValues.id).then(function(formValues) {
+            post.get(formValues);
+            post.set(formValues);
+
+            post.save(); // => PATCH to '/posts/1'
+          });
+
+    },
   },
 
   // choosePic(formValues) {
@@ -41,5 +45,5 @@ actions: {
   //     this.saveUser(upload[0]);
   //   });
   // }
-}
+// }
   });

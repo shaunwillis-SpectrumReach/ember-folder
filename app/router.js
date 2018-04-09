@@ -61,6 +61,10 @@ Router.map(function() {
   this.route('logout');
   this.route('error');
   this.route('register-thanks');
+  this.route('profile', function() {
+    this.route('edit', { path: '/:id'});
+  });
+  this.route('confirmation');
 });
 
 export default Router;

@@ -2,12 +2,15 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-    wizard: Ember.inject.service('wizard'),
-
+    currentUser: Ember.inject.service(),
+    // wizard: Ember.inject.service('wizard'),
     // beforeModel() {
     //   $('#burger').removeClass('hide');
     //
     // },
+ //    model({ id }) {
+ //   return this.store.findRecord('pid', id);
+ // },
 
 
 });
