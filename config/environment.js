@@ -7,9 +7,9 @@ module.exports = function(environment) {
       // LocalHost
       // host: 'http://127.0.0.1:3333',
       // Staging Database
-      //  host: 'https://firstlook-staging-api.herokuapp.com',
+      host: 'https://firstlook-staging-api.herokuapp.com',
       // Production Database
-      host: 'https://firstlook-spectrumreach-api.herokuapp.com',
+      // host: 'https://firstlook-spectrumreach-api.herokuapp.com',
       // postman
       // host: 'https://4ffe1e86-5762-4b48-a8bc-fe587faf68d1.mock.pstmn.io',
       namespace: 'api',
