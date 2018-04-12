@@ -884,11 +884,11 @@ padding:40px 0;
 
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
   #menuRight {
-    left: initial !important;
+    left: auto !important;
   }
 
 
   .side-menu {
-    left: initial !important;
+    left: auto !important;
   }
 }
