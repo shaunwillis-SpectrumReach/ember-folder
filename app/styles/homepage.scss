@@ -53,16 +53,22 @@
 
 // @supports (-ms-accelerator:true) {
 
-@supports (display:-ms-page) {
+@supports (display:-ms-grid) {
 
   #menuRight {
     left: initial !important;
   }
-  .side-menu: {
+}
+
+@supports (display:-ms-page) {
+  .side-menu {
     left: initial !important;
   }
 
 }
+
+
+
 
 
 #burger {
