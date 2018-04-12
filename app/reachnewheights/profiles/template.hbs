@@ -1,0 +1,189 @@
+{{#if currentUser.pid.isAdmin}}
+
+<div id="wrapper-rnh" >
+
+  <section id="header">
+
+    {{#link-to "profile.details" currentUser.pid.id class=""}}<div class="userNameTop">Welcome, {{ currentUser.pid.firstname}}  <img style="border-radius: 50%;" src="{{currentUser.pid.fullProfilePicUrl}}" width="25"></div>{{/link-to}}
+    <div>{{#link-to "launchpad"}}<img class="srilogo" src="/assets/img/rnh/sri_logo.svg" >{{/link-to}} </div>
+   <!-- <div> <div class="logoText" >Spectrum Reach Incentives</div></div> -->
+  </section>
+<section id="altNav" >
+  <div class="  " style="padding-left:24px;"  >
+    <ul>
+        <!-- <li><a href="/launchpad">Launchpad</a></li> -->
+        <li>{{#link-to "reachnewheights.overview"}}Overview{{/link-to}}</li>
+        <li><a href="/reachnewheights/dashboard">Standings</a></li>
+        <!-- <li ><a href="/reachnewheights/standings">FAQs</a></li> -->
+        {{#if currentUser.pid.isAdmin}}
+          <li class="active">Admin</li>
+        {{/if}}
+        <li class="hideUnder767" style="float: right; width: 200px;">Reach New Heights</li>
+    </ul>
+  </div>
+  </section>
+
+
+<!-- <div class="divider-rnh"></div> -->
+
+
+
+  <!--  //////////////////////////////////////////////////////// -->
+  <!--  ///////////  STANDINGS   ///////////  -->
+<!--  //////////////////////////////////////////////////////// -->
+
+<section id="standings"  >
+
+  <div class="container" >
+    <div class="row "  >
+
+      <div class="col-lg-9">
+
+        <div class="row text-left" >
+          <h1 class="row" style="color:#fff; ">ADMIN</h1>
+
+        <div class="row" id="Filters"  >
+          <p class=" row footnote-dash" style="">Sort Data with Filters below. Select tab to view each divisional roll-up.</p>
+           <div class=" filters " style="" >
+                       <div id="divCentral" class="divisionBtn divisionBtn1 divisionBtn1-Active" {{action "filterCategoryCentral"}}>
+                         &nbsp;</div>
+                       <div id="divSouth" class="divisionBtn divisionBtn2" {{action "filterCategorySouth"}}>
+                           &nbsp;</div>
+                       <div id="divWest" class="divisionBtn divisionBtn3" {{action "filterCategoryWest"}} >
+                           &nbsp;</div>
+                       <div id="divNortheast" class="divisionBtn divisionBtn4" {{action "filterCategoryNortheast"}}>
+                         &nbsp;</div>
+           </div>
+       </div>
+
+
+          </div>
+        <!-- <div id="pdf"  class="col-lg-12 "> <a href="/assets/img/Firstlook_OTBNetRev_byAE_wk5_020118.pdf" target="_blank" style="color:#0099D8;"><img src="/assets/img/ae_pdf.svg" alt="download pdf"/></a>&nbsp; <a href="/assets/img/Firstlook_OTBNetRev_byLSM-Rollup_wk5_020118.pdf" target="_blank" style="color:#0099D8;"><img src="/assets/img/lsm_pdf.svg" alt="download pdf"/></a></div> -->
+    </div>
+
+
+    <div>
+      <h3>Admin Instructional Resources</h3>
+      <p style="text-align:left;"><a href="https://vimeo.com/261421594" target="_blank"><img src="/assets/img/rnh/videoTutorial.png" width="121" height="70" style="margin-right:12px;">Watch Video Tutorial</a></p>
+      <p style="text-align:left;"><a href="/assets/img/rnh/SR_IncentivesManager_Training.pdf" target="_blank"><img src="/assets/img/rnh/pdf-download-rnhAdmin.png" width="28" height="34" style="margin-right:12px;"> Download detailed PDF Tutorial</a></p>
+      <p style="text-align:left;"><a href="/supportform" target="_blank"><img src="/assets/img/rnh/clickHere.png" width="59" height="37" style="margin-right:12px;">If someone is not showing up</a></p>
+    </div>
+
+    <div class="row" id="FilterDisclaimer"  >
+      <p style=" ">Visit our desktop version for more info, searchable data, and filtering capabilities.<span class="hideUnder992"><br>Please use iPad or larger device for editing.</span></p>
+    </div>
+
+  </div>
+  </div>
+</section>
+
+
+
+<section id="AElist" class="" style="padding-bottom: 0px;" >
+  <div id="datatable" class="container-fluid datatable" style="">
+
+  
+
+    <!--   ================================   -->
+    <!--  Central table  -->
+    <!--   ================================   -->
+    <div class="row" id="aeCentral" style="">
+      <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        {{models-table
+           data=model.central
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           columnComponents=(hash
+            profileImg=(component "profile-img") editRow=(component "models-table/cell-edit-toggle" saveRowAction=(action "onSaveRow") cancelRowAction=(action "onCancelRow"))
+          )
+           pageSize=755
+         }}
+        </div>
+    </div>
+
+
+    <!--   ================================   -->
+    <!--  West table  -->
+    <!--   ================================   -->
+    <div class="row hide" id="aeWest" >
+      <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        {{models-table
+           data=model.west
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           columnComponents=(hash
+            profileImg=(component "profile-img") editRow=(component "models-table/cell-edit-toggle" saveRowAction=(action "onSaveRow") cancelRowAction=(action "onCancelRow"))
+          )
+           pageSize=755
+         }}
+        </div>
+    </div>
+    <!--   ================================   -->
+    <!--  Northeast table  -->
+    <!--   ================================   -->
+
+    <div class="row hide" id="aeNortheast" >
+      <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        {{models-table
+           data=model.northeast
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           columnComponents=(hash
+            profileImg=(component "profile-img") editRow=(component "models-table/cell-edit-toggle" saveRowAction=(action "onSaveRow") cancelRowAction=(action "onCancelRow"))
+          )
+           pageSize=755
+         }}
+        </div>
+    </div>
+
+    <!--   ================================   -->
+    <!--  South table  -->
+    <!--   ================================   -->
+    <div class="row hide" id="aeSouth" >
+      <div class="col-lg-12" style="padding-left:0; padding-right:0;">
+        {{models-table
+           data=model.south
+           columns=columns
+           showGlobalFilter=false
+           showComponentFooter=false
+           filteringIgnoreCase=true
+           columnComponents=(hash
+            profileImg=(component "profile-img") editRow=(component "models-table/cell-edit-toggle" saveRowAction=(action "onSaveRow") cancelRowAction=(action "onCancelRow"))
+          )
+           pageSize=755
+         }}
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<!-- <div class="spacer10" style="">&nbsp;&nbsp;</div> -->
+</section>
+<section id="stickyFooter" style="margin-bottom:0; padding-bottom:0;">
+<div class="copyright"><p style="padding:24px;">Copyright 2018 • Spectrum Reach • All Rights Reserved</p></div>
+ <div class="toTop"><span class="" {{action "scrollToTop"}}><span style="color:#fff;">Top</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+
+</section>
+
+</div>
+
+{{else}}
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h2 style="margin-top: 8rem;">You are not an Admin Page. Please <a href="mailTo:shaun.willis@charter.com" style="color: #003057;">contact support</a> for help.</h2>
+    </div>
+  </div>
+</div>
+{{/if}}
+
+{{outlet}}
