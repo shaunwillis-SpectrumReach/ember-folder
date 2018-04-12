@@ -14,8 +14,8 @@
 
 #menuRight {
   background-color: #003057;
-  width: 300px;
-  right: -300px;
+  width: 300px !important;
+  right: -300px !important;
   color: #0099D8 !important;
   font-size: 24px;
   font-weight: 500;
@@ -46,6 +46,21 @@
 #menuRight a {
   text-decoration: none;
 }
+
+
+
+/*  ///////////  Nav side-bar for Edge Browser ////////////  */
+
+// @supports (-ms-accelerator:true) {
+
+@supports (display:-ms-grid) {
+
+  #menuRight {
+    left: 0!important;
+  }
+
+}
+
 
 #burger {
   padding-top: 2.5rem;
