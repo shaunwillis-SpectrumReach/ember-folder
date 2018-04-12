@@ -883,6 +883,10 @@ padding:40px 0;
 /*  ///////////  Nav side-bar for Edge Browser ////////////  */
 
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  #menuRight {
+    left: initial !important;
+  }
+
 
   .side-menu {
     left: initial !important;
