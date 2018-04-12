@@ -1,31 +1,33 @@
-<div id="wrapper" class="homepageWrapper">
+<div id="wrapper-launch" >
   <div id="contentHome" class="" >
     <section id="header">
-      <div class="userNameTop">Welcome, {{ currentUser.pid.firstname }}  <img style="border-radius: 50%;" src="{{currentUser.pid.fullProfilePicUrl}}" width="25"></div>
-          <img class="l_FirstLook" src="/assets/img/L_FirstLook.png" >
+     {{#link-to "profile.details" currentUser.pid.id class=""}}<div class="userNameTop">Welcome, {{ currentUser.pid.firstname}}  <img style="border-radius: 50%;" src="{{currentUser.pid.fullProfilePicUrl}}" width="25"></div>{{/link-to}}
+     <div>{{#link-to "launchpad"}}<img class="srilogo" src="/assets/img/rnh/sri_logo.svg" >{{/link-to}} </div>
     </section>
 
 
-    <div id="" class="graygradient" style="min-height:calc(100vh - 130px ) !important;min-height:600px;">
+<section id="launch" style="background-color: #0099D8; background-image: url('../assets/img/launch/block_head_blue.jpg'); padding-top: 40 px;">
 
-<section id="profileSummary" style="text-align: center;">
-
-        <h3>EDIT PROFILE</h3>
-  
+      <div  class="container fadein"  style="min-height:73vh;">
 
 
-</section>
+
 {{outlet}}
 </div>
 
-<section id="homepageCornerLogo">
-  <img src="/assets/img/Spectrum_Reach_Rev_RGB.svg">
 </section>
 
-<section id="stickyFooter">
-<p>Copyright 2018 • Spectrum Reach • All Rights Reserved</p>
-</section>
 
+
+
+
+
+<section id="stickyFooter" style="margin-bottom:0; padding-bottom:0;">
+<div class="copyright"><p style="padding:24px;">Copyright 2018 • Spectrum Reach • All Rights Reserved</p></div>
+ <div class="toTop"><span class="" {{action "scrollToTop"}}><span style="color:#fff;">Top</span> <img src="/assets/img/leaderboard/return_top.svg" /></span></div>
+
+</section>
 
 </div>
+<!--  END WRAPPER  -->
 </div>

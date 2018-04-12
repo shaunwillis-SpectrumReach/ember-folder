@@ -1,0 +1,38 @@
+<div id="" class="" style="min-height:calc(100vh - 130px ) !important;min-height:600px; color: white!important;">
+
+ <section id="title" style="padding-top: 0px;">
+  <div  class="container fadein"  style="margin-top:30px; position: relative;" >
+
+  <h2 style="color: white;" >Profile Summary</h2>
+  <a href="https://spectrumreach.typeform.com/to/zdQZSe" target="_blank">
+  {{#if currentUser.pid.fullProfilePicUrl}}
+  <p><img style="border-radius: 50%; max-width: 10rem; box-shadow: none;" src="{{currentUser.pid.fullProfilePicUrl}}" width="120"></p>
+  {{else}}
+  <p><img src="/assets/img/homepage/nav_generic_thumb.svg" width="120"></p>
+  {{/if}}
+  <p style="color: white;" class="comment">Edit image</p>
+</a>
+
+</div>
+<div id="" class="" style="min-height:calc(100vh - 130px ) !important;min-height:600px;">
+  <!--  Note:  need a conditional, if image profile picture exists, file path = foo, else display generic thumbnail. - generic_thumbnail.svg  -->
+
+   <div id="" style="text-align: left; width: 20rem; margin: auto;">
+    <p style="color: white;"><span class="userItem" style="padding-right: 21px; text-decoration: none;">Name: </span>{{currentUser.pid.firstname}} {{currentUser.pid.lastname}}</p>
+    <p style="color: white;"><span class="userItem" style="padding-right: 21px; text-decoration: none;">Email: </span>{{currentUser.pid.email}}</p>
+    <p style="color: white;"><span class="userItem" style="padding-right: 43px; text-decoration: none;">ID: </span>{{currentUser.pid.pid}} </p>
+    <p style="color: white;"><span class="userItem" style="padding-right: 6px; text-decoration: none;">Job Title: </span>{{currentUser.pid.jobtitle}}</p>
+    <p style="color: white;"><span class="userItem" style="padding-right: 1px; text-decoration: none;">Manager: </span>{{currentUser.pid.managername}}</p>
+    <p style="color: white;"><span class="userItem" style="padding-right: 13px; text-decoration: none;">Region: </span>{{currentUser.pid.region}}</p>
+    <p style="color: white;"><span class="userItem" style="padding-right: 8px; text-decoration: none;">Division: </span>{{currentUser.pid.division}}</p>
+  </div>
+   <div class="" style="margin-top:40px; text-align: center;">
+    {{#link-to 'profile.edit' currentUser.pid.id class="btn darkbutton" name="button" }}Edit Profile{{/link-to}}
+  </div>
+</div>
+  </section>
+
+
+
+
+</div>

@@ -30,17 +30,17 @@
     </li>
 
 
-    <li class="border-top" style="margin-top:100px;">
+    <!-- <li class="border-top" style="margin-top:100px;">
       <a href="https://spectrumreach.typeform.com/to/zdQZSe" target="_blank">
         <img style="border-radius: 50%;" src="{{currentUser.pid.fullProfilePicUrl}}" width="25"> <span>Manage Profile</span>
       </a>
-    </li>
-    <!-- <li class="border-top" style="margin-top:100px;">
-      {{#side-menu-link-to "profile.edit" currentUser.pid.id}}
+    </li> -->
+    <li class="border-top" style="margin-top:100px;">
+      {{#side-menu-link-to "profile.details" currentUser.pid.id}}
         <img style="border-radius: 50%;" src="{{currentUser.pid.fullProfilePicUrl}}" width="25"> <span>Manage Profile</span>
       {{/side-menu-link-to}}
+    </li>
 
-    </li> -->
     {{#link-to 'logout' class=" " replace="true"}}
     <li class="signOut" style=" ">
       SIGN OUT

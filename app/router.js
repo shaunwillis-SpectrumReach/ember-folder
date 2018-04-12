@@ -62,7 +62,8 @@ Router.map(function() {
   this.route('error');
   this.route('register-thanks');
   this.route('profile', function() {
-    this.route('edit', { path: '/:id'});
+    this.route('edit', { path: '/:id/edit'});
+    this.route('details', { path: '/:id'});
   });
   this.route('confirmation');
 });

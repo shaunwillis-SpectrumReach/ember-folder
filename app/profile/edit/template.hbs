@@ -1,4 +1,6 @@
-{{outlet}}
+
+<h2 style="color: white;" >Profile Summary</h2><br />
+<h3 style="color: white; text-align: center; margin: auto; float: none;">EDIT PROFILE</h3>
 <div class="detail">
   <div class="detail-card">
     <!-- <div class="detail-card__title">Edit Details</div> -->
@@ -21,7 +23,8 @@
       {{input class="form__input" type="text" required=true id="region"
       value=formValues.region placeholder="Region"}}<br />
 
-        <button type="submit" class="btn">Save</button>
+        <button type="submit" class="btn" style="background: #002039;">Save</button><br />
+        {{#link-to "profile.details" currentUser.pid.id class="btn darkbutton"}}Back{{/link-to}}
     {{/simple-form}}
   </div>
 </div>

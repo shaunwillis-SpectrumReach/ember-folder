@@ -2,8 +2,8 @@
  <div id="contentHome" class="" >
   <section id="header">
 
-   <div class="userNameTop">Welcome, {{ currentUser.pid.firstname}}  <img style="border-radius: 50%;" src="{{currentUser.pid.fullProfilePicUrl}}" width="25"></div>
-   <div ><a href="/launchpad"><img class="srilogo" src="/assets/img/rnh/sri_logo.svg" style="max-width: 16rem;"></a> </div>
+    {{#link-to "profile.details" currentUser.pid.id class=""}}<div class="userNameTop">Welcome, {{ currentUser.pid.firstname}}  <img style="border-radius: 50%;" src="{{currentUser.pid.fullProfilePicUrl}}" width="25"></div>{{/link-to}}
+    <div>{{#link-to "launchpad"}}<img class="srilogo" src="/assets/img/rnh/sri_logo.svg" >{{/link-to}} </div>
    <!-- <div> <div class="logoText" >Spectrum Reach Incentives</div></div> -->
   </section>
 
