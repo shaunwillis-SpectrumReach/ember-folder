@@ -34,6 +34,15 @@ export default Route.extend({
       managernameae: this.store.query('rn-haedbview', {
           'managername': true
         }),
+      managernamervp: this.store.query('rn-hrvpdbview', {
+          'managernamedashboard': true
+        }),
+      managernamelsm: this.store.query('rn-hlsmdbview', {
+          'managernamedashboard': true
+        }),
+      managernamedos: this.store.query('rn-hdosdbview', {
+          'managernamedashboard': true
+        }),
       managernamedvpnortheast: this.store.query('rn-hdvpdbview', {
           'northeast': true
         }),

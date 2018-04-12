@@ -51,6 +51,7 @@ Router.map(function() {
     this.route('dashboard');
     this.route('overview');
     this.route('faqs');
+    this.route('profiles');
   });
   this.route('launchpad');
   this.route('login');
