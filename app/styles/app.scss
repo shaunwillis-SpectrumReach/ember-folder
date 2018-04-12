@@ -1,5 +1,6 @@
 /* @import "progress-b";  */  /* used for circular prgress bar  */
 /* @import "progress-leader";  */
+@import "ember-side-menu";
 @import "homepage";
 @import "launchpad";
 @import "rnh-overview";
@@ -8,7 +9,7 @@
 @import "preloader";
 @import "leaderboard";
 @import "standings";
-@import "ember-side-menu";
+
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css');
 @import url('https://cloud.typography.com/6510934/7039392/css/fonts.css');  // to add Whitney and Gotham
 // @import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" ');
