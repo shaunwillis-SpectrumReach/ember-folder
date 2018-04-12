@@ -640,6 +640,10 @@ th.rnhprogress {
     padding: 60px 0 10px;
   }
 
+  #wrapper-rnh .datatable {
+    margin: -40px 0 0;
+  }
+
   .divisionBtn {
     background-size: cover;
     width: 140px;
@@ -689,6 +693,13 @@ th.rnhprogress {
     padding: 40px 10px 0 10px;
     margin-bottom:0px;
     text-align:left;
+  }
+
+  .aeCentral h3,
+  .aeNortheast h3,
+  .aeSouth h3,
+  .aeWest h3 {
+    margin-bottom:-12px;
   }
 
 }
