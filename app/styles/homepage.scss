@@ -53,12 +53,13 @@
 
 // @supports (-ms-accelerator:true) {
 
-@supports (display:-ms-grid) {
+@supports (display:-ms-page) {
 
   #menuRight {
-    width: 360px !important;
-    right: -360px !important;
-    left: 90vw !important;
+    left: initial !important;
+  }
+  .side-menu: {
+    left:initial !important;
   }
 
 }
