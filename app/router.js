@@ -65,6 +65,8 @@ Router.map(function() {
   this.route('profile', function() {
     this.route('edit', { path: '/:id/edit'});
     this.route('details', { path: '/:id'});
+    this.route('updatepassword', { path: '/updatepassword/:id/edit'});
+    this.route('resetpasswordconfirmation');
   });
   this.route('confirmation');
 });

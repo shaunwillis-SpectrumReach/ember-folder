@@ -27,7 +27,8 @@
     <p style="color: white;"><span class="userItem" style="padding-right: 8px; text-decoration: none;">Division: </span>{{currentUser.pid.division}}</p>
   </div>
    <div class="" style="margin-top:40px; text-align: center;">
-    {{#link-to 'profile.edit' currentUser.pid.id class="btn darkbutton" name="button" }}Edit Profile{{/link-to}}
+    {{#link-to 'profile.edit' currentUser.pid.id class="btn darkbutton" name="button" }}Edit Profile{{/link-to}}<br />
+    {{#link-to "profile.updatepassword" currentUser.pid.id class="btn darkbutton"}}Update Password{{/link-to}}
   </div>
 </div>
   </section>
