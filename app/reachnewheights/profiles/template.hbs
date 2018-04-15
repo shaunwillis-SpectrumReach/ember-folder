@@ -16,7 +16,10 @@
         <li><a href="/reachnewheights/dashboard">Standings</a></li>
         <!-- <li ><a href="/reachnewheights/standings">FAQs</a></li> -->
         {{#if currentUser.pid.isAdmin}}
-          <li class="active">Admin</li>
+          <li class="">Admin</li>
+        {{/if}}
+        {{#if currentUser.pid.isAdmin}}
+          <li class="active">Profiles</li>
         {{/if}}
         <li class="hideUnder767" style="float: right; width: 200px;">Reach New Heights</li>
     </ul>
@@ -40,7 +43,7 @@
       <div class="col-lg-9">
 
         <div class="row text-left" >
-          <h1 class="row" style="color:#fff; ">ADMIN</h1>
+          <h1 class="row" style="color:#fff; ">PROFILES</h1>
 
         <div class="row" id="Filters"  >
           <p class=" row footnote-dash" style="">Sort Data with Filters below. Select tab to view each divisional roll-up.</p>
@@ -62,12 +65,12 @@
     </div>
 
 
-    <div>
+    <!-- <div>
       <h3>Admin Instructional Resources</h3>
       <p style="text-align:left;"><a href="https://vimeo.com/261421594" target="_blank"><img src="/assets/img/rnh/videoTutorial.png" width="121" height="70" style="margin-right:12px;">Watch Video Tutorial</a></p>
       <p style="text-align:left;"><a href="/assets/img/rnh/SR_IncentivesManager_Training.pdf" target="_blank"><img src="/assets/img/rnh/pdf-download-rnhAdmin.png" width="28" height="34" style="margin-right:12px;"> Download detailed PDF Tutorial</a></p>
       <p style="text-align:left;"><a href="/supportform" target="_blank"><img src="/assets/img/rnh/clickHere.png" width="59" height="37" style="margin-right:12px;">If someone is not showing up</a></p>
-    </div>
+    </div> -->
 
     <div class="row" id="FilterDisclaimer"  >
       <p style=" ">Visit our desktop version for more info, searchable data, and filtering capabilities.<span class="hideUnder992"><br>Please use iPad or larger device for editing.</span></p>
@@ -82,7 +85,7 @@
 <section id="AElist" class="" style="padding-bottom: 0px;" >
   <div id="datatable" class="container-fluid datatable" style="">
 
-  
+
 
     <!--   ================================   -->
     <!--  Central table  -->
