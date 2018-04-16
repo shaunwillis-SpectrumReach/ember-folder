@@ -69,6 +69,7 @@ Router.map(function() {
     this.route('resetpasswordconfirmation');
   });
   this.route('confirmation');
+  this.route('profilemanager');
 });
 
 export default Router;
