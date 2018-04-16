@@ -7,24 +7,20 @@ export default Route.extend({
 
   model() {
     return RSVP.hash({
-      mine: this.store.query('rn-hall', {
-          'mine': true
-        }),
-      central: this.store.query('rn-hall', {
-        'allcentral': true
+      
+      central: this.store.query('pids', {
+        'central': true
       }),
-      west: this.store.query('rn-hall', {
-        'allwest': true
+      west: this.store.query('pids', {
+        'west': true
       }),
-      south: this.store.query('rn-hall', {
-        'allsouth': true
+      south: this.store.query('pids', {
+        'south': true
       }),
-      northeast: this.store.query('rn-hall', {
-        'allnortheast': true
-      }),
-      aerollup: this.store.query('rn-hall', {
-        'rollup': true
+      northeast: this.store.query('pids', {
+        'northeast': true
       })
+
       });
 
   },
