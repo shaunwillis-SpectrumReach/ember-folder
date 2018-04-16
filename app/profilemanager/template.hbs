@@ -16,12 +16,12 @@
         <li><a href="/reachnewheights/dashboard">Standings</a></li>
         <!-- <li ><a href="/reachnewheights/standings">FAQs</a></li> -->
         {{#if currentUser.pid.isAdmin}}
-          <li class="">Admin</li>
+          <li class=""><a href="/reachnewheights/admin">Admin</a></li>
         {{/if}}
         {{#if currentUser.pid.isAdmin}}
-          <li class="active">Profile Manager</li>
+          <li class="active">Profiles</li>
         {{/if}}
-        <li class="hideUnder767" style="float: right; width: 200px;">Reach New Heights</li>
+        <li class="hideUnder767" style="float: right; width: 200px;">SR Incentives</li>
     </ul>
   </div>
   </section>
@@ -45,7 +45,19 @@
         <div class="row text-left" >
           <h1 class="row" style="color:#fff; ">PROFILE MANAGER</h1>
 
-      
+        <div class="row" id="Filters"  >
+          <p class=" row footnote-dash" style="">Sort Data with Filters below. Select tab to view each divisional roll-up.</p>
+           <div class=" filters " style="" >
+                       <div id="divCentral" class="divisionBtn divisionBtn1 divisionBtn1-Active" {{action "filterCategoryCentral"}}>
+                         &nbsp;</div>
+                       <div id="divSouth" class="divisionBtn divisionBtn2" {{action "filterCategorySouth"}}>
+                           &nbsp;</div>
+                       <div id="divWest" class="divisionBtn divisionBtn3" {{action "filterCategoryWest"}} >
+                           &nbsp;</div>
+                       <div id="divNortheast" class="divisionBtn divisionBtn4" {{action "filterCategoryNortheast"}}>
+                         &nbsp;</div>
+           </div>
+       </div>
 
 
           </div>

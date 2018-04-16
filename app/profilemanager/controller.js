@@ -10,9 +10,15 @@ import { get } from '@ember/object';
       columns: [
         {
           "title": "",
-          "component": "profileImg",
-          "className": "hideUnder992",
-          "editable": false
+          "propertyName": "lastname",
+          "filterPlaceholder": "Last Name...",
+          "className": "placeholdercolor"
+        },
+        {
+          "title": "",
+          "propertyName": "firstname",
+          "filterPlaceholder": "First Name...",
+          "className": "placeholdercolor"
         },
         {
           "title": "",
@@ -29,23 +35,33 @@ import { get } from '@ember/object';
           // ],
 
         },
-        
         {
           "title": "",
-          "propertyName": "firstname",
-          "filterPlaceholder": "Search First Name...",
-          "className": "placeholdercolor"
+          "filterPlaceholder": "Admin Access",
+          "className": "text-center placeholdercolor noborder",
+          "propertyName": "isAdmin"
+
         },
         {
           "title": "",
-          "propertyName": "lastname",
-          "filterPlaceholder": "Search Last Name...",
-          "className": "placeholdercolor"
+          "filterPlaceholder": "AE Access",
+          "className": "text-center placeholdercolor noborder",
+          "propertyName": "isAe"
+
         },
+        {
+          "title": "",
+          "filterPlaceholder": "Guest Access",
+          "className": "text-center placeholdercolor noborder",
+          "propertyName": "isGuest"
+
+        },
+
+
 
         {
           "title": "",
-          "filterPlaceholder": "Search Manager...",
+          "filterPlaceholder": "Manager...",
           "className": "placeholdercolor",
           "propertyName": "managername"
 
@@ -72,6 +88,15 @@ import { get } from '@ember/object';
           ]
 
         },
+        {
+          "title": "",
+          "filterPlaceholder": "Division",
+          "className": "placeholdercolor noborder",
+          "propertyName": "division",
+
+
+        },
+
 
         {
           "title": "",
