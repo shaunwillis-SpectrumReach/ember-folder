@@ -16,12 +16,12 @@
 
       {{input class="form__input" type="text" required=true id="managername"
       value=formValues.managername placeholder="Manager Name"}}<br />
+      
+      {{input class="form__input" type="text" required=true id="region"
+      value=formValues.region placeholder="Region"}}<br />
 
       {{input class="form__input" type="text" required=true id="division"
       value=formValues.division placeholder="Division"}}<br />
-
-      {{input class="form__input" type="text" required=true id="region"
-      value=formValues.region placeholder="Region"}}<br />
 
         <button type="submit" class="btn" style="background: #002039;">Save</button><br />
         {{#link-to "profile.details" currentUser.pid.id class="btn darkbutton"}}Back{{/link-to}}
