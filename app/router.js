@@ -70,6 +70,7 @@ Router.map(function() {
   });
   this.route('confirmation');
   this.route('profilemanager');
+
 });
 
 export default Router;
