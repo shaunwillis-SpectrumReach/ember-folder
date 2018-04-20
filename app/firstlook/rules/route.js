@@ -1,4 +1,6 @@
-import Route from '@ember/routing/route';
+import Ember from 'ember';
+import $ from 'jquery';
+
 import AuthenticatedRouteMixin from 'ember-simple-auth/mixins/authenticated-route-mixin';
 
 export default Ember.Route.extend(AuthenticatedRouteMixin, {

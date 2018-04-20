@@ -7,12 +7,12 @@ export default Ember.Route.extend({
     };
   },
   if (params){
-    var $ = Ember.$;
+    // var $ = Ember.$;
     if (params.queryParams.cat=="left") {
-      console.log(params.queryParams.cat);
+      // console.log(params.queryParams.cat);
     }
     else if (params.queryParams.cat=="right") {
-      console.log(params.queryParams.cat);
+      // console.log(params.queryParams.cat);
       }
     },
     //Use this after Registration is finished

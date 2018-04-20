@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import config from 'ember-folder/config/environment';
+// import config from 'ember-folder/config/environment';
 
 export default Ember.Controller.extend({
   currentUser: Ember.inject.service(),

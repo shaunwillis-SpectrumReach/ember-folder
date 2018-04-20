@@ -115,9 +115,6 @@ export default Route.extend({
       aerolluprvp: this.store.query('rn-hrvpdbview', {
         'rvp': true
       }),
-      aerolluprvp: this.store.query('rn-hrvpdbview', {
-        'rvp': true
-      })
       });
 
   },

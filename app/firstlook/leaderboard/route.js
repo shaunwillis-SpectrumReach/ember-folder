@@ -1,4 +1,5 @@
-import Route from '@ember/routing/route';
+import Ember from 'ember';
+import $ from 'jquery';
 import RSVP from 'rsvp';
 import AuthenticatedRouteMixin from 'ember-simple-auth/mixins/authenticated-route-mixin';
 

@@ -30,7 +30,7 @@ export default Ember.Controller.extend({
 
 actions: {
   update(formValues) {
-          this.store.queryRecord('pid', formValues.id).then(function(formValues) {
+        let post = this.store.queryRecord('pid', formValues.id).then(function(formValues) {
             post.get(formValues);
             post.set(formValues);
 

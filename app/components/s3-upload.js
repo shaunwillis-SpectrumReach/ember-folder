@@ -9,8 +9,8 @@ export default Component.extend({
 
   filesDidChange: function(files) {
     let uploadFile = this.store.createRecord('uploads', files);
-      profile.save().then(() => {
-        profile.save();
+      uploadFile.save().then(() => {
+        uploadFile.save();
       }).then(() => {
         this.transitionToRoute('firstlook.register-conf')
       // let uploadUrl = this.get('url'),
