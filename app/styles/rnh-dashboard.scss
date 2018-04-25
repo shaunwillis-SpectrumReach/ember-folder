@@ -576,13 +576,31 @@ th.rnhprogress {
     height: 59px;
   }
 }
+
+
+/* //////////////////////  MEDIA  1300   /////////////////////  */
+@media only screen and (max-width:475px) {
+.rnh {
+  float: left!important;
+  width: 131px!important;
+}
+}
+
+/* //////////////////////  MEDIA  1300   /////////////////////  */
+@media only screen and (max-width:1300px) {
+  #wrapper-rnh h1 {
+    font-size: 54px;
+  }
+
+  #wrapper-rnh h4 {
+    font-size: 14px;
+  }
+
+}
 /* //////////////////////  MEDIA  1200   /////////////////////  */
 @media only screen and (max-width:1200px) {
   #rnh-ovTitle {}
 
-  #wrapper-rnh h1 {
-    font-size: 54px;
-  }
 
   #wrapper-rnh h2 {
     font-size: 20px;
@@ -595,9 +613,7 @@ th.rnhprogress {
   }
 
   ,
-  #wrapper-rnh h4 {
-    font-size: 14px;
-  }
+
 
   ,
   #wrapper-rnh h5 {

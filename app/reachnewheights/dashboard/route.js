@@ -10,6 +10,9 @@ export default Route.extend({
       // mine: this.store.query('rn-hall', {
       //     'mine': true
       //   }),
+        percentage: this.store.query('rn-hdvpdbviewpercentage', {
+          'percentage': true
+        }),
         goal: this.store.query('rn-hgoaldbview', {
           'goal': true
         }),
@@ -28,6 +31,7 @@ export default Route.extend({
         minedvp: this.store.query('rn-hdvpdbview', {
           'mine': true
         }),
+
       managername: this.store.query('rn-hall', {
           'managername': true
         }),
